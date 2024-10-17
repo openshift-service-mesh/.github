@@ -36,7 +36,7 @@ The vast majority of development of OpenShift Service Mesh (OSSM) happens in
 center of how we deploy and manage the lifecycle of Istio), the most notable
 exceptions being some areas related to [Envoy Proxy] (which are deployed as
 sidecars to [Pods] within the mesh to control and shape traffic (See the [Istio
-Architecture] documentation for more details)) or other building and testing
+Architecture] documentation for more details) or other building and testing
 configurations specific to OSSM. So as a developer on OSSM, you'll _mostly_ be
 following the pattern of **"develop in upstream, build in downstream"**.
 
