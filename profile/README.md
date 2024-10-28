@@ -3,10 +3,11 @@
 Repositories for building OpenShift Service Mesh (OSSM) for the [OpenShift
 Container Platform][ocp].
 
-> **Note**: For general information about service mesh concepts click [here].
+> [!NOTE]
+> For general information about service mesh concepts click [here].
 
-> **Warning**: This organization deals *only* with builds of the 3.x series of
-> OSSM.
+> [!WARNING]
+> This organization deals *only* with builds of the 3.x series of OSSM.
 
 [here]:https://www.redhat.com/en/topics/microservices/what-is-a-service-mesh
 [ocp]:https://www.redhat.com/en/technologies/cloud-computing/openshift/container-platform
@@ -21,7 +22,8 @@ Istio repositories, with some small changes mainly related to building and
 shipping releases. In the repositories section we'll provide a brief overview of
 some of the repositories in this org to help you get started.
 
-> **Note**: Ultimately **this organization is meant for OSSM developers, not
+> [!NOTE]
+> Ultimately **this organization is meant for OSSM developers, not
 > users**. If you're a user looking to install and use OSSM, see the [OpenShift
 > Container Platform Documentation][ocp-docs] for your version instead.
 
@@ -40,7 +42,8 @@ Architecture] documentation for more details) or other building and testing
 configurations specific to OSSM. So as a developer on OSSM, you'll _mostly_ be
 following the pattern of **"develop in upstream, build in downstream"**.
 
-> **Note**: The most notable caveat to our pure upstream focus is that upstream
+> [!NOTE]
+> The most notable caveat to our pure upstream focus is that upstream
 > Istio employs a version of [Envoy Proxy] that uses [BoringSSL], which is
 > notably not compliant with the United States [National Institute of Standards
 > and Technology (NIST)][nist]'s [Federal Information Processing Standards
