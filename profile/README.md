@@ -119,6 +119,8 @@ date with [upstream istio/istio][istio], but you will find some small fixes
 tests][integration] on OpenShift CI. Look in the `prow/` directly for scripts
 specifically related to running integration tests for OSSM.
 
+We maintain an auto-generated [table of downstream patches](../downstream-changes/istio.md). You can add context to each commit by modifying the YAML files in the [downstream-changes](../downstream-changes/) directory. For each commit, you can use the `comment`, `upstreamPR` and `isPermanent` fields to add information to the tables. The `upstreamPR` field should link to any istio/istio Pull Request that contains this (or a similar) commit, while the `comment` field should be used to give additional context like "this commit can be replaced by upstream feature `xyz` starting from upstream version 1.44". If a change has to be carried over permanently (e.g. because it does not make sense to move it upstream), then you should set `isPermanent` to `true` to mark it. Remember: our goal is to minimize the amount of downstream patches we maintain, so for every commit we need to capture information on why it has to exist downstream rather than upstream.
+
 [ossm-istio]:https://github.com/openshift-service-mesh/istio
 [istio]:https://github.com/istio/istio
 [integration]:https://github.com/istio/istio/tree/master/tests/integration
