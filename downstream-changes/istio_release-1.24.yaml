@@ -1,0 +1,73 @@
+commits:
+  - sha: 8b08fdb2a41a6fb3df6099eefea53705c9583a43
+    title: Fix tests resources cleanup for Openshift (#55638) (#344)
+    author: Filip Brychta
+    date: 2025-04-09 14:36:47 +0200
+  - sha: 30015619f01d1d3508f60cbf91fa8773969526bb
+    title: Add flag to be compliant with attribute handling behavior in the specification (#341)
+    author: Yann Liu
+    date: 2025-04-08 12:11:18 +0800
+  - sha: 25dfdc58014fbc05901aff6f75c978b7f8a73f1c
+    title: Enable CA Bundle injection in only Gateway Namespaces (#335)
+    author: Aslak Knutsen
+    date: 2025-04-04 13:45:17 +0200
+  - sha: 48f4c4dc059c18c5090965744edf9d46fda0caa7
+    title: OSSM-8825 add integration test for gateway instance (#338)
+    author: Daniel Grimm
+    date: 2025-04-03 14:04:41 +0200
+  - sha: c7a70df550c5537362f4865ef859003a914f2150
+    title: 'istiod ca: custom ConfigMap name for CA root cert (#333)'
+    author: Daniel Grimm
+    date: 2025-04-03 12:31:02 +0200
+  - sha: b273863293adbcaec326943c3eae745031ce72f5
+    title: '[release-1.24] Update proxy (#332)'
+    author: Filip Brychta
+    date: 2025-03-31 12:19:59 +0200
+  - sha: 187165e80545d6a507959a45500b20ed00c32396
+    title: '[release-1.24] - Fix TestCNIRaceRepair test for Openshift (#55658)'
+    author: Maxim Babushkin
+    date: 2025-03-26 05:46:49 +0200
+  - sha: f764d9dec48e35a1e83bb6001f2fecb00b97e0c5
+    title: Release 1.24 fix test services reachability and flackiness (#55642)
+    author: Maxim Babushkin
+    date: 2025-03-24 23:18:48 +0200
+  - sha: 1d85810990b51800489f48d5787a10d9edf49695
+    title: Update sleep to use quay.io/sail-dev (#323)
+    author: OpenShift Cherrypick Robot
+    date: 2025-03-21 17:23:36 +0100
+  - sha: 8b9d7722e7fa1fe2c201393c6f97b9d05a7543c3
+    title: Update some examples to use quay.io/sail-dev instead of docker
+    author: Nick Fox
+    date: 2025-03-10 15:32:01 -0400
+  - sha: 5ed26ac96064259f2bf44cb77ec56a5f104c2702
+    title: Fix CVE-2025-22868 (#307)
+    author: Daniel Grimm
+    date: 2025-03-04 12:48:26 +0100
+  - sha: 68a4ddf0e03a4993ad05aa56aba15368b69648e8
+    title: Remove ARM support on proxy update script (#301)
+    author: Jonh Wendell
+    date: 2025-02-24 11:29:15 -0500
+  - sha: f1d1604f82a53d9d9d6f2ecc544f9ac877049d23
+    title: Fix file permissions (#297)
+    author: Filip Brychta
+    date: 2025-02-20 12:53:11 +0100
+  - sha: f96e71bd24172cb6c2293c960ad32572625148e6
+    title: '[release-1.24] Adding OCP scripts for int tests from master branch (#295)'
+    author: Filip Brychta
+    date: 2025-02-20 09:52:30 +0100
+  - sha: 5a1358dc85a693976a707fd14821c90bcb720f92
+    title: 'gateway-api: allow disabling manual deployments (#281)'
+    author: Daniel Grimm
+    date: 2025-02-12 16:51:29 +0100
+  - sha: 77fed3235006ea56f860aa2864208092eb284908
+    title: 'OSSM-8342: Use our proxy (#225)'
+    author: Jonh Wendell
+    date: 2025-01-15 12:56:16 -0500
+  - sha: 2832ac7842f624385d6fd91487feb588f6d7cb77
+    title: '[release-1.24] Fixes to make tests work in our prow (#222)'
+    author: Jonh Wendell
+    date: 2025-01-08 17:22:51 -0500
+  - sha: 6e5023d38f10804bc5bbb96d1479082a8beac93c
+    title: '[release-1.24] Set unsupported istioctl commands (#210) (#228)'
+    author: Brian Mangoenpawiro
+    date: 2024-12-11 19:15:48 +0100

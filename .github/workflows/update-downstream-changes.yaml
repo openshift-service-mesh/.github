@@ -1,0 +1,27 @@
+---
+name: Update Downstream Changes
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+
+permissions: {}
+
+jobs:
+  update:
+    name: Update Downstream Changes
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: write
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Run update target
+        run: |
+          make update
+
+      - name: commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
