@@ -63,3 +63,8 @@ commits:
     title: OSSM-4505 Add script to run integration test againt OCP cluster (#4)
     author: Francisco Herrera
     date: 2024-04-26 13:40:16 +0200
+  - sha: 6eba70643f93f95f1f51d8aa9750ee0dd7934453
+    title: OSSM-8998 Disable istioctl commands with building ldflags (#312)
+    author: Brian Mangoenpawiro
+    date: 2025-04-18 10:04:01 +0200
+    found: true

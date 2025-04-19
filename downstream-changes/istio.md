@@ -18,6 +18,7 @@
 | [1e1816c4](https://github.com/openshift-service-mesh/istio/commit/1e1816c4c3833b802feec9c36d74df7c0289e3ee) | Fix ocp running test script affected by upstream test ([#17](https://github.com/openshift-service-mesh/istio/issues/17)) |  | :x: |  | 2024-05-10 15:12:57 +0200 | Francisco Herrera |
 | [29681e9f](https://github.com/openshift-service-mesh/istio/commit/29681e9fc9dfafaf292538ed890ea97823b98051) | [OSSM-6313](https://issues.redhat.com/browse/OSSM-6313) Update getAddressTimeout in our fork ([#12](https://github.com/openshift-service-mesh/istio/issues/12)) |  | :x: |  | 2024-05-08 17:22:43 +0200 | Francisco Herrera |
 | [db100e5a](https://github.com/openshift-service-mesh/istio/commit/db100e5aaeea4ee6df92552e3f5ac196b423bf3f) | [OSSM-4505](https://issues.redhat.com/browse/OSSM-4505) Add script to run integration test againt OCP cluster ([#4](https://github.com/openshift-service-mesh/istio/issues/4)) |  | :x: |  | 2024-04-26 13:40:16 +0200 | Francisco Herrera |
+| [6eba7064](https://github.com/openshift-service-mesh/istio/commit/6eba70643f93f95f1f51d8aa9750ee0dd7934453) | [OSSM-8998](https://issues.redhat.com/browse/OSSM-8998) Disable istioctl commands with building ldflags ([#312](https://github.com/openshift-service-mesh/istio/issues/312)) |  | :x: |  | 2025-04-18 10:04:01 +0200 | Brian Mangoenpawiro |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
