@@ -68,3 +68,8 @@ commits:
     author: Brian Mangoenpawiro
     date: 2025-04-18 10:04:01 +0200
     found: true
+  - sha: 7754f9edccd192c7f3438a75f2a617a722d326f3
+    title: Update bookinfo image version
+    author: Maxim Babushkin
+    date: 2025-04-20 09:48:40 +0300
+    found: true
