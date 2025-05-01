@@ -21,6 +21,7 @@
 | [6eba7064](https://github.com/openshift-service-mesh/istio/commit/6eba70643f93f95f1f51d8aa9750ee0dd7934453) | [OSSM-8998](https://issues.redhat.com/browse/OSSM-8998) Disable istioctl commands with building ldflags ([#312](https://github.com/openshift-service-mesh/istio/issues/312)) |  | :x: |  | 2025-04-18 10:04:01 +0200 | Brian Mangoenpawiro |
 | [7754f9ed](https://github.com/openshift-service-mesh/istio/commit/7754f9edccd192c7f3438a75f2a617a722d326f3) | Update bookinfo image version |  | :x: |  | 2025-04-20 09:48:40 +0300 | Maxim Babushkin |
 | [c448aa2c](https://github.com/openshift-service-mesh/istio/commit/c448aa2c65742a99b568b824bfdb93318e445c6a) | Add copyright banner ([#359](https://github.com/openshift-service-mesh/istio/issues/359)) |  | :x: |  | 2025-04-29 09:37:48 +0200 | Brian Mangoenpawiro |
+| [82039538](https://github.com/openshift-service-mesh/istio/commit/8203953870191224c87913d9b3233d265a68e715) | Fixing Failing Converter Tests |  | :x: |  | 2025-04-14 18:11:31 +0200 | ctartici |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
