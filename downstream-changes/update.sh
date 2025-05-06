@@ -45,6 +45,10 @@ function renderTitle() {
     echo $1 | sed "s|\(OSSM-[0-9]*\)|[\1](${JIRA_BASE_URL}\1)|g" | sed "s|\#\([0-9]*\)|[#\1](${GH_ISSUES_BASE_URL}\1)|g"
 }
 
+function renderComment() {
+    echo $1 | sed "s|\(OSSM-[0-9]*\)|[\1](${JIRA_BASE_URL}\1)|g"
+}
+
 function renderMarkdownTableFromYAML() {
   yaml_file="${1}"
 
@@ -65,7 +69,7 @@ function renderMarkdownTableFromYAML() {
     if [[ "${upstreamPR}" == "null" ]]; then
       upstreamPR=""
     fi
-    echo "| [${sha:0:8}](${COMMIT_BASE_URL}${sha}) | `renderTitle "${title}"` | ${upstreamPR} | ${isPermanent} | ${comment} | ${date} | ${author} |"
+    echo "| [${sha:0:8}](${COMMIT_BASE_URL}${sha}) | `renderTitle "${title}"` | ${upstreamPR} | ${isPermanent} | `renderComment "${comment}"` | ${date} | ${author} |"
   done < <(echo "${commit_data}")
 }
 
