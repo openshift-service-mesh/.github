@@ -22,6 +22,9 @@
 | [7754f9ed](https://github.com/openshift-service-mesh/istio/commit/7754f9edccd192c7f3438a75f2a617a722d326f3) | Update bookinfo image version |  | :x: |  | 2025-04-20 09:48:40 +0300 | Maxim Babushkin |
 | [c448aa2c](https://github.com/openshift-service-mesh/istio/commit/c448aa2c65742a99b568b824bfdb93318e445c6a) | Add copyright banner ([#359](https://github.com/openshift-service-mesh/istio/issues/359)) |  | :x: |  | 2025-04-29 09:37:48 +0200 | Brian Mangoenpawiro |
 | [82039538](https://github.com/openshift-service-mesh/istio/commit/8203953870191224c87913d9b3233d265a68e715) | Fixing Failing Converter Tests |  | :x: |  | 2025-04-14 18:11:31 +0200 | ctartici |
+| [0ec714be](https://github.com/openshift-service-mesh/istio/commit/0ec714bea3bd0513eb273c7daf35b9d39b02230d) | change timeout value 2h if test is running on sail-operator |  | :x: |  | 2025-05-05 20:18:37 +0200 | ctartici |
+| [213efb7b](https://github.com/openshift-service-mesh/istio/commit/213efb7b982a0dc4a3522925504b573b0797aeb0) | fix for release directory structure to patch config |  | :x: |  | 2025-05-05 13:54:29 +0200 | ctartici |
+| [269f9470](https://github.com/openshift-service-mesh/istio/commit/269f94707cd8e76b68ffd06ddbfd9dfbeed4720e) | small fix to get latest istio version |  | :x: |  | 2025-04-30 13:32:41 +0200 | ctartici |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -43,3 +46,4 @@
 | [77fed323](https://github.com/openshift-service-mesh/istio/commit/77fed3235006ea56f860aa2864208092eb284908) | [OSSM-8342](https://issues.redhat.com/browse/OSSM-8342): Use our proxy ([#225](https://github.com/openshift-service-mesh/istio/issues/225)) |  | :x: |  | 2025-01-15 12:56:16 -0500 | Jonh Wendell |
 | [2832ac78](https://github.com/openshift-service-mesh/istio/commit/2832ac7842f624385d6fd91487feb588f6d7cb77) | [release-1.24] Fixes to make tests work in our prow ([#222](https://github.com/openshift-service-mesh/istio/issues/222)) |  | :x: |  | 2025-01-08 17:22:51 -0500 | Jonh Wendell |
 | [6e5023d3](https://github.com/openshift-service-mesh/istio/commit/6e5023d38f10804bc5bbb96d1479082a8beac93c) | [release-1.24] Set unsupported istioctl commands ([#210](https://github.com/openshift-service-mesh/istio/issues/210)) ([#228](https://github.com/openshift-service-mesh/istio/issues/228)) |  | :x: |  | 2024-12-11 19:15:48 +0100 | Brian Mangoenpawiro |
+| [b44a8d8b](https://github.com/openshift-service-mesh/istio/commit/b44a8d8b4c95598815237a0a857a26bfd4a6bc85) | [release-1.24] [OSSM-8998](https://issues.redhat.com/browse/OSSM-8998) Disable istioctl commands with building ldflags ([#355](https://github.com/openshift-service-mesh/istio/issues/355)) |  | :x: |  | 2025-05-05 10:23:50 +0200 | Brian Mangoenpawiro |

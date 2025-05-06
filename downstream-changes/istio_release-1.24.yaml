@@ -71,3 +71,8 @@ commits:
     title: '[release-1.24] Set unsupported istioctl commands (#210) (#228)'
     author: Brian Mangoenpawiro
     date: 2024-12-11 19:15:48 +0100
+  - sha: b44a8d8b4c95598815237a0a857a26bfd4a6bc85
+    title: '[release-1.24] OSSM-8998 Disable istioctl commands with building ldflags (#355)'
+    author: Brian Mangoenpawiro
+    date: 2025-05-05 10:23:50 +0200
+    found: true
