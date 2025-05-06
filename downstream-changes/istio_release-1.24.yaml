@@ -15,10 +15,14 @@ commits:
     title: OSSM-8825 add integration test for gateway instance (#338)
     author: Daniel Grimm
     date: 2025-04-03 14:04:41 +0200
+    isPermanent: true
+    comment: this is an integration test that aims to cover most aspects of our integration with OCP for delivering Gateway API functionality. It does not have an upstream PR and will likely have to be cherry-picked for a while
   - sha: c7a70df550c5537362f4865ef859003a914f2150
     title: 'istiod ca: custom ConfigMap name for CA root cert (#333)'
     author: Daniel Grimm
     date: 2025-04-03 12:31:02 +0200
+    upstreamPR: https://github.com/istio/istio/pull/54971
+    comment: we need this to support overlapping namespaces (OSSM-8206). upstream PR is still pending
   - sha: b273863293adbcaec326943c3eae745031ce72f5
     title: '[release-1.24] Update proxy (#332)'
     author: Filip Brychta
@@ -43,6 +47,8 @@ commits:
     title: Fix CVE-2025-22868 (#307)
     author: Daniel Grimm
     date: 2025-03-04 12:48:26 +0100
+    upstreamPR: https://github.com/istio/istio/pull/55594
+    comment: upstream commit is already included in this branch
   - sha: 68a4ddf0e03a4993ad05aa56aba15368b69648e8
     title: Remove ARM support on proxy update script (#301)
     author: Jonh Wendell
@@ -59,6 +65,8 @@ commits:
     title: 'gateway-api: allow disabling manual deployments (#281)'
     author: Daniel Grimm
     date: 2025-02-12 16:51:29 +0100
+    upstreamPR: https://github.com/istio/istio/pull/55053
+    comment: merged upstream and will be included in 1.26
   - sha: 77fed3235006ea56f860aa2864208092eb284908
     title: 'OSSM-8342: Use our proxy (#225)'
     author: Jonh Wendell
