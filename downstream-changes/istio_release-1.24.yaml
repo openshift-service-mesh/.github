@@ -7,6 +7,8 @@ commits:
     title: Add flag to be compliant with attribute handling behavior in the specification (#341)
     author: Yann Liu
     date: 2025-04-08 12:11:18 +0800
+    upstreamPR: https://github.com/istio/istio/pull/55746
+    comment: We need this to support the Gateway API. The upstream PR is still pending.
   - sha: 25dfdc58014fbc05901aff6f75c978b7f8a73f1c
     title: Enable CA Bundle injection in only Gateway Namespaces (#335)
     author: Aslak Knutsen
