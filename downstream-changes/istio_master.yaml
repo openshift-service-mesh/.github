@@ -7,10 +7,14 @@ commits:
     title: Update sleep to use quay.io/sail-dev (#319)
     author: Nick Fox
     date: 2025-03-21 07:15:17 -0400
+    permenant: true
+    comment: This commit allows RH product docs to link to a quay.io image instead of docker.io when deploying samples.
   - sha: d23d97dad16d6eb17317b432659ec39c1c08a74b
     title: Update some examples to use quay.io/sail-dev instead of docker
     author: Nick Fox
     date: 2025-03-10 15:32:01 -0400
+    permenant: true
+    comment: This commit allows RH product docs to link to a quay.io image instead of docker.io when deploying samples.
   - sha: eb93d7dbb8e18b4a31dce0d54c9c2ddccc4cf0cf
     title: Adding SKIP_SETUP SKIP_TEST_RUN and DEPLOY_METALLB to ocp test run script (#279)
     author: Francisco Herrera
