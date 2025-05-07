@@ -56,7 +56,7 @@ function renderMarkdownTableFromYAML() {
 
   echo "| Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |"
   echo "| --- | --- | --- | --- | --- | --- |--- |"
-  commit_data=$(yq e '.commits[] | [.sha, .title, .upstreamPR, .isPermanent, .comment, .date, .author] | @tsv' ${yaml_file})
+  commit_data=$(yq e '.commits[] | [.sha, .title, (.upstreamPR // "null"), (.isPermanent // "false"), (.comment // "null"), .date, .author] | @tsv' ${yaml_file})
   while IFS=$'\t' read -r sha title upstreamPR isPermanent comment date author _; do
     if [[ "${isPermanent}" == "true" ]]; then
       isPermanent=":white_check_mark:"
