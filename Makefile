@@ -8,7 +8,7 @@ gen:
 
 .PHONY: gen-check
 gen-check: gen
-	@if [[ -n "$(shell git status --porcelain)" ]]; then \
+	@if [ -n "$(shell git status --porcelain)" ]; then \
 	  git status; git diff; \
 	  echo "ERROR: Some files need to be updated, please run 'make gen' and include any changed files in your PR"; \
 	  exit 1; \
