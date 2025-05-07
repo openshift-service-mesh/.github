@@ -25,6 +25,7 @@
 | [0ec714be](https://github.com/openshift-service-mesh/istio/commit/0ec714bea3bd0513eb273c7daf35b9d39b02230d) | change timeout value 2h if test is running on sail-operator |  | :x: |  | 2025-05-05 20:18:37 +0200 | ctartici |
 | [213efb7b](https://github.com/openshift-service-mesh/istio/commit/213efb7b982a0dc4a3522925504b573b0797aeb0) | fix for release directory structure to patch config |  | :x: |  | 2025-05-05 13:54:29 +0200 | ctartici |
 | [269f9470](https://github.com/openshift-service-mesh/istio/commit/269f94707cd8e76b68ffd06ddbfd9dfbeed4720e) | small fix to get latest istio version |  | :x: |  | 2025-04-30 13:32:41 +0200 | ctartici |
+| [98514e62](https://github.com/openshift-service-mesh/istio/commit/98514e627de1517ba86ed66e6064d75e26f5a0b6) | modify cleanup function with wait |  | :x: |  | 2025-05-06 10:46:07 +0200 | ctartici |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |

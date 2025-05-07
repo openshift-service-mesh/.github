@@ -98,3 +98,8 @@ commits:
     author: ctartici
     date: 2025-04-30 13:32:41 +0200
     found: true
+  - sha: 98514e627de1517ba86ed66e6064d75e26f5a0b6
+    title: modify cleanup function with wait
+    author: ctartici
+    date: 2025-05-06 10:46:07 +0200
+    found: true
