@@ -59,6 +59,8 @@ commits:
     title: Remove ARM support on proxy update script (#301)
     author: Jonh Wendell
     date: 2025-02-24 11:29:15 -0500
+    comment: We don't build proxy in ARM, thus this script currently always fail.
+    isPermanent: true
   - sha: f1d1604f82a53d9d9d6f2ecc544f9ac877049d23
     title: Fix file permissions (#297)
     author: Filip Brychta
@@ -77,10 +79,14 @@ commits:
     title: 'OSSM-8342: Use our proxy (#225)'
     author: Jonh Wendell
     date: 2025-01-15 12:56:16 -0500
+    comment: We need to use our proxy image for the tests.
+    isPermanent: true
   - sha: 2832ac7842f624385d6fd91487feb588f6d7cb77
     title: '[release-1.24] Fixes to make tests work in our prow (#222)'
     author: Jonh Wendell
     date: 2025-01-08 17:22:51 -0500
+    comment: This commit is needed to make the tests work in our prow. It will be removed when we have a better solution.
+    isPermanent: true
   - sha: 6e5023d38f10804bc5bbb96d1479082a8beac93c
     title: '[release-1.24] Set unsupported istioctl commands (#210) (#228)'
     author: Brian Mangoenpawiro
