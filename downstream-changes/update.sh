@@ -31,11 +31,11 @@ function updateGit() {
     while IFS="|" read -r sha title date author
     do
       if [[ $(yq e ".commits[] | select(.sha == \"${sha}\")" ${output_yaml}) != "" ]]; then
-        yq -i e "(.commits[] | select(.sha == \"${sha}\") | .title) = \"${title}\" |
+        yq -i e "(.commits[] | select(.sha == \"${sha}\") | .title) = \"${title//\"/\\\"}\" |
                 (.commits[] | select(.sha == \"${sha}\") | .author) = \"${author}\" |
                 (.commits[] | select(.sha == \"${sha}\") | .date) = \"${date}\"" ${output_yaml}
       else
-        yq -i e ".commits += [{\"sha\":\"${sha}\",\"title\":\"${title}\",\"author\":\"${author}\",\"date\":\"${date}\",\"found\": true}]" ${output_yaml}
+        yq -i e ".commits += [{\"sha\":\"${sha}\",\"title\":\"${title//\"/\\\"}\",\"author\":\"${author}\",\"date\":\"${date}\",\"found\": true}]" ${output_yaml}
       fi
     done < <(git log --pretty="tformat:%H|%s|%ai|%an" --no-decorate --no-merges upstream/${branch}..downstream/${branch})
   done

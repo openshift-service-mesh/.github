@@ -22,19 +22,26 @@ commits:
   - sha: c575ca9e6f38d7fa435b42656ccde88f7611f329
     title: Enable istioctl related ambient commands
     author: bmangoen
+    isPermanent: true
+    comment: this enables back the istioctl ambient commands. It allows to remove a divergence with upstream code base
     date: 2025-01-24 10:10:12 +0100
   - sha: 3169415d93cf6c601030b3584df058866789c1f0
     title: Fix go linter errors (#230)
     author: Brian Mangoenpawiro
     date: 2024-12-11 15:01:25 +0100
+    isPermanent: true
+    comment: this fixes go linter errors when we forced users to set --create-service-account=false when they are using istioctl create-remote-secret. It does not have an upstream PR because it is OpenShift specific
   - sha: 249514518d98119a959ba4ee2256be6f005d6696
     title: Set unsupported istioctl commands (#210)
     author: Brian Mangoenpawiro
     date: 2024-12-10 16:28:39 +0100
+    isPermanent: true
+    comment: this allows us to build our own istioctl binaries disabling the commands we do not support. It does not have an upstream PR and we are not sure upstream would accept this
   - sha: 34ea3e82c6894f0a51f0d5cf1581542292018c24
     title: Add retry timeouts delay for AWS LB (#227)
     author: Brian Mangoenpawiro
     date: 2024-12-10 15:25:26 +0100
+    comment: this fixed an issue of AWS loadbalancer provisioning duration. It does not have an upstream PR (reverted)
   - sha: 1ccb43235622084f6f53a13c943a404c788614c1
     title: Add in ocp setup the build of ztunnel image (#142)
     author: Francisco Herrera
@@ -71,6 +78,8 @@ commits:
     title: OSSM-8998 Disable istioctl commands with building ldflags (#312)
     author: Brian Mangoenpawiro
     date: 2025-04-18 10:04:01 +0200
+    isPermanent: true
+    comment: this allows us to build our own istioctl binaries disabling the commands we do not support without any hardcoded function. It does not have an upstream PR and we are not sure upstream would accept this
     found: true
   - sha: 7754f9edccd192c7f3438a75f2a617a722d326f3
     title: Update bookinfo image version
@@ -81,6 +90,8 @@ commits:
     title: Add copyright banner (#359)
     author: Brian Mangoenpawiro
     date: 2025-04-29 09:37:48 +0200
+    isPermanent: true
+    comment: this fixes the linter issue for ossm_custom_cmd.go file
     found: true
   - sha: 8203953870191224c87913d9b3233d265a68e715
     title: Fixing Failing Converter Tests
@@ -106,4 +117,11 @@ commits:
     title: modify cleanup function with wait
     author: ctartici
     date: 2025-05-06 10:46:07 +0200
+    found: true
+  - sha: 01618eb12ba6cfa93a0467c860e1df5d6b226a58
+    title: Revert "Add retry timeouts delay for AWS LB (#227)" (#374)
+    author: Brian Mangoenpawiro
+    date: 2025-05-09 16:08:19 +0200
+    isPermanent: true
+    comment: this removes the temporary fix of AWS LB delay duration. It allows to remove a divergence with upstream code base
     found: true
