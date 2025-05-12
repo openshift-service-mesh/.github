@@ -15,6 +15,7 @@ commits:
     title: Enable CA Bundle injection in only Gateway Namespaces (#335)
     author: Aslak Knutsen
     date: 2025-04-04 13:45:17 +0200
+    comment: No direct upstream PR. This feature is a temp fix for the Ingress Team to avoid installing certs into every namespace in the cluster even if there are no Gateways or istio related resources there. This PR can be removed when the upstream Kubernetes API ClusterTrustBundle is out of alpha/beta and we/customers have migrated to use it. Time frame semi unknown(6 months+). (https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#cluster-trust-bundles)
   - sha: 48f4c4dc059c18c5090965744edf9d46fda0caa7
     title: OSSM-8825 add integration test for gateway instance (#338)
     author: Daniel Grimm
