@@ -106,8 +106,3 @@ commits:
     date: 2025-05-07 17:09:12 +0200
     comment: this removes the temporary fix of AWS LB delay duration. It allows to remove a divergence with upstream code base
     found: true
-  - sha: e6cdecebe16d23975b3b6acee123af0e7f9396b9
-    title: Remove retry timeouts delay for AWS LB (#376)
-    author: Brian Mangoenpawiro
-    date: 2025-05-07 17:09:12 +0200
-    found: true
