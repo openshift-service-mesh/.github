@@ -115,3 +115,13 @@ commits:
     date: 2025-05-07 17:09:12 +0200
     comment: this removes the temporary fix of AWS LB delay duration. It allows to remove a divergence with upstream code base
     found: true
+  - sha: 0cb3293059c795e8f3aca38cfcd25a3db4101bf1
+    title: Fix listener addr duplication for dualStack svc with IPv6 as primary (#56151) (#56188) (#385)
+    author: Filip Brychta
+    date: 2025-05-13 17:28:51 +0200
+    found: true
+  - sha: 1de930513cb45ac30272ddce15d640ea7e4bf3d6
+    title: bump golang.org/x/net (#56238) (#384)
+    author: Filip Brychta
+    date: 2025-05-13 15:35:06 +0200
+    found: true
