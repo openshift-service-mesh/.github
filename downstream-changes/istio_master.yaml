@@ -125,3 +125,8 @@ commits:
     isPermanent: true
     comment: this removes the temporary fix of AWS LB delay duration. It allows to remove a divergence with upstream code base
     found: true
+  - sha: 13f5eea6fa8b768e8da64e71f5d629506ae8cf1e
+    title: Add ambient test flow (#390)
+    author: Maxim Babushkin
+    date: 2025-05-26 18:22:47 +0300
+    found: true
