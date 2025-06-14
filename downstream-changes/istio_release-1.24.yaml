@@ -125,3 +125,8 @@ commits:
     author: Filip Brychta
     date: 2025-05-13 15:35:06 +0200
     found: true
+  - sha: 73b8a0fbf58d8dc6b66a76b07059eb97c8612a01
+    title: '[release-1.24] Automator: Update proxy (#394)'
+    author: openshift-service-mesh-bot
+    date: 2025-06-13 07:33:05 +0200
+    found: true
