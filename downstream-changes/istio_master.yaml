@@ -19,6 +19,8 @@ commits:
     title: Adding SKIP_SETUP SKIP_TEST_RUN and DEPLOY_METALLB to ocp test run script (#279)
     author: Francisco Herrera
     date: 2025-02-11 11:15:15 +0100
+    isPermanent: true
+    comment: Adding some env var to run script to be able to skip setup and test run.
   - sha: c575ca9e6f38d7fa435b42656ccde88f7611f329
     title: Enable istioctl related ambient commands
     author: bmangoen
@@ -46,34 +48,50 @@ commits:
     title: Add in ocp setup the build of ztunnel image (#142)
     author: Francisco Herrera
     date: 2024-09-12 14:05:26 +0200
+    isPermanent: true
+    comment: At some point we missed the build of the ztunnel image in the ocp setup script. This commit adds it back.
   - sha: 22682d548157a7163f1944e3efd4da148b0479c7
     title: 'Integration test run: delete profile openshift (#137)'
     author: Francisco Herrera
     date: 2024-09-09 13:34:19 +0200
+    isPermanent: true
+    comment: Deleting istio.test.kube.helm.values=profile=openshift flag because was not needed anymore after changes in upstream repo.
   - sha: c26057c627321c20a2b49dc3b18a47e7ef24e032
     title: OSSM-6600 Avoid failures to be hidden on integration test (#30)
     author: Francisco Herrera
     date: 2024-07-18 12:58:40 +0200
+    isPermanent: true
+    comment: This commit adds a check to the integration test run script to avoid failures to be hidden.
   - sha: d5cabdb7c54a94884d22c56d97a4f8148aceaf0b
     title: Push distroless images when helm integration test are executed (#27)
     author: Francisco Herrera
     date: 2024-05-22 18:29:01 +0200
+    isPermanent: true
+    comment: This commit adds the push of distroless images used by integration tests.
   - sha: ec35221294d8119948cd34a282eaebc2cd264fd2
     title: Changes to report junit file and results from the running test suite (#15)
     author: Francisco Herrera
     date: 2024-05-14 13:54:50 +0200
+    isPermanent: true
+    comment: This commit adds the generation of a junit file with the results of the running test suite.
   - sha: 1e1816c4c3833b802feec9c36d74df7c0289e3ee
     title: Fix ocp running test script affected by upstream test (#17)
     author: Francisco Herrera
     date: 2024-05-10 15:12:57 +0200
+    isPermanent: true
+    comment: Change nonDistrolessTargets to match changes in upstream repo.
   - sha: 29681e9fc9dfafaf292538ed890ea97823b98051
     title: OSSM-6313 Update getAddressTimeout in our fork (#12)
     author: Francisco Herrera
     date: 2024-05-08 17:22:43 +0200
+    isPermanent: true
+    comment: This commit updates the getAddressTimeout value in our fork to avoid specific failures on OCP.
   - sha: db100e5aaeea4ee6df92552e3f5ac196b423bf3f
     title: OSSM-4505 Add script to run integration test againt OCP cluster (#4)
     author: Francisco Herrera
     date: 2024-04-26 13:40:16 +0200
+    isPermanent: true
+    comment: This commit adds a script to run integration tests against OCP cluster.
   - sha: 6eba70643f93f95f1f51d8aa9750ee0dd7934453
     title: OSSM-8998 Disable istioctl commands with building ldflags (#312)
     author: Brian Mangoenpawiro
