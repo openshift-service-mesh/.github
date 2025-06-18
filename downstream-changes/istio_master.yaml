@@ -148,3 +148,8 @@ commits:
     author: Maxim Babushkin
     date: 2025-05-26 18:22:47 +0300
     found: true
+  - sha: 9f67b91854373def5a1d148abd43d902ebcef30c
+    title: Add mechanism to execute integration tests againist downstream builds.
+    author: ctartici
+    date: 2025-06-12 20:41:41 +0200
+    found: true
