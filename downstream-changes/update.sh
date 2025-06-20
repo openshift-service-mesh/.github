@@ -4,7 +4,7 @@ set -eux -o pipefail
 UPSTREAM_CLONE_URL=${UPSTREAM_CLONE_URL:-https://github.com/istio/istio.git}
 DOWNSTREAM_CLONE_URL=${DOWNSTREAM_CLONE_URL:-https://github.com/openshift-service-mesh/istio.git}
 REPO=$(basename "${UPSTREAM_CLONE_URL}" .git)
-BRANCHES=${BRANCHES:-master release-1.24}
+BRANCHES=${BRANCHES:-master release-1.24 release-1.26}
 
 # base URLs for markdown rendering
 COMMIT_BASE_URL=https://github.com/openshift-service-mesh/istio/commit/
