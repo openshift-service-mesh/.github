@@ -1,0 +1,156 @@
+commits:
+  - sha: 65948a8cdbd864edb5337bda622141e9b2dfaf38
+    title: '[release-1.26] Improve ingress address resolution in integration tests flow (#56315)'
+    author: Maxim Babushkin
+    date: 2025-05-19 19:57:23 +0300
+    found: true
+  - sha: f31c47784dc2958c57da889841614162416c3d00
+    title: '[release-1.26] OSSM-8342: Use our proxy (#225)'
+    author: Jonh Wendell
+    date: 2025-01-15 12:56:16 -0500
+    found: true
+  - sha: 8c3a6343d63a50641a1c01a56c46061fc727e58d
+    title: '[release-1.26] Add flag to be compliant with attribute handling behavior in the specification (#341)'
+    author: Yann Liu
+    date: 2025-04-08 12:11:18 +0800
+    found: true
+  - sha: 40f9eea6320fa12fd791b27371465c61eb2f0f64
+    title: '[release-1.26] Enable CA Bundle injection in only Gateway Namespaces (#335)'
+    author: Aslak Knutsen
+    date: 2025-04-04 13:45:17 +0200
+    found: true
+  - sha: cec7700393bde3bcc9ac11c645b2a5e47254dc6e
+    title: '[release-1.26] istiod ca: custom ConfigMap name for CA root cert (#333)'
+    author: Daniel Grimm
+    date: 2025-04-03 12:31:02 +0200
+    found: true
+  - sha: 9ecc218eda5a2779ab16336d2387d9575922666a
+    title: '[release-1.26] OSSM-8825 add integration test for gateway instance (#338)'
+    author: Daniel Grimm
+    date: 2025-04-03 14:04:41 +0200
+    found: true
+  - sha: d2c508821ec0cbe00dbefe4b171c58e373796952
+    title: '[release-1.26] Remove ARM support on proxy update script (#301)'
+    author: Yann Liu
+    date: 2025-05-29 16:38:33 +0800
+    found: true
+  - sha: 0796f0528bcc344314b94febdd9400c677055661
+    title: '[release-1.26] Fixes to make tests work in our prow (#222)'
+    author: Yann Liu
+    date: 2025-05-29 16:37:35 +0800
+    found: true
+  - sha: e1991ef5808fe72a5fc8d62135c26105d63f6485
+    title: Add ambient test flow (#390)
+    author: Maxim Babushkin
+    date: 2025-05-26 18:22:47 +0300
+    found: true
+  - sha: 858765052bbbc02b45cc1f81495b37031475602b
+    title: modify cleanup function with wait
+    author: ctartici
+    date: 2025-05-06 10:46:07 +0200
+    found: true
+  - sha: 283fa16b2f861b46747017c6596a1c47bb7e09a8
+    title: change timeout value 2h if test is running on sail-operator
+    author: ctartici
+    date: 2025-05-05 20:18:37 +0200
+    found: true
+  - sha: 62916158e198e26398c6257b5fbefbdee1328323
+    title: fix for release directory structure to patch config
+    author: ctartici
+    date: 2025-05-05 13:54:29 +0200
+    found: true
+  - sha: bef2e006fc596f039798a787dcb2917ef77045ad
+    title: small fix to get latest istio version
+    author: ctartici
+    date: 2025-04-30 13:32:41 +0200
+    found: true
+  - sha: 346b19666f48f833359956a0148705cdcea20b30
+    title: Add copyright banner (#359)
+    author: Brian Mangoenpawiro
+    date: 2025-04-29 09:37:48 +0200
+    found: true
+  - sha: c201ac24502f01518b2c695cc7c465e894f031c3
+    title: OSSM-8998 Disable istioctl commands with building ldflags (#312)
+    author: Brian Mangoenpawiro
+    date: 2025-04-18 10:04:01 +0200
+    found: true
+  - sha: 0ae2ed09755e5def08784aa358c68fa4cdba9952
+    title: Fixing Failing Converter Tests
+    author: ctartici
+    date: 2025-04-14 18:11:31 +0200
+    found: true
+  - sha: 556124ff21cef3cecc3d35a94e8dd463117ab022
+    title: Modifications to Run integration Tests With Sail Operator (#300)
+    author: Cansin Tartici
+    date: 2025-04-08 09:24:07 +0200
+    found: true
+  - sha: a5a6783ed9e14cd3f4df358c0438553f9cfeaa80
+    title: Update sleep to use quay.io/sail-dev (#319)
+    author: Nick Fox
+    date: 2025-03-21 07:15:17 -0400
+    found: true
+  - sha: 1c0957bc0f0fdde02e883e102bb094b5ccce97a5
+    title: Update some examples to use quay.io/sail-dev instead of docker
+    author: Nick Fox
+    date: 2025-03-10 15:32:01 -0400
+    found: true
+  - sha: 11188d27dd94b0f5bdeeb42b67db4afd0011e938
+    title: Adding SKIP_SETUP SKIP_TEST_RUN and DEPLOY_METALLB to ocp test run script (#279)
+    author: Francisco Herrera
+    date: 2025-02-11 11:15:15 +0100
+    found: true
+  - sha: 1c4bcae0a83767aa729807e72762ce4fd28f660d
+    title: Enable istioctl related ambient commands
+    author: bmangoen
+    date: 2025-01-24 10:10:12 +0100
+    found: true
+  - sha: 6714f4f930c505f4e0e62188ed9f6acae4cd1e0d
+    title: Fix go linter errors (#230)
+    author: Brian Mangoenpawiro
+    date: 2024-12-11 15:01:25 +0100
+    found: true
+  - sha: e217f9d12a18bd2597b770394e5aaf7cf9ffc200
+    title: Set unsupported istioctl commands (#210)
+    author: Brian Mangoenpawiro
+    date: 2024-12-10 16:28:39 +0100
+    found: true
+  - sha: 9c5c2f893d40ccedd94555dc6647adfd3993433c
+    title: Add in ocp setup the build of ztunnel image (#142)
+    author: Francisco Herrera
+    date: 2024-09-12 14:05:26 +0200
+    found: true
+  - sha: 627d2320ec183115aa107c4dbdda8f1b09e15424
+    title: 'Integration test run: delete profile openshift (#137)'
+    author: Francisco Herrera
+    date: 2024-09-09 13:34:19 +0200
+    found: true
+  - sha: 99a5f385efc0562a3aaf6f8342af4d2c2aab2b89
+    title: OSSM-6600 Avoid failures to be hidden on integration test (#30)
+    author: Francisco Herrera
+    date: 2024-07-18 12:58:40 +0200
+    found: true
+  - sha: 16d27aedeabd17d3b81107c35e2cc982fc515de3
+    title: Push distroless images when helm integration test are executed (#27)
+    author: Francisco Herrera
+    date: 2024-05-22 18:29:01 +0200
+    found: true
+  - sha: 515665d96ea9693f626cd8c9ae6c12ac15d8c9c0
+    title: Changes to report junit file and results from the running test suite (#15)
+    author: Francisco Herrera
+    date: 2024-05-14 13:54:50 +0200
+    found: true
+  - sha: fc26c3b0fb99187635daa7b8df80b1c7afa55958
+    title: Fix ocp running test script affected by upstream test (#17)
+    author: Francisco Herrera
+    date: 2024-05-10 15:12:57 +0200
+    found: true
+  - sha: 68c0c0534c8fd5855f1bfe0fc06f4c349ac1b8b5
+    title: OSSM-6313 Update getAddressTimeout in our fork (#12)
+    author: Francisco Herrera
+    date: 2024-05-08 17:22:43 +0200
+    found: true
+  - sha: a643fdb042c9bf6a222d66020b62a313197b9d3f
+    title: OSSM-4505 Add script to run integration test againt OCP cluster (#4)
+    author: Francisco Herrera
+    date: 2024-04-26 13:40:16 +0200
+    found: true
