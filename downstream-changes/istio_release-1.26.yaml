@@ -154,3 +154,8 @@ commits:
     author: Francisco Herrera
     date: 2024-04-26 13:40:16 +0200
     found: true
+  - sha: 4438d075ccc1809de82f9a402b9f3f93ed11b80e
+    title: 'tls: add PQC compliance policy (#56331) (#412)'
+    author: Jacek Ewertowski
+    date: 2025-06-27 13:19:53 +0200
+    found: true
