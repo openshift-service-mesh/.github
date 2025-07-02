@@ -153,3 +153,13 @@ commits:
     author: ctartici
     date: 2025-06-12 20:41:41 +0200
     found: true
+  - sha: df9a14ddf9288de0520a3e45bbaca6ad872dc2e9
+    title: 'tests: do not skip TPROXY sidecars (#416)'
+    author: Jacek Ewertowski
+    date: 2025-07-01 17:03:43 +0200
+    found: true
+  - sha: 27b352a40d7860eba35b36bdf14485dae29a4607
+    title: 'tests: revert patching TestGatewayConformance (#421)'
+    author: Jacek Ewertowski
+    date: 2025-07-01 13:22:41 +0200
+    found: true

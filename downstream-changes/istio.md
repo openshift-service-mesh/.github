@@ -29,6 +29,8 @@
 | [01618eb1](https://github.com/openshift-service-mesh/istio/commit/01618eb12ba6cfa93a0467c860e1df5d6b226a58) | "Revert ""Add retry timeouts delay for AWS LB ([#227](https://github.com/openshift-service-mesh/istio/issues/227))"" ([#374](https://github.com/openshift-service-mesh/istio/issues/374))" |  | :white_check_mark: | this removes the temporary fix of AWS LB delay duration. It allows to remove a divergence with upstream code base | 2025-05-09 16:08:19 +0200 | Brian Mangoenpawiro |
 | [13f5eea6](https://github.com/openshift-service-mesh/istio/commit/13f5eea6fa8b768e8da64e71f5d629506ae8cf1e) | Add ambient test flow ([#390](https://github.com/openshift-service-mesh/istio/issues/390)) |  | :x: |  | 2025-05-26 18:22:47 +0300 | Maxim Babushkin |
 | [9f67b918](https://github.com/openshift-service-mesh/istio/commit/9f67b91854373def5a1d148abd43d902ebcef30c) | Add mechanism to execute integration tests againist downstream builds. |  | :x: |  | 2025-06-12 20:41:41 +0200 | ctartici |
+| [df9a14dd](https://github.com/openshift-service-mesh/istio/commit/df9a14ddf9288de0520a3e45bbaca6ad872dc2e9) | tests: do not skip TPROXY sidecars ([#416](https://github.com/openshift-service-mesh/istio/issues/416)) |  | :x: |  | 2025-07-01 17:03:43 +0200 | Jacek Ewertowski |
+| [27b352a4](https://github.com/openshift-service-mesh/istio/commit/27b352a40d7860eba35b36bdf14485dae29a4607) | tests: revert patching TestGatewayConformance ([#421](https://github.com/openshift-service-mesh/istio/issues/421)) |  | :x: |  | 2025-07-01 13:22:41 +0200 | Jacek Ewertowski |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
