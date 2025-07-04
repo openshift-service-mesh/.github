@@ -31,6 +31,7 @@
 | [9f67b918](https://github.com/openshift-service-mesh/istio/commit/9f67b91854373def5a1d148abd43d902ebcef30c) | Add mechanism to execute integration tests againist downstream builds. |  | :x: |  | 2025-06-12 20:41:41 +0200 | ctartici |
 | [df9a14dd](https://github.com/openshift-service-mesh/istio/commit/df9a14ddf9288de0520a3e45bbaca6ad872dc2e9) | tests: do not skip TPROXY sidecars ([#416](https://github.com/openshift-service-mesh/istio/issues/416)) |  | :x: |  | 2025-07-01 17:03:43 +0200 | Jacek Ewertowski |
 | [27b352a4](https://github.com/openshift-service-mesh/istio/commit/27b352a40d7860eba35b36bdf14485dae29a4607) | tests: revert patching TestGatewayConformance ([#421](https://github.com/openshift-service-mesh/istio/issues/421)) |  | :x: |  | 2025-07-01 13:22:41 +0200 | Jacek Ewertowski |
+| [68ff310c](https://github.com/openshift-service-mesh/istio/commit/68ff310c0b24ab1d95827b3b3892e566a0e35360) | Add Ambient Gateway API test flow ([#423](https://github.com/openshift-service-mesh/istio/issues/423)) |  | :x: |  | 2025-07-03 14:23:27 +0300 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
