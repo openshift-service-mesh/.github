@@ -159,3 +159,8 @@ commits:
     author: Jacek Ewertowski
     date: 2025-06-27 13:19:53 +0200
     found: true
+  - sha: 2d55ad799f8845ef932c4c7b5d718812ec060ef3
+    title: Add Ambient Gateway API test flow (#423) (#427)
+    author: Maxim Babushkin
+    date: 2025-07-08 11:36:36 +0300
+    found: true
