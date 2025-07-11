@@ -164,3 +164,13 @@ commits:
     author: Maxim Babushkin
     date: 2025-07-08 11:36:36 +0300
     found: true
+  - sha: 0cd2e18053fa6570697f0afd22ae85d786317685
+    title: Tests fixes into release 1.26 branch (#439)
+    author: Maxim Babushkin
+    date: 2025-07-10 22:09:31 +0300
+    found: true
+  - sha: b09002d1fd13d6b558a6696442639b403acdf6a6
+    title: '[release-1.26] GIE backport (#434)'
+    author: Daniel Grimm
+    date: 2025-07-10 12:38:29 +0200
+    found: true

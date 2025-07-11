@@ -168,3 +168,8 @@ commits:
     author: Maxim Babushkin
     date: 2025-07-03 14:23:27 +0300
     found: true
+  - sha: 7a2325954f19d7b6c532dfa86920d2feed1c4df2
+    title: Add Ambient flow to Sail Operator Control Plane deploy integ tests (#436)
+    author: Maxim Babushkin
+    date: 2025-07-10 14:28:27 +0300
+    found: true
