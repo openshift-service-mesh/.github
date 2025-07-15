@@ -173,3 +173,8 @@ commits:
     author: Maxim Babushkin
     date: 2025-07-10 14:28:27 +0300
     found: true
+  - sha: 62d99183c3eed080f0e58242cab753b5008fed45
+    title: Modifications for running Gateway Conformance Test Suite
+    author: ctartici
+    date: 2025-07-09 17:10:16 +0200
+    found: true
