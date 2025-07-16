@@ -174,3 +174,23 @@ commits:
     author: Daniel Grimm
     date: 2025-07-10 12:38:29 +0200
     found: true
+  - sha: 0b9317b4bf4a4cd3014423dc3b3307e034e2e7f9
+    title: '[release-1.26] manifests: add default NetworkPolicy for istiod  (#443)'
+    author: Daniel Grimm
+    date: 2025-07-15 23:08:16 +0200
+    found: true
+  - sha: 1747fac3f780cf4d2bb7c7af4b2feb7e92f87729
+    title: Add mechanism to execute integration tests againist downstream builds.
+    author: ctartici
+    date: 2025-06-12 20:41:41 +0200
+    found: true
+  - sha: bffdf249be00ebc45a0dc896507761d8c24e78b3
+    title: Modifications for running Gateway Conformance Test Suite
+    author: ctartici
+    date: 2025-07-09 17:10:16 +0200
+    found: true
+  - sha: 911d634468998200fe157250ee110839fea36059
+    title: Add AllowCRDsMismatch parameter to gateway conformance options. (#56945) (#56976)
+    author: Cansin Tartici
+    date: 2025-07-14 12:40:37 +0200
+    found: true
