@@ -33,7 +33,7 @@
 | [27b352a4](https://github.com/openshift-service-mesh/istio/commit/27b352a40d7860eba35b36bdf14485dae29a4607) | tests: revert patching TestGatewayConformance ([#421](https://github.com/openshift-service-mesh/istio/issues/421)) |  | :x: |  | 2025-07-01 13:22:41 +0200 | Jacek Ewertowski |
 | [68ff310c](https://github.com/openshift-service-mesh/istio/commit/68ff310c0b24ab1d95827b3b3892e566a0e35360) | Add Ambient Gateway API test flow ([#423](https://github.com/openshift-service-mesh/istio/issues/423)) |  | :x: |  | 2025-07-03 14:23:27 +0300 | Maxim Babushkin |
 | [7a232595](https://github.com/openshift-service-mesh/istio/commit/7a2325954f19d7b6c532dfa86920d2feed1c4df2) | Add Ambient flow to Sail Operator Control Plane deploy integ tests ([#436](https://github.com/openshift-service-mesh/istio/issues/436)) |  | :x: |  | 2025-07-10 14:28:27 +0300 | Maxim Babushkin |
-| [62d99183](https://github.com/openshift-service-mesh/istio/commit/62d99183c3eed080f0e58242cab753b5008fed45) | Modifications for running Gateway Conformance Test Suite |  | :x: |  | 2025-07-09 17:10:16 +0200 | ctartici |
+| [62d99183](https://github.com/openshift-service-mesh/istio/commit/62d99183c3eed080f0e58242cab753b5008fed45) | Modifications for running Gateway Conformance Test Suite |  | :x: | We need this change to execute Conformance tests on OCP 4.19. Since 4.19 has gateway api CRDs 1.2.1 and istio demands 1.3.1 we need to set a flag. | 2025-07-09 17:10:16 +0200 | ctartici |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
