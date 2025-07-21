@@ -38,10 +38,14 @@ commits:
     title: '[release-1.24] - Fix TestCNIRaceRepair test for Openshift (#55658)'
     author: Maxim Babushkin
     date: 2025-03-26 05:46:49 +0200
+    upstreamPR: https://github.com/istio/istio/pull/55658
+    comment: Probably false positive. The changes available upstream.
   - sha: f764d9dec48e35a1e83bb6001f2fecb00b97e0c5
     title: Release 1.24 fix test services reachability and flackiness (#55642)
     author: Maxim Babushkin
     date: 2025-03-24 23:18:48 +0200
+    upstreamPR: https://github.com/istio/istio/pull/55642
+    comment: Probably false positive. The changes available upstream.
   - sha: 1d85810990b51800489f48d5787a10d9edf49695
     title: Update sleep to use quay.io/sail-dev (#323)
     author: OpenShift Cherrypick Robot

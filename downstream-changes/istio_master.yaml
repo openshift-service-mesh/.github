@@ -103,6 +103,8 @@ commits:
     title: Update bookinfo image version
     author: Maxim Babushkin
     date: 2025-04-20 09:48:40 +0300
+    isPermanent: true
+    comment: Updates bookinfo image version to the new one with the images reside in quay.io/sail-dev repo
     found: true
   - sha: c448aa2c65742a99b568b824bfdb93318e445c6a
     title: Add copyright banner (#359)
@@ -147,6 +149,8 @@ commits:
     title: Add ambient test flow (#390)
     author: Maxim Babushkin
     date: 2025-05-26 18:22:47 +0300
+    isPermanent: true
+    comment: Adds ambient test flow for OCP based clusters
     found: true
   - sha: 9f67b91854373def5a1d148abd43d902ebcef30c
     title: Add mechanism to execute integration tests againist downstream builds.
@@ -167,11 +171,15 @@ commits:
     title: Add Ambient Gateway API test flow (#423)
     author: Maxim Babushkin
     date: 2025-07-03 14:23:27 +0300
+    isPermanent: true
+    comment: Add an Ambient related configuration for OCP based clusters
     found: true
   - sha: 7a2325954f19d7b6c532dfa86920d2feed1c4df2
     title: Add Ambient flow to Sail Operator Control Plane deploy integ tests (#436)
     author: Maxim Babushkin
     date: 2025-07-10 14:28:27 +0300
+    isPermanent: true
+    comment: Allows to execute Ambient tests with Sail Operator as control plane
     found: true
   - sha: 62d99183c3eed080f0e58242cab753b5008fed45
     title: Modifications for running Gateway Conformance Test Suite
