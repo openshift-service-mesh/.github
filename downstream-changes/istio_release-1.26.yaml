@@ -199,3 +199,8 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-07-16 11:45:17 +0200
     found: true
+  - sha: 262d0b903cc710024038b2e5783e642e8e236e88
+    title: 'manifests: add NetworkPolicy to istio-cni chart (#446)'
+    author: Daniel Grimm
+    date: 2025-07-22 16:01:58 +0200
+    found: true
