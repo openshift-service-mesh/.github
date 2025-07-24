@@ -204,3 +204,8 @@ commits:
     author: Daniel Grimm
     date: 2025-07-22 16:01:58 +0200
     found: true
+  - sha: 60c3f30527ac90eb8717d480979c4bfb3ee338dc
+    title: Gateway API Inference Extension v0.5.0 support (#447)
+    author: Aslak Knutsen
+    date: 2025-07-23 17:10:07 +0200
+    found: true
