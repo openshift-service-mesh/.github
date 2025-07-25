@@ -209,3 +209,8 @@ commits:
     author: Aslak Knutsen
     date: 2025-07-23 17:10:07 +0200
     found: true
+  - sha: cebe4469fbc63ce9fbea3ad7cbce136a47319d81
+    title: 'manifests: fix NetworkPolicy creation (#449)'
+    author: Daniel Grimm
+    date: 2025-07-24 16:43:23 +0200
+    found: true
