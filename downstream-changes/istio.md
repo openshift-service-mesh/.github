@@ -34,6 +34,7 @@
 | [68ff310c](https://github.com/openshift-service-mesh/istio/commit/68ff310c0b24ab1d95827b3b3892e566a0e35360) | Add Ambient Gateway API test flow ([#423](https://github.com/openshift-service-mesh/istio/issues/423)) |  | :white_check_mark: | Add an Ambient related configuration for OCP based clusters | 2025-07-03 14:23:27 +0300 | Maxim Babushkin |
 | [7a232595](https://github.com/openshift-service-mesh/istio/commit/7a2325954f19d7b6c532dfa86920d2feed1c4df2) | Add Ambient flow to Sail Operator Control Plane deploy integ tests ([#436](https://github.com/openshift-service-mesh/istio/issues/436)) |  | :white_check_mark: | Allows to execute Ambient tests with Sail Operator as control plane | 2025-07-10 14:28:27 +0300 | Maxim Babushkin |
 | [62d99183](https://github.com/openshift-service-mesh/istio/commit/62d99183c3eed080f0e58242cab753b5008fed45) | Modifications for running Gateway Conformance Test Suite |  | :x: |  | 2025-07-09 17:10:16 +0200 | ctartici |
+| [bdb7d602](https://github.com/openshift-service-mesh/istio/commit/bdb7d602034f66be09ab4bfca22f88ea96128b13) | security suite control plane parameters |  | :x: |  | 2025-07-24 17:54:22 +0200 | ctartici |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -106,3 +107,4 @@
 | [262d0b90](https://github.com/openshift-service-mesh/istio/commit/262d0b903cc710024038b2e5783e642e8e236e88) | manifests: add NetworkPolicy to istio-cni chart ([#446](https://github.com/openshift-service-mesh/istio/issues/446)) |  | :x: |  | 2025-07-22 16:01:58 +0200 | Daniel Grimm |
 | [60c3f305](https://github.com/openshift-service-mesh/istio/commit/60c3f30527ac90eb8717d480979c4bfb3ee338dc) | Gateway API Inference Extension v0.5.0 support ([#447](https://github.com/openshift-service-mesh/istio/issues/447)) |  | :x: |  | 2025-07-23 17:10:07 +0200 | Aslak Knutsen |
 | [cebe4469](https://github.com/openshift-service-mesh/istio/commit/cebe4469fbc63ce9fbea3ad7cbce136a47319d81) | manifests: fix NetworkPolicy creation ([#449](https://github.com/openshift-service-mesh/istio/issues/449)) |  | :x: |  | 2025-07-24 16:43:23 +0200 | Daniel Grimm |
+| [0fa91b11](https://github.com/openshift-service-mesh/istio/commit/0fa91b11f45d53002b3b790143df7bb028af3a77) | Fix the proxy image to work with new proxy binary ([#453](https://github.com/openshift-service-mesh/istio/issues/453)) |  | :x: |  | 2025-07-28 12:02:02 -0300 | Jonh Wendell |

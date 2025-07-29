@@ -214,3 +214,8 @@ commits:
     author: Daniel Grimm
     date: 2025-07-24 16:43:23 +0200
     found: true
+  - sha: 0fa91b11f45d53002b3b790143df7bb028af3a77
+    title: Fix the proxy image to work with new proxy binary (#453)
+    author: Jonh Wendell
+    date: 2025-07-28 12:02:02 -0300
+    found: true

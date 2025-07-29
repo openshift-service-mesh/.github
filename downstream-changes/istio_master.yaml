@@ -186,3 +186,8 @@ commits:
     author: ctartici
     date: 2025-07-09 17:10:16 +0200
     found: true
+  - sha: bdb7d602034f66be09ab4bfca22f88ea96128b13
+    title: security suite control plane parameters
+    author: ctartici
+    date: 2025-07-24 17:54:22 +0200
+    found: true
