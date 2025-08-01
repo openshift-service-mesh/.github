@@ -191,3 +191,8 @@ commits:
     author: ctartici
     date: 2025-07-24 17:54:22 +0200
     found: true
+  - sha: 05f60493cdb94dd7be9bb2032f0c1773652dbca6
+    title: Modify Prow Sail Operator script cleanup step (#457)
+    author: Maxim Babushkin
+    date: 2025-07-31 21:25:33 +0300
+    found: true

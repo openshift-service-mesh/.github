@@ -35,6 +35,7 @@
 | [7a232595](https://github.com/openshift-service-mesh/istio/commit/7a2325954f19d7b6c532dfa86920d2feed1c4df2) | Add Ambient flow to Sail Operator Control Plane deploy integ tests ([#436](https://github.com/openshift-service-mesh/istio/issues/436)) |  | :white_check_mark: | Allows to execute Ambient tests with Sail Operator as control plane | 2025-07-10 14:28:27 +0300 | Maxim Babushkin |
 | [62d99183](https://github.com/openshift-service-mesh/istio/commit/62d99183c3eed080f0e58242cab753b5008fed45) | Modifications for running Gateway Conformance Test Suite |  | :x: |  | 2025-07-09 17:10:16 +0200 | ctartici |
 | [bdb7d602](https://github.com/openshift-service-mesh/istio/commit/bdb7d602034f66be09ab4bfca22f88ea96128b13) | security suite control plane parameters |  | :x: |  | 2025-07-24 17:54:22 +0200 | ctartici |
+| [05f60493](https://github.com/openshift-service-mesh/istio/commit/05f60493cdb94dd7be9bb2032f0c1773652dbca6) | Modify Prow Sail Operator script cleanup step ([#457](https://github.com/openshift-service-mesh/istio/issues/457)) |  | :x: |  | 2025-07-31 21:25:33 +0300 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
