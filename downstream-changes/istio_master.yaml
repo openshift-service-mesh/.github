@@ -196,3 +196,8 @@ commits:
     author: Maxim Babushkin
     date: 2025-07-31 21:25:33 +0300
     found: true
+  - sha: 3be872f1ded0ff9458be3033d7672dcfe1d58d45
+    title: Added mechanism to skip test suites
+    author: ctartici
+    date: 2025-08-01 12:27:18 +0200
+    found: true

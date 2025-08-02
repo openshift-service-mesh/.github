@@ -36,6 +36,7 @@
 | [62d99183](https://github.com/openshift-service-mesh/istio/commit/62d99183c3eed080f0e58242cab753b5008fed45) | Modifications for running Gateway Conformance Test Suite |  | :x: |  | 2025-07-09 17:10:16 +0200 | ctartici |
 | [bdb7d602](https://github.com/openshift-service-mesh/istio/commit/bdb7d602034f66be09ab4bfca22f88ea96128b13) | security suite control plane parameters |  | :x: |  | 2025-07-24 17:54:22 +0200 | ctartici |
 | [05f60493](https://github.com/openshift-service-mesh/istio/commit/05f60493cdb94dd7be9bb2032f0c1773652dbca6) | Modify Prow Sail Operator script cleanup step ([#457](https://github.com/openshift-service-mesh/istio/issues/457)) |  | :x: |  | 2025-07-31 21:25:33 +0300 | Maxim Babushkin |
+| [3be872f1](https://github.com/openshift-service-mesh/istio/commit/3be872f1ded0ff9458be3033d7672dcfe1d58d45) | Added mechanism to skip test suites |  | :x: |  | 2025-08-01 12:27:18 +0200 | ctartici |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -110,3 +111,4 @@
 | [cebe4469](https://github.com/openshift-service-mesh/istio/commit/cebe4469fbc63ce9fbea3ad7cbce136a47319d81) | manifests: fix NetworkPolicy creation ([#449](https://github.com/openshift-service-mesh/istio/issues/449)) |  | :x: |  | 2025-07-24 16:43:23 +0200 | Daniel Grimm |
 | [0fa91b11](https://github.com/openshift-service-mesh/istio/commit/0fa91b11f45d53002b3b790143df7bb028af3a77) | Fix the proxy image to work with new proxy binary ([#453](https://github.com/openshift-service-mesh/istio/issues/453)) |  | :x: |  | 2025-07-28 12:02:02 -0300 | Jonh Wendell |
 | [b3be4cc0](https://github.com/openshift-service-mesh/istio/commit/b3be4cc0f5d8366af6c532800cdcc7bbe35bc79d) | [release-1.26] Automator: Update proxy ([#455](https://github.com/openshift-service-mesh/istio/issues/455)) |  | :x: |  | 2025-07-30 11:39:27 +0200 | openshift-service-mesh-bot |
+| [4b1e497c](https://github.com/openshift-service-mesh/istio/commit/4b1e497cd1c6b51e6a45e6c0abe9aab6bb19e0a8) | [release-1.26] Automator: Update proxy ([#458](https://github.com/openshift-service-mesh/istio/issues/458)) |  | :x: |  | 2025-08-01 11:20:44 +0200 | openshift-service-mesh-bot |
