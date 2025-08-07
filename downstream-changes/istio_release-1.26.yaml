@@ -174,3 +174,58 @@ commits:
     author: Daniel Grimm
     date: 2025-07-10 12:38:29 +0200
     found: true
+  - sha: 0b9317b4bf4a4cd3014423dc3b3307e034e2e7f9
+    title: '[release-1.26] manifests: add default NetworkPolicy for istiod  (#443)'
+    author: Daniel Grimm
+    date: 2025-07-15 23:08:16 +0200
+    found: true
+  - sha: 1747fac3f780cf4d2bb7c7af4b2feb7e92f87729
+    title: Add mechanism to execute integration tests againist downstream builds.
+    author: ctartici
+    date: 2025-06-12 20:41:41 +0200
+    found: true
+  - sha: bffdf249be00ebc45a0dc896507761d8c24e78b3
+    title: Modifications for running Gateway Conformance Test Suite
+    author: ctartici
+    date: 2025-07-09 17:10:16 +0200
+    found: true
+  - sha: 911d634468998200fe157250ee110839fea36059
+    title: Add AllowCRDsMismatch parameter to gateway conformance options. (#56945) (#56976)
+    author: Cansin Tartici
+    date: 2025-07-14 12:40:37 +0200
+    found: true
+  - sha: 50a55a215994227616be911ac8b19ed5a39134b9
+    title: '[release-1.26] Automator: Update proxy (#415)'
+    author: openshift-service-mesh-bot
+    date: 2025-07-16 11:45:17 +0200
+    found: true
+  - sha: 262d0b903cc710024038b2e5783e642e8e236e88
+    title: 'manifests: add NetworkPolicy to istio-cni chart (#446)'
+    author: Daniel Grimm
+    date: 2025-07-22 16:01:58 +0200
+    found: true
+  - sha: 60c3f30527ac90eb8717d480979c4bfb3ee338dc
+    title: Gateway API Inference Extension v0.5.0 support (#447)
+    author: Aslak Knutsen
+    date: 2025-07-23 17:10:07 +0200
+    found: true
+  - sha: cebe4469fbc63ce9fbea3ad7cbce136a47319d81
+    title: 'manifests: fix NetworkPolicy creation (#449)'
+    author: Daniel Grimm
+    date: 2025-07-24 16:43:23 +0200
+    found: true
+  - sha: 0fa91b11f45d53002b3b790143df7bb028af3a77
+    title: Fix the proxy image to work with new proxy binary (#453)
+    author: Jonh Wendell
+    date: 2025-07-28 12:02:02 -0300
+    found: true
+  - sha: b3be4cc0f5d8366af6c532800cdcc7bbe35bc79d
+    title: '[release-1.26] Automator: Update proxy (#455)'
+    author: openshift-service-mesh-bot
+    date: 2025-07-30 11:39:27 +0200
+    found: true
+  - sha: 4b1e497cd1c6b51e6a45e6c0abe9aab6bb19e0a8
+    title: '[release-1.26] Automator: Update proxy (#458)'
+    author: openshift-service-mesh-bot
+    date: 2025-08-01 11:20:44 +0200
+    found: true
