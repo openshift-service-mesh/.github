@@ -37,6 +37,7 @@
 | [bdb7d602](https://github.com/openshift-service-mesh/istio/commit/bdb7d602034f66be09ab4bfca22f88ea96128b13) | security suite control plane parameters |  | :x: |  | 2025-07-24 17:54:22 +0200 | ctartici |
 | [05f60493](https://github.com/openshift-service-mesh/istio/commit/05f60493cdb94dd7be9bb2032f0c1773652dbca6) | Modify Prow Sail Operator script cleanup step ([#457](https://github.com/openshift-service-mesh/istio/issues/457)) |  | :x: |  | 2025-07-31 21:25:33 +0300 | Maxim Babushkin |
 | [3be872f1](https://github.com/openshift-service-mesh/istio/commit/3be872f1ded0ff9458be3033d7672dcfe1d58d45) | Added mechanism to skip test suites |  | :x: |  | 2025-08-01 12:27:18 +0200 | ctartici |
+| [557246aa](https://github.com/openshift-service-mesh/istio/commit/557246aa263378bd76493cda158549c9ef468532) | Added mechanism to skip test suites |  | :x: |  | 2025-08-04 11:04:31 +0200 | ctartici |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
