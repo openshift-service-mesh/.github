@@ -123,14 +123,20 @@ commits:
     title: Fix listener addr duplication for dualStack svc with IPv6 as primary (#56151) (#56188) (#385)
     author: Filip Brychta
     date: 2025-05-13 17:28:51 +0200
+    comment: False positive, the change is already in release-1.24 upstream https://github.com/istio/istio/pull/56188
+    upstreamPR: https://github.com/istio/istio/pull/56188
     found: true
   - sha: 1de930513cb45ac30272ddce15d640ea7e4bf3d6
     title: bump golang.org/x/net (#56238) (#384)
     author: Filip Brychta
     date: 2025-05-13 15:35:06 +0200
+    comment: False positive, the change is already in release-1.24 upstream https://github.com/istio/istio/pull/56238
+    upstreamPR: https://github.com/istio/istio/pull/56238
     found: true
   - sha: 73b8a0fbf58d8dc6b66a76b07059eb97c8612a01
     title: '[release-1.24] Automator: Update proxy (#394)'
     author: openshift-service-mesh-bot
     date: 2025-06-13 07:33:05 +0200
+    comment: Our version of the proxy
+    isPermanent: true
     found: true
