@@ -186,6 +186,7 @@ commits:
     author: ctartici
     date: 2025-07-09 17:10:16 +0200
     found: true
+    comment: We need this change to execute Conformance tests on OCP 4.19. Since 4.19 has gateway api CRDs 1.2.1 and istio demands 1.3.1 we need to set a flag.
   - sha: bdb7d602034f66be09ab4bfca22f88ea96128b13
     title: security suite control plane parameters
     author: ctartici
