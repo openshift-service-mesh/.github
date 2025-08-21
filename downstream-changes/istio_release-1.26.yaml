@@ -229,3 +229,18 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-08-01 11:20:44 +0200
     found: true
+  - sha: 99e869f26cf30441c34191f61f35a0005f9d1358
+    title: Do not create the PDB by default when we don't have enough replicas (#57202)
+    author: Filip Brychta
+    date: 2025-08-20 09:49:21 +0200
+    found: true
+  - sha: d5e22f0d2cdc8bb80f7ac914031d86f5686bae52
+    title: 'feat: allow for PDB configuration, fixes #56547 (#56630)'
+    author: Michael Merrill
+    date: 2025-07-01 15:19:24 -0400
+    found: true
+  - sha: a5677e0dad972405b8b3aa322f902816617acff9
+    title: '[release-1.26] Automator: Update proxy (#473)'
+    author: openshift-service-mesh-bot
+    date: 2025-08-20 07:38:59 +0200
+    found: true
