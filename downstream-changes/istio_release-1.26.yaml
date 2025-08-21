@@ -234,13 +234,17 @@ commits:
     author: Filip Brychta
     date: 2025-08-20 09:49:21 +0200
     found: true
+    upstreamPR: https://github.com/istio/istio/pull/57202
   - sha: d5e22f0d2cdc8bb80f7ac914031d86f5686bae52
     title: 'feat: allow for PDB configuration, fixes #56547 (#56630)'
     author: Michael Merrill
     date: 2025-07-01 15:19:24 -0400
     found: true
+    upstreamPR: https://github.com/istio/istio/pull/56630
   - sha: a5677e0dad972405b8b3aa322f902816617acff9
     title: '[release-1.26] Automator: Update proxy (#473)'
     author: openshift-service-mesh-bot
     date: 2025-08-20 07:38:59 +0200
+    comment: Our version of the proxy
+    isPermanent: true
     found: true
