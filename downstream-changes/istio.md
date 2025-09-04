@@ -38,6 +38,7 @@
 | [05f60493](https://github.com/openshift-service-mesh/istio/commit/05f60493cdb94dd7be9bb2032f0c1773652dbca6) | Modify Prow Sail Operator script cleanup step ([#457](https://github.com/openshift-service-mesh/istio/issues/457)) |  | :x: |  | 2025-07-31 21:25:33 +0300 | Maxim Babushkin |
 | [3be872f1](https://github.com/openshift-service-mesh/istio/commit/3be872f1ded0ff9458be3033d7672dcfe1d58d45) | Added mechanism to skip test suites |  | :x: |  | 2025-08-01 12:27:18 +0200 | ctartici |
 | [557246aa](https://github.com/openshift-service-mesh/istio/commit/557246aa263378bd76493cda158549c9ef468532) | Added mechanism to skip test suites |  | :x: |  | 2025-08-04 11:04:31 +0200 | ctartici |
+| [0c4e8754](https://github.com/openshift-service-mesh/istio/commit/0c4e8754d02773fcb4cdfb99d634cdc73f81d2fa) | "Move ""meshConfig"" values out of gateway manifests ([#479](https://github.com/openshift-service-mesh/istio/issues/479))" |  | :x: |  | 2025-09-03 14:29:59 +0300 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
