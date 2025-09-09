@@ -212,3 +212,8 @@ commits:
     author: Maxim Babushkin
     date: 2025-09-03 14:29:59 +0300
     found: true
+  - sha: 565f2eb3dca2ff3d08fb7d1ceb52520e65dc393d
+    title: Add config for TestAccessLogs telemetry test (#481)
+    author: Maxim Babushkin
+    date: 2025-09-08 20:42:17 +0300
+    found: true
