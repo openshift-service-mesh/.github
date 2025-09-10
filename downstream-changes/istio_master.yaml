@@ -217,3 +217,8 @@ commits:
     author: Maxim Babushkin
     date: 2025-09-08 20:42:17 +0300
     found: true
+  - sha: 673a162553c7db710080fc1c1b9cdef1c7dbe01a
+    title: Fixing lint warnings in our ocp scripts (#484)
+    author: Filip Brychta
+    date: 2025-09-09 07:52:25 +0200
+    found: true

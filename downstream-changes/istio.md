@@ -40,6 +40,7 @@
 | [557246aa](https://github.com/openshift-service-mesh/istio/commit/557246aa263378bd76493cda158549c9ef468532) | Added mechanism to skip test suites |  | :x: |  | 2025-08-04 11:04:31 +0200 | ctartici |
 | [0c4e8754](https://github.com/openshift-service-mesh/istio/commit/0c4e8754d02773fcb4cdfb99d634cdc73f81d2fa) | "Move ""meshConfig"" values out of gateway manifests ([#479](https://github.com/openshift-service-mesh/istio/issues/479))" |  | :x: |  | 2025-09-03 14:29:59 +0300 | Maxim Babushkin |
 | [565f2eb3](https://github.com/openshift-service-mesh/istio/commit/565f2eb3dca2ff3d08fb7d1ceb52520e65dc393d) | Add config for TestAccessLogs telemetry test ([#481](https://github.com/openshift-service-mesh/istio/issues/481)) |  | :x: |  | 2025-09-08 20:42:17 +0300 | Maxim Babushkin |
+| [673a1625](https://github.com/openshift-service-mesh/istio/commit/673a162553c7db710080fc1c1b9cdef1c7dbe01a) | Fixing lint warnings in our ocp scripts ([#484](https://github.com/openshift-service-mesh/istio/issues/484)) |  | :x: |  | 2025-09-09 07:52:25 +0200 | Filip Brychta |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -118,3 +119,5 @@
 | [99e869f2](https://github.com/openshift-service-mesh/istio/commit/99e869f26cf30441c34191f61f35a0005f9d1358) | Do not create the PDB by default when we don't have enough replicas ([#57202](https://github.com/openshift-service-mesh/istio/issues/57202)) |  | :x: |  | 2025-08-20 09:49:21 +0200 | Filip Brychta |
 | [d5e22f0d](https://github.com/openshift-service-mesh/istio/commit/d5e22f0d2cdc8bb80f7ac914031d86f5686bae52) | feat: allow for PDB configuration, fixes [#56547](https://github.com/openshift-service-mesh/istio/issues/56547) ([#56630](https://github.com/openshift-service-mesh/istio/issues/56630)) |  | :x: |  | 2025-07-01 15:19:24 -0400 | Michael Merrill |
 | [a5677e0d](https://github.com/openshift-service-mesh/istio/commit/a5677e0dad972405b8b3aa322f902816617acff9) | [release-1.26] Automator: Update proxy ([#473](https://github.com/openshift-service-mesh/istio/issues/473)) |  | :x: |  | 2025-08-20 07:38:59 +0200 | openshift-service-mesh-bot |
+| [606d76b9](https://github.com/openshift-service-mesh/istio/commit/606d76b9ef66861947806cc20473b8fa067b823d) | Run make gen after 1.26.4 sync |  | :x: |  | 2025-09-09 12:33:17 +0200 | mkralik3 |
+| [d9b1257c](https://github.com/openshift-service-mesh/istio/commit/d9b1257c2de914bedd4acb236f7fa769feed8163) | [release-1.26] Automator: Update proxy ([#486](https://github.com/openshift-service-mesh/istio/issues/486)) |  | :x: |  | 2025-09-09 08:09:34 +0200 | openshift-service-mesh-bot |
