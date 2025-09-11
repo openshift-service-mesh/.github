@@ -140,3 +140,8 @@ commits:
     comment: Our version of the proxy
     isPermanent: true
     found: true
+  - sha: 5c914a2c40d7573c11fb94a755a859e3202e0c3d
+    title: '[release-1.24] Automator: Update proxy (#485)'
+    author: openshift-service-mesh-bot
+    date: 2025-09-10 09:21:23 +0200
+    found: true
