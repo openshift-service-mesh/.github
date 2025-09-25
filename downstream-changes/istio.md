@@ -122,6 +122,7 @@
 | [a5677e0d](https://github.com/openshift-service-mesh/istio/commit/a5677e0dad972405b8b3aa322f902816617acff9) | [release-1.26] Automator: Update proxy ([#473](https://github.com/openshift-service-mesh/istio/issues/473)) |  | :x: |  | 2025-08-20 07:38:59 +0200 | openshift-service-mesh-bot |
 | [606d76b9](https://github.com/openshift-service-mesh/istio/commit/606d76b9ef66861947806cc20473b8fa067b823d) | Run make gen after 1.26.4 sync |  | :x: |  | 2025-09-09 12:33:17 +0200 | mkralik3 |
 | [d9b1257c](https://github.com/openshift-service-mesh/istio/commit/d9b1257c2de914bedd4acb236f7fa769feed8163) | [release-1.26] Automator: Update proxy ([#486](https://github.com/openshift-service-mesh/istio/issues/486)) |  | :x: |  | 2025-09-09 08:09:34 +0200 | openshift-service-mesh-bot |
+| [e6e55d9d](https://github.com/openshift-service-mesh/istio/commit/e6e55d9dfa8ddf2bd1c01d1ba0502dee9173763b) | "Move ""meshConfig"" values out of gateway manifests ([#479](https://github.com/openshift-service-mesh/istio/issues/479))" |  | :x: |  | 2025-09-03 14:29:59 +0300 | Maxim Babushkin |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
