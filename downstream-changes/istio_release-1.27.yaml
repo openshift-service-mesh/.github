@@ -204,3 +204,8 @@ commits:
     author: Francisco Herrera
     date: 2024-04-26 13:40:16 +0200
     found: true
+  - sha: 25dcb2d5bf228cf7dce75cb28e966b3e7d77e0dc
+    title: Move "meshConfig" values out of gateway manifests (#479) (#500)
+    author: Maxim Babushkin
+    date: 2025-09-25 14:13:37 +0300
+    found: true
