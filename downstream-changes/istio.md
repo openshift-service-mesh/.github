@@ -41,6 +41,7 @@
 | [0c4e8754](https://github.com/openshift-service-mesh/istio/commit/0c4e8754d02773fcb4cdfb99d634cdc73f81d2fa) | "Move ""meshConfig"" values out of gateway manifests ([#479](https://github.com/openshift-service-mesh/istio/issues/479))" |  | :x: |  | 2025-09-03 14:29:59 +0300 | Maxim Babushkin |
 | [565f2eb3](https://github.com/openshift-service-mesh/istio/commit/565f2eb3dca2ff3d08fb7d1ceb52520e65dc393d) | Add config for TestAccessLogs telemetry test ([#481](https://github.com/openshift-service-mesh/istio/issues/481)) |  | :x: |  | 2025-09-08 20:42:17 +0300 | Maxim Babushkin |
 | [673a1625](https://github.com/openshift-service-mesh/istio/commit/673a162553c7db710080fc1c1b9cdef1c7dbe01a) | Fixing lint warnings in our ocp scripts ([#484](https://github.com/openshift-service-mesh/istio/issues/484)) |  | :x: |  | 2025-09-09 07:52:25 +0200 | Filip Brychta |
+| [a1d835ef](https://github.com/openshift-service-mesh/istio/commit/a1d835ef9dfaedc42e0cd0ed7fc7ce15004d6f05) | Update sail-operator-setup.sh |  | :x: |  | 2025-09-18 10:55:38 +0200 | Cansin Tartici |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
