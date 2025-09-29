@@ -209,3 +209,8 @@ commits:
     author: Maxim Babushkin
     date: 2025-09-25 14:13:37 +0300
     found: true
+  - sha: 8dad717f74fbffd463595039148f9ec2148fa5fc
+    title: Gateway API Inference Extension v1.0 (#489)
+    author: Aslak Knutsen
+    date: 2025-09-29 00:11:09 +0200
+    found: true
