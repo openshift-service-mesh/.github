@@ -42,6 +42,7 @@
 | [565f2eb3](https://github.com/openshift-service-mesh/istio/commit/565f2eb3dca2ff3d08fb7d1ceb52520e65dc393d) | Add config for TestAccessLogs telemetry test ([#481](https://github.com/openshift-service-mesh/istio/issues/481)) |  | :x: |  | 2025-09-08 20:42:17 +0300 | Maxim Babushkin |
 | [673a1625](https://github.com/openshift-service-mesh/istio/commit/673a162553c7db710080fc1c1b9cdef1c7dbe01a) | Fixing lint warnings in our ocp scripts ([#484](https://github.com/openshift-service-mesh/istio/issues/484)) |  | :x: |  | 2025-09-09 07:52:25 +0200 | Filip Brychta |
 | [a1d835ef](https://github.com/openshift-service-mesh/istio/commit/a1d835ef9dfaedc42e0cd0ed7fc7ce15004d6f05) | Update sail-operator-setup.sh |  | :x: |  | 2025-09-18 10:55:38 +0200 | Cansin Tartici |
+| [16ba1ea3](https://github.com/openshift-service-mesh/istio/commit/16ba1ea3e8a008188dde3f4eff00d54e193f7670) | Add gotestsum option for integration test execution which is suitable for polarion xml parsing ([#503](https://github.com/openshift-service-mesh/istio/issues/503)) |  | :x: |  | 2025-09-29 15:18:29 +0200 | Cansin Tartici |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -124,6 +125,7 @@
 | [606d76b9](https://github.com/openshift-service-mesh/istio/commit/606d76b9ef66861947806cc20473b8fa067b823d) | Run make gen after 1.26.4 sync |  | :x: |  | 2025-09-09 12:33:17 +0200 | mkralik3 |
 | [d9b1257c](https://github.com/openshift-service-mesh/istio/commit/d9b1257c2de914bedd4acb236f7fa769feed8163) | [release-1.26] Automator: Update proxy ([#486](https://github.com/openshift-service-mesh/istio/issues/486)) |  | :x: |  | 2025-09-09 08:09:34 +0200 | openshift-service-mesh-bot |
 | [e6e55d9d](https://github.com/openshift-service-mesh/istio/commit/e6e55d9dfa8ddf2bd1c01d1ba0502dee9173763b) | "Move ""meshConfig"" values out of gateway manifests ([#479](https://github.com/openshift-service-mesh/istio/issues/479))" |  | :x: |  | 2025-09-03 14:29:59 +0300 | Maxim Babushkin |
+| [7cc7cc05](https://github.com/openshift-service-mesh/istio/commit/7cc7cc05f01d79ba3a976694a2015d7182a1c7e6) | Add gotestsum option for integration test execution which is suitable for polarion xml parsing ([#505](https://github.com/openshift-service-mesh/istio/issues/505)) |  | :x: |  | 2025-09-29 18:36:10 +0200 | Cansin Tartici |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -170,3 +172,6 @@
 | [06142d01](https://github.com/openshift-service-mesh/istio/commit/06142d01f0d7bf737404f38414a217ca75bec09a) | [OSSM-4505](https://issues.redhat.com/browse/OSSM-4505) Add script to run integration test againt OCP cluster ([#4](https://github.com/openshift-service-mesh/istio/issues/4)) |  | :x: |  | 2024-04-26 13:40:16 +0200 | Francisco Herrera |
 | [25dcb2d5](https://github.com/openshift-service-mesh/istio/commit/25dcb2d5bf228cf7dce75cb28e966b3e7d77e0dc) | "Move ""meshConfig"" values out of gateway manifests ([#479](https://github.com/openshift-service-mesh/istio/issues/479)) ([#500](https://github.com/openshift-service-mesh/istio/issues/500))" |  | :x: |  | 2025-09-25 14:13:37 +0300 | Maxim Babushkin |
 | [8dad717f](https://github.com/openshift-service-mesh/istio/commit/8dad717f74fbffd463595039148f9ec2148fa5fc) | Gateway API Inference Extension v1.0 ([#489](https://github.com/openshift-service-mesh/istio/issues/489)) |  | :x: |  | 2025-09-29 00:11:09 +0200 | Aslak Knutsen |
+| [3e9ef336](https://github.com/openshift-service-mesh/istio/commit/3e9ef336c4e6f6a806ea14cc710c73042ee9b997) | Add gotestsum option for integration test execution which is suitable for polarion xml parsing ([#506](https://github.com/openshift-service-mesh/istio/issues/506)) |  | :x: |  | 2025-09-29 19:46:23 +0200 | Cansin Tartici |
+| [87def1c3](https://github.com/openshift-service-mesh/istio/commit/87def1c307da41ccb5235e271b994a0297706e19) | Do not use a default revision in gatewayinstance tests ([#501](https://github.com/openshift-service-mesh/istio/issues/501)) |  | :x: |  | 2025-09-29 16:10:58 +0200 | Filip Brychta |
+| [dd1eed15](https://github.com/openshift-service-mesh/istio/commit/dd1eed15fd5c36d722e68024475c1df730166851) | feat: implements crl support for plugged-in CA for Gateway only ca ([#493](https://github.com/openshift-service-mesh/istio/issues/493)) |  | :x: |  | 2025-09-29 13:22:48 +0200 | Aslak Knutsen |

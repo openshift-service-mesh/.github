@@ -259,3 +259,8 @@ commits:
     author: Maxim Babushkin
     date: 2025-09-03 14:29:59 +0300
     found: true
+  - sha: 7cc7cc05f01d79ba3a976694a2015d7182a1c7e6
+    title: Add gotestsum option for integration test execution which is suitable for polarion xml parsing (#505)
+    author: Cansin Tartici
+    date: 2025-09-29 18:36:10 +0200
+    found: true

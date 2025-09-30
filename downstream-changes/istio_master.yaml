@@ -227,3 +227,8 @@ commits:
     author: Cansin Tartici
     date: 2025-09-18 10:55:38 +0200
     found: true
+  - sha: 16ba1ea3e8a008188dde3f4eff00d54e193f7670
+    title: Add gotestsum option for integration test execution which is suitable for polarion xml parsing (#503)
+    author: Cansin Tartici
+    date: 2025-09-29 15:18:29 +0200
+    found: true

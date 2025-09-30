@@ -214,3 +214,18 @@ commits:
     author: Aslak Knutsen
     date: 2025-09-29 00:11:09 +0200
     found: true
+  - sha: 3e9ef336c4e6f6a806ea14cc710c73042ee9b997
+    title: Add gotestsum option for integration test execution which is suitable for polarion xml parsing (#506)
+    author: Cansin Tartici
+    date: 2025-09-29 19:46:23 +0200
+    found: true
+  - sha: 87def1c307da41ccb5235e271b994a0297706e19
+    title: Do not use a default revision in gatewayinstance tests (#501)
+    author: Filip Brychta
+    date: 2025-09-29 16:10:58 +0200
+    found: true
+  - sha: dd1eed15fd5c36d722e68024475c1df730166851
+    title: 'feat: implements crl support for plugged-in CA for Gateway only ca (#493)'
+    author: Aslak Knutsen
+    date: 2025-09-29 13:22:48 +0200
+    found: true
