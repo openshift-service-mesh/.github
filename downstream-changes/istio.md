@@ -43,6 +43,7 @@
 | [673a1625](https://github.com/openshift-service-mesh/istio/commit/673a162553c7db710080fc1c1b9cdef1c7dbe01a) | Fixing lint warnings in our ocp scripts ([#484](https://github.com/openshift-service-mesh/istio/issues/484)) |  | :x: |  | 2025-09-09 07:52:25 +0200 | Filip Brychta |
 | [a1d835ef](https://github.com/openshift-service-mesh/istio/commit/a1d835ef9dfaedc42e0cd0ed7fc7ce15004d6f05) | Update sail-operator-setup.sh |  | :x: |  | 2025-09-18 10:55:38 +0200 | Cansin Tartici |
 | [16ba1ea3](https://github.com/openshift-service-mesh/istio/commit/16ba1ea3e8a008188dde3f4eff00d54e193f7670) | Add gotestsum option for integration test execution which is suitable for polarion xml parsing ([#503](https://github.com/openshift-service-mesh/istio/issues/503)) |  | :x: |  | 2025-09-29 15:18:29 +0200 | Cansin Tartici |
+| [db76426d](https://github.com/openshift-service-mesh/istio/commit/db76426d0eb73c7674b5ae3c0b6f0f39351d1c72) | Implement cluster operator stability check ([#504](https://github.com/openshift-service-mesh/istio/issues/504)) |  | :x: |  | 2025-10-01 00:29:33 +0200 | Francisco Herrera |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
