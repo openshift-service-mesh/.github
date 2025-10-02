@@ -229,3 +229,18 @@ commits:
     author: Aslak Knutsen
     date: 2025-09-29 13:22:48 +0200
     found: true
+  - sha: 293ae9032391865649a86f776e8711ccf4a4d002
+    title: Using the latest proxy from release-1.27 branch
+    author: Filip Brychta
+    date: 2025-10-01 07:59:58 +0200
+    found: true
+  - sha: 862dc92018be97e97fc6db27295de9c0291049c8
+    title: '[release-1.27] Fix the proxy image to work with new proxy binary (#453)'
+    author: Jonh Wendell
+    date: 2025-07-28 12:02:02 -0300
+    found: true
+  - sha: af51ceaf24f587570a37419dcd50e708318903aa
+    title: '[release-1.27] OSSM-8342: Use our proxy (#225)'
+    author: Jonh Wendell
+    date: 2025-01-15 12:56:16 -0500
+    found: true
