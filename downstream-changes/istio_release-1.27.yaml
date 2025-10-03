@@ -244,3 +244,8 @@ commits:
     author: Jonh Wendell
     date: 2025-01-15 12:56:16 -0500
     found: true
+  - sha: a478318548b0968c4d01b0a8fa4c234eeef9f369
+    title: '[release-1.27] Automator: Update proxy (#509)'
+    author: openshift-service-mesh-bot
+    date: 2025-10-02 10:30:55 +0200
+    found: true
