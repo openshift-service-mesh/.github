@@ -264,3 +264,13 @@ commits:
     author: Cansin Tartici
     date: 2025-09-29 18:36:10 +0200
     found: true
+  - sha: e676f84574b2814e06f0d2b0f6a77d0cbe9f4c11
+    title: '[release-1.26] Automator: Update proxy (#514)'
+    author: openshift-service-mesh-bot
+    date: 2025-10-15 10:52:02 -0400
+    found: true
+  - sha: e37fca100a69f8454815b45bd3a715e3687e4fdf
+    title: Implement cluster operator stability check (#507)
+    author: OpenShift Cherrypick Robot
+    date: 2025-10-15 13:07:09 +0200
+    found: true

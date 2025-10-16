@@ -254,3 +254,13 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-10-14 03:48:12 -0400
     found: true
+  - sha: 748dd8f2e40bbde2174b330b147ec50d69622670
+    title: Implement cluster operator stability check (#508)
+    author: OpenShift Cherrypick Robot
+    date: 2025-10-15 15:04:09 +0200
+    found: true
+  - sha: 7fe8e10dd59fcb42797aebb5078f5fb06e692a96
+    title: '[release-1.27] Automator: Update proxy (#512)'
+    author: openshift-service-mesh-bot
+    date: 2025-10-15 07:18:11 -0400
+    found: true
