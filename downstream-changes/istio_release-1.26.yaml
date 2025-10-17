@@ -274,3 +274,8 @@ commits:
     author: OpenShift Cherrypick Robot
     date: 2025-10-15 13:07:09 +0200
     found: true
+  - sha: 387c7556debf5657f3e5d7aefb03a8b042104f66
+    title: '[release-1.26] Automator: Update proxy (#519)'
+    author: openshift-service-mesh-bot
+    date: 2025-10-16 15:55:45 -0400
+    found: true
