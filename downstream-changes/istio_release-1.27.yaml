@@ -14,6 +14,8 @@ commits:
     author: Aslak Knutsen
     date: 2025-04-04 13:45:17 +0200
     found: true
+    isPermanent: true
+    comment: 'Temporary permanent'
   - sha: 024dc8e799e74f71ab71c4b7b369e77132821255
     title: '[release-1.26] OSSM-8825 add integration test for gateway instance (#338)'
     author: Daniel Grimm
@@ -229,6 +231,8 @@ commits:
     author: Aslak Knutsen
     date: 2025-09-29 13:22:48 +0200
     found: true
+    isPermanent: true
+    comment: 'Follows 7fed0aa8b0db56e7d898652cfe6f4005f90a7f5d Enable CA Bundle injection in only Gateway Namespaces (#335)'
   - sha: 293ae9032391865649a86f776e8711ccf4a4d002
     title: Using the latest proxy from release-1.27 branch
     author: Filip Brychta
