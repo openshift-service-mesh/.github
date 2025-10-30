@@ -288,3 +288,8 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-10-27 03:51:30 -0400
     found: true
+  - sha: e4c535c0f8a6f7b7dcfc780d7d9b9c86c17bfd8e
+    title: 'manifests: add optional network policy charts for ztunnel (#57680)'
+    author: Cameron Garrison
+    date: 2025-10-28 17:13:03 -0400
+    found: true
