@@ -137,6 +137,7 @@
 | [d08af215](https://github.com/openshift-service-mesh/istio/commit/d08af215ab6fbae744391affd5a1e0d5e2a3559b) | [release-1.26] Automator: Update proxy ([#521](https://github.com/openshift-service-mesh/istio/issues/521)) |  | :x: |  | 2025-10-21 15:47:24 -0400 | openshift-service-mesh-bot |
 | [97ab93c9](https://github.com/openshift-service-mesh/istio/commit/97ab93c93853c8f33e843630d303bc61ac734527) | [release-1.26] Automator: Update proxy ([#524](https://github.com/openshift-service-mesh/istio/issues/524)) |  | :x: |  | 2025-10-26 07:02:58 -0400 | openshift-service-mesh-bot |
 | [ac9131ee](https://github.com/openshift-service-mesh/istio/commit/ac9131eeefa6ebcd0c5e16e3aaa0b32a0e570324) | [release-1.26] Automator: Update proxy ([#530](https://github.com/openshift-service-mesh/istio/issues/530)) |  | :x: |  | 2025-11-02 08:43:25 -0500 | openshift-service-mesh-bot |
+| [4d9e6a8b](https://github.com/openshift-service-mesh/istio/commit/4d9e6a8b911bc3c804fd208ece5722ba84f98af8) | [release-1.26] Automator: Update proxy ([#536](https://github.com/openshift-service-mesh/istio/issues/536)) |  | :x: |  | 2025-11-30 05:54:43 -0500 | openshift-service-mesh-bot |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -198,3 +199,4 @@
 | [8b721a26](https://github.com/openshift-service-mesh/istio/commit/8b721a266c6bd41d84ec1ea71902c50b92da5e3c) | [release-1.27] Automator: Update proxy ([#523](https://github.com/openshift-service-mesh/istio/issues/523)) |  | :x: |  | 2025-10-22 01:42:27 -0400 | openshift-service-mesh-bot |
 | [15d69d85](https://github.com/openshift-service-mesh/istio/commit/15d69d85e3c34215c34ad18a97a7ad51d1ba301d) | [release-1.27] Automator: Update proxy ([#525](https://github.com/openshift-service-mesh/istio/issues/525)) |  | :x: |  | 2025-10-27 03:51:30 -0400 | openshift-service-mesh-bot |
 | [e4c535c0](https://github.com/openshift-service-mesh/istio/commit/e4c535c0f8a6f7b7dcfc780d7d9b9c86c17bfd8e) | manifests: add optional network policy charts for ztunnel ([#57680](https://github.com/openshift-service-mesh/istio/issues/57680)) |  | :x: |  | 2025-10-28 17:13:03 -0400 | Cameron Garrison |
+| [97722eaa](https://github.com/openshift-service-mesh/istio/commit/97722eaa71f7f1f0407f33e7648905cd472b51eb) | [release-1.27] Automator: Update proxy ([#535](https://github.com/openshift-service-mesh/istio/issues/535)) |  | :x: |  | 2025-11-30 05:51:59 -0500 | openshift-service-mesh-bot |

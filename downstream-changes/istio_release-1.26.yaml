@@ -294,3 +294,8 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-11-02 08:43:25 -0500
     found: true
+  - sha: 4d9e6a8b911bc3c804fd208ece5722ba84f98af8
+    title: '[release-1.26] Automator: Update proxy (#536)'
+    author: openshift-service-mesh-bot
+    date: 2025-11-30 05:54:43 -0500
+    found: true

@@ -293,3 +293,8 @@ commits:
     author: Cameron Garrison
     date: 2025-10-28 17:13:03 -0400
     found: true
+  - sha: 97722eaa71f7f1f0407f33e7648905cd472b51eb
+    title: '[release-1.27] Automator: Update proxy (#535)'
+    author: openshift-service-mesh-bot
+    date: 2025-11-30 05:51:59 -0500
+    found: true
