@@ -139,6 +139,7 @@
 | [ac9131ee](https://github.com/openshift-service-mesh/istio/commit/ac9131eeefa6ebcd0c5e16e3aaa0b32a0e570324) | [release-1.26] Automator: Update proxy ([#530](https://github.com/openshift-service-mesh/istio/issues/530)) |  | :x: |  | 2025-11-02 08:43:25 -0500 | openshift-service-mesh-bot |
 | [4d9e6a8b](https://github.com/openshift-service-mesh/istio/commit/4d9e6a8b911bc3c804fd208ece5722ba84f98af8) | [release-1.26] Automator: Update proxy ([#536](https://github.com/openshift-service-mesh/istio/issues/536)) |  | :x: |  | 2025-11-30 05:54:43 -0500 | openshift-service-mesh-bot |
 | [f24e6707](https://github.com/openshift-service-mesh/istio/commit/f24e6707f8929d564b9fe3bb750411979dee6f22) | [release-1.26] Automator: Update proxy ([#542](https://github.com/openshift-service-mesh/istio/issues/542)) |  | :x: |  | 2025-12-08 07:04:19 -0500 | openshift-service-mesh-bot |
+| [ae067b07](https://github.com/openshift-service-mesh/istio/commit/ae067b073773558e7c5a44dc954701a0f3ff4214) | security suite control plane parameters ([#543](https://github.com/openshift-service-mesh/istio/issues/543)) |  | :x: |  | 2025-12-11 16:49:53 +0100 | Matej Kralik |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |

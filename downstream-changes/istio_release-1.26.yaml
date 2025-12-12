@@ -304,3 +304,8 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-12-08 07:04:19 -0500
     found: true
+  - sha: ae067b073773558e7c5a44dc954701a0f3ff4214
+    title: security suite control plane parameters (#543)
+    author: Matej Kralik
+    date: 2025-12-11 16:49:53 +0100
+    found: true
