@@ -44,6 +44,7 @@
 | [a1d835ef](https://github.com/openshift-service-mesh/istio/commit/a1d835ef9dfaedc42e0cd0ed7fc7ce15004d6f05) | Update sail-operator-setup.sh |  | :x: |  | 2025-09-18 10:55:38 +0200 | Cansin Tartici |
 | [16ba1ea3](https://github.com/openshift-service-mesh/istio/commit/16ba1ea3e8a008188dde3f4eff00d54e193f7670) | Add gotestsum option for integration test execution which is suitable for polarion xml parsing ([#503](https://github.com/openshift-service-mesh/istio/issues/503)) |  | :x: |  | 2025-09-29 15:18:29 +0200 | Cansin Tartici |
 | [db76426d](https://github.com/openshift-service-mesh/istio/commit/db76426d0eb73c7674b5ae3c0b6f0f39351d1c72) | Implement cluster operator stability check ([#504](https://github.com/openshift-service-mesh/istio/issues/504)) |  | :x: |  | 2025-10-01 00:29:33 +0200 | Francisco Herrera |
+| [08d4ac6e](https://github.com/openshift-service-mesh/istio/commit/08d4ac6e7106c18199be23acfdbc73b411d08387) | Modify version slection in Sail control plane install flow for testing ([#545](https://github.com/openshift-service-mesh/istio/issues/545)) |  | :x: |  | 2025-12-14 17:34:19 +0200 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |

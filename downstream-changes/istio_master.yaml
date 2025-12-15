@@ -237,3 +237,8 @@ commits:
     author: Francisco Herrera
     date: 2025-10-01 00:29:33 +0200
     found: true
+  - sha: 08d4ac6e7106c18199be23acfdbc73b411d08387
+    title: Modify version slection in Sail control plane install flow for testing (#545)
+    author: Maxim Babushkin
+    date: 2025-12-14 17:34:19 +0200
+    found: true
