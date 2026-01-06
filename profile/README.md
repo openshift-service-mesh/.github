@@ -155,3 +155,16 @@ you'll find from upstream here relate to integrating our alternative
 [alt]:https://github.com/envoyproxy/envoy-openssl
 [FIPS]:https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips
 
+### openshift-service-mesh/ztunnel
+
+Istio provides [Ambient Mode] as an alternative to sidecar mode for service mesh.
+This mode uses a per-node L4 proxy, and an optional L7 proxy (instead of sidecar
+proxies). The L7 proxy is Envoy, and is called a "waypoint proxy". The L4 proxy
+used is [istio/ztunnel]. We have a downstream build of this proxy at
+[openshift-service-mesh/ztunnel]. We added OpenSSL support to ztunnel to support
+[FIPS].
+
+[Ambient Mode]:https://istio.io/latest/docs/ambient/
+[istio/ztunnel]:https://github.com/istio/ztunnel
+[openshift-service-mesh/ztunnel]:https://github.com/openshift-service-mesh/ztunnel
+[FIPS]:https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips
