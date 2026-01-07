@@ -45,6 +45,7 @@
 | [16ba1ea3](https://github.com/openshift-service-mesh/istio/commit/16ba1ea3e8a008188dde3f4eff00d54e193f7670) | Add gotestsum option for integration test execution which is suitable for polarion xml parsing ([#503](https://github.com/openshift-service-mesh/istio/issues/503)) |  | :x: |  | 2025-09-29 15:18:29 +0200 | Cansin Tartici |
 | [db76426d](https://github.com/openshift-service-mesh/istio/commit/db76426d0eb73c7674b5ae3c0b6f0f39351d1c72) | Implement cluster operator stability check ([#504](https://github.com/openshift-service-mesh/istio/issues/504)) |  | :x: |  | 2025-10-01 00:29:33 +0200 | Francisco Herrera |
 | [08d4ac6e](https://github.com/openshift-service-mesh/istio/commit/08d4ac6e7106c18199be23acfdbc73b411d08387) | Modify version slection in Sail control plane install flow for testing ([#545](https://github.com/openshift-service-mesh/istio/issues/545)) |  | :x: |  | 2025-12-14 17:34:19 +0200 | Maxim Babushkin |
+| [b7da2069](https://github.com/openshift-service-mesh/istio/commit/b7da2069bc3a9643299001eac84f40a26619142f) | Set Ambient config for DNS resolution ([#547](https://github.com/openshift-service-mesh/istio/issues/547)) |  | :x: |  | 2026-01-06 16:36:01 +0200 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -203,3 +204,4 @@
 | [15d69d85](https://github.com/openshift-service-mesh/istio/commit/15d69d85e3c34215c34ad18a97a7ad51d1ba301d) | [release-1.27] Automator: Update proxy ([#525](https://github.com/openshift-service-mesh/istio/issues/525)) |  | :x: |  | 2025-10-27 03:51:30 -0400 | openshift-service-mesh-bot |
 | [e4c535c0](https://github.com/openshift-service-mesh/istio/commit/e4c535c0f8a6f7b7dcfc780d7d9b9c86c17bfd8e) | manifests: add optional network policy charts for ztunnel ([#57680](https://github.com/openshift-service-mesh/istio/issues/57680)) |  | :x: |  | 2025-10-28 17:13:03 -0400 | Cameron Garrison |
 | [97722eaa](https://github.com/openshift-service-mesh/istio/commit/97722eaa71f7f1f0407f33e7648905cd472b51eb) | [release-1.27] Automator: Update proxy ([#535](https://github.com/openshift-service-mesh/istio/issues/535)) |  | :x: |  | 2025-11-30 05:51:59 -0500 | openshift-service-mesh-bot |
+| [ee2a561a](https://github.com/openshift-service-mesh/istio/commit/ee2a561a92ec2b7074fdb00a9f918427642ca097) | Gateway Inference Extension 1.1 Multi-Port support ([#538](https://github.com/openshift-service-mesh/istio/issues/538)) |  | :x: |  | 2026-01-06 12:44:27 +0100 | Aslak Knutsen |

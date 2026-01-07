@@ -298,3 +298,8 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-11-30 05:51:59 -0500
     found: true
+  - sha: ee2a561a92ec2b7074fdb00a9f918427642ca097
+    title: Gateway Inference Extension 1.1 Multi-Port support (#538)
+    author: Aslak Knutsen
+    date: 2026-01-06 12:44:27 +0100
+    found: true

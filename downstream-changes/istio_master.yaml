@@ -242,3 +242,8 @@ commits:
     author: Maxim Babushkin
     date: 2025-12-14 17:34:19 +0200
     found: true
+  - sha: b7da2069bc3a9643299001eac84f40a26619142f
+    title: Set Ambient config for DNS resolution (#547)
+    author: Maxim Babushkin
+    date: 2026-01-06 16:36:01 +0200
+    found: true
