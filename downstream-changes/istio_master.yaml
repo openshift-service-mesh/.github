@@ -247,3 +247,8 @@ commits:
     author: Maxim Babushkin
     date: 2026-01-06 16:36:01 +0200
     found: true
+  - sha: e0ae356d72eae7284de41afda48175e3fadaee97
+    title: Prevent silent exit in OpenShift CI (#546)
+    author: Filip Brychta
+    date: 2026-01-07 14:22:52 +0100
+    found: true
