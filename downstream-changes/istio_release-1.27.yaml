@@ -303,3 +303,8 @@ commits:
     author: Aslak Knutsen
     date: 2026-01-06 12:44:27 +0100
     found: true
+  - sha: 2b0c137744a86676a7cc26657091da617efac4f4
+    title: Set Ambient config for DNS resolution (#548)
+    author: OpenShift Cherrypick Robot
+    date: 2026-01-09 09:18:15 +0100
+    found: true
