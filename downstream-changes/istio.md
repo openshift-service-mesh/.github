@@ -78,6 +78,7 @@
 | [6afb4060](https://github.com/openshift-service-mesh/istio/commit/6afb4060d890b47f7b1e861a6ebdd1c7ef94961c) | [release-1.24] Automator: Update proxy ([#518](https://github.com/openshift-service-mesh/istio/issues/518)) |  | :x: |  | 2025-10-22 04:16:45 -0400 | openshift-service-mesh-bot |
 | [aca33d64](https://github.com/openshift-service-mesh/istio/commit/aca33d64402be6c6540149df6ccca44999e1f1ea) | [release-1.24] Automator: Update proxy ([#527](https://github.com/openshift-service-mesh/istio/issues/527)) |  | :x: |  | 2025-10-26 07:02:58 -0400 | openshift-service-mesh-bot |
 | [10e4d700](https://github.com/openshift-service-mesh/istio/commit/10e4d700bd3b39f9d4ecc9623c86958824dda729) | [release-1.24] Automator: Update proxy ([#529](https://github.com/openshift-service-mesh/istio/issues/529)) |  | :x: |  | 2025-11-02 08:46:05 -0500 | openshift-service-mesh-bot |
+| [9bff741f](https://github.com/openshift-service-mesh/istio/commit/9bff741fb4818fc690834b42cb96efcd5863e881) | Prevent silent exit in OpenShift CI ([#550](https://github.com/openshift-service-mesh/istio/issues/550)) |  | :x: |  | 2026-01-13 14:07:18 +0100 | OpenShift Cherrypick Robot |
 ## release-1.26 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -143,6 +144,7 @@
 | [4d9e6a8b](https://github.com/openshift-service-mesh/istio/commit/4d9e6a8b911bc3c804fd208ece5722ba84f98af8) | [release-1.26] Automator: Update proxy ([#536](https://github.com/openshift-service-mesh/istio/issues/536)) |  | :x: |  | 2025-11-30 05:54:43 -0500 | openshift-service-mesh-bot |
 | [f24e6707](https://github.com/openshift-service-mesh/istio/commit/f24e6707f8929d564b9fe3bb750411979dee6f22) | [release-1.26] Automator: Update proxy ([#542](https://github.com/openshift-service-mesh/istio/issues/542)) |  | :x: |  | 2025-12-08 07:04:19 -0500 | openshift-service-mesh-bot |
 | [ae067b07](https://github.com/openshift-service-mesh/istio/commit/ae067b073773558e7c5a44dc954701a0f3ff4214) | security suite control plane parameters ([#543](https://github.com/openshift-service-mesh/istio/issues/543)) |  | :x: |  | 2025-12-11 16:49:53 +0100 | Matej Kralik |
+| [c2c1acd8](https://github.com/openshift-service-mesh/istio/commit/c2c1acd869957d2100e8ae211e764fd8ad0846f9) | Prevent silent exit in OpenShift CI ([#549](https://github.com/openshift-service-mesh/istio/issues/549)) |  | :x: |  | 2026-01-13 14:07:17 +0100 | OpenShift Cherrypick Robot |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -207,3 +209,4 @@
 | [97722eaa](https://github.com/openshift-service-mesh/istio/commit/97722eaa71f7f1f0407f33e7648905cd472b51eb) | [release-1.27] Automator: Update proxy ([#535](https://github.com/openshift-service-mesh/istio/issues/535)) |  | :x: |  | 2025-11-30 05:51:59 -0500 | openshift-service-mesh-bot |
 | [ee2a561a](https://github.com/openshift-service-mesh/istio/commit/ee2a561a92ec2b7074fdb00a9f918427642ca097) | Gateway Inference Extension 1.1 Multi-Port support ([#538](https://github.com/openshift-service-mesh/istio/issues/538)) |  | :x: |  | 2026-01-06 12:44:27 +0100 | Aslak Knutsen |
 | [2b0c1377](https://github.com/openshift-service-mesh/istio/commit/2b0c137744a86676a7cc26657091da617efac4f4) | Set Ambient config for DNS resolution ([#548](https://github.com/openshift-service-mesh/istio/issues/548)) |  | :x: |  | 2026-01-09 09:18:15 +0100 | OpenShift Cherrypick Robot |
+| [ab794a9a](https://github.com/openshift-service-mesh/istio/commit/ab794a9a5f9ba5c3f5f15c4a629b0d19e5c4d466) | Prevent silent exit in OpenShift CI ([#551](https://github.com/openshift-service-mesh/istio/issues/551)) |  | :x: |  | 2026-01-13 14:54:57 +0100 | OpenShift Cherrypick Robot |

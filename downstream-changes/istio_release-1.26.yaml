@@ -309,3 +309,8 @@ commits:
     author: Matej Kralik
     date: 2025-12-11 16:49:53 +0100
     found: true
+  - sha: c2c1acd869957d2100e8ae211e764fd8ad0846f9
+    title: Prevent silent exit in OpenShift CI (#549)
+    author: OpenShift Cherrypick Robot
+    date: 2026-01-13 14:07:17 +0100
+    found: true

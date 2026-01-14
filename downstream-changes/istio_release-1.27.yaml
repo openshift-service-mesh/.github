@@ -308,3 +308,8 @@ commits:
     author: OpenShift Cherrypick Robot
     date: 2026-01-09 09:18:15 +0100
     found: true
+  - sha: ab794a9a5f9ba5c3f5f15c4a629b0d19e5c4d466
+    title: Prevent silent exit in OpenShift CI (#551)
+    author: OpenShift Cherrypick Robot
+    date: 2026-01-13 14:54:57 +0100
+    found: true

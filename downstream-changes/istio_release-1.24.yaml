@@ -165,3 +165,8 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-11-02 08:46:05 -0500
     found: true
+  - sha: 9bff741fb4818fc690834b42cb96efcd5863e881
+    title: Prevent silent exit in OpenShift CI (#550)
+    author: OpenShift Cherrypick Robot
+    date: 2026-01-13 14:07:18 +0100
+    found: true
