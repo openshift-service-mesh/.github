@@ -213,3 +213,7 @@
 | [2b0c1377](https://github.com/openshift-service-mesh/istio/commit/2b0c137744a86676a7cc26657091da617efac4f4) | Set Ambient config for DNS resolution ([#548](https://github.com/openshift-service-mesh/istio/issues/548)) |  | :x: |  | 2026-01-09 09:18:15 +0100 | OpenShift Cherrypick Robot |
 | [ab794a9a](https://github.com/openshift-service-mesh/istio/commit/ab794a9a5f9ba5c3f5f15c4a629b0d19e5c4d466) | Prevent silent exit in OpenShift CI ([#551](https://github.com/openshift-service-mesh/istio/issues/551)) |  | :x: |  | 2026-01-13 14:54:57 +0100 | OpenShift Cherrypick Robot |
 | [940bd62c](https://github.com/openshift-service-mesh/istio/commit/940bd62cb22d463134cf680ebe6abd9ac7876c52) | [release-1.27] Automator: Update proxy ([#540](https://github.com/openshift-service-mesh/istio/issues/540)) |  | :x: |  | 2026-01-15 16:27:12 -0500 | openshift-service-mesh-bot |
+## release-1.28 branch
+| Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
+| --- | --- | --- | --- | --- | --- |--- |
+| [](https://github.com/openshift-service-mesh/istio/commit/) |  |  | :x: |  |  |  |
