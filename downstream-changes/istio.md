@@ -47,6 +47,7 @@
 | [08d4ac6e](https://github.com/openshift-service-mesh/istio/commit/08d4ac6e7106c18199be23acfdbc73b411d08387) | Modify version slection in Sail control plane install flow for testing ([#545](https://github.com/openshift-service-mesh/istio/issues/545)) |  | :x: |  | 2025-12-14 17:34:19 +0200 | Maxim Babushkin |
 | [b7da2069](https://github.com/openshift-service-mesh/istio/commit/b7da2069bc3a9643299001eac84f40a26619142f) | Set Ambient config for DNS resolution ([#547](https://github.com/openshift-service-mesh/istio/issues/547)) |  | :x: |  | 2026-01-06 16:36:01 +0200 | Maxim Babushkin |
 | [e0ae356d](https://github.com/openshift-service-mesh/istio/commit/e0ae356d72eae7284de41afda48175e3fadaee97) | Prevent silent exit in OpenShift CI ([#546](https://github.com/openshift-service-mesh/istio/issues/546)) |  | :x: |  | 2026-01-07 14:22:52 +0100 | Filip Brychta |
+| [4c495638](https://github.com/openshift-service-mesh/istio/commit/4c4956380d1bd47ebb3006922cd7bedb255a6015) | Fix Telemetry tests Sail Operator config ([#552](https://github.com/openshift-service-mesh/istio/issues/552)) |  | :x: |  | 2026-01-19 13:04:55 +0200 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |

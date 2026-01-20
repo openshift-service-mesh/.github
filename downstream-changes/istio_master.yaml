@@ -252,3 +252,8 @@ commits:
     author: Filip Brychta
     date: 2026-01-07 14:22:52 +0100
     found: true
+  - sha: 4c4956380d1bd47ebb3006922cd7bedb255a6015
+    title: Fix Telemetry tests Sail Operator config (#552)
+    author: Maxim Babushkin
+    date: 2026-01-19 13:04:55 +0200
+    found: true
