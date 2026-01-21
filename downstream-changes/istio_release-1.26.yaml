@@ -319,3 +319,8 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-01-16 00:44:15 -0500
     found: true
+  - sha: 33c58ae12c665c781b74db9f40040d792a310894
+    title: Fix Telemetry tests Sail Operator config (#552) (#557)
+    author: Maxim Babushkin
+    date: 2026-01-20 12:41:25 +0200
+    found: true
