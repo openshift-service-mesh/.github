@@ -48,6 +48,7 @@
 | [b7da2069](https://github.com/openshift-service-mesh/istio/commit/b7da2069bc3a9643299001eac84f40a26619142f) | Set Ambient config for DNS resolution ([#547](https://github.com/openshift-service-mesh/istio/issues/547)) |  | :x: |  | 2026-01-06 16:36:01 +0200 | Maxim Babushkin |
 | [e0ae356d](https://github.com/openshift-service-mesh/istio/commit/e0ae356d72eae7284de41afda48175e3fadaee97) | Prevent silent exit in OpenShift CI ([#546](https://github.com/openshift-service-mesh/istio/issues/546)) |  | :x: |  | 2026-01-07 14:22:52 +0100 | Filip Brychta |
 | [4c495638](https://github.com/openshift-service-mesh/istio/commit/4c4956380d1bd47ebb3006922cd7bedb255a6015) | Fix Telemetry tests Sail Operator config ([#552](https://github.com/openshift-service-mesh/istio/issues/552)) |  | :x: |  | 2026-01-19 13:04:55 +0200 | Maxim Babushkin |
+| [fe88ec00](https://github.com/openshift-service-mesh/istio/commit/fe88ec00af3125823eac3396ac19d3ee0c435ea2) | Fix TestEgressGatewayTls security test ([#562](https://github.com/openshift-service-mesh/istio/issues/562)) |  | :x: |  | 2026-01-26 09:44:03 +0200 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
