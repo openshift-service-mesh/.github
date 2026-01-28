@@ -262,3 +262,8 @@ commits:
     author: Maxim Babushkin
     date: 2026-01-26 09:44:03 +0200
     found: true
+  - sha: ae34c4f135027e6c721bb062a7c3f1d272563be9
+    title: Fix security QUIC Sail Operator config (#553)
+    author: Maxim Babushkin
+    date: 2026-01-27 14:26:26 +0200
+    found: true
