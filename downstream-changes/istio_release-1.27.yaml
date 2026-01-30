@@ -328,3 +328,8 @@ commits:
     author: bmangoen
     date: 2026-01-16 11:34:40 +0100
     found: true
+  - sha: ceabf3d85a965d901920a4d79e9bb322d7c9d768
+    title: Fix TestEgressGatewayTls security test (#565)
+    author: OpenShift Cherrypick Robot
+    date: 2026-01-29 13:32:00 +0100
+    found: true

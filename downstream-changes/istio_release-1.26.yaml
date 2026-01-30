@@ -324,3 +324,8 @@ commits:
     author: Maxim Babushkin
     date: 2026-01-20 12:41:25 +0200
     found: true
+  - sha: 5afbad8136c2d678971099aefd97921c3c5b1253
+    title: Fix TestEgressGatewayTls security test (#564)
+    author: OpenShift Cherrypick Robot
+    date: 2026-01-29 13:32:01 +0100
+    found: true

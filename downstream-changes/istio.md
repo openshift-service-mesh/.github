@@ -150,6 +150,7 @@
 | [c2c1acd8](https://github.com/openshift-service-mesh/istio/commit/c2c1acd869957d2100e8ae211e764fd8ad0846f9) | Prevent silent exit in OpenShift CI ([#549](https://github.com/openshift-service-mesh/istio/issues/549)) |  | :x: |  | 2026-01-13 14:07:17 +0100 | OpenShift Cherrypick Robot |
 | [450f2ff9](https://github.com/openshift-service-mesh/istio/commit/450f2ff9c2a93e3603a9d69c5d37bcaa833451f0) | [release-1.26] Automator: Update proxy ([#544](https://github.com/openshift-service-mesh/istio/issues/544)) |  | :x: |  | 2026-01-16 00:44:15 -0500 | openshift-service-mesh-bot |
 | [33c58ae1](https://github.com/openshift-service-mesh/istio/commit/33c58ae12c665c781b74db9f40040d792a310894) | Fix Telemetry tests Sail Operator config ([#552](https://github.com/openshift-service-mesh/istio/issues/552)) ([#557](https://github.com/openshift-service-mesh/istio/issues/557)) |  | :x: |  | 2026-01-20 12:41:25 +0200 | Maxim Babushkin |
+| [5afbad81](https://github.com/openshift-service-mesh/istio/commit/5afbad8136c2d678971099aefd97921c3c5b1253) | Fix TestEgressGatewayTls security test ([#564](https://github.com/openshift-service-mesh/istio/issues/564)) |  | :x: |  | 2026-01-29 13:32:01 +0100 | OpenShift Cherrypick Robot |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -218,3 +219,4 @@
 | [940bd62c](https://github.com/openshift-service-mesh/istio/commit/940bd62cb22d463134cf680ebe6abd9ac7876c52) | [release-1.27] Automator: Update proxy ([#540](https://github.com/openshift-service-mesh/istio/issues/540)) |  | :x: |  | 2026-01-15 16:27:12 -0500 | openshift-service-mesh-bot |
 | [7d86be07](https://github.com/openshift-service-mesh/istio/commit/7d86be07c1fbde694b42a104bde3930cb84d944b) | Fix Telemetry tests Sail Operator config ([#552](https://github.com/openshift-service-mesh/istio/issues/552)) ([#556](https://github.com/openshift-service-mesh/istio/issues/556)) |  | :x: |  | 2026-01-20 12:41:25 +0200 | Maxim Babushkin |
 | [466ee144](https://github.com/openshift-service-mesh/istio/commit/466ee144426dcd79dd74d4942951addc79703d1b) | Run make gen |  | :x: |  | 2026-01-16 11:34:40 +0100 | bmangoen |
+| [ceabf3d8](https://github.com/openshift-service-mesh/istio/commit/ceabf3d85a965d901920a4d79e9bb322d7c9d768) | Fix TestEgressGatewayTls security test ([#565](https://github.com/openshift-service-mesh/istio/issues/565)) |  | :x: |  | 2026-01-29 13:32:00 +0100 | OpenShift Cherrypick Robot |
