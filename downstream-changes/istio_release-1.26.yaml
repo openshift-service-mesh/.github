@@ -329,3 +329,8 @@ commits:
     author: OpenShift Cherrypick Robot
     date: 2026-01-29 13:32:01 +0100
     found: true
+  - sha: b501c5ca70b50ebe2e488cab094e56255930e68f
+    title: Fix security QUIC Sail Operator config (#569)
+    author: OpenShift Cherrypick Robot
+    date: 2026-02-02 09:57:33 +0100
+    found: true
