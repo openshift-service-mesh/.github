@@ -154,6 +154,7 @@
 | [33c58ae1](https://github.com/openshift-service-mesh/istio/commit/33c58ae12c665c781b74db9f40040d792a310894) | Fix Telemetry tests Sail Operator config ([#552](https://github.com/openshift-service-mesh/istio/issues/552)) ([#557](https://github.com/openshift-service-mesh/istio/issues/557)) |  | :x: |  | 2026-01-20 12:41:25 +0200 | Maxim Babushkin |
 | [5afbad81](https://github.com/openshift-service-mesh/istio/commit/5afbad8136c2d678971099aefd97921c3c5b1253) | Fix TestEgressGatewayTls security test ([#564](https://github.com/openshift-service-mesh/istio/issues/564)) |  | :x: |  | 2026-01-29 13:32:01 +0100 | OpenShift Cherrypick Robot |
 | [b501c5ca](https://github.com/openshift-service-mesh/istio/commit/b501c5ca70b50ebe2e488cab094e56255930e68f) | Fix security QUIC Sail Operator config ([#569](https://github.com/openshift-service-mesh/istio/issues/569)) |  | :x: |  | 2026-02-02 09:57:33 +0100 | OpenShift Cherrypick Robot |
+| [0a83065d](https://github.com/openshift-service-mesh/istio/commit/0a83065d312319cb3d3b84c29b4c725d4556daee) | test: Show output of external control plane installer when failed ([#58915](https://github.com/openshift-service-mesh/istio/issues/58915)) ([#566](https://github.com/openshift-service-mesh/istio/issues/566)) |  | :x: |  | 2026-02-04 17:17:28 +0100 | Matej Kralik |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |

@@ -334,3 +334,8 @@ commits:
     author: OpenShift Cherrypick Robot
     date: 2026-02-02 09:57:33 +0100
     found: true
+  - sha: 0a83065d312319cb3d3b84c29b4c725d4556daee
+    title: 'test: Show output of external control plane installer when failed (#58915) (#566)'
+    author: Matej Kralik
+    date: 2026-02-04 17:17:28 +0100
+    found: true
