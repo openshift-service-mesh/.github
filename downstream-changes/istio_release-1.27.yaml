@@ -318,3 +318,23 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-01-15 16:27:12 -0500
     found: true
+  - sha: 7d86be07c1fbde694b42a104bde3930cb84d944b
+    title: Fix Telemetry tests Sail Operator config (#552) (#556)
+    author: Maxim Babushkin
+    date: 2026-01-20 12:41:25 +0200
+    found: true
+  - sha: 466ee144426dcd79dd74d4942951addc79703d1b
+    title: Run make gen
+    author: bmangoen
+    date: 2026-01-16 11:34:40 +0100
+    found: true
+  - sha: ceabf3d85a965d901920a4d79e9bb322d7c9d768
+    title: Fix TestEgressGatewayTls security test (#565)
+    author: OpenShift Cherrypick Robot
+    date: 2026-01-29 13:32:00 +0100
+    found: true
+  - sha: db8a981f3c577b016dc6cb2e002f487e359357ec
+    title: Fix security QUIC Sail Operator config (#568)
+    author: OpenShift Cherrypick Robot
+    date: 2026-02-02 11:47:41 +0100
+    found: true

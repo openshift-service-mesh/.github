@@ -48,6 +48,8 @@
 | [b7da2069](https://github.com/openshift-service-mesh/istio/commit/b7da2069bc3a9643299001eac84f40a26619142f) | Set Ambient config for DNS resolution ([#547](https://github.com/openshift-service-mesh/istio/issues/547)) |  | :x: |  | 2026-01-06 16:36:01 +0200 | Maxim Babushkin |
 | [e0ae356d](https://github.com/openshift-service-mesh/istio/commit/e0ae356d72eae7284de41afda48175e3fadaee97) | Prevent silent exit in OpenShift CI ([#546](https://github.com/openshift-service-mesh/istio/issues/546)) |  | :x: |  | 2026-01-07 14:22:52 +0100 | Filip Brychta |
 | [4c495638](https://github.com/openshift-service-mesh/istio/commit/4c4956380d1bd47ebb3006922cd7bedb255a6015) | Fix Telemetry tests Sail Operator config ([#552](https://github.com/openshift-service-mesh/istio/issues/552)) |  | :x: |  | 2026-01-19 13:04:55 +0200 | Maxim Babushkin |
+| [fe88ec00](https://github.com/openshift-service-mesh/istio/commit/fe88ec00af3125823eac3396ac19d3ee0c435ea2) | Fix TestEgressGatewayTls security test ([#562](https://github.com/openshift-service-mesh/istio/issues/562)) |  | :x: |  | 2026-01-26 09:44:03 +0200 | Maxim Babushkin |
+| [ae34c4f1](https://github.com/openshift-service-mesh/istio/commit/ae34c4f135027e6c721bb062a7c3f1d272563be9) | Fix security QUIC Sail Operator config ([#553](https://github.com/openshift-service-mesh/istio/issues/553)) |  | :x: |  | 2026-01-27 14:26:26 +0200 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -80,6 +82,8 @@
 | [aca33d64](https://github.com/openshift-service-mesh/istio/commit/aca33d64402be6c6540149df6ccca44999e1f1ea) | [release-1.24] Automator: Update proxy ([#527](https://github.com/openshift-service-mesh/istio/issues/527)) |  | :x: |  | 2025-10-26 07:02:58 -0400 | openshift-service-mesh-bot |
 | [10e4d700](https://github.com/openshift-service-mesh/istio/commit/10e4d700bd3b39f9d4ecc9623c86958824dda729) | [release-1.24] Automator: Update proxy ([#529](https://github.com/openshift-service-mesh/istio/issues/529)) |  | :x: |  | 2025-11-02 08:46:05 -0500 | openshift-service-mesh-bot |
 | [9bff741f](https://github.com/openshift-service-mesh/istio/commit/9bff741fb4818fc690834b42cb96efcd5863e881) | Prevent silent exit in OpenShift CI ([#550](https://github.com/openshift-service-mesh/istio/issues/550)) |  | :x: |  | 2026-01-13 14:07:18 +0100 | OpenShift Cherrypick Robot |
+| [954474f7](https://github.com/openshift-service-mesh/istio/commit/954474f79808cfa49e223ee1a2a5a2cbd3be44d5) | [release-1.24] Control Gateway API deploy in integration tests ([#567](https://github.com/openshift-service-mesh/istio/issues/567)) |  | :x: |  | 2026-02-02 22:02:17 +0200 | Maxim Babushkin |
+| [53a7da20](https://github.com/openshift-service-mesh/istio/commit/53a7da20088be185984b92f84bdda5a495c5927e) | [release-1.24] Automator: Update proxy ([#541](https://github.com/openshift-service-mesh/istio/issues/541)) |  | :x: |  | 2026-02-03 03:18:35 -0500 | openshift-service-mesh-bot |
 ## release-1.26 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -147,6 +151,10 @@
 | [ae067b07](https://github.com/openshift-service-mesh/istio/commit/ae067b073773558e7c5a44dc954701a0f3ff4214) | security suite control plane parameters ([#543](https://github.com/openshift-service-mesh/istio/issues/543)) |  | :x: |  | 2025-12-11 16:49:53 +0100 | Matej Kralik |
 | [c2c1acd8](https://github.com/openshift-service-mesh/istio/commit/c2c1acd869957d2100e8ae211e764fd8ad0846f9) | Prevent silent exit in OpenShift CI ([#549](https://github.com/openshift-service-mesh/istio/issues/549)) |  | :x: |  | 2026-01-13 14:07:17 +0100 | OpenShift Cherrypick Robot |
 | [450f2ff9](https://github.com/openshift-service-mesh/istio/commit/450f2ff9c2a93e3603a9d69c5d37bcaa833451f0) | [release-1.26] Automator: Update proxy ([#544](https://github.com/openshift-service-mesh/istio/issues/544)) |  | :x: |  | 2026-01-16 00:44:15 -0500 | openshift-service-mesh-bot |
+| [33c58ae1](https://github.com/openshift-service-mesh/istio/commit/33c58ae12c665c781b74db9f40040d792a310894) | Fix Telemetry tests Sail Operator config ([#552](https://github.com/openshift-service-mesh/istio/issues/552)) ([#557](https://github.com/openshift-service-mesh/istio/issues/557)) |  | :x: |  | 2026-01-20 12:41:25 +0200 | Maxim Babushkin |
+| [5afbad81](https://github.com/openshift-service-mesh/istio/commit/5afbad8136c2d678971099aefd97921c3c5b1253) | Fix TestEgressGatewayTls security test ([#564](https://github.com/openshift-service-mesh/istio/issues/564)) |  | :x: |  | 2026-01-29 13:32:01 +0100 | OpenShift Cherrypick Robot |
+| [b501c5ca](https://github.com/openshift-service-mesh/istio/commit/b501c5ca70b50ebe2e488cab094e56255930e68f) | Fix security QUIC Sail Operator config ([#569](https://github.com/openshift-service-mesh/istio/issues/569)) |  | :x: |  | 2026-02-02 09:57:33 +0100 | OpenShift Cherrypick Robot |
+| [0a83065d](https://github.com/openshift-service-mesh/istio/commit/0a83065d312319cb3d3b84c29b4c725d4556daee) | test: Show output of external control plane installer when failed ([#58915](https://github.com/openshift-service-mesh/istio/issues/58915)) ([#566](https://github.com/openshift-service-mesh/istio/issues/566)) |  | :x: |  | 2026-02-04 17:17:28 +0100 | Matej Kralik |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -213,6 +221,10 @@
 | [2b0c1377](https://github.com/openshift-service-mesh/istio/commit/2b0c137744a86676a7cc26657091da617efac4f4) | Set Ambient config for DNS resolution ([#548](https://github.com/openshift-service-mesh/istio/issues/548)) |  | :x: |  | 2026-01-09 09:18:15 +0100 | OpenShift Cherrypick Robot |
 | [ab794a9a](https://github.com/openshift-service-mesh/istio/commit/ab794a9a5f9ba5c3f5f15c4a629b0d19e5c4d466) | Prevent silent exit in OpenShift CI ([#551](https://github.com/openshift-service-mesh/istio/issues/551)) |  | :x: |  | 2026-01-13 14:54:57 +0100 | OpenShift Cherrypick Robot |
 | [940bd62c](https://github.com/openshift-service-mesh/istio/commit/940bd62cb22d463134cf680ebe6abd9ac7876c52) | [release-1.27] Automator: Update proxy ([#540](https://github.com/openshift-service-mesh/istio/issues/540)) |  | :x: |  | 2026-01-15 16:27:12 -0500 | openshift-service-mesh-bot |
+| [7d86be07](https://github.com/openshift-service-mesh/istio/commit/7d86be07c1fbde694b42a104bde3930cb84d944b) | Fix Telemetry tests Sail Operator config ([#552](https://github.com/openshift-service-mesh/istio/issues/552)) ([#556](https://github.com/openshift-service-mesh/istio/issues/556)) |  | :x: |  | 2026-01-20 12:41:25 +0200 | Maxim Babushkin |
+| [466ee144](https://github.com/openshift-service-mesh/istio/commit/466ee144426dcd79dd74d4942951addc79703d1b) | Run make gen |  | :x: |  | 2026-01-16 11:34:40 +0100 | bmangoen |
+| [ceabf3d8](https://github.com/openshift-service-mesh/istio/commit/ceabf3d85a965d901920a4d79e9bb322d7c9d768) | Fix TestEgressGatewayTls security test ([#565](https://github.com/openshift-service-mesh/istio/issues/565)) |  | :x: |  | 2026-01-29 13:32:00 +0100 | OpenShift Cherrypick Robot |
+| [db8a981f](https://github.com/openshift-service-mesh/istio/commit/db8a981f3c577b016dc6cb2e002f487e359357ec) | Fix security QUIC Sail Operator config ([#568](https://github.com/openshift-service-mesh/istio/issues/568)) |  | :x: |  | 2026-02-02 11:47:41 +0100 | OpenShift Cherrypick Robot |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
