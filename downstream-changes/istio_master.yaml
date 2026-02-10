@@ -267,3 +267,8 @@ commits:
     author: Maxim Babushkin
     date: 2026-01-27 14:26:26 +0200
     found: true
+  - sha: 6330525e4917492cae6a1b7e6338f7fd5da22828
+    title: 'test: Support specific tests to run in integ-suite-ocp.sh (#573)'
+    author: Matej Kralik
+    date: 2026-02-09 09:57:41 +0100
+    found: true
