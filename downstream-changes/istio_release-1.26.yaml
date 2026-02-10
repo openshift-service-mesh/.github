@@ -339,3 +339,8 @@ commits:
     author: Matej Kralik
     date: 2026-02-04 17:17:28 +0100
     found: true
+  - sha: bc3b01661ec8ab959e7ed5bf9299386751b141a6
+    title: '[release-1.26] test: Support specific tests to run in integ-suite-ocp.sh + backport skip test suites (#577)'
+    author: Matej Kralik
+    date: 2026-02-09 13:07:25 +0100
+    found: true
