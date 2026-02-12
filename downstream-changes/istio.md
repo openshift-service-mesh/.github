@@ -227,6 +227,7 @@
 | [466ee144](https://github.com/openshift-service-mesh/istio/commit/466ee144426dcd79dd74d4942951addc79703d1b) | Run make gen |  | :x: |  | 2026-01-16 11:34:40 +0100 | bmangoen |
 | [ceabf3d8](https://github.com/openshift-service-mesh/istio/commit/ceabf3d85a965d901920a4d79e9bb322d7c9d768) | Fix TestEgressGatewayTls security test ([#565](https://github.com/openshift-service-mesh/istio/issues/565)) |  | :x: |  | 2026-01-29 13:32:00 +0100 | OpenShift Cherrypick Robot |
 | [db8a981f](https://github.com/openshift-service-mesh/istio/commit/db8a981f3c577b016dc6cb2e002f487e359357ec) | Fix security QUIC Sail Operator config ([#568](https://github.com/openshift-service-mesh/istio/issues/568)) |  | :x: |  | 2026-02-02 11:47:41 +0100 | OpenShift Cherrypick Robot |
+| [a9a7c87d](https://github.com/openshift-service-mesh/istio/commit/a9a7c87d13eac1e4b6d00f1361a91c94af4354ad) | test: Support specific tests to run in integ-suite-ocp.sh ([#575](https://github.com/openshift-service-mesh/istio/issues/575)) |  | :x: |  | 2026-02-11 10:18:19 +0100 | OpenShift Cherrypick Robot |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
