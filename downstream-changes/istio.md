@@ -85,6 +85,7 @@
 | [9bff741f](https://github.com/openshift-service-mesh/istio/commit/9bff741fb4818fc690834b42cb96efcd5863e881) | Prevent silent exit in OpenShift CI ([#550](https://github.com/openshift-service-mesh/istio/issues/550)) |  | :x: |  | 2026-01-13 14:07:18 +0100 | OpenShift Cherrypick Robot |
 | [954474f7](https://github.com/openshift-service-mesh/istio/commit/954474f79808cfa49e223ee1a2a5a2cbd3be44d5) | [release-1.24] Control Gateway API deploy in integration tests ([#567](https://github.com/openshift-service-mesh/istio/issues/567)) |  | :x: |  | 2026-02-02 22:02:17 +0200 | Maxim Babushkin |
 | [53a7da20](https://github.com/openshift-service-mesh/istio/commit/53a7da20088be185984b92f84bdda5a495c5927e) | [release-1.24] Automator: Update proxy ([#541](https://github.com/openshift-service-mesh/istio/issues/541)) |  | :x: |  | 2026-02-03 03:18:35 -0500 | openshift-service-mesh-bot |
+| [07a00783](https://github.com/openshift-service-mesh/istio/commit/07a0078396ce598eda869251f2e1dfc101b2bce1) | [release-1.24] Backport changes for use fully qualified names ([#578](https://github.com/openshift-service-mesh/istio/issues/578)) |  | :x: |  | 2026-02-12 09:23:25 +0100 | Matej Kralik |
 ## release-1.26 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -278,3 +279,4 @@
 | [9d8c05ae](https://github.com/openshift-service-mesh/istio/commit/9d8c05ae0f7c0a77db6a41388740d42060206172) | Fix ocp running test script affected by upstream test ([#17](https://github.com/openshift-service-mesh/istio/issues/17)) |  | :x: |  | 2024-05-10 15:12:57 +0200 | Francisco Herrera |
 | [01fe438a](https://github.com/openshift-service-mesh/istio/commit/01fe438a0568e5816eb48e5795df9b44c2dc1bbc) | [OSSM-6313](https://issues.redhat.com/browse/OSSM-6313) Update getAddressTimeout in our fork ([#12](https://github.com/openshift-service-mesh/istio/issues/12)) |  | :x: |  | 2024-05-08 17:22:43 +0200 | Francisco Herrera |
 | [afe1221c](https://github.com/openshift-service-mesh/istio/commit/afe1221c479172c5cbf2237b353a0a3727829ec0) | [OSSM-4505](https://issues.redhat.com/browse/OSSM-4505) Add script to run integration test againt OCP cluster ([#4](https://github.com/openshift-service-mesh/istio/issues/4)) |  | :x: |  | 2024-04-26 13:40:16 +0200 | Francisco Herrera |
+| [71e84aa6](https://github.com/openshift-service-mesh/istio/commit/71e84aa639a7c999c52ebe731046c76cd8e456f9) | [release-1.28] Automator: Update proxy |  | :x: |  | 2026-02-10 22:57:07 +0000 | openshift-service-mesh-bot |

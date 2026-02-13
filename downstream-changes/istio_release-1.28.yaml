@@ -234,3 +234,8 @@ commits:
     author: Francisco Herrera
     date: 2024-04-26 13:40:16 +0200
     found: true
+  - sha: 71e84aa639a7c999c52ebe731046c76cd8e456f9
+    title: '[release-1.28] Automator: Update proxy'
+    author: openshift-service-mesh-bot
+    date: 2026-02-10 22:57:07 +0000
+    found: true
