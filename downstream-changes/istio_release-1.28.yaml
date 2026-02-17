@@ -239,3 +239,13 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-02-10 22:57:07 +0000
     found: true
+  - sha: a2ffe1a25755a5e82e7ecb67f4fc399e8f67ff12
+    title: Missing backports in release-1.28 (#585)
+    author: Matej Kralik
+    date: 2026-02-16 17:29:52 +0100
+    found: true
+  - sha: bb9eb1df4964023b326e541b8ce15d6628b549fb
+    title: Missing backports in release-1.28 (#576)
+    author: Matej Kralik
+    date: 2026-02-16 16:02:06 +0100
+    found: true
