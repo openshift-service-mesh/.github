@@ -249,3 +249,8 @@ commits:
     author: Matej Kralik
     date: 2026-02-16 16:02:06 +0100
     found: true
+  - sha: f9a1046870392af9a13da43bc51834efc531523c
+    title: 'manifests: add NetworkPolicy to istio-cni chart (#446) (#587)'
+    author: Daniel Grimm
+    date: 2026-02-17 16:26:58 +0100
+    found: true
