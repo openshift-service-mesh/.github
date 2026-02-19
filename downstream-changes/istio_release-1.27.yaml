@@ -343,3 +343,8 @@ commits:
     author: OpenShift Cherrypick Robot
     date: 2026-02-11 10:18:19 +0100
     found: true
+  - sha: d1d7c291d2475c70ca57be7cf6a13581de9334f7
+    title: Revert "Prevent route resource status conflict in multi-revision installs (#58292) (#58369)" (#590)
+    author: Aslak Knutsen
+    date: 2026-02-18 21:52:33 +0100
+    found: true
