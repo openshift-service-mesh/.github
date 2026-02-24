@@ -254,3 +254,13 @@ commits:
     author: Daniel Grimm
     date: 2026-02-17 16:26:58 +0100
     found: true
+  - sha: a533392ca76bbb7b05dcb691acd330e36184e54d
+    title: '[release-1.28] Re-enable using unsupported commands with warning (#598)'
+    author: OpenShift Cherrypick Robot
+    date: 2026-02-24 02:01:32 +0100
+    found: true
+  - sha: 5b873db74e911914e88c384b6bbc8e27c733cf8b
+    title: Use our ztunnel (#594)
+    author: Zuzana Miklánková
+    date: 2026-02-23 13:56:24 +0100
+    found: true

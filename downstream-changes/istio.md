@@ -51,6 +51,8 @@
 | [fe88ec00](https://github.com/openshift-service-mesh/istio/commit/fe88ec00af3125823eac3396ac19d3ee0c435ea2) | Fix TestEgressGatewayTls security test ([#562](https://github.com/openshift-service-mesh/istio/issues/562)) |  | :x: |  | 2026-01-26 09:44:03 +0200 | Maxim Babushkin |
 | [ae34c4f1](https://github.com/openshift-service-mesh/istio/commit/ae34c4f135027e6c721bb062a7c3f1d272563be9) | Fix security QUIC Sail Operator config ([#553](https://github.com/openshift-service-mesh/istio/issues/553)) |  | :x: |  | 2026-01-27 14:26:26 +0200 | Maxim Babushkin |
 | [6330525e](https://github.com/openshift-service-mesh/istio/commit/6330525e4917492cae6a1b7e6338f7fd5da22828) | test: Support specific tests to run in integ-suite-ocp.sh ([#573](https://github.com/openshift-service-mesh/istio/issues/573)) |  | :x: |  | 2026-02-09 09:57:41 +0100 | Matej Kralik |
+| [1354bfb7](https://github.com/openshift-service-mesh/istio/commit/1354bfb702e963934e042dcd402a191ba120cbde) | Fix lint issues |  | :x: |  | 2026-02-19 14:14:47 +0100 | bmangoen |
+| [f17bcf1b](https://github.com/openshift-service-mesh/istio/commit/f17bcf1b726f65bc2d57dc6ea3e9324a35277aeb) | Re-enable using unsupported commands with warning |  | :x: |  | 2026-02-19 13:12:43 +0100 | bmangoen |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -230,6 +232,7 @@
 | [db8a981f](https://github.com/openshift-service-mesh/istio/commit/db8a981f3c577b016dc6cb2e002f487e359357ec) | Fix security QUIC Sail Operator config ([#568](https://github.com/openshift-service-mesh/istio/issues/568)) |  | :x: |  | 2026-02-02 11:47:41 +0100 | OpenShift Cherrypick Robot |
 | [a9a7c87d](https://github.com/openshift-service-mesh/istio/commit/a9a7c87d13eac1e4b6d00f1361a91c94af4354ad) | test: Support specific tests to run in integ-suite-ocp.sh ([#575](https://github.com/openshift-service-mesh/istio/issues/575)) |  | :x: |  | 2026-02-11 10:18:19 +0100 | OpenShift Cherrypick Robot |
 | [d1d7c291](https://github.com/openshift-service-mesh/istio/commit/d1d7c291d2475c70ca57be7cf6a13581de9334f7) | "Revert ""Prevent route resource status conflict in multi-revision installs ([#58292](https://github.com/openshift-service-mesh/istio/issues/58292)) ([#58369](https://github.com/openshift-service-mesh/istio/issues/58369))"" ([#590](https://github.com/openshift-service-mesh/istio/issues/590))" |  | :x: |  | 2026-02-18 21:52:33 +0100 | Aslak Knutsen |
+| [9c2e01d7](https://github.com/openshift-service-mesh/istio/commit/9c2e01d7b522fe46da7dbf34beb65740c7190c40) | Use our ztunnel ([#571](https://github.com/openshift-service-mesh/istio/issues/571)) |  | :x: |  | 2026-02-23 12:04:35 +0100 | Zuzana Miklánková |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -284,3 +287,5 @@
 | [a2ffe1a2](https://github.com/openshift-service-mesh/istio/commit/a2ffe1a25755a5e82e7ecb67f4fc399e8f67ff12) | Missing backports in release-1.28 ([#585](https://github.com/openshift-service-mesh/istio/issues/585)) |  | :x: |  | 2026-02-16 17:29:52 +0100 | Matej Kralik |
 | [bb9eb1df](https://github.com/openshift-service-mesh/istio/commit/bb9eb1df4964023b326e541b8ce15d6628b549fb) | Missing backports in release-1.28 ([#576](https://github.com/openshift-service-mesh/istio/issues/576)) |  | :x: |  | 2026-02-16 16:02:06 +0100 | Matej Kralik |
 | [f9a10468](https://github.com/openshift-service-mesh/istio/commit/f9a1046870392af9a13da43bc51834efc531523c) | manifests: add NetworkPolicy to istio-cni chart ([#446](https://github.com/openshift-service-mesh/istio/issues/446)) ([#587](https://github.com/openshift-service-mesh/istio/issues/587)) |  | :x: |  | 2026-02-17 16:26:58 +0100 | Daniel Grimm |
+| [a533392c](https://github.com/openshift-service-mesh/istio/commit/a533392ca76bbb7b05dcb691acd330e36184e54d) | [release-1.28] Re-enable using unsupported commands with warning ([#598](https://github.com/openshift-service-mesh/istio/issues/598)) |  | :x: |  | 2026-02-24 02:01:32 +0100 | OpenShift Cherrypick Robot |
+| [5b873db7](https://github.com/openshift-service-mesh/istio/commit/5b873db74e911914e88c384b6bbc8e27c733cf8b) | Use our ztunnel ([#594](https://github.com/openshift-service-mesh/istio/issues/594)) |  | :x: |  | 2026-02-23 13:56:24 +0100 | Zuzana Miklánková |

@@ -272,3 +272,13 @@ commits:
     author: Matej Kralik
     date: 2026-02-09 09:57:41 +0100
     found: true
+  - sha: 1354bfb702e963934e042dcd402a191ba120cbde
+    title: Fix lint issues
+    author: bmangoen
+    date: 2026-02-19 14:14:47 +0100
+    found: true
+  - sha: f17bcf1b726f65bc2d57dc6ea3e9324a35277aeb
+    title: Re-enable using unsupported commands with warning
+    author: bmangoen
+    date: 2026-02-19 13:12:43 +0100
+    found: true
