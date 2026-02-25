@@ -282,3 +282,8 @@ commits:
     author: bmangoen
     date: 2026-02-19 13:12:43 +0100
     found: true
+  - sha: 8a854eaa9abceb1da8eec0c294b26b190aa07ebf
+    title: Add "ztunnelNamespace" flag to converter flow (#593)
+    author: Maxim Babushkin
+    date: 2026-02-24 22:40:03 +0200
+    found: true

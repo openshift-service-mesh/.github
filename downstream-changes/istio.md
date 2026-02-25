@@ -53,6 +53,7 @@
 | [6330525e](https://github.com/openshift-service-mesh/istio/commit/6330525e4917492cae6a1b7e6338f7fd5da22828) | test: Support specific tests to run in integ-suite-ocp.sh ([#573](https://github.com/openshift-service-mesh/istio/issues/573)) |  | :x: |  | 2026-02-09 09:57:41 +0100 | Matej Kralik |
 | [1354bfb7](https://github.com/openshift-service-mesh/istio/commit/1354bfb702e963934e042dcd402a191ba120cbde) | Fix lint issues |  | :x: |  | 2026-02-19 14:14:47 +0100 | bmangoen |
 | [f17bcf1b](https://github.com/openshift-service-mesh/istio/commit/f17bcf1b726f65bc2d57dc6ea3e9324a35277aeb) | Re-enable using unsupported commands with warning |  | :x: |  | 2026-02-19 13:12:43 +0100 | bmangoen |
+| [8a854eaa](https://github.com/openshift-service-mesh/istio/commit/8a854eaa9abceb1da8eec0c294b26b190aa07ebf) | "Add ""ztunnelNamespace"" flag to converter flow ([#593](https://github.com/openshift-service-mesh/istio/issues/593))" |  | :x: |  | 2026-02-24 22:40:03 +0200 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -289,3 +290,5 @@
 | [f9a10468](https://github.com/openshift-service-mesh/istio/commit/f9a1046870392af9a13da43bc51834efc531523c) | manifests: add NetworkPolicy to istio-cni chart ([#446](https://github.com/openshift-service-mesh/istio/issues/446)) ([#587](https://github.com/openshift-service-mesh/istio/issues/587)) |  | :x: |  | 2026-02-17 16:26:58 +0100 | Daniel Grimm |
 | [a533392c](https://github.com/openshift-service-mesh/istio/commit/a533392ca76bbb7b05dcb691acd330e36184e54d) | [release-1.28] Re-enable using unsupported commands with warning ([#598](https://github.com/openshift-service-mesh/istio/issues/598)) |  | :x: |  | 2026-02-24 02:01:32 +0100 | OpenShift Cherrypick Robot |
 | [5b873db7](https://github.com/openshift-service-mesh/istio/commit/5b873db74e911914e88c384b6bbc8e27c733cf8b) | Use our ztunnel ([#594](https://github.com/openshift-service-mesh/istio/issues/594)) |  | :x: |  | 2026-02-23 13:56:24 +0100 | Zuzana Miklánková |
+| [4783cbe9](https://github.com/openshift-service-mesh/istio/commit/4783cbe9805c0510c7122b924e2a50402cbde83b) | Adapt TestInferencePoolMultipleTargetPorts test to Openshift ([#58448](https://github.com/openshift-service-mesh/istio/issues/58448)) |  | :x: |  | 2025-12-01 14:45:19 +0200 | Maxim Babushkin |
+| [527342d7](https://github.com/openshift-service-mesh/istio/commit/527342d7246c453256bcf1216fb2a62ac1f5cf1e) | Restore midstream proxy SHAs and fix hadolint inline ignore |  | :x: |  | 2026-02-17 15:29:28 -0500 | Cameron Garrison |

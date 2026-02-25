@@ -264,3 +264,13 @@ commits:
     author: Zuzana Miklánková
     date: 2026-02-23 13:56:24 +0100
     found: true
+  - sha: 4783cbe9805c0510c7122b924e2a50402cbde83b
+    title: Adapt TestInferencePoolMultipleTargetPorts test to Openshift (#58448)
+    author: Maxim Babushkin
+    date: 2025-12-01 14:45:19 +0200
+    found: true
+  - sha: 527342d7246c453256bcf1216fb2a62ac1f5cf1e
+    title: Restore midstream proxy SHAs and fix hadolint inline ignore
+    author: Cameron Garrison
+    date: 2026-02-17 15:29:28 -0500
+    found: true
