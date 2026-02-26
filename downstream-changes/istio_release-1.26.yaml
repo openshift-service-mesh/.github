@@ -344,3 +344,8 @@ commits:
     author: Matej Kralik
     date: 2026-02-09 13:07:25 +0100
     found: true
+  - sha: c72e2b6b721a67c476539d217ef4d5912254a803
+    title: '[release-1.26] Automator: Update proxy (#584)'
+    author: openshift-service-mesh-bot
+    date: 2026-02-25 19:58:31 -0500
+    found: true

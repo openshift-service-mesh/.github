@@ -161,6 +161,7 @@
 | [b501c5ca](https://github.com/openshift-service-mesh/istio/commit/b501c5ca70b50ebe2e488cab094e56255930e68f) | Fix security QUIC Sail Operator config ([#569](https://github.com/openshift-service-mesh/istio/issues/569)) |  | :x: |  | 2026-02-02 09:57:33 +0100 | OpenShift Cherrypick Robot |
 | [0a83065d](https://github.com/openshift-service-mesh/istio/commit/0a83065d312319cb3d3b84c29b4c725d4556daee) | test: Show output of external control plane installer when failed ([#58915](https://github.com/openshift-service-mesh/istio/issues/58915)) ([#566](https://github.com/openshift-service-mesh/istio/issues/566)) |  | :x: |  | 2026-02-04 17:17:28 +0100 | Matej Kralik |
 | [bc3b0166](https://github.com/openshift-service-mesh/istio/commit/bc3b01661ec8ab959e7ed5bf9299386751b141a6) | [release-1.26] test: Support specific tests to run in integ-suite-ocp.sh + backport skip test suites ([#577](https://github.com/openshift-service-mesh/istio/issues/577)) |  | :x: |  | 2026-02-09 13:07:25 +0100 | Matej Kralik |
+| [c72e2b6b](https://github.com/openshift-service-mesh/istio/commit/c72e2b6b721a67c476539d217ef4d5912254a803) | [release-1.26] Automator: Update proxy ([#584](https://github.com/openshift-service-mesh/istio/issues/584)) |  | :x: |  | 2026-02-25 19:58:31 -0500 | openshift-service-mesh-bot |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -292,3 +293,4 @@
 | [5b873db7](https://github.com/openshift-service-mesh/istio/commit/5b873db74e911914e88c384b6bbc8e27c733cf8b) | Use our ztunnel ([#594](https://github.com/openshift-service-mesh/istio/issues/594)) |  | :x: |  | 2026-02-23 13:56:24 +0100 | Zuzana Miklánková |
 | [4783cbe9](https://github.com/openshift-service-mesh/istio/commit/4783cbe9805c0510c7122b924e2a50402cbde83b) | Adapt TestInferencePoolMultipleTargetPorts test to Openshift ([#58448](https://github.com/openshift-service-mesh/istio/issues/58448)) |  | :x: |  | 2025-12-01 14:45:19 +0200 | Maxim Babushkin |
 | [527342d7](https://github.com/openshift-service-mesh/istio/commit/527342d7246c453256bcf1216fb2a62ac1f5cf1e) | Restore midstream proxy SHAs and fix hadolint inline ignore |  | :x: |  | 2026-02-17 15:29:28 -0500 | Cameron Garrison |
+| [f50bcf4e](https://github.com/openshift-service-mesh/istio/commit/f50bcf4e82f4e049a089bbcaf06f4c6546836e97) | [release-1.28] Automator: Update proxy ([#582](https://github.com/openshift-service-mesh/istio/issues/582)) |  | :x: |  | 2026-02-25 14:19:00 -0500 | openshift-service-mesh-bot |
