@@ -279,3 +279,18 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-02-25 14:19:00 -0500
     found: true
+  - sha: a4394a0b1b05e508a0fbf372df5a87e89e9a3486
+    title: use Fedora 43 for both ztunnel and proxy runtime containers to contain openssl 3.5 (#606)
+    author: Zuzana Miklánková
+    date: 2026-02-26 17:34:14 +0100
+    found: true
+  - sha: 8d916378441eb0c7652b7214d7d49249aed5a142
+    title: '[release-1.28] Automator: Update proxy'
+    author: openshift-service-mesh-bot
+    date: 2026-02-26 05:09:05 +0000
+    found: true
+  - sha: 253f92586704cc02fe68927d70be366ee37a080f
+    title: Revert "Prevent route resource status conflict in multi-revision installs (#58292) (#58369)"
+    author: Aslak Knutsen
+    date: 2026-02-25 18:30:53 +0100
+    found: true

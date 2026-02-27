@@ -353,3 +353,8 @@ commits:
     author: Zuzana Miklánková
     date: 2026-02-23 12:04:35 +0100
     found: true
+  - sha: 4c9aec6cf547cc0a00811f9717645a586556983c
+    title: '[release-1.27] Automator: Update proxy (#581)'
+    author: openshift-service-mesh-bot
+    date: 2026-02-25 22:39:40 -0500
+    found: true

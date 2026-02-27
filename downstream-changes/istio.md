@@ -54,6 +54,7 @@
 | [1354bfb7](https://github.com/openshift-service-mesh/istio/commit/1354bfb702e963934e042dcd402a191ba120cbde) | Fix lint issues |  | :x: |  | 2026-02-19 14:14:47 +0100 | bmangoen |
 | [f17bcf1b](https://github.com/openshift-service-mesh/istio/commit/f17bcf1b726f65bc2d57dc6ea3e9324a35277aeb) | Re-enable using unsupported commands with warning |  | :x: |  | 2026-02-19 13:12:43 +0100 | bmangoen |
 | [8a854eaa](https://github.com/openshift-service-mesh/istio/commit/8a854eaa9abceb1da8eec0c294b26b190aa07ebf) | "Add ""ztunnelNamespace"" flag to converter flow ([#593](https://github.com/openshift-service-mesh/istio/issues/593))" |  | :x: |  | 2026-02-24 22:40:03 +0200 | Maxim Babushkin |
+| [26c3ad48](https://github.com/openshift-service-mesh/istio/commit/26c3ad483d109cbd1301453ae24773b60d1cd8af) | Add PR label check Github Action ([#607](https://github.com/openshift-service-mesh/istio/issues/607)) |  | :x: |  | 2026-02-26 13:00:40 +0200 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -235,6 +236,7 @@
 | [a9a7c87d](https://github.com/openshift-service-mesh/istio/commit/a9a7c87d13eac1e4b6d00f1361a91c94af4354ad) | test: Support specific tests to run in integ-suite-ocp.sh ([#575](https://github.com/openshift-service-mesh/istio/issues/575)) |  | :x: |  | 2026-02-11 10:18:19 +0100 | OpenShift Cherrypick Robot |
 | [d1d7c291](https://github.com/openshift-service-mesh/istio/commit/d1d7c291d2475c70ca57be7cf6a13581de9334f7) | "Revert ""Prevent route resource status conflict in multi-revision installs ([#58292](https://github.com/openshift-service-mesh/istio/issues/58292)) ([#58369](https://github.com/openshift-service-mesh/istio/issues/58369))"" ([#590](https://github.com/openshift-service-mesh/istio/issues/590))" |  | :x: |  | 2026-02-18 21:52:33 +0100 | Aslak Knutsen |
 | [9c2e01d7](https://github.com/openshift-service-mesh/istio/commit/9c2e01d7b522fe46da7dbf34beb65740c7190c40) | Use our ztunnel ([#571](https://github.com/openshift-service-mesh/istio/issues/571)) |  | :x: |  | 2026-02-23 12:04:35 +0100 | Zuzana Miklánková |
+| [4c9aec6c](https://github.com/openshift-service-mesh/istio/commit/4c9aec6cf547cc0a00811f9717645a586556983c) | [release-1.27] Automator: Update proxy ([#581](https://github.com/openshift-service-mesh/istio/issues/581)) |  | :x: |  | 2026-02-25 22:39:40 -0500 | openshift-service-mesh-bot |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -294,3 +296,6 @@
 | [4783cbe9](https://github.com/openshift-service-mesh/istio/commit/4783cbe9805c0510c7122b924e2a50402cbde83b) | Adapt TestInferencePoolMultipleTargetPorts test to Openshift ([#58448](https://github.com/openshift-service-mesh/istio/issues/58448)) |  | :x: |  | 2025-12-01 14:45:19 +0200 | Maxim Babushkin |
 | [527342d7](https://github.com/openshift-service-mesh/istio/commit/527342d7246c453256bcf1216fb2a62ac1f5cf1e) | Restore midstream proxy SHAs and fix hadolint inline ignore |  | :x: |  | 2026-02-17 15:29:28 -0500 | Cameron Garrison |
 | [f50bcf4e](https://github.com/openshift-service-mesh/istio/commit/f50bcf4e82f4e049a089bbcaf06f4c6546836e97) | [release-1.28] Automator: Update proxy ([#582](https://github.com/openshift-service-mesh/istio/issues/582)) |  | :x: |  | 2026-02-25 14:19:00 -0500 | openshift-service-mesh-bot |
+| [a4394a0b](https://github.com/openshift-service-mesh/istio/commit/a4394a0b1b05e508a0fbf372df5a87e89e9a3486) | use Fedora 43 for both ztunnel and proxy runtime containers to contain openssl 3.5 ([#606](https://github.com/openshift-service-mesh/istio/issues/606)) |  | :x: |  | 2026-02-26 17:34:14 +0100 | Zuzana Miklánková |
+| [8d916378](https://github.com/openshift-service-mesh/istio/commit/8d916378441eb0c7652b7214d7d49249aed5a142) | [release-1.28] Automator: Update proxy |  | :x: |  | 2026-02-26 05:09:05 +0000 | openshift-service-mesh-bot |
+| [253f9258](https://github.com/openshift-service-mesh/istio/commit/253f92586704cc02fe68927d70be366ee37a080f) | "Revert ""Prevent route resource status conflict in multi-revision installs ([#58292](https://github.com/openshift-service-mesh/istio/issues/58292)) ([#58369](https://github.com/openshift-service-mesh/istio/issues/58369))""" |  | :x: |  | 2026-02-25 18:30:53 +0100 | Aslak Knutsen |

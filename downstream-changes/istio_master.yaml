@@ -287,3 +287,8 @@ commits:
     author: Maxim Babushkin
     date: 2026-02-24 22:40:03 +0200
     found: true
+  - sha: 26c3ad483d109cbd1301453ae24773b60d1cd8af
+    title: Add PR label check Github Action (#607)
+    author: Maxim Babushkin
+    date: 2026-02-26 13:00:40 +0200
+    found: true
