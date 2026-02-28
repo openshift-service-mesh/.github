@@ -294,3 +294,13 @@ commits:
     author: Aslak Knutsen
     date: 2026-02-25 18:30:53 +0100
     found: true
+  - sha: 6f156fc54ec3decad507eab7ad11c1cf7f820623
+    title: 'tests: add integration tests for "pqc" compliance policy (#59042)'
+    author: Jacek Ewertowski
+    date: 2026-02-18 22:43:28 +0100
+    found: true
+  - sha: 1ecb53640afd95be99cbad9958cd55e8e670ed10
+    title: 'test: add support for customizing min TLS version and ECDH curves in echo client/server (#58918)'
+    author: Jacek Ewertowski
+    date: 2026-02-09 15:43:54 +0100
+    found: true
