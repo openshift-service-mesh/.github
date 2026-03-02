@@ -292,3 +292,8 @@ commits:
     author: Maxim Babushkin
     date: 2026-02-26 13:00:40 +0200
     found: true
+  - sha: c95b5d6458d5c830b5bab09d7b7122bc7dbd4862
+    title: Add "discoverySelectors" param to Sail test deploy config (#605)
+    author: Maxim Babushkin
+    date: 2026-03-01 12:12:13 +0200
+    found: true

@@ -55,6 +55,7 @@
 | [f17bcf1b](https://github.com/openshift-service-mesh/istio/commit/f17bcf1b726f65bc2d57dc6ea3e9324a35277aeb) | Re-enable using unsupported commands with warning |  | :x: |  | 2026-02-19 13:12:43 +0100 | bmangoen |
 | [8a854eaa](https://github.com/openshift-service-mesh/istio/commit/8a854eaa9abceb1da8eec0c294b26b190aa07ebf) | "Add ""ztunnelNamespace"" flag to converter flow ([#593](https://github.com/openshift-service-mesh/istio/issues/593))" |  | :x: |  | 2026-02-24 22:40:03 +0200 | Maxim Babushkin |
 | [26c3ad48](https://github.com/openshift-service-mesh/istio/commit/26c3ad483d109cbd1301453ae24773b60d1cd8af) | Add PR label check Github Action ([#607](https://github.com/openshift-service-mesh/istio/issues/607)) |  | :x: |  | 2026-02-26 13:00:40 +0200 | Maxim Babushkin |
+| [c95b5d64](https://github.com/openshift-service-mesh/istio/commit/c95b5d6458d5c830b5bab09d7b7122bc7dbd4862) | "Add ""discoverySelectors"" param to Sail test deploy config ([#605](https://github.com/openshift-service-mesh/istio/issues/605))" |  | :x: |  | 2026-03-01 12:12:13 +0200 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -237,6 +238,7 @@
 | [d1d7c291](https://github.com/openshift-service-mesh/istio/commit/d1d7c291d2475c70ca57be7cf6a13581de9334f7) | "Revert ""Prevent route resource status conflict in multi-revision installs ([#58292](https://github.com/openshift-service-mesh/istio/issues/58292)) ([#58369](https://github.com/openshift-service-mesh/istio/issues/58369))"" ([#590](https://github.com/openshift-service-mesh/istio/issues/590))" |  | :x: |  | 2026-02-18 21:52:33 +0100 | Aslak Knutsen |
 | [9c2e01d7](https://github.com/openshift-service-mesh/istio/commit/9c2e01d7b522fe46da7dbf34beb65740c7190c40) | Use our ztunnel ([#571](https://github.com/openshift-service-mesh/istio/issues/571)) |  | :x: |  | 2026-02-23 12:04:35 +0100 | Zuzana Miklánková |
 | [4c9aec6c](https://github.com/openshift-service-mesh/istio/commit/4c9aec6cf547cc0a00811f9717645a586556983c) | [release-1.27] Automator: Update proxy ([#581](https://github.com/openshift-service-mesh/istio/issues/581)) |  | :x: |  | 2026-02-25 22:39:40 -0500 | openshift-service-mesh-bot |
+| [c7ea2467](https://github.com/openshift-service-mesh/istio/commit/c7ea2467ec0fcf745ec679f7289df93fb3ba7487) | [release-1.27] Automator: Update proxy ([#615](https://github.com/openshift-service-mesh/istio/issues/615)) |  | :x: |  | 2026-03-01 12:21:22 -0500 | openshift-service-mesh-bot |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
