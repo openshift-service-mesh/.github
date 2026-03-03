@@ -297,3 +297,8 @@ commits:
     author: Maxim Babushkin
     date: 2026-03-01 12:12:13 +0200
     found: true
+  - sha: de4c2c11db19e57d0e913d6e6d588d4cf27cc4fd
+    title: Update integ-suite-ocp.sh to support IBM infra to run (#599)
+    author: Matej Kralik
+    date: 2026-03-02 21:36:01 +0100
+    found: true

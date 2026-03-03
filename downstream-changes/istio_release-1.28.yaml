@@ -304,3 +304,8 @@ commits:
     author: Jacek Ewertowski
     date: 2026-02-09 15:43:54 +0100
     found: true
+  - sha: 240e80b25c3c67ccdfc137864cc0ef960ac6bb56
+    title: Add "discoverySelectors" param to Sail test deploy config (#617)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-02 15:51:12 +0100
+    found: true
