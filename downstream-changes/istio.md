@@ -57,6 +57,7 @@
 | [26c3ad48](https://github.com/openshift-service-mesh/istio/commit/26c3ad483d109cbd1301453ae24773b60d1cd8af) | Add PR label check Github Action ([#607](https://github.com/openshift-service-mesh/istio/issues/607)) |  | :x: |  | 2026-02-26 13:00:40 +0200 | Maxim Babushkin |
 | [c95b5d64](https://github.com/openshift-service-mesh/istio/commit/c95b5d6458d5c830b5bab09d7b7122bc7dbd4862) | "Add ""discoverySelectors"" param to Sail test deploy config ([#605](https://github.com/openshift-service-mesh/istio/issues/605))" |  | :x: |  | 2026-03-01 12:12:13 +0200 | Maxim Babushkin |
 | [de4c2c11](https://github.com/openshift-service-mesh/istio/commit/de4c2c11db19e57d0e913d6e6d588d4cf27cc4fd) | Update integ-suite-ocp.sh to support IBM infra to run ([#599](https://github.com/openshift-service-mesh/istio/issues/599)) |  | :x: |  | 2026-03-02 21:36:01 +0100 | Matej Kralik |
+| [aa4cd211](https://github.com/openshift-service-mesh/istio/commit/aa4cd211d33fbe7466d1c4965ac10968cf06998e) | "Update ""PR label check"" GH workflow ([#624](https://github.com/openshift-service-mesh/istio/issues/624))" |  | :x: |  | 2026-03-03 15:23:59 +0200 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -92,6 +93,7 @@
 | [954474f7](https://github.com/openshift-service-mesh/istio/commit/954474f79808cfa49e223ee1a2a5a2cbd3be44d5) | [release-1.24] Control Gateway API deploy in integration tests ([#567](https://github.com/openshift-service-mesh/istio/issues/567)) |  | :x: |  | 2026-02-02 22:02:17 +0200 | Maxim Babushkin |
 | [53a7da20](https://github.com/openshift-service-mesh/istio/commit/53a7da20088be185984b92f84bdda5a495c5927e) | [release-1.24] Automator: Update proxy ([#541](https://github.com/openshift-service-mesh/istio/issues/541)) |  | :x: |  | 2026-02-03 03:18:35 -0500 | openshift-service-mesh-bot |
 | [07a00783](https://github.com/openshift-service-mesh/istio/commit/07a0078396ce598eda869251f2e1dfc101b2bce1) | [release-1.24] Backport changes for use fully qualified names ([#578](https://github.com/openshift-service-mesh/istio/issues/578)) |  | :x: |  | 2026-02-12 09:23:25 +0100 | Matej Kralik |
+| [6ca1d2c1](https://github.com/openshift-service-mesh/istio/commit/6ca1d2c1f5512ac0c1fac0e137c28e27e3799ac9) | Add PR label check Github Action ([#625](https://github.com/openshift-service-mesh/istio/issues/625)) |  | :x: |  | 2026-03-03 15:06:13 +0100 | OpenShift Cherrypick Robot |
 ## release-1.26 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -165,6 +167,8 @@
 | [0a83065d](https://github.com/openshift-service-mesh/istio/commit/0a83065d312319cb3d3b84c29b4c725d4556daee) | test: Show output of external control plane installer when failed ([#58915](https://github.com/openshift-service-mesh/istio/issues/58915)) ([#566](https://github.com/openshift-service-mesh/istio/issues/566)) |  | :x: |  | 2026-02-04 17:17:28 +0100 | Matej Kralik |
 | [bc3b0166](https://github.com/openshift-service-mesh/istio/commit/bc3b01661ec8ab959e7ed5bf9299386751b141a6) | [release-1.26] test: Support specific tests to run in integ-suite-ocp.sh + backport skip test suites ([#577](https://github.com/openshift-service-mesh/istio/issues/577)) |  | :x: |  | 2026-02-09 13:07:25 +0100 | Matej Kralik |
 | [c72e2b6b](https://github.com/openshift-service-mesh/istio/commit/c72e2b6b721a67c476539d217ef4d5912254a803) | [release-1.26] Automator: Update proxy ([#584](https://github.com/openshift-service-mesh/istio/issues/584)) |  | :x: |  | 2026-02-25 19:58:31 -0500 | openshift-service-mesh-bot |
+| [83f427ba](https://github.com/openshift-service-mesh/istio/commit/83f427baa608243b88a7b53c59ea61698946adc5) | Add PR label check Github Action ([#626](https://github.com/openshift-service-mesh/istio/issues/626)) |  | :x: |  | 2026-03-03 15:15:57 +0100 | OpenShift Cherrypick Robot |
+| [e099ef0b](https://github.com/openshift-service-mesh/istio/commit/e099ef0b08cb1219e1e40d162989266effee93da) | Update integ-suite-ocp.sh to support IBM infra to run ([#621](https://github.com/openshift-service-mesh/istio/issues/621)) |  | :x: |  | 2026-03-03 14:48:17 +0100 | OpenShift Cherrypick Robot |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -240,6 +244,9 @@
 | [9c2e01d7](https://github.com/openshift-service-mesh/istio/commit/9c2e01d7b522fe46da7dbf34beb65740c7190c40) | Use our ztunnel ([#571](https://github.com/openshift-service-mesh/istio/issues/571)) |  | :x: |  | 2026-02-23 12:04:35 +0100 | Zuzana Miklánková |
 | [4c9aec6c](https://github.com/openshift-service-mesh/istio/commit/4c9aec6cf547cc0a00811f9717645a586556983c) | [release-1.27] Automator: Update proxy ([#581](https://github.com/openshift-service-mesh/istio/issues/581)) |  | :x: |  | 2026-02-25 22:39:40 -0500 | openshift-service-mesh-bot |
 | [c7ea2467](https://github.com/openshift-service-mesh/istio/commit/c7ea2467ec0fcf745ec679f7289df93fb3ba7487) | [release-1.27] Automator: Update proxy ([#615](https://github.com/openshift-service-mesh/istio/issues/615)) |  | :x: |  | 2026-03-01 12:21:22 -0500 | openshift-service-mesh-bot |
+| [a2e60cfc](https://github.com/openshift-service-mesh/istio/commit/a2e60cfc6620cbd314d387ae36f8edd97a22b43b) | "Add ""discoverySelectors"" param to Sail test deploy config ([#616](https://github.com/openshift-service-mesh/istio/issues/616))" |  | :x: |  | 2026-03-04 00:19:39 +0100 | OpenShift Cherrypick Robot |
+| [2d3ced8d](https://github.com/openshift-service-mesh/istio/commit/2d3ced8de59ed2b327f26982753c912a3a6c7760) | "Update ""PR label check"" GH workflow ([#629](https://github.com/openshift-service-mesh/istio/issues/629))" |  | :x: |  | 2026-03-03 16:01:47 +0100 | OpenShift Cherrypick Robot |
+| [1e689272](https://github.com/openshift-service-mesh/istio/commit/1e68927274385a176bea46546494dbdbf9f62c20) | Add PR label check Github Action ([#627](https://github.com/openshift-service-mesh/istio/issues/627)) |  | :x: |  | 2026-03-03 14:14:52 +0100 | OpenShift Cherrypick Robot |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -305,3 +312,7 @@
 | [6f156fc5](https://github.com/openshift-service-mesh/istio/commit/6f156fc54ec3decad507eab7ad11c1cf7f820623) | "tests: add integration tests for ""pqc"" compliance policy ([#59042](https://github.com/openshift-service-mesh/istio/issues/59042))" |  | :x: |  | 2026-02-18 22:43:28 +0100 | Jacek Ewertowski |
 | [1ecb5364](https://github.com/openshift-service-mesh/istio/commit/1ecb53640afd95be99cbad9958cd55e8e670ed10) | test: add support for customizing min TLS version and ECDH curves in echo client/server ([#58918](https://github.com/openshift-service-mesh/istio/issues/58918)) |  | :x: |  | 2026-02-09 15:43:54 +0100 | Jacek Ewertowski |
 | [240e80b2](https://github.com/openshift-service-mesh/istio/commit/240e80b25c3c67ccdfc137864cc0ef960ac6bb56) | "Add ""discoverySelectors"" param to Sail test deploy config ([#617](https://github.com/openshift-service-mesh/istio/issues/617))" |  | :x: |  | 2026-03-02 15:51:12 +0100 | OpenShift Cherrypick Robot |
+| [ba0acb0f](https://github.com/openshift-service-mesh/istio/commit/ba0acb0f754cf8434c8bba6099ae64fbbf9f4127) | Use DestinationRule in ambient tests |  | :x: |  | 2026-03-03 14:47:29 +0100 | Jacek Ewertowski |
+| [6bfa4e86](https://github.com/openshift-service-mesh/istio/commit/6bfa4e868b05bf22c976384921d8c9cace8f50c8) | tests: add integration tests for PQC compliance policy in ambient mode |  | :x: |  | 2026-02-18 21:59:51 +0100 | Jacek Ewertowski |
+| [bdab43a3](https://github.com/openshift-service-mesh/istio/commit/bdab43a3779b80e32ea9fe48bd5f146089160686) | "Update ""PR label check"" GH workflow ([#630](https://github.com/openshift-service-mesh/istio/issues/630))" |  | :x: |  | 2026-03-03 16:01:48 +0100 | OpenShift Cherrypick Robot |
+| [766daf9d](https://github.com/openshift-service-mesh/istio/commit/766daf9dc42ed005fc3832bf6f6d15d20dd22677) | Add PR label check Github Action ([#628](https://github.com/openshift-service-mesh/istio/issues/628)) |  | :x: |  | 2026-03-03 14:14:53 +0100 | OpenShift Cherrypick Robot |

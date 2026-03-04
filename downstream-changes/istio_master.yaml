@@ -302,3 +302,8 @@ commits:
     author: Matej Kralik
     date: 2026-03-02 21:36:01 +0100
     found: true
+  - sha: aa4cd211d33fbe7466d1c4965ac10968cf06998e
+    title: Update "PR label check" GH workflow (#624)
+    author: Maxim Babushkin
+    date: 2026-03-03 15:23:59 +0200
+    found: true

@@ -185,3 +185,8 @@ commits:
     author: Matej Kralik
     date: 2026-02-12 09:23:25 +0100
     found: true
+  - sha: 6ca1d2c1f5512ac0c1fac0e137c28e27e3799ac9
+    title: Add PR label check Github Action (#625)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-03 15:06:13 +0100
+    found: true
