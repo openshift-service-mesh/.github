@@ -378,3 +378,8 @@ commits:
     author: OpenShift Cherrypick Robot
     date: 2026-03-03 14:14:52 +0100
     found: true
+  - sha: bc7f02c894df72b472cd59dae91ca11974c33e3d
+    title: Update integ-suite-ocp.sh to support IBM infra to run (#622)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-04 12:36:22 +0100
+    found: true

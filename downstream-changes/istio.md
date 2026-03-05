@@ -94,6 +94,8 @@
 | [53a7da20](https://github.com/openshift-service-mesh/istio/commit/53a7da20088be185984b92f84bdda5a495c5927e) | [release-1.24] Automator: Update proxy ([#541](https://github.com/openshift-service-mesh/istio/issues/541)) |  | :x: |  | 2026-02-03 03:18:35 -0500 | openshift-service-mesh-bot |
 | [07a00783](https://github.com/openshift-service-mesh/istio/commit/07a0078396ce598eda869251f2e1dfc101b2bce1) | [release-1.24] Backport changes for use fully qualified names ([#578](https://github.com/openshift-service-mesh/istio/issues/578)) |  | :x: |  | 2026-02-12 09:23:25 +0100 | Matej Kralik |
 | [6ca1d2c1](https://github.com/openshift-service-mesh/istio/commit/6ca1d2c1f5512ac0c1fac0e137c28e27e3799ac9) | Add PR label check Github Action ([#625](https://github.com/openshift-service-mesh/istio/issues/625)) |  | :x: |  | 2026-03-03 15:06:13 +0100 | OpenShift Cherrypick Robot |
+| [3df41f55](https://github.com/openshift-service-mesh/istio/commit/3df41f55733e7b1b8045cbbb7450b56a5f76ffb6) | [release-1.24] Automator: Update proxy ([#600](https://github.com/openshift-service-mesh/istio/issues/600)) |  | :x: |  | 2026-03-04 03:16:00 -0500 | openshift-service-mesh-bot |
+| [36c948e4](https://github.com/openshift-service-mesh/istio/commit/36c948e4bb439743da865fed6641e54ac9bb6b39) | "Update ""PR label check"" GH workflow ([#633](https://github.com/openshift-service-mesh/istio/issues/633))" |  | :x: |  | 2026-03-04 06:19:18 +0100 | OpenShift Cherrypick Robot |
 ## release-1.26 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -169,6 +171,8 @@
 | [c72e2b6b](https://github.com/openshift-service-mesh/istio/commit/c72e2b6b721a67c476539d217ef4d5912254a803) | [release-1.26] Automator: Update proxy ([#584](https://github.com/openshift-service-mesh/istio/issues/584)) |  | :x: |  | 2026-02-25 19:58:31 -0500 | openshift-service-mesh-bot |
 | [83f427ba](https://github.com/openshift-service-mesh/istio/commit/83f427baa608243b88a7b53c59ea61698946adc5) | Add PR label check Github Action ([#626](https://github.com/openshift-service-mesh/istio/issues/626)) |  | :x: |  | 2026-03-03 15:15:57 +0100 | OpenShift Cherrypick Robot |
 | [e099ef0b](https://github.com/openshift-service-mesh/istio/commit/e099ef0b08cb1219e1e40d162989266effee93da) | Update integ-suite-ocp.sh to support IBM infra to run ([#621](https://github.com/openshift-service-mesh/istio/issues/621)) |  | :x: |  | 2026-03-03 14:48:17 +0100 | OpenShift Cherrypick Robot |
+| [ed9d8860](https://github.com/openshift-service-mesh/istio/commit/ed9d8860ff91c5842dc66f880db6cf13a5f5b331) | [release-1.26] Automator: Update proxy ([#614](https://github.com/openshift-service-mesh/istio/issues/614)) |  | :x: |  | 2026-03-04 05:06:28 -0500 | openshift-service-mesh-bot |
+| [a4bfa809](https://github.com/openshift-service-mesh/istio/commit/a4bfa8097e3ba6005b65154dc000dad91ac8c832) | "Update ""PR label check"" GH workflow ([#632](https://github.com/openshift-service-mesh/istio/issues/632))" |  | :x: |  | 2026-03-04 06:24:57 +0100 | OpenShift Cherrypick Robot |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -247,6 +251,7 @@
 | [a2e60cfc](https://github.com/openshift-service-mesh/istio/commit/a2e60cfc6620cbd314d387ae36f8edd97a22b43b) | "Add ""discoverySelectors"" param to Sail test deploy config ([#616](https://github.com/openshift-service-mesh/istio/issues/616))" |  | :x: |  | 2026-03-04 00:19:39 +0100 | OpenShift Cherrypick Robot |
 | [2d3ced8d](https://github.com/openshift-service-mesh/istio/commit/2d3ced8de59ed2b327f26982753c912a3a6c7760) | "Update ""PR label check"" GH workflow ([#629](https://github.com/openshift-service-mesh/istio/issues/629))" |  | :x: |  | 2026-03-03 16:01:47 +0100 | OpenShift Cherrypick Robot |
 | [1e689272](https://github.com/openshift-service-mesh/istio/commit/1e68927274385a176bea46546494dbdbf9f62c20) | Add PR label check Github Action ([#627](https://github.com/openshift-service-mesh/istio/issues/627)) |  | :x: |  | 2026-03-03 14:14:52 +0100 | OpenShift Cherrypick Robot |
+| [bc7f02c8](https://github.com/openshift-service-mesh/istio/commit/bc7f02c894df72b472cd59dae91ca11974c33e3d) | Update integ-suite-ocp.sh to support IBM infra to run ([#622](https://github.com/openshift-service-mesh/istio/issues/622)) |  | :x: |  | 2026-03-04 12:36:22 +0100 | OpenShift Cherrypick Robot |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -316,3 +321,5 @@
 | [6bfa4e86](https://github.com/openshift-service-mesh/istio/commit/6bfa4e868b05bf22c976384921d8c9cace8f50c8) | tests: add integration tests for PQC compliance policy in ambient mode |  | :x: |  | 2026-02-18 21:59:51 +0100 | Jacek Ewertowski |
 | [bdab43a3](https://github.com/openshift-service-mesh/istio/commit/bdab43a3779b80e32ea9fe48bd5f146089160686) | "Update ""PR label check"" GH workflow ([#630](https://github.com/openshift-service-mesh/istio/issues/630))" |  | :x: |  | 2026-03-03 16:01:48 +0100 | OpenShift Cherrypick Robot |
 | [766daf9d](https://github.com/openshift-service-mesh/istio/commit/766daf9dc42ed005fc3832bf6f6d15d20dd22677) | Add PR label check Github Action ([#628](https://github.com/openshift-service-mesh/istio/issues/628)) |  | :x: |  | 2026-03-03 14:14:53 +0100 | OpenShift Cherrypick Robot |
+| [515afd20](https://github.com/openshift-service-mesh/istio/commit/515afd20f4e83982ad119e3d1c500bb701bc13b3) | Update integ-suite-ocp.sh to support IBM infra to run ([#623](https://github.com/openshift-service-mesh/istio/issues/623)) |  | :x: |  | 2026-03-04 12:30:24 +0100 | OpenShift Cherrypick Robot |
+| [9fd2939a](https://github.com/openshift-service-mesh/istio/commit/9fd2939a4d079a790ed762fb5ec627a436d0b7db) | "Add ""ZtunnelNamespace"" flag to specify Ztunnel deployment location ([#58677](https://github.com/openshift-service-mesh/istio/issues/58677)) ([#619](https://github.com/openshift-service-mesh/istio/issues/619))" |  | :x: |  | 2026-03-04 11:24:28 +0200 | Maxim Babushkin |

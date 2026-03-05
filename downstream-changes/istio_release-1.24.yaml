@@ -190,3 +190,13 @@ commits:
     author: OpenShift Cherrypick Robot
     date: 2026-03-03 15:06:13 +0100
     found: true
+  - sha: 3df41f55733e7b1b8045cbbb7450b56a5f76ffb6
+    title: '[release-1.24] Automator: Update proxy (#600)'
+    author: openshift-service-mesh-bot
+    date: 2026-03-04 03:16:00 -0500
+    found: true
+  - sha: 36c948e4bb439743da865fed6641e54ac9bb6b39
+    title: Update "PR label check" GH workflow (#633)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-04 06:19:18 +0100
+    found: true

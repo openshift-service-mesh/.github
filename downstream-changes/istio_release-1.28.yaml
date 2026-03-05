@@ -329,3 +329,13 @@ commits:
     author: OpenShift Cherrypick Robot
     date: 2026-03-03 14:14:53 +0100
     found: true
+  - sha: 515afd20f4e83982ad119e3d1c500bb701bc13b3
+    title: Update integ-suite-ocp.sh to support IBM infra to run (#623)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-04 12:30:24 +0100
+    found: true
+  - sha: 9fd2939a4d079a790ed762fb5ec627a436d0b7db
+    title: Add "ZtunnelNamespace" flag to specify Ztunnel deployment location (#58677) (#619)
+    author: Maxim Babushkin
+    date: 2026-03-04 11:24:28 +0200
+    found: true
