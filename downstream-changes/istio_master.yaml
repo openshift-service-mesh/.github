@@ -287,16 +287,19 @@ commits:
     author: Maxim Babushkin
     date: 2026-02-24 22:40:03 +0200
     found: true
+    isPermanent: true
   - sha: 26c3ad483d109cbd1301453ae24773b60d1cd8af
     title: Add PR label check Github Action (#607)
     author: Maxim Babushkin
     date: 2026-02-26 13:00:40 +0200
     found: true
+    isPermanent: true
   - sha: c95b5d6458d5c830b5bab09d7b7122bc7dbd4862
     title: Add "discoverySelectors" param to Sail test deploy config (#605)
     author: Maxim Babushkin
     date: 2026-03-01 12:12:13 +0200
     found: true
+    isPermanent: true
   - sha: de4c2c11db19e57d0e913d6e6d588d4cf27cc4fd
     title: Update integ-suite-ocp.sh to support IBM infra to run (#599)
     author: Matej Kralik
@@ -307,3 +310,4 @@ commits:
     author: Maxim Babushkin
     date: 2026-03-03 15:23:59 +0200
     found: true
+    isPermanent: true
