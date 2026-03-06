@@ -344,3 +344,8 @@ commits:
     author: Maxim Babushkin
     date: 2026-03-05 11:57:02 +0200
     found: true
+  - sha: b09d5d45c58d758a83ff20d09ba3b0ad56d76058
+    title: '[release-1.28] Automator: Update ztunnel (#631)'
+    author: openshift-service-mesh-bot
+    date: 2026-03-05 11:27:33 -0500
+    found: true
