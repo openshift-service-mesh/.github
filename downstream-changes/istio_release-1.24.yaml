@@ -53,7 +53,7 @@ commits:
     isPermanent: true
     comment: This commit allows RH product docs to link to a quay.io image instead of docker.io when deploying samples.
   - sha: 8b9d7722e7fa1fe2c201393c6f97b9d05a7543c3
-    title: Update some examples to use quay.io/sail-dev instead of docker
+    title: Update some examples to use quay.io/sail-dev instead of docker (#313)
     author: Nick Fox
     date: 2025-03-10 15:32:01 -0400
     isPermanent: true
@@ -190,6 +190,7 @@ commits:
     author: OpenShift Cherrypick Robot
     date: 2026-03-03 15:06:13 +0100
     found: true
+    isPermanent: true
   - sha: 3df41f55733e7b1b8045cbbb7450b56a5f76ffb6
     title: '[release-1.24] Automator: Update proxy (#600)'
     author: openshift-service-mesh-bot
@@ -200,3 +201,4 @@ commits:
     author: OpenShift Cherrypick Robot
     date: 2026-03-04 06:19:18 +0100
     found: true
+    isPermanent: true
