@@ -49,11 +49,13 @@ commits:
     author: Filip Brychta
     date: 2025-09-05 09:08:24 +0200
     found: true
+    isPermanent: true
   - sha: c824bd6ef0d6893ec5e9938bbf1466b50b29bb62
     title: '[release-1.27] Fix ca root cert configmap update in gateway ca controller (#560)'
     author: Filip Brychta
     date: 2025-09-04 08:12:10 +0200
     found: true
+    isPermanent: true
   - sha: 687e12de8bc355677748a4dacb3c4b11938c89dd
     title: '[release-1.27] Enable CA Bundle injection in only Gateway Namespaces (#335)'
     author: Aslak Knutsen
@@ -74,6 +76,7 @@ commits:
     author: ctartici
     date: 2025-07-09 17:10:16 +0200
     found: true
+    isPermanent: true
   - sha: cbb90c03987b81780835ecbae818e65a2499b312
     title: 'tests: revert patching TestGatewayConformance (#421)'
     author: Jacek Ewertowski
@@ -84,11 +87,13 @@ commits:
     author: ctartici
     date: 2025-08-04 11:04:31 +0200
     found: true
+    isPermanent: true
   - sha: d9eb753067e913060b373bb911465f6ab7f3b304
     title: Added mechanism to skip test suites (#560)
     author: ctartici
     date: 2025-08-01 12:27:18 +0200
     found: true
+    isPermanent: true
   - sha: ecd80315f05d967dcafbb74c518e29c5bae48cab
     title: Modify Prow Sail Operator script cleanup step (#457)
     author: Maxim Babushkin
@@ -99,6 +104,7 @@ commits:
     author: ctartici
     date: 2025-07-24 17:54:22 +0200
     found: true
+    isPermanent: true
   - sha: 1d75180a9f79adec70db4dfd6a19f6bad9ea9428
     title: Add Ambient flow to Sail Operator Control Plane deploy integ tests (#436)
     author: Maxim Babushkin
@@ -114,11 +120,13 @@ commits:
     author: ctartici
     date: 2025-06-12 20:41:41 +0200
     found: true
+    isPermanent: true
   - sha: e7ad1c87bbe61d9ca7577319d3eddf50d3ce009b
     title: Update bookinfo image version (#560)
     author: Maxim Babushkin
     date: 2025-04-20 09:48:40 +0300
     found: true
+    isPermanent: true
   - sha: 327f94f2673b18bebc3d58350924ed855f6c6bef
     title: Add ambient test flow (#390)
     author: Maxim Babushkin
@@ -129,21 +137,25 @@ commits:
     author: ctartici
     date: 2025-05-06 10:46:07 +0200
     found: true
+    isPermanent: true
   - sha: 4acac21f1c211908419e76d60059f13ba908de2e
     title: change timeout value 2h if test is running on sail-operator (#560)
     author: ctartici
     date: 2025-05-05 20:18:37 +0200
     found: true
+    isPermanent: true
   - sha: 80e889981951ab61fa74b22f1fbb5fbfa233ea6d
     title: fix for release directory structure to patch config (#560)
     author: ctartici
     date: 2025-05-05 13:54:29 +0200
     found: true
+    isPermanent: true
   - sha: ea8ae190dc02c3106a282a0183f0a6e994c2e21d
     title: small fix to get latest istio version (#560)
     author: ctartici
     date: 2025-04-30 13:32:41 +0200
     found: true
+    isPermanent: true
   - sha: 73a6ba23c526dfed3295128a3854a538a388ee1e
     title: Add copyright banner (#359)
     author: Brian Mangoenpawiro
@@ -159,6 +171,7 @@ commits:
     author: ctartici
     date: 2025-04-14 18:11:31 +0200
     found: true
+    isPermanent: true
   - sha: 84ba892c74bb29eca78876301aa3198f89b872dc
     title: Modifications to Run integration Tests With Sail Operator (#300)
     author: Cansin Tartici
@@ -179,6 +192,7 @@ commits:
     author: Nick Fox
     date: 2025-03-10 15:32:01 -0400
     found: true
+    isPermanent: true
   - sha: 9fca120828fe5ec8795e18d85e100a98de04eda8
     title: Adding SKIP_SETUP SKIP_TEST_RUN and DEPLOY_METALLB to ocp test run script (#279)
     author: Francisco Herrera
@@ -189,6 +203,7 @@ commits:
     author: bmangoen
     date: 2025-01-24 10:10:12 +0100
     found: true
+    isPermanent: true
   - sha: b2f0b996a22cb03851d86e0e4ab7214b91cec6a5
     title: Set unsupported istioctl commands (#210)
     author: Brian Mangoenpawiro
@@ -244,6 +259,7 @@ commits:
     author: Matej Kralik
     date: 2026-02-16 17:29:52 +0100
     found: true
+    isPermanent: true
   - sha: bb9eb1df4964023b326e541b8ce15d6628b549fb
     title: Missing backports in release-1.28 (#576)
     author: Matej Kralik
@@ -264,6 +280,7 @@ commits:
     author: Zuzana Miklánková
     date: 2026-02-23 13:56:24 +0100
     found: true
+    isPermanent: true
   - sha: 4783cbe9805c0510c7122b924e2a50402cbde83b
     title: Adapt TestInferencePoolMultipleTargetPorts test to Openshift (#58448)
     author: Maxim Babushkin
