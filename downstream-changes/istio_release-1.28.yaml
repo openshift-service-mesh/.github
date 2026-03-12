@@ -375,3 +375,9 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-05 11:27:33 -0500
     found: true
+  - sha: 7da3a391b5a5a30164858e082694d6e36c8e3ab9
+    title: 'tests: customize app image in PQC tests (#639)'
+    author: Jacek Ewertowski
+    date: 2026-03-11 17:25:51 +0100
+    found: true
+    isPermanent: true

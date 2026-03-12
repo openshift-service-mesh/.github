@@ -399,3 +399,9 @@ commits:
     date: 2026-03-05 10:04:40 +0200
     found: true
     isPermanent: true
+  - sha: c8758e8adaeabc2ddd27e4e97adc89440a7f5e59
+    title: 'Fix: Merge Extra field during VirtualService merge for multiple Infer… (#58393) (#650)'
+    author: Aslak Knutsen
+    date: 2026-03-11 18:43:41 +0100
+    found: true
+    isPermanent: true
