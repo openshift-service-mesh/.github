@@ -312,3 +312,15 @@ commits:
     date: 2026-03-03 15:23:59 +0200
     found: true
     isPermanent: true
+  - sha: 031f33b4c2d0bb7430ade274f3e916f5e24f955d
+    title: 'Ambient/pqc: Correct workdir name (#664)'
+    author: Matej Kralik
+    date: 2026-03-13 17:04:20 +0100
+    found: true
+    isPermanent: true
+  - sha: 2f1109586e7eefb67bb225a92784c3effc6d7b97
+    title: Fix sail operator setup for ambient pqc (#652)
+    author: Matej Kralik
+    date: 2026-03-13 09:02:40 +0100
+    found: true
+    isPermanent: true

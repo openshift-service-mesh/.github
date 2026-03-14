@@ -386,3 +386,21 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-12 11:11:58 -0400
     found: true
+  - sha: db3ef7e4bfee13de3d81123c97c7245ec13c9f08
+    title: 'tests: use FIPS-compliant keys and certs in integration tests (#658)'
+    author: Daniel Grimm
+    date: 2026-03-14 01:26:08 +0100
+    found: true
+    isPermanent: true
+  - sha: 5fa407c6752215418b384fb846fef6f5ec1038f8
+    title: 'Ambient/pqc: Correct workdir name (#665)'
+    author: Matej Kralik
+    date: 2026-03-13 20:33:20 +0100
+    found: true
+    isPermanent: true
+  - sha: 1e2b94637dd14f3155d4f905ec46356ad354a91c
+    title: Fix sail operator setup for ambient pqc (#663)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-13 11:12:18 +0100
+    found: true
+    isPermanent: true
