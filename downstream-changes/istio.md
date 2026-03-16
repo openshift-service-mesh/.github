@@ -98,6 +98,7 @@
 | [6ca1d2c1](https://github.com/openshift-service-mesh/istio/commit/6ca1d2c1f5512ac0c1fac0e137c28e27e3799ac9) | Add PR label check Github Action ([#625](https://github.com/openshift-service-mesh/istio/issues/625)) |  | :white_check_mark: |  | 2026-03-03 15:06:13 +0100 | OpenShift Cherrypick Robot |
 | [3df41f55](https://github.com/openshift-service-mesh/istio/commit/3df41f55733e7b1b8045cbbb7450b56a5f76ffb6) | [release-1.24] Automator: Update proxy ([#600](https://github.com/openshift-service-mesh/istio/issues/600)) |  | :x: |  | 2026-03-04 03:16:00 -0500 | openshift-service-mesh-bot |
 | [36c948e4](https://github.com/openshift-service-mesh/istio/commit/36c948e4bb439743da865fed6641e54ac9bb6b39) | "Update ""PR label check"" GH workflow ([#633](https://github.com/openshift-service-mesh/istio/issues/633))" |  | :white_check_mark: |  | 2026-03-04 06:19:18 +0100 | OpenShift Cherrypick Robot |
+| [4f39d095](https://github.com/openshift-service-mesh/istio/commit/4f39d095dbb94aec243adc15d8039043d5b058d6) | [release-1.24] Automator: Update proxy ([#666](https://github.com/openshift-service-mesh/istio/issues/666)) |  | :x: |  | 2026-03-15 10:42:07 -0400 | openshift-service-mesh-bot |
 ## release-1.26 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -176,6 +177,7 @@
 | [ed9d8860](https://github.com/openshift-service-mesh/istio/commit/ed9d8860ff91c5842dc66f880db6cf13a5f5b331) | [release-1.26] Automator: Update proxy ([#614](https://github.com/openshift-service-mesh/istio/issues/614)) |  | :x: |  | 2026-03-04 05:06:28 -0500 | openshift-service-mesh-bot |
 | [a4bfa809](https://github.com/openshift-service-mesh/istio/commit/a4bfa8097e3ba6005b65154dc000dad91ac8c832) | "Update ""PR label check"" GH workflow ([#632](https://github.com/openshift-service-mesh/istio/issues/632))" |  | :white_check_mark: |  | 2026-03-04 06:24:57 +0100 | OpenShift Cherrypick Robot |
 | [ed83698f](https://github.com/openshift-service-mesh/istio/commit/ed83698ff4ee1eca6aa545f95c2cb4c2abc2a8bd) | Fix: Merge Extra field during VirtualService merge for multiple Infer… ([#58393](https://github.com/openshift-service-mesh/istio/issues/58393)) ([#59303](https://github.com/openshift-service-mesh/istio/issues/59303)) ([#645](https://github.com/openshift-service-mesh/istio/issues/645)) |  | :white_check_mark: |  | 2026-03-11 15:37:10 +0100 | Aslak Knutsen |
+| [24674dbc](https://github.com/openshift-service-mesh/istio/commit/24674dbc372d1c1eff6f4dbafcee0f6d01a4dd59) | [release-1.26] Automator: Update proxy ([#661](https://github.com/openshift-service-mesh/istio/issues/661)) |  | :x: |  | 2026-03-15 10:42:06 -0400 | openshift-service-mesh-bot |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -261,6 +263,7 @@
 | [4aee98e1](https://github.com/openshift-service-mesh/istio/commit/4aee98e195c1af3f5e9385c637050db22d8c41d8) | add release note for xds debug namespace auth fix ([#656](https://github.com/openshift-service-mesh/istio/issues/656)) |  | :white_check_mark: |  | 2026-03-06 09:43:03 -0800 | Petr McAllister |
 | [a91ea332](https://github.com/openshift-service-mesh/istio/commit/a91ea3324849e1354d248d7070d3ea1a94af2094) | Security fixes for 1.27 (cherry-pick from 1.29) ([#154](https://github.com/openshift-service-mesh/istio/issues/154)) |  | :x: |  | 2026-03-05 17:01:17 -0800 | Petr McAllister |
 | [b750c8a1](https://github.com/openshift-service-mesh/istio/commit/b750c8a19a3e2b92269052ac0b3df01f5b2949dd) | Bump PROXY_REPO_SHA for 1.27.8 security release ([#656](https://github.com/openshift-service-mesh/istio/issues/656)) |  | :white_check_mark: |  | 2026-03-04 13:56:56 -0800 | Petr McAllister |
+| [11e149db](https://github.com/openshift-service-mesh/istio/commit/11e149dba4b2642859bb91e0a7f7301b2dcb3380) | [release-1.27] Automator: Update proxy ([#662](https://github.com/openshift-service-mesh/istio/issues/662)) |  | :x: |  | 2026-03-15 14:35:51 -0400 | openshift-service-mesh-bot |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -339,3 +342,6 @@
 | [db3ef7e4](https://github.com/openshift-service-mesh/istio/commit/db3ef7e4bfee13de3d81123c97c7245ec13c9f08) | tests: use FIPS-compliant keys and certs in integration tests ([#658](https://github.com/openshift-service-mesh/istio/issues/658)) |  | :white_check_mark: |  | 2026-03-14 01:26:08 +0100 | Daniel Grimm |
 | [5fa407c6](https://github.com/openshift-service-mesh/istio/commit/5fa407c6752215418b384fb846fef6f5ec1038f8) | Ambient/pqc: Correct workdir name ([#665](https://github.com/openshift-service-mesh/istio/issues/665)) |  | :white_check_mark: |  | 2026-03-13 20:33:20 +0100 | Matej Kralik |
 | [1e2b9463](https://github.com/openshift-service-mesh/istio/commit/1e2b94637dd14f3155d4f905ec46356ad354a91c) | Fix sail operator setup for ambient pqc ([#663](https://github.com/openshift-service-mesh/istio/issues/663)) |  | :white_check_mark: |  | 2026-03-13 11:12:18 +0100 | OpenShift Cherrypick Robot |
+| [7da66621](https://github.com/openshift-service-mesh/istio/commit/7da6662175184479cb9281f3d814d6994bf1009f) | add release note for xds debug namespace auth fix ([#657](https://github.com/openshift-service-mesh/istio/issues/657)) |  | :white_check_mark: |  | 2026-03-06 09:42:29 -0800 | Petr McAllister |
+| [670168e6](https://github.com/openshift-service-mesh/istio/commit/670168e65c307ed43b4ad33142a18b28aeac241d) | Security fixes for 1.28 (cherry-pick from 1.29) ([#153](https://github.com/openshift-service-mesh/istio/issues/153)) |  | :x: |  | 2026-03-05 21:39:50 -0800 | Petr McAllister |
+| [680c2e4a](https://github.com/openshift-service-mesh/istio/commit/680c2e4a13f05fc89c44c7d3de1d559d57980609) | Bump PROXY_REPO_SHA for 1.28.5 security release ([#657](https://github.com/openshift-service-mesh/istio/issues/657)) |  | :white_check_mark: |  | 2026-03-04 13:56:40 -0800 | Petr McAllister |
