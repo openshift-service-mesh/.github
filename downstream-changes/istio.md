@@ -264,6 +264,7 @@
 | [a91ea332](https://github.com/openshift-service-mesh/istio/commit/a91ea3324849e1354d248d7070d3ea1a94af2094) | Security fixes for 1.27 (cherry-pick from 1.29) ([#154](https://github.com/openshift-service-mesh/istio/issues/154)) |  | :x: |  | 2026-03-05 17:01:17 -0800 | Petr McAllister |
 | [b750c8a1](https://github.com/openshift-service-mesh/istio/commit/b750c8a19a3e2b92269052ac0b3df01f5b2949dd) | Bump PROXY_REPO_SHA for 1.27.8 security release ([#656](https://github.com/openshift-service-mesh/istio/issues/656)) |  | :white_check_mark: |  | 2026-03-04 13:56:56 -0800 | Petr McAllister |
 | [11e149db](https://github.com/openshift-service-mesh/istio/commit/11e149dba4b2642859bb91e0a7f7301b2dcb3380) | [release-1.27] Automator: Update proxy ([#662](https://github.com/openshift-service-mesh/istio/issues/662)) |  | :x: |  | 2026-03-15 14:35:51 -0400 | openshift-service-mesh-bot |
+| [05659db4](https://github.com/openshift-service-mesh/istio/commit/05659db4d2c3082fe25be2712780475d56cc782c) | [release-1.27] Automator: Update ztunnel ([#660](https://github.com/openshift-service-mesh/istio/issues/660)) |  | :x: |  | 2026-03-16 09:49:50 -0400 | openshift-service-mesh-bot |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -345,3 +346,4 @@
 | [7da66621](https://github.com/openshift-service-mesh/istio/commit/7da6662175184479cb9281f3d814d6994bf1009f) | add release note for xds debug namespace auth fix ([#657](https://github.com/openshift-service-mesh/istio/issues/657)) |  | :white_check_mark: |  | 2026-03-06 09:42:29 -0800 | Petr McAllister |
 | [670168e6](https://github.com/openshift-service-mesh/istio/commit/670168e65c307ed43b4ad33142a18b28aeac241d) | Security fixes for 1.28 (cherry-pick from 1.29) ([#153](https://github.com/openshift-service-mesh/istio/issues/153)) |  | :x: |  | 2026-03-05 21:39:50 -0800 | Petr McAllister |
 | [680c2e4a](https://github.com/openshift-service-mesh/istio/commit/680c2e4a13f05fc89c44c7d3de1d559d57980609) | Bump PROXY_REPO_SHA for 1.28.5 security release ([#657](https://github.com/openshift-service-mesh/istio/issues/657)) |  | :white_check_mark: |  | 2026-03-04 13:56:40 -0800 | Petr McAllister |
+| [28b971b8](https://github.com/openshift-service-mesh/istio/commit/28b971b8ad28a04f0f93983d19c556b573c29894) | tests: use check.OK function to log errors if occur ([#675](https://github.com/openshift-service-mesh/istio/issues/675)) |  | :white_check_mark: |  | 2026-03-16 20:18:06 +0100 | Jacek Ewertowski |
