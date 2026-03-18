@@ -324,3 +324,9 @@ commits:
     date: 2026-03-13 09:02:40 +0100
     found: true
     isPermanent: true
+  - sha: 35ba3e286950a80ef3841051308739fc370bbae1
+    title: Removing dependabot.yml (#684)
+    author: Filip Brychta
+    date: 2026-03-17 12:50:32 +0100
+    found: true
+    isPermanent: true

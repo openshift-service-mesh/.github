@@ -207,3 +207,9 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-15 10:42:07 -0400
     found: true
+  - sha: 41c8fd4691d2f48a7258eb311325f6e4f5a3c05f
+    title: '[release-1.24] Security fixes for 1.24 (from istio/istio pr #59372) (#679)'
+    author: Yuanlin Xu
+    date: 2026-03-17 03:14:07 -0400
+    found: true
+    isPermanent: true
