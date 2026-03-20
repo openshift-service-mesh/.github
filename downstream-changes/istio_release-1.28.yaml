@@ -432,3 +432,9 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-17 03:16:52 -0400
     found: true
+  - sha: abdbf45d7ccaca4b2fc0f2dc301b409674755a58
+    title: 'fix: increase xDS keepalive to 2m (#685)'
+    author: Daniel Grimm
+    date: 2026-03-19 13:33:29 +0100
+    found: true
+    isPermanent: true
