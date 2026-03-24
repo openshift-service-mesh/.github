@@ -24,7 +24,12 @@ Compares upstream and midstream repositories to identify commits that exist only
 Automatically discovers which Pull Request each commit came from using GitHub's API.
 
 ### 3. Classify Changes by Labels
-Reads PR labels to determine if changes are permanent (intended to stay midstream) or temporary (should eventually go upstream).
+Reads PR labels to classify changes into three mutually exclusive categories:
+- **permanent-change**: Downstream-only commits that should be cherry-picked to all new release branches
+- **no-permanent-change**: Downstream-only commits that should NOT be cherry-picked to new release branches
+- **pending-upstream-sync**: Commits that were merged to upstream and backported, but not yet synced downstream. These are manually cherry-picked to existing branches. For new release branches, the cherry-pick automation checks if the commit already exists (synced from upstream) and excludes it if found.
+
+**Note**: The `update.sh` script only tracks these labels in the YAML files. The actual upstream checking and label removal happens in separate cherry-pick automation.
 
 ### 4. Generate Documentation
 Creates a markdown report with tables showing all midstream changes, their status, and relevant metadata.
@@ -45,6 +50,13 @@ SKIP_PR_LABELS=1              # Skip PR label processing
 UPSTREAM_CLONE_URL="https://github.com/istio/istio.git"                    # Upstream repository URL
 MIDSTREAM_CLONE_URL="https://github.com/openshift-service-mesh/istio.git"  # midstream repository URL
 BRANCHES="master release-1.24 release-1.26 release-1.27 release-1.28"      # Branches to analyze
+```
+
+### Label Configuration
+```bash
+LABEL_PERMANENT="permanent-change"              # Label for commits that should be cherry-picked to all new releases
+LABEL_NON_PERMANENT="no-permanent-change"       # Label for commits that should NOT be cherry-picked
+LABEL_PENDING_UPSTREAM="pending-upstream-sync"  # Label for commits awaiting upstream synchronization
 ```
 
 ## Usage
@@ -86,7 +98,10 @@ commits:
     author: "Developer Name"
     date: "2024-03-08 10:30:00 +0000"
     found: true
-    isPermanent: true
+    isPermanent: true                # Set when PR has "permanent-change" label
+    isPendingUpstreamSync: true      # Set when PR has "pending-upstream-sync" label
     upstreamPR: "456"
     comment: "This change is specific to OpenShift"
 ```
+
+**Note**: Each commit should have only ONE classification field set (`isPermanent` or `isPendingUpstreamSync`). These correspond to mutually exclusive PR labels.

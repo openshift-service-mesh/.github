@@ -23,6 +23,7 @@ GRAPHQL_REPO_OWNER=${GRAPHQL_REPO_OWNER:-"openshift-service-mesh"}
 GRAPHQL_REPO_NAME=${GRAPHQL_REPO_NAME:-"istio"}
 LABEL_PERMANENT=${LABEL_PERMANENT:-"permanent-change"}
 LABEL_NON_PERMANENT=${LABEL_NON_PERMANENT:-"no-permanent-change"}
+LABEL_PENDING_UPSTREAM=${LABEL_PENDING_UPSTREAM:-"pending-upstream-sync"}
 GRAPHQL_LABELS_LIMIT=${GRAPHQL_LABELS_LIMIT:-20}
 
 function updateGit() {
@@ -64,14 +65,19 @@ function renderMarkdownTableFromYAML() {
 
   readarray commits < <(yq e -o=j -I=0 '.commits | to_entries' ${yaml_file} )
 
-  echo "| Commit SHA | Title | Upstream PR | Permanent | Comment | Date | Author |"
-  echo "| --- | --- | --- | --- | --- | --- |--- |"
-  commit_data=$(yq e '.commits[] | [.sha, .title, (.upstreamPR // "null"), (.isPermanent // "false"), (.comment // "null"), .date, .author] | @tsv' ${yaml_file})
-  while IFS=$'\t' read -r sha title upstreamPR isPermanent comment date author _; do
+  echo "| Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |"
+  echo "| --- | --- | --- | --- | --- | --- | --- |--- |"
+  commit_data=$(yq e '.commits[] | [.sha, .title, (.upstreamPR // "null"), (.isPendingUpstreamSync // "null"), (.isPermanent // "false"), (.comment // "null"), .date, .author] | @tsv' ${yaml_file})
+  while IFS=$'\t' read -r sha title upstreamPR isPendingUpstreamSync isPermanent comment date author _; do
     if [[ "${isPermanent}" == "true" ]]; then
       isPermanent=":white_check_mark:"
-    else 
+    else
       isPermanent=":x:"
+    fi
+    if [[ "${isPendingUpstreamSync}" == "true" ]]; then
+      isPendingUpstreamSync=":hourglass_flowing_sand:"
+    else
+      isPendingUpstreamSync=""
     fi
     if [[ "${comment}" == "null" ]]; then
       comment=""
@@ -79,7 +85,7 @@ function renderMarkdownTableFromYAML() {
     if [[ "${upstreamPR}" == "null" ]]; then
       upstreamPR=""
     fi
-    echo "| [${sha:0:8}](${COMMIT_BASE_URL}${sha}) | `renderTitle "${title}"` | ${upstreamPR} | ${isPermanent} | `renderComment "${comment}"` | ${date} | ${author} |"
+    echo "| [${sha:0:8}](${COMMIT_BASE_URL}${sha}) | `renderTitle "${title}"` | ${upstreamPR} | ${isPendingUpstreamSync} | ${isPermanent} | `renderComment "${comment}"` | ${date} | ${author} |"
   done < <(echo "${commit_data}")
 }
 
@@ -316,8 +322,11 @@ function processPRData() {
         elif echo "${labels}" | grep -q "${LABEL_NON_PERMANENT}"; then
           updates+=("(.commits[] | select(.sha == \"${sha}\") | .isPermanent) = false")
           echo "  Setting isPermanent=false for commit ${sha:0:8} (PR #${pr_number}) - found '${LABEL_NON_PERMANENT}' label"
+        elif echo "${labels}" | grep -q "${LABEL_PENDING_UPSTREAM}"; then
+          updates+=("(.commits[] | select(.sha == \"${sha}\") | .isPendingUpstreamSync) = true")
+          echo "  Setting isPendingUpstreamSync=true for commit ${sha:0:8} (PR #${pr_number}) - found '${LABEL_PENDING_UPSTREAM}' label"
         else
-          echo "  No relevant labels found for commit ${sha:0:8} (PR #${pr_number}) - expected '${LABEL_PERMANENT}' or '${LABEL_NON_PERMANENT}'"
+          echo "  No relevant labels found for commit ${sha:0:8} (PR #${pr_number}) - expected one of: '${LABEL_PERMANENT}', '${LABEL_NON_PERMANENT}', or '${LABEL_PENDING_UPSTREAM}'"
         fi
       fi
     done
