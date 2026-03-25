@@ -432,3 +432,9 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-16 09:49:50 -0400
     found: true
+  - sha: aa9c1669620c4009f87f216121c0a01271e6aa73
+    title: 'fix: resources improperly being set when trying to remove resource values (#58824) (#691)'
+    author: Maxim Babushkin
+    date: 2026-03-24 15:07:31 +0200
+    found: true
+    isPermanent: true

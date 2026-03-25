@@ -438,3 +438,9 @@ commits:
     date: 2026-03-19 13:33:29 +0100
     found: true
     isPermanent: true
+  - sha: b174927e9716ea459c326eeb71f6e147df6746c7
+    title: 'fix: resources improperly being set when trying to remove resource values (#58824) (#689)'
+    author: Maxim Babushkin
+    date: 2026-03-24 15:15:37 +0200
+    found: true
+    isPermanent: true
