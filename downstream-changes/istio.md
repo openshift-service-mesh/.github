@@ -269,6 +269,7 @@
 | [11e149db](https://github.com/openshift-service-mesh/istio/commit/11e149dba4b2642859bb91e0a7f7301b2dcb3380) | [release-1.27] Automator: Update proxy ([#662](https://github.com/openshift-service-mesh/istio/issues/662)) |  |  | :x: |  | 2026-03-15 14:35:51 -0400 | openshift-service-mesh-bot |
 | [05659db4](https://github.com/openshift-service-mesh/istio/commit/05659db4d2c3082fe25be2712780475d56cc782c) | [release-1.27] Automator: Update ztunnel ([#660](https://github.com/openshift-service-mesh/istio/issues/660)) |  |  | :x: |  | 2026-03-16 09:49:50 -0400 | openshift-service-mesh-bot |
 | [aa9c1669](https://github.com/openshift-service-mesh/istio/commit/aa9c1669620c4009f87f216121c0a01271e6aa73) | fix: resources improperly being set when trying to remove resource values ([#58824](https://github.com/openshift-service-mesh/istio/issues/58824)) ([#691](https://github.com/openshift-service-mesh/istio/issues/691)) |  |  | :white_check_mark: |  | 2026-03-24 15:07:31 +0200 | Maxim Babushkin |
+| [e56da608](https://github.com/openshift-service-mesh/istio/commit/e56da6087a1f7aa0ec2a83270556e95a5859f5c2) | [release-1.27] Automator: Update proxy ([#697](https://github.com/openshift-service-mesh/istio/issues/697)) |  |  | :x: |  | 2026-03-29 08:39:15 -0400 | openshift-service-mesh-bot |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
