@@ -13,6 +13,8 @@ The `downstream-changes/update.sh` script automatically:
 
 This helps the OpenShift Service Mesh team track which changes are intentionally divergent from upstream and which are temporary patches awaiting upstream contribution.
 
+**View the generated report**: See [`downstream-changes/istio.md`](downstream-changes/istio.md) for the complete auto-generated documentation of all midstream changes across all tracked branches.
+
 ## Workflow
 
 The script follows these main steps:
@@ -25,11 +27,26 @@ Automatically discovers which Pull Request each commit came from using GitHub's 
 
 ### 3. Classify Changes by Labels
 Reads PR labels to classify changes into three mutually exclusive categories:
-- **permanent-change**: Downstream-only commits that should be cherry-picked to all new release branches
-- **no-permanent-change**: Downstream-only commits that should NOT be cherry-picked to new release branches
-- **pending-upstream-sync**: Commits that were merged to upstream and backported, but not yet synced downstream. These are manually cherry-picked to existing branches. For new release branches, the cherry-pick automation checks if the commit already exists (synced from upstream) and excludes it if found.
 
-**Note**: The `update.sh` script only tracks these labels in the YAML files. The actual upstream checking and label removal happens in separate cherry-pick automation.
+- **permanent-change**: Use for OSSM-specific changes that:
+  - Are added directly to this repository (not synced from upstream)
+  - Should be cherry-picked to all new release branches
+  - Include OpenShift-specific features and customizations
+  - Will remain permanently in the OSSM codebase
+
+- **no-permanent-change**: Use for temporary changes that:
+  - Will be removed from the repository in the future
+  - Should NOT be cherry-picked to release branches
+  - Are experimental or short-term modifications
+  - Will be replaced by upstream synchronization
+
+- **pending-upstream-sync**: Use for changes that:
+  - Were merged to upstream and backported to existing downstream branches
+  - Are manually cherry-picked to existing branches in the interim
+  - For new release branches: cherry-pick automation checks if the commit already exists (synced from upstream) and excludes it if found
+  - Will eventually come from upstream in new release branches
+
+**Note**: These labels are mutually exclusive. Each PR must have exactly one of these labels. The `update.sh` script tracks these labels in the YAML files. The actual upstream checking and label removal happens in separate cherry-pick automation.
 
 ### 4. Generate Documentation
 Creates a markdown report with tables showing all midstream changes, their status, and relevant metadata.
@@ -84,7 +101,7 @@ SKIP_PR_DISCOVERY=1 make gen
 
 ## Output
 
-The script generates several files:
+The script generates several files. The main report ([`istio.md`](downstream-changes/istio.md), linked at the top) provides a human-readable view, while the YAML files contain the structured data:
 
 - `istio.md` - Main markdown report with tables for each branch
 - `istio_master.yaml` - YAML data for master branch commits
