@@ -248,6 +248,7 @@ commits:
     author: Jonh Wendell
     date: 2025-01-15 12:56:16 -0500
     found: true
+    isPermanent: true
   - sha: a478318548b0968c4d01b0a8fa4c234eeef9f369
     title: '[release-1.27] Automator: Update proxy (#509)'
     author: openshift-service-mesh-bot
@@ -308,11 +309,13 @@ commits:
     author: OpenShift Cherrypick Robot
     date: 2026-01-09 09:18:15 +0100
     found: true
+    isPermanent: true
   - sha: ab794a9a5f9ba5c3f5f15c4a629b0d19e5c4d466
     title: Prevent silent exit in OpenShift CI (#551)
     author: OpenShift Cherrypick Robot
     date: 2026-01-13 14:54:57 +0100
     found: true
+    isPermanent: true
   - sha: 940bd62cb22d463134cf680ebe6abd9ac7876c52
     title: '[release-1.27] Automator: Update proxy (#540)'
     author: openshift-service-mesh-bot

@@ -9,6 +9,7 @@ commits:
     author: Jonh Wendell
     date: 2025-01-15 12:56:16 -0500
     found: true
+    isPermanent: true
   - sha: 8c3a6343d63a50641a1c01a56c46061fc727e58d
     title: '[release-1.26] Add flag to be compliant with attribute handling behavior in the specification (#341)'
     author: Yann Liu
