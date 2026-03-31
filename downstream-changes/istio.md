@@ -61,6 +61,7 @@
 | [031f33b4](https://github.com/openshift-service-mesh/istio/commit/031f33b4c2d0bb7430ade274f3e916f5e24f955d) | Ambient/pqc: Correct workdir name ([#664](https://github.com/openshift-service-mesh/istio/issues/664)) |  |  | :white_check_mark: |  | 2026-03-13 17:04:20 +0100 | Matej Kralik |
 | [2f110958](https://github.com/openshift-service-mesh/istio/commit/2f1109586e7eefb67bb225a92784c3effc6d7b97) | Fix sail operator setup for ambient pqc ([#652](https://github.com/openshift-service-mesh/istio/issues/652)) |  |  | :white_check_mark: |  | 2026-03-13 09:02:40 +0100 | Matej Kralik |
 | [35ba3e28](https://github.com/openshift-service-mesh/istio/commit/35ba3e286950a80ef3841051308739fc370bbae1) | Removing dependabot.yml ([#684](https://github.com/openshift-service-mesh/istio/issues/684)) |  |  | :white_check_mark: |  | 2026-03-17 12:50:32 +0100 | Filip Brychta |
+| [a09fd614](https://github.com/openshift-service-mesh/istio/commit/a09fd614ce0325b02ff699420dddf859d140dfc2) | "Modify ""pr-label-check"" GH workflow ([#695](https://github.com/openshift-service-mesh/istio/issues/695))" |  |  | :white_check_mark: |  | 2026-03-30 19:05:43 +0300 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

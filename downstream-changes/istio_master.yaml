@@ -330,3 +330,9 @@ commits:
     date: 2026-03-17 12:50:32 +0100
     found: true
     isPermanent: true
+  - sha: a09fd614ce0325b02ff699420dddf859d140dfc2
+    title: Modify "pr-label-check" GH workflow (#695)
+    author: Maxim Babushkin
+    date: 2026-03-30 19:05:43 +0300
+    found: true
+    isPermanent: true
