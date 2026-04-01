@@ -446,3 +446,9 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-29 08:39:15 -0400
     found: true
+  - sha: 89e95d96e773e2ced0fc86eba50d8cf454adf3d7
+    title: Fix pilot/gatewayinstance subsuite when sail operator is used (#706)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-31 23:16:49 +0200
+    found: true
+    isPermanent: true
