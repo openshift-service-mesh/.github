@@ -390,3 +390,9 @@ commits:
     date: 2026-03-17 03:08:37 -0400
     found: true
     isPermanent: true
+  - sha: bcaf99b9ded6735e558b820ae40cdbbda0f6fe31
+    title: '[release-1.26] [OSSM-12848] Fix pilot/gatewayinstance subsuite when sail operator is used#706 (#707)'
+    author: Matej Kralik
+    date: 2026-04-01 09:51:26 +0200
+    found: true
+    isPermanent: true

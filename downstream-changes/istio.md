@@ -62,6 +62,7 @@
 | [2f110958](https://github.com/openshift-service-mesh/istio/commit/2f1109586e7eefb67bb225a92784c3effc6d7b97) | Fix sail operator setup for ambient pqc ([#652](https://github.com/openshift-service-mesh/istio/issues/652)) |  |  | :white_check_mark: |  | 2026-03-13 09:02:40 +0100 | Matej Kralik |
 | [35ba3e28](https://github.com/openshift-service-mesh/istio/commit/35ba3e286950a80ef3841051308739fc370bbae1) | Removing dependabot.yml ([#684](https://github.com/openshift-service-mesh/istio/issues/684)) |  |  | :white_check_mark: |  | 2026-03-17 12:50:32 +0100 | Filip Brychta |
 | [a09fd614](https://github.com/openshift-service-mesh/istio/commit/a09fd614ce0325b02ff699420dddf859d140dfc2) | "Modify ""pr-label-check"" GH workflow ([#695](https://github.com/openshift-service-mesh/istio/issues/695))" |  |  | :white_check_mark: |  | 2026-03-30 19:05:43 +0300 | Maxim Babushkin |
+| [3ed98e76](https://github.com/openshift-service-mesh/istio/commit/3ed98e766294f0781ce8f6cd55f4bd3928c76ff4) | Adapt test suite on OSSM 3.3+ proxy key validation on FIPS ([#699](https://github.com/openshift-service-mesh/istio/issues/699)) |  |  | :white_check_mark: |  | 2026-04-01 15:35:17 +0200 | Matej Kralik |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -182,6 +183,7 @@
 | [ed83698f](https://github.com/openshift-service-mesh/istio/commit/ed83698ff4ee1eca6aa545f95c2cb4c2abc2a8bd) | Fix: Merge Extra field during VirtualService merge for multiple Infer… ([#58393](https://github.com/openshift-service-mesh/istio/issues/58393)) ([#59303](https://github.com/openshift-service-mesh/istio/issues/59303)) ([#645](https://github.com/openshift-service-mesh/istio/issues/645)) |  |  | :white_check_mark: |  | 2026-03-11 15:37:10 +0100 | Aslak Knutsen |
 | [24674dbc](https://github.com/openshift-service-mesh/istio/commit/24674dbc372d1c1eff6f4dbafcee0f6d01a4dd59) | [release-1.26] Automator: Update proxy ([#661](https://github.com/openshift-service-mesh/istio/issues/661)) |  |  | :x: |  | 2026-03-15 10:42:06 -0400 | openshift-service-mesh-bot |
 | [ecdf6fc3](https://github.com/openshift-service-mesh/istio/commit/ecdf6fc30f778bcb374ab168b850800125b4c649) | [release-1.26] Security fixes for 1.26 (from istio/istio pr [#59372](https://github.com/openshift-service-mesh/istio/issues/59372)) ([#678](https://github.com/openshift-service-mesh/istio/issues/678)) |  |  | :white_check_mark: |  | 2026-03-17 03:08:37 -0400 | Yuanlin Xu |
+| [bcaf99b9](https://github.com/openshift-service-mesh/istio/commit/bcaf99b9ded6735e558b820ae40cdbbda0f6fe31) | [release-1.26] [[OSSM-12848](https://issues.redhat.com/browse/OSSM-12848)] Fix pilot/gatewayinstance subsuite when sail operator is used[#706](https://github.com/openshift-service-mesh/istio/issues/706) ([#707](https://github.com/openshift-service-mesh/istio/issues/707)) |  |  | :white_check_mark: |  | 2026-04-01 09:51:26 +0200 | Matej Kralik |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
