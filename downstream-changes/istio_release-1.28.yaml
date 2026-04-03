@@ -463,3 +463,9 @@ commits:
     date: 2026-03-31 16:14:03 +0200
     found: true
     isPermanent: true
+  - sha: ecf26593219d125c48145dfd75981f381bed928d
+    title: '[release-1.28] Adapt test suite on OSSM 3.3+ proxy key validation on FIPS (#709)'
+    author: OpenShift Cherrypick Robot
+    date: 2026-04-02 09:30:38 +0200
+    found: true
+    isPermanent: true
