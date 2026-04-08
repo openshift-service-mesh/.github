@@ -396,3 +396,9 @@ commits:
     date: 2026-04-01 09:51:26 +0200
     found: true
     isPermanent: true
+  - sha: 01b32deff8ad6291523b51092ec3131ccf2ce608
+    title: Sync sail-operator-setup.sh with release-1.28 (#711)
+    author: Matej Kralik
+    date: 2026-04-07 17:37:08 +0200
+    found: true
+    isPermanent: true
