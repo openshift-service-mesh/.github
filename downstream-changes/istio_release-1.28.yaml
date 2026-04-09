@@ -469,3 +469,9 @@ commits:
     date: 2026-04-02 09:30:38 +0200
     found: true
     isPermanent: true
+  - sha: 7391f299928988b5d658515d7924f1b1211f2a15
+    title: '[release-1.28] Security fix for 1.28 (#717)'
+    author: Mikhail Abramov
+    date: 2026-04-08 16:51:23 +0200
+    found: true
+    isPermanent: true

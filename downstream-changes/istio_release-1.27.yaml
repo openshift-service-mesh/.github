@@ -452,3 +452,9 @@ commits:
     date: 2026-03-31 23:16:49 +0200
     found: true
     isPermanent: true
+  - sha: b72394c1a2bb7116e2db987541b0cd744e77c150
+    title: '[release-1.27] Security fix for 1.27 (#716)'
+    author: Mikhail Abramov
+    date: 2026-04-08 16:48:39 +0200
+    found: true
+    isPermanent: true
