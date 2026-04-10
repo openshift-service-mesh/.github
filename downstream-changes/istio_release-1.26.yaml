@@ -407,3 +407,9 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-04-08 14:19:46 -0400
     found: true
+  - sha: 6acb9a12f7c43ce40985e9d28a1ed3be9872ead3
+    title: '[release-1.26] Security fix for 1.26 (#715)'
+    author: Mikhail Abramov
+    date: 2026-04-09 07:03:02 +0200
+    found: true
+    isPermanent: true
