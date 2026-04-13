@@ -63,6 +63,7 @@
 | [35ba3e28](https://github.com/openshift-service-mesh/istio/commit/35ba3e286950a80ef3841051308739fc370bbae1) | Removing dependabot.yml ([#684](https://github.com/openshift-service-mesh/istio/issues/684)) |  |  | :white_check_mark: |  | 2026-03-17 12:50:32 +0100 | Filip Brychta |
 | [a09fd614](https://github.com/openshift-service-mesh/istio/commit/a09fd614ce0325b02ff699420dddf859d140dfc2) | "Modify ""pr-label-check"" GH workflow ([#695](https://github.com/openshift-service-mesh/istio/issues/695))" |  |  | :white_check_mark: |  | 2026-03-30 19:05:43 +0300 | Maxim Babushkin |
 | [3ed98e76](https://github.com/openshift-service-mesh/istio/commit/3ed98e766294f0781ce8f6cd55f4bd3928c76ff4) | Adapt test suite on OSSM 3.3+ proxy key validation on FIPS ([#699](https://github.com/openshift-service-mesh/istio/issues/699)) |  |  | :white_check_mark: |  | 2026-04-01 15:35:17 +0200 | Matej Kralik |
+| [77b7fc7a](https://github.com/openshift-service-mesh/istio/commit/77b7fc7a5cb2ad66b1bbb464bbcdd4ae838175e2) | Add pre-release cherry-pick list create automation ([#651](https://github.com/openshift-service-mesh/istio/issues/651)) |  |  | :white_check_mark: |  | 2026-04-12 14:17:58 +0300 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -189,6 +190,7 @@
 | [1eb7a024](https://github.com/openshift-service-mesh/istio/commit/1eb7a0241f4f6ac67c9639f75601dfde585a918b) | [release-1.26] Automator: Update proxy ([#713](https://github.com/openshift-service-mesh/istio/issues/713)) |  |  | :x: |  | 2026-04-08 14:19:46 -0400 | openshift-service-mesh-bot |
 | [6acb9a12](https://github.com/openshift-service-mesh/istio/commit/6acb9a12f7c43ce40985e9d28a1ed3be9872ead3) | [release-1.26] Security fix for 1.26 ([#715](https://github.com/openshift-service-mesh/istio/issues/715)) |  |  | :white_check_mark: |  | 2026-04-09 07:03:02 +0200 | Mikhail Abramov |
 | [9410477c](https://github.com/openshift-service-mesh/istio/commit/9410477c6d649da561b83e179114e9da4a79239c) | [release-1.26] Automator: Update proxy ([#719](https://github.com/openshift-service-mesh/istio/issues/719)) |  |  | :x: |  | 2026-04-10 12:08:32 -0400 | openshift-service-mesh-bot |
+| [9bdb431f](https://github.com/openshift-service-mesh/istio/commit/9bdb431f764e2d478c876a37562a15bd21ed4f51) | [release-1.26] Automator: Update proxy ([#720](https://github.com/openshift-service-mesh/istio/issues/720)) |  |  | :x: |  | 2026-04-12 16:58:16 -0400 | openshift-service-mesh-bot |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -282,6 +284,7 @@
 | [b72394c1](https://github.com/openshift-service-mesh/istio/commit/b72394c1a2bb7116e2db987541b0cd744e77c150) | [release-1.27] Security fix for 1.27 ([#716](https://github.com/openshift-service-mesh/istio/issues/716)) |  |  | :white_check_mark: |  | 2026-04-08 16:48:39 +0200 | Mikhail Abramov |
 | [49a6b150](https://github.com/openshift-service-mesh/istio/commit/49a6b150152765da09ab43744e285225cd9c6912) | [release-1.27] Automator: Update proxy ([#708](https://github.com/openshift-service-mesh/istio/issues/708)) |  |  | :x: |  | 2026-04-09 01:05:47 -0400 | openshift-service-mesh-bot |
 | [f9718a08](https://github.com/openshift-service-mesh/istio/commit/f9718a08954d0a9f83e6294ff7289a29780c9676) | [release-1.27] Automator: Update proxy ([#718](https://github.com/openshift-service-mesh/istio/issues/718)) |  |  | :x: |  | 2026-04-10 10:59:24 -0400 | openshift-service-mesh-bot |
+| [b3e88db6](https://github.com/openshift-service-mesh/istio/commit/b3e88db6280746300f7759ab4de61bee927ebdd7) | [release-1.27] Automator: Update proxy ([#722](https://github.com/openshift-service-mesh/istio/issues/722)) |  |  | :x: |  | 2026-04-12 07:06:55 -0400 | openshift-service-mesh-bot |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
