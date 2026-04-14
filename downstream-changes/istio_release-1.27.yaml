@@ -473,3 +473,15 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-04-12 07:06:55 -0400
     found: true
+  - sha: 4b991fab7ffecd6401f204ca04ce39d4f7bb5905
+    title: Modify "pr-label-check" GH workflow (#702)
+    author: OpenShift Cherrypick Robot
+    date: 2026-04-13 18:34:16 +0200
+    found: true
+    isPermanent: true
+  - sha: 4d970f6155726842eb033b2cfe340762442c87f7
+    title: Add pre-release cherry-pick list create automation (#726)
+    author: OpenShift Cherrypick Robot
+    date: 2026-04-13 09:06:28 +0200
+    found: true
+    isPermanent: true
