@@ -435,3 +435,9 @@ commits:
     date: 2026-04-13 13:01:43 +0200
     found: true
     isPermanent: true
+  - sha: e953d852dce08a913c8d0d58b177e98f013d4251
+    title: '[OSSM-12338] Standardize skip of failing test on both midstream and downstream repositories (#734)'
+    author: Matej Kralik
+    date: 2026-04-16 06:58:37 +0200
+    found: true
+    isPermanent: true

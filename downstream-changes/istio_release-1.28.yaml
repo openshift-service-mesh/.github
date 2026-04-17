@@ -497,3 +497,9 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-04-13 02:38:55 -0400
     found: true
+  - sha: 4d96a62760d68edb94a6676b25c4c208132c0bc2
+    title: '[OSSM-12338] Standardize skip of failing test on both midstream and downstream repositories (#736)'
+    author: Matej Kralik
+    date: 2026-04-16 09:35:43 +0200
+    found: true
+    isPermanent: true
