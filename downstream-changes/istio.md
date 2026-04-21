@@ -65,6 +65,7 @@
 | [3ed98e76](https://github.com/openshift-service-mesh/istio/commit/3ed98e766294f0781ce8f6cd55f4bd3928c76ff4) | Adapt test suite on OSSM 3.3+ proxy key validation on FIPS ([#699](https://github.com/openshift-service-mesh/istio/issues/699)) |  |  | :white_check_mark: |  | 2026-04-01 15:35:17 +0200 | Matej Kralik |
 | [77b7fc7a](https://github.com/openshift-service-mesh/istio/commit/77b7fc7a5cb2ad66b1bbb464bbcdd4ae838175e2) | Add pre-release cherry-pick list create automation ([#651](https://github.com/openshift-service-mesh/istio/issues/651)) |  |  | :white_check_mark: |  | 2026-04-12 14:17:58 +0300 | Maxim Babushkin |
 | [8918d08e](https://github.com/openshift-service-mesh/istio/commit/8918d08e4d9890da4e90e7383644049311e662d9) | [[OSSM-12338](https://issues.redhat.com/browse/OSSM-12338)] Standardize skip of failing test on both midstream and downstream repositories ([#737](https://github.com/openshift-service-mesh/istio/issues/737)) |  |  | :white_check_mark: |  | 2026-04-16 12:17:41 +0200 | Matej Kralik |
+| [13301d58](https://github.com/openshift-service-mesh/istio/commit/13301d580baba613267f96f0b02d9dd811d5c832) | Add Sail config for TestCNINeverEnrollsPodsInExcludedNamespaces test ([#739](https://github.com/openshift-service-mesh/istio/issues/739)) |  |  | :white_check_mark: |  | 2026-04-20 15:40:48 +0300 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -295,6 +296,7 @@
 | [4b991fab](https://github.com/openshift-service-mesh/istio/commit/4b991fab7ffecd6401f204ca04ce39d4f7bb5905) | "Modify ""pr-label-check"" GH workflow ([#702](https://github.com/openshift-service-mesh/istio/issues/702))" |  |  | :white_check_mark: |  | 2026-04-13 18:34:16 +0200 | OpenShift Cherrypick Robot |
 | [4d970f61](https://github.com/openshift-service-mesh/istio/commit/4d970f6155726842eb033b2cfe340762442c87f7) | Add pre-release cherry-pick list create automation ([#726](https://github.com/openshift-service-mesh/istio/issues/726)) |  |  | :white_check_mark: |  | 2026-04-13 09:06:28 +0200 | OpenShift Cherrypick Robot |
 | [eaff6a5f](https://github.com/openshift-service-mesh/istio/commit/eaff6a5f1338ef85fc29c5b1ca8b4c6d9f62ad54) | [[OSSM-12338](https://issues.redhat.com/browse/OSSM-12338)] Standardize skip of failing test on both midstream and downstream repositories ([#735](https://github.com/openshift-service-mesh/istio/issues/735)) |  |  | :white_check_mark: |  | 2026-04-15 20:51:58 +0200 | Matej Kralik |
+| [e5508fd1](https://github.com/openshift-service-mesh/istio/commit/e5508fd176399bdf58846bb8575240fe376410ec) | [release-1.27] Automator: Update proxy ([#738](https://github.com/openshift-service-mesh/istio/issues/738)) |  |  | :x: |  | 2026-04-20 10:19:12 -0400 | openshift-service-mesh-bot |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

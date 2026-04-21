@@ -354,3 +354,9 @@ commits:
     date: 2026-04-16 12:17:41 +0200
     found: true
     isPermanent: true
+  - sha: 13301d580baba613267f96f0b02d9dd811d5c832
+    title: Add Sail config for TestCNINeverEnrollsPodsInExcludedNamespaces test (#739)
+    author: Maxim Babushkin
+    date: 2026-04-20 15:40:48 +0300
+    found: true
+    isPermanent: true
