@@ -360,3 +360,9 @@ commits:
     date: 2026-04-20 15:40:48 +0300
     found: true
     isPermanent: true
+  - sha: 88c675e914df3369fd3ad74faaf2b785131436ce
+    title: Upstream sync (#728)
+    author: Maxim Babushkin
+    date: 2026-04-21 17:12:31 +0300
+    found: true
+    isPermanent: true

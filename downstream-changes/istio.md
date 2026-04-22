@@ -66,6 +66,7 @@
 | [77b7fc7a](https://github.com/openshift-service-mesh/istio/commit/77b7fc7a5cb2ad66b1bbb464bbcdd4ae838175e2) | Add pre-release cherry-pick list create automation ([#651](https://github.com/openshift-service-mesh/istio/issues/651)) |  |  | :white_check_mark: |  | 2026-04-12 14:17:58 +0300 | Maxim Babushkin |
 | [8918d08e](https://github.com/openshift-service-mesh/istio/commit/8918d08e4d9890da4e90e7383644049311e662d9) | [[OSSM-12338](https://issues.redhat.com/browse/OSSM-12338)] Standardize skip of failing test on both midstream and downstream repositories ([#737](https://github.com/openshift-service-mesh/istio/issues/737)) |  |  | :white_check_mark: |  | 2026-04-16 12:17:41 +0200 | Matej Kralik |
 | [13301d58](https://github.com/openshift-service-mesh/istio/commit/13301d580baba613267f96f0b02d9dd811d5c832) | Add Sail config for TestCNINeverEnrollsPodsInExcludedNamespaces test ([#739](https://github.com/openshift-service-mesh/istio/issues/739)) |  |  | :white_check_mark: |  | 2026-04-20 15:40:48 +0300 | Maxim Babushkin |
+| [88c675e9](https://github.com/openshift-service-mesh/istio/commit/88c675e914df3369fd3ad74faaf2b785131436ce) | Upstream sync ([#728](https://github.com/openshift-service-mesh/istio/issues/728)) |  |  | :white_check_mark: |  | 2026-04-21 17:12:31 +0300 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
