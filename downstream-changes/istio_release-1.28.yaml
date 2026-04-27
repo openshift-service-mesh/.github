@@ -386,7 +386,6 @@ commits:
     author: Jacek Ewertowski
     date: 2026-03-11 17:25:51 +0100
     found: true
-    isPermanent: true
     isPendingUpstreamSync: true
   - sha: d01cf20e73b7e5dd96fcd4bf8fabe54dc817a333
     title: '[release-1.28] Automator: Update ztunnel (#654)'
@@ -398,7 +397,6 @@ commits:
     author: Daniel Grimm
     date: 2026-03-14 01:26:08 +0100
     found: true
-    isPermanent: true
     isPendingUpstreamSync: true
   - sha: 5fa407c6752215418b384fb846fef6f5ec1038f8
     title: 'Ambient/pqc: Correct workdir name (#665)'
