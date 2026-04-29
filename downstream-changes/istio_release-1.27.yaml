@@ -496,3 +496,13 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-04-20 10:19:12 -0400
     found: true
+  - sha: b911848021d2e60b70c715533bffc0700ddfceaa
+    title: '[release-1.27] Automator: Update ztunnel (#747)'
+    author: openshift-service-mesh-bot
+    date: 2026-04-28 16:18:38 -0400
+    found: true
+  - sha: 8c58bda6d929798ac5b768c01361ba20904edfe5
+    title: '[release-1.27] Automator: Update proxy (#744)'
+    author: openshift-service-mesh-bot
+    date: 2026-04-28 07:42:47 -0400
+    found: true

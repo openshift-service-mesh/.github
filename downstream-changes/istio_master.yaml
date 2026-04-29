@@ -366,3 +366,9 @@ commits:
     date: 2026-04-21 17:12:31 +0300
     found: true
     isPermanent: true
+  - sha: dc32cb22d36cc1ed2a62d800c0eb92eca950242a
+    title: Disable Ambient integ tests due to unsupported CRDs (#750)
+    author: Maxim Babushkin
+    date: 2026-04-28 18:04:37 +0300
+    found: true
+    isPermanent: true
