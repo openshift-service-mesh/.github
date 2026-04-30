@@ -22,7 +22,7 @@ commits:
     isPermanent: true
     comment: Adding some env var to run script to be able to skip setup and test run.
   - sha: c575ca9e6f38d7fa435b42656ccde88f7611f329
-    title: Enable istioctl related ambient commands
+    title: Enable istioctl related ambient commands (#266)
     author: bmangoen
     isPermanent: true
     comment: this enables back the istioctl ambient commands. It allows to remove a divergence with upstream code base
@@ -198,7 +198,7 @@ commits:
     date: 2025-07-31 21:25:33 +0300
     found: true
   - sha: 3be872f1ded0ff9458be3033d7672dcfe1d58d45
-    title: Added mechanism to skip test suites
+    title: Added mechanism to skip test suites (#461)
     author: ctartici
     date: 2025-08-01 12:27:18 +0200
     found: true
@@ -370,5 +370,22 @@ commits:
     title: Disable Ambient integ tests due to unsupported CRDs (#750)
     author: Maxim Babushkin
     date: 2026-04-28 18:04:37 +0300
+    found: true
+    isPermanent: true
+  - sha: 4e177db41dfee182e9645edc0c541f64a8255acd
+    title: Update istio-gw-api-coredns-fix.patch to adapt the upstream changes [#2]
+    author: Maxim Babushkin
+    date: 2026-04-27 12:32:09 +0300
+    found: true
+  - sha: 6f8e7d5ef6732ee07c0567aa3daa4565bdf4269b
+    title: Update istio-gw-api-coredns-fix.patch to adapt the upstream changes (#746)
+    author: Maxim Babushkin
+    date: 2026-04-27 11:38:35 +0300
+    found: true
+    isPermanent: true
+  - sha: f1ff503ab42365d705ef98acb9fdebcc9b7d5f50
+    title: Fix go.sum and update license files (#746)
+    author: Maxim Babushkin
+    date: 2026-04-26 15:15:50 +0300
     found: true
     isPermanent: true
