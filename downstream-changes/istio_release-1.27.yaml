@@ -1,11 +1,11 @@
 commits:
   - sha: 94319d0fff381c4db4e6afde976c0ee116b58edb
-    title: Fixing lint warnings in our ocp scripts (#480)
+    title: Fixing lint warnings in our ocp scripts
     author: Filip Brychta
     date: 2025-09-05 09:08:24 +0200
     found: true
   - sha: 7dc0b7fbeb56325f4af644f4c2c0e6301a30472d
-    title: '[release-1.27] Fix ca root cert configmap update in gateway ca controller (#480)'
+    title: '[release-1.27] Fix ca root cert configmap update in gateway ca controller'
     author: Filip Brychta
     date: 2025-09-04 08:12:10 +0200
     found: true
@@ -42,7 +42,7 @@ commits:
     date: 2025-07-15 23:08:16 +0200
     found: true
   - sha: db2a278e852bc3d8aaffb44a18261f9cc56ef943
-    title: Modifications for running Gateway Conformance Test Suite (#480)
+    title: Modifications for running Gateway Conformance Test Suite
     author: ctartici
     date: 2025-07-09 17:10:16 +0200
     found: true
@@ -52,12 +52,12 @@ commits:
     date: 2025-07-01 13:22:41 +0200
     found: true
   - sha: 5f39751b12cc9b3797cdf29d91821ac39ad3c04d
-    title: Added mechanism to skip test suites (#480)
+    title: Added mechanism to skip test suites
     author: ctartici
     date: 2025-08-04 11:04:31 +0200
     found: true
   - sha: 2250eca86e71386db3ce6be0d628b371013d28bf
-    title: Added mechanism to skip test suites (#480)
+    title: Added mechanism to skip test suites
     author: ctartici
     date: 2025-08-01 12:27:18 +0200
     found: true
@@ -67,7 +67,7 @@ commits:
     date: 2025-07-31 21:25:33 +0300
     found: true
   - sha: 3ca8a7d4c2ed13adead9bea07d502db038d086c7
-    title: security suite control plane parameters (#480)
+    title: security suite control plane parameters
     author: ctartici
     date: 2025-07-24 17:54:22 +0200
     found: true
@@ -82,12 +82,12 @@ commits:
     date: 2025-07-03 14:23:27 +0300
     found: true
   - sha: 28709bc085aa900f7fdf0e71e7605f0c0077ef92
-    title: Add mechanism to execute integration tests againist downstream builds. (#480)
+    title: Add mechanism to execute integration tests againist downstream builds.
     author: ctartici
     date: 2025-06-12 20:41:41 +0200
     found: true
   - sha: e9ad230dd6ed4a0ac4f788205aa42078c2fd7528
-    title: Update bookinfo image version (#480)
+    title: Update bookinfo image version
     author: Maxim Babushkin
     date: 2025-04-20 09:48:40 +0300
     found: true
@@ -97,22 +97,22 @@ commits:
     date: 2025-05-26 18:22:47 +0300
     found: true
   - sha: e40ce5ad9e0172aa9572f9cff6c1e5d9f183a7d5
-    title: modify cleanup function with wait (#480)
+    title: modify cleanup function with wait
     author: ctartici
     date: 2025-05-06 10:46:07 +0200
     found: true
   - sha: 6975e695dd9bd7ec78439fe1fa2c79f5192b12d8
-    title: change timeout value 2h if test is running on sail-operator (#480)
+    title: change timeout value 2h if test is running on sail-operator
     author: ctartici
     date: 2025-05-05 20:18:37 +0200
     found: true
   - sha: eba138a0933ee85a64458b6f9c4756620fa6b787
-    title: fix for release directory structure to patch config (#480)
+    title: fix for release directory structure to patch config
     author: ctartici
     date: 2025-05-05 13:54:29 +0200
     found: true
   - sha: a789e3da4bddcb8109d4f94b56e28565e6ffec61
-    title: small fix to get latest istio version (#480)
+    title: small fix to get latest istio version
     author: ctartici
     date: 2025-04-30 13:32:41 +0200
     found: true
@@ -127,7 +127,7 @@ commits:
     date: 2025-04-18 10:04:01 +0200
     found: true
   - sha: e9d90bf687ddf362eca02fd278956c15b864b6d1
-    title: Fixing Failing Converter Tests (#480)
+    title: Fixing Failing Converter Tests
     author: ctartici
     date: 2025-04-14 18:11:31 +0200
     found: true
@@ -147,7 +147,7 @@ commits:
     date: 2025-03-21 07:15:17 -0400
     found: true
   - sha: a8b399f84511ae8b2e4d29465a717ff79c125e07
-    title: Update some examples to use quay.io/sail-dev instead of docker (#480)
+    title: Update some examples to use quay.io/sail-dev instead of docker
     author: Nick Fox
     date: 2025-03-10 15:32:01 -0400
     found: true
@@ -157,7 +157,7 @@ commits:
     date: 2025-02-11 11:15:15 +0100
     found: true
   - sha: 7932f6ccdfe34141f7d330c033ffca51e344c14c
-    title: Enable istioctl related ambient commands (#480)
+    title: Enable istioctl related ambient commands
     author: bmangoen
     date: 2025-01-24 10:10:12 +0100
     found: true
@@ -234,7 +234,7 @@ commits:
     isPermanent: true
     comment: 'Follows 7fed0aa8b0db56e7d898652cfe6f4005f90a7f5d Enable CA Bundle injection in only Gateway Namespaces (#335)'
   - sha: 293ae9032391865649a86f776e8711ccf4a4d002
-    title: Using the latest proxy from release-1.27 branch (#487)
+    title: Using the latest proxy from release-1.27 branch
     author: Filip Brychta
     date: 2025-10-01 07:59:58 +0200
     found: true
@@ -327,7 +327,7 @@ commits:
     date: 2026-01-20 12:41:25 +0200
     found: true
   - sha: 466ee144426dcd79dd74d4942951addc79703d1b
-    title: Run make gen (#554)
+    title: Run make gen
     author: bmangoen
     date: 2026-01-16 11:34:40 +0100
     found: true
@@ -409,7 +409,7 @@ commits:
     found: true
     isPermanent: true
   - sha: 4aee98e195c1af3f5e9385c637050db22d8c41d8
-    title: add release note for xds debug namespace auth fix (#656)
+    title: add release note for xds debug namespace auth fix
     author: Petr McAllister
     date: 2026-03-06 09:43:03 -0800
     found: true
@@ -420,7 +420,7 @@ commits:
     date: 2026-03-05 17:01:17 -0800
     found: true
   - sha: b750c8a19a3e2b92269052ac0b3df01f5b2949dd
-    title: Bump PROXY_REPO_SHA for 1.27.8 security release (#656)
+    title: Bump PROXY_REPO_SHA for 1.27.8 security release
     author: Petr McAllister
     date: 2026-03-04 13:56:56 -0800
     found: true
@@ -510,4 +510,9 @@ commits:
     title: '[release-1.27] Automator: Update proxy (#751)'
     author: openshift-service-mesh-bot
     date: 2026-04-30 06:54:19 -0400
+    found: true
+  - sha: e953246af89127842ffbc0fec18910fad74360ca
+    title: '[release-1.27] Automator: Update proxy (#755)'
+    author: openshift-service-mesh-bot
+    date: 2026-05-04 02:33:09 -0400
     found: true

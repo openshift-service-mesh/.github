@@ -53,7 +53,7 @@ commits:
     isPermanent: true
     comment: This commit allows RH product docs to link to a quay.io image instead of docker.io when deploying samples.
   - sha: 8b9d7722e7fa1fe2c201393c6f97b9d05a7543c3
-    title: Update some examples to use quay.io/sail-dev instead of docker (#313)
+    title: Update some examples to use quay.io/sail-dev instead of docker
     author: Nick Fox
     date: 2025-03-10 15:32:01 -0400
     isPermanent: true
