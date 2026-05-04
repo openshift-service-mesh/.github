@@ -17,6 +17,7 @@ OUTPUT_MARKDOWN_FILE="${pwd}/${REPO}.md"
 SKIP_GIT=${SKIP_GIT:-}
 SKIP_PR_LABELS=${SKIP_PR_LABELS:-}
 SKIP_PR_DISCOVERY=${SKIP_PR_DISCOVERY:-}
+FORCE_LABEL_UPDATE=${FORCE_LABEL_UPDATE:-}
 
 # GraphQL and label configuration
 GRAPHQL_REPO_OWNER=${GRAPHQL_REPO_OWNER:-"openshift-service-mesh"}
@@ -27,6 +28,9 @@ LABEL_PENDING_UPSTREAM=${LABEL_PENDING_UPSTREAM:-"pending-upstream-sync"}
 GRAPHQL_LABELS_LIMIT=${GRAPHQL_LABELS_LIMIT:-20}
 
 function updateGit() {
+  # Initialize file to track new commits discovered in this run
+  > "${pwd}/.new_commits_list"
+
   cd `mktemp -d`
 
   git clone -o downstream ${DOWNSTREAM_CLONE_URL} .
@@ -42,11 +46,14 @@ function updateGit() {
     while IFS="|" read -r sha title date author
     do
       if [[ $(yq e ".commits[] | select(.sha == \"${sha}\")" ${output_yaml}) != "" ]]; then
+        # Existing commit - update metadata only
         yq -i e "(.commits[] | select(.sha == \"${sha}\") | .title) = \"${title//\"/\\\"}\" |
                 (.commits[] | select(.sha == \"${sha}\") | .author) = \"${author}\" |
                 (.commits[] | select(.sha == \"${sha}\") | .date) = \"${date}\"" ${output_yaml}
       else
+        # NEW commit - add to YAML and track in new commits list
         yq -i e ".commits += [{\"sha\":\"${sha}\",\"title\":\"${title//\"/\\\"}\",\"author\":\"${author}\",\"date\":\"${date}\",\"found\": true}]" ${output_yaml}
+        echo "${sha}" >> "${pwd}/.new_commits_list"
       fi
     done < <(git log --pretty="tformat:%H|%s|%ai|%an" --no-decorate --no-merges upstream/${branch}..downstream/${branch})
   done
@@ -65,10 +72,22 @@ function renderMarkdownTableFromYAML() {
 
   readarray commits < <(yq e -o=j -I=0 '.commits | to_entries' ${yaml_file} )
 
-  echo "| Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |"
-  echo "| --- | --- | --- | --- | --- | --- | --- |--- |"
-  commit_data=$(yq e '.commits[] | [.sha, .title, (.upstreamPR // "null"), (.isPendingUpstreamSync // "null"), (.isPermanent // "false"), (.comment // "null"), .date, .author] | @tsv' ${yaml_file})
-  while IFS=$'\t' read -r sha title upstreamPR isPendingUpstreamSync isPermanent comment date author _; do
+  echo "| Commit SHA | Title | PR | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |"
+  echo "| --- | --- | --- | --- | --- | --- | --- | --- |--- |"
+  commit_data=$(yq e '.commits[] | [.sha, .title, (.prNumber // "null"), (.upstreamPR // "null"), (.isPendingUpstreamSync // "null"), (.isPermanent // "false"), (.comment // "null"), .date, .author] | @tsv' ${yaml_file})
+  while IFS=$'\t' read -r sha title prNumber upstreamPR isPendingUpstreamSync isPermanent comment date author _; do
+    # Format PR number as a link if available
+    local pr_display=""
+    if [[ -n "${prNumber}" && "${prNumber}" != "null" ]]; then
+      pr_display="[#${prNumber}](https://github.com/${GRAPHQL_REPO_OWNER}/${GRAPHQL_REPO_NAME}/pull/${prNumber})"
+    else
+      # Fallback: extract from title for backwards compatibility
+      local extracted_pr=$(extractPRNumber "${title}")
+      if [[ -n "${extracted_pr}" ]]; then
+        pr_display="[#${extracted_pr}](https://github.com/${GRAPHQL_REPO_OWNER}/${GRAPHQL_REPO_NAME}/pull/${extracted_pr})"
+      fi
+    fi
+
     if [[ "${isPermanent}" == "true" ]]; then
       isPermanent=":white_check_mark:"
     else
@@ -85,7 +104,7 @@ function renderMarkdownTableFromYAML() {
     if [[ "${upstreamPR}" == "null" ]]; then
       upstreamPR=""
     fi
-    echo "| [${sha:0:8}](${COMMIT_BASE_URL}${sha}) | `renderTitle "${title}"` | ${upstreamPR} | ${isPendingUpstreamSync} | ${isPermanent} | `renderComment "${comment}"` | ${date} | ${author} |"
+    echo "| [${sha:0:8}](${COMMIT_BASE_URL}${sha}) | `renderTitle "${title}"` | ${pr_display} | ${upstreamPR} | ${isPendingUpstreamSync} | ${isPermanent} | `renderComment "${comment}"` | ${date} | ${author} |"
   done < <(echo "${commit_data}")
 }
 
@@ -173,9 +192,12 @@ function batchFetchPRLabels() {
 
 function findPRForCommit() {
   local sha="$1"
+  local branch="${2:-}"  # Optional: branch name to filter PRs
   local pr_number=""
 
-  # Try GitHub commits API (primary method)
+  # Primary method: GitHub commits API
+  # Works for: Regular commits (non-cherry-picked)
+  # Fails for: Cherry-picked commits (GitHub doesn't maintain commit→PR mapping for cherry-picks)
   if pr_number=$(gh api -X GET "repos/${GRAPHQL_REPO_OWNER}/${GRAPHQL_REPO_NAME}/commits/${sha}/pulls" --jq '.[0].number' 2>/dev/null); then
     if [[ -n "$pr_number" && "$pr_number" != "null" ]]; then
       echo "$pr_number"
@@ -183,7 +205,9 @@ function findPRForCommit() {
     fi
   fi
 
-  # Fallback: GitHub search API
+  # Fallback 1: GitHub Search API
+  # Why keep this: May catch edge cases where search indexing differs from commits endpoint
+  # Known limitation: Also fails for cherry-picked commits (same underlying data as primary)
   if pr_number=$(gh api -X GET "search/issues" -f q="repo:${GRAPHQL_REPO_OWNER}/${GRAPHQL_REPO_NAME} ${sha} type:pr" --jq '.items[0].number' 2>/dev/null); then
     if [[ -n "$pr_number" && "$pr_number" != "null" ]]; then
       echo "$pr_number"
@@ -191,7 +215,99 @@ function findPRForCommit() {
     fi
   fi
 
+  # Fallback 2: GraphQL - Check recent merged PRs
+  # Why needed: Solves the cherry-pick problem by reversing the query direction
+  # Instead of "which PR has this commit?" (broken for cherry-picks)
+  # We ask "does this recent PR contain this commit?" (works!)
+  # This works because PR→commits mapping is maintained even for cherry-picks
+  echo "  Searching recent PRs for commit..." >&2
+
+  local limit=50
+
+  # Get recent PR numbers merged to the branch
+  local pr_numbers
+  pr_numbers=$(gh pr list --repo "${GRAPHQL_REPO_OWNER}/${GRAPHQL_REPO_NAME}" \
+    --state merged --limit ${limit} ${branch:+--base "$branch"} --json number --jq '.[].number' 2>/dev/null)
+
+  if [[ -z "$pr_numbers" ]]; then
+    echo ""
+    return 1
+  fi
+
+  # Check each PR's commits via GraphQL in batches of 10
+  local batch_size=10
+  local pr_array=($pr_numbers)
+
+  for ((i=0; i<${#pr_array[@]}; i+=batch_size)); do
+    local batch=("${pr_array[@]:i:batch_size}")
+
+    # Build GraphQL query to check if commit exists in these PRs
+    local query="query { repository(owner: \"${GRAPHQL_REPO_OWNER}\", name: \"${GRAPHQL_REPO_NAME}\") {"
+    for pr_num in "${batch[@]}"; do
+      # Query first 100 commits in each PR (adjust if PRs have more commits)
+      query+=" pr${pr_num}: pullRequest(number: ${pr_num}) { number commits(first: 100) { nodes { commit { oid } } } }"
+    done
+    query+=' } }'
+
+    # Execute GraphQL query
+    local response
+    if response=$(gh api graphql -f query="$query" 2>/dev/null); then
+      # Check each PR in the response
+      for pr_num in "${batch[@]}"; do
+        # Check if our commit SHA is in this PR's commits
+        if echo "$response" | jq -r ".data.repository.pr${pr_num}.commits.nodes[]?.commit.oid" 2>/dev/null | grep -q "^${sha}$"; then
+          echo "$pr_num"
+          return 0
+        fi
+      done
+    else
+      # If GraphQL batch fails, try individual PR checks using REST API
+      for pr_num in "${batch[@]}"; do
+        if gh api "repos/${GRAPHQL_REPO_OWNER}/${GRAPHQL_REPO_NAME}/pulls/${pr_num}/commits" \
+           --jq '.[].sha' 2>/dev/null | grep -q "^${sha}$"; then
+          echo "$pr_num"
+          return 0
+        fi
+      done
+    fi
+  done
+
   echo ""
+  return 1
+}
+
+function loadNewCommitsSet() {
+  local -n result_set="$1"  # nameref to associative array
+
+  if [[ -f "${pwd}/.new_commits_list" ]]; then
+    while read -r sha; do
+      [[ -n "${sha}" ]] && result_set["${sha}"]=1
+    done < "${pwd}/.new_commits_list"
+  fi
+
+  # Temporarily disable 'set -u' to safely get count
+  set +u
+  local count=${#result_set[@]}
+  set -u
+
+  echo "$count"
+}
+
+function shouldProcessCommit() {
+  local sha="$1"
+  local -n commits_set="$2"  # nameref to new_commits_set
+
+  # In FORCE mode, process everything
+  if [[ -n "${FORCE_LABEL_UPDATE}" ]]; then
+    return 0
+  fi
+
+  # In DEFAULT mode, only process new commits
+  if [[ -n "${commits_set[$sha]:-}" ]]; then
+    return 0
+  fi
+
+  return 1
 }
 
 function discoverMissingPRNumbers() {
@@ -200,6 +316,16 @@ function discoverMissingPRNumbers() {
   if ! command -v gh >/dev/null 2>&1; then
     echo "  Warning: gh CLI not available, skipping PR discovery"
     return
+  fi
+
+  # Load list of new commits discovered in this run
+  declare -A new_commits_set
+  local new_commits_count=$(loadNewCommitsSet new_commits_set)
+
+  if [[ -n "${FORCE_LABEL_UPDATE}" ]]; then
+    echo "  FORCE mode: discovering PR numbers for ALL commits without them"
+  else
+    echo "  Default mode: discovering PR numbers for only NEW commits (${new_commits_count} commits)"
   fi
 
   for branch in ${BRANCHES}; do
@@ -227,14 +353,18 @@ function discoverMissingPRNumbers() {
 
       if [[ -z "$sha" ]]; then continue; fi
 
+      # Check if this commit should be processed based on mode
+      if ! shouldProcessCommit "$sha" new_commits_set; then
+        continue
+      fi
+
       echo "  Finding PR for commit ${sha:0:8}: ${title:0:50}..."
-      pr_number=$(findPRForCommit "$sha")
+      pr_number=$(findPRForCommit "$sha" "$branch" || true)
 
       if [[ -n "$pr_number" ]]; then
-        # Update commit title to include PR number
-        new_title="${title} (#${pr_number})"
-        yq -i e "(.commits[] | select(.sha == \"${sha}\") | .title) = \"${new_title//\"/\\\"}\"" "${yaml_file}"
-        echo "    ✅ Added PR #${pr_number} to title"
+        # Set prNumber field (separate from title)
+        yq -i e "(.commits[] | select(.sha == \"${sha}\") | .prNumber) = ${pr_number}" "${yaml_file}"
+        echo "    ✅ Set prNumber=${pr_number}"
         updates_made=$((updates_made + 1))
       else
         echo "    ❌ No PR found (likely direct commit or API limit reached)"
@@ -258,6 +388,17 @@ function processPRData() {
     return
   fi
 
+  # Load list of new commits discovered in this run
+  # Always declare the array, even if file doesn't exist (e.g., when SKIP_GIT=1)
+  declare -A new_commits_set
+  local new_commits_count=$(loadNewCommitsSet new_commits_set)
+
+  if [[ -n "${FORCE_LABEL_UPDATE}" ]]; then
+    echo "  FORCE_LABEL_UPDATE enabled: processing ALL commits (sets fields based on current PR labels)"
+  else
+    echo "  Default mode: processing only NEW commits discovered in this run (${new_commits_count} commits)"
+  fi
+
   # Process all branches and all commits in each YAML file
   for branch in ${BRANCHES}; do
     yaml_file="${pwd}/${REPO}_${branch}.yaml"
@@ -272,8 +413,8 @@ function processPRData() {
     declare -A unique_prs     # track unique PRs to avoid duplicates
     local pr_list=()          # array of unique PR numbers
 
-    # Get ALL commits from YAML file
-    readarray -t commits < <(yq e -o=j -I=0 '.commits[] | [.sha, .title] | @tsv' "${yaml_file}")
+    # Get ALL commits from YAML file with prNumber field
+    readarray -t commits < <(yq e -o=j -I=0 '.commits[] | [.sha, .title, (.prNumber // "null")] | @tsv' "${yaml_file}")
 
     for commit_line in "${commits[@]}"; do
       if [[ -z "${commit_line}" ]]; then
@@ -284,9 +425,19 @@ function processPRData() {
       clean_line=$(echo "${commit_line}" | sed 's/^"//; s/"$//' | sed 's/\\t/\t/g')
       sha=$(echo "${clean_line}" | awk -F'\t' '{print $1}')
       title=$(echo "${clean_line}" | awk -F'\t' '{print $2}')
+      pr_from_field=$(echo "${clean_line}" | awk -F'\t' '{print $3}')
 
-      # Extract PR number from title
-      pr_number=$(extractPRNumber "${title}")
+      # Check if this commit should be processed based on mode
+      if ! shouldProcessCommit "$sha" new_commits_set; then
+        continue
+      fi
+
+      # Get PR number: check prNumber field first, then fallback to extracting from title
+      if [[ -n "${pr_from_field}" && "${pr_from_field}" != "null" ]]; then
+        pr_number="${pr_from_field}"
+      else
+        pr_number=$(extractPRNumber "${title}")
+      fi
       if [[ -n "${pr_number}" ]]; then
         commit_pr_map["${sha}"]="${pr_number}"
 
@@ -315,19 +466,25 @@ function processPRData() {
 
       # Process labels if available
       labels="${pr_labels[$pr_number]:-}"
-      if [[ -n "${labels}" ]]; then
-        if echo "${labels}" | grep -q "${LABEL_PERMANENT}"; then
-          updates+=("(.commits[] | select(.sha == \"${sha}\") | .isPermanent) = true")
-          echo "  Setting isPermanent=true for commit ${sha:0:8} (PR #${pr_number}) - found '${LABEL_PERMANENT}' label"
-        elif echo "${labels}" | grep -q "${LABEL_NON_PERMANENT}"; then
-          updates+=("(.commits[] | select(.sha == \"${sha}\") | .isPermanent) = false")
-          echo "  Setting isPermanent=false for commit ${sha:0:8} (PR #${pr_number}) - found '${LABEL_NON_PERMANENT}' label"
-        elif echo "${labels}" | grep -q "${LABEL_PENDING_UPSTREAM}"; then
-          updates+=("(.commits[] | select(.sha == \"${sha}\") | .isPendingUpstreamSync) = true")
-          echo "  Setting isPendingUpstreamSync=true for commit ${sha:0:8} (PR #${pr_number}) - found '${LABEL_PENDING_UPSTREAM}' label"
-        else
-          echo "  No relevant labels found for commit ${sha:0:8} (PR #${pr_number}) - expected one of: '${LABEL_PERMANENT}', '${LABEL_NON_PERMANENT}', or '${LABEL_PENDING_UPSTREAM}'"
-        fi
+
+      # Check for permanent change labels
+      if echo "${labels}" | grep -q "${LABEL_PERMANENT}"; then
+        updates+=("(.commits[] | select(.sha == \"${sha}\") | .isPermanent) = true")
+        echo "  Setting isPermanent=true for commit ${sha:0:8} (PR #${pr_number}) - found '${LABEL_PERMANENT}' label"
+      elif echo "${labels}" | grep -q "${LABEL_NON_PERMANENT}"; then
+        updates+=("(.commits[] | select(.sha == \"${sha}\") | .isPermanent) = false")
+        echo "  Setting isPermanent=false for commit ${sha:0:8} (PR #${pr_number}) - found '${LABEL_NON_PERMANENT}' label"
+      fi
+
+      # Check for pending upstream sync label
+      if echo "${labels}" | grep -q "${LABEL_PENDING_UPSTREAM}"; then
+        updates+=("(.commits[] | select(.sha == \"${sha}\") | .isPendingUpstreamSync) = true")
+        echo "  Setting isPendingUpstreamSync=true for commit ${sha:0:8} (PR #${pr_number}) - found '${LABEL_PENDING_UPSTREAM}' label"
+      fi
+
+      # Log if no labels found (informational)
+      if [[ -z "${labels}" ]] || [[ ! "${labels}" =~ (${LABEL_PERMANENT}|${LABEL_NON_PERMANENT}|${LABEL_PENDING_UPSTREAM}) ]]; then
+        echo "  No relevant labels found for commit ${sha:0:8} (PR #${pr_number})"
       fi
     done
 
@@ -346,6 +503,11 @@ function processPRData() {
     unset commit_pr_map unique_prs pr_labels
   done
 }
+
+# Clear the new commits list before starting
+# If updateGit() runs, it will create a fresh list
+# If SKIP_GIT=1, the empty/missing file indicates no new commits
+rm -f "${pwd}/.new_commits_list"
 
 if [[ -z "${SKIP_GIT}" ]]; then
   updateGit
@@ -366,3 +528,6 @@ for branch in ${BRANCHES}; do
   echo "## ${branch} branch" >> "${OUTPUT_MARKDOWN_FILE}"
   renderMarkdownTableFromYAML "${input_yaml}" >> "${OUTPUT_MARKDOWN_FILE}"
 done
+
+# Clean up temporary file
+rm -f "${pwd}/.new_commits_list"
