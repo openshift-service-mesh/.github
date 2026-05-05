@@ -521,3 +521,14 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-04-30 09:03:05 -0400
     found: true
+  - sha: 0139da7c45c9cf2d5f91a742b3187be84401a641
+    title: 'Revert "fix: increase xDS keepalive to 2m (#685)" (#757)'
+    author: Jonh Wendell
+    date: 2026-05-04 13:21:33 -0400
+    found: true
+    isPermanent: true
+  - sha: 4a72515d0fd5c6e95d6ae2b325a7e921618270e0
+    title: '[release-1.28] Automator: Update proxy (#754)'
+    author: openshift-service-mesh-bot
+    date: 2026-05-04 02:33:09 -0400
+    found: true

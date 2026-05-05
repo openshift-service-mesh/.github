@@ -511,3 +511,14 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-04-30 06:54:19 -0400
     found: true
+  - sha: e973d7be21bca4a1a4f2200ecc63c380bfc09150
+    title: 'Revert "fix: resources improperly being set when trying to remove resource values (#58824) (#691)" (#759)'
+    author: Matej Kralik
+    date: 2026-05-04 17:22:52 +0200
+    found: true
+    isPermanent: true
+  - sha: e953246af89127842ffbc0fec18910fad74360ca
+    title: '[release-1.27] Automator: Update proxy (#755)'
+    author: openshift-service-mesh-bot
+    date: 2026-05-04 02:33:09 -0400
+    found: true
