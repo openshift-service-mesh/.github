@@ -522,3 +522,9 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-05-04 02:33:09 -0400
     found: true
+  - sha: 047067a2f153da94e927fae4563f2ff4920b18fd
+    title: '  Remove unnecessary from: [] in NetworkPolicy templates (#59592) (#730)'
+    author: Cameron Garrison
+    date: 2026-05-05 11:57:16 -0400
+    found: true
+    isPendingUpstreamSync: true
