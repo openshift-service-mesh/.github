@@ -168,3 +168,111 @@ used is [istio/ztunnel]. We have a downstream build of this proxy at
 [istio/ztunnel]:https://github.com/istio/ztunnel
 [openshift-service-mesh/ztunnel]:https://github.com/openshift-service-mesh/ztunnel
 [FIPS]:https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips
+
+## Downstream Sync (OpenShift CI / Prow)
+
+```mermaid
+flowchart TB
+    subgraph upstream["Upstream Sources"]
+        istio_repo["istio/istio<br/>(releases + source)"]
+        eol_api["endoflife.date API"]
+        tools_repos["Tool repos<br/>(operator-sdk, Helm,<br/>controller-runtime, etc.)"]
+        gw_api["kubernetes-sigs/<br/>gateway-api"]
+    end
+
+    subgraph gha["GitHub Actions (istio-ecosystem/sail-operator)"]
+        update_deps["Update Dependencies<br/>(daily)"]
+        update_eol["Update EOL Versions<br/>(daily)"]
+        nightly["Nightly Build<br/>(daily)"]
+        vtb["Versions-Triggered Build<br/>(on versions.yaml change)"]
+        clean["Clean Nightlies<br/>(daily)"]
+    end
+
+    subgraph prow["Prow Jobs (openshift-service-mesh)"]
+        sync_sail["sync-upstream<br/>sail-operator<br/>(periodic)"]
+        sync_istio["sync-upstream<br/>istio<br/>(periodic)"]
+        update_istio_ztunnel["update-istio<br/>ztunnel → istio<br/>(postsubmit)"]
+        update_istio_proxy["update-istio<br/>proxy → istio<br/>(postsubmit)"]
+    end
+
+    subgraph artifacts["Published Artifacts"]
+        quay["quay.io<br/>operator images"]
+        operatorhub["OpenShift<br/>OperatorHub"]
+        gcs["GCS<br/>ztunnel + proxy<br/>build artifacts"]
+    end
+
+    istio_repo --> update_deps
+    tools_repos --> update_deps
+    gw_api --> update_deps
+    eol_api --> update_eol
+
+    update_deps -->|"updates versions.yaml"| vtb
+    vtb --> quay
+    nightly --> quay
+    nightly --> operatorhub
+    clean --> operatorhub
+
+    update_deps -->|"merged changes flow<br/>to downstream"| sync_sail
+    istio_repo -->|"master branch"| sync_istio
+    update_istio_ztunnel -->|"updates ztunnel dep<br/>in downstream istio"| sync_istio
+    update_istio_proxy -->|"updates proxy dep<br/>in downstream istio"| sync_istio
+    update_istio_ztunnel --> gcs
+    update_istio_proxy --> gcs
+
+    style prow stroke:#EE0000,stroke-width:4px
+    style gcs stroke:#EE0000,stroke-width:4px
+```
+
+Prow jobs in the [openshift/release](https://github.com/openshift/release) repository automate syncing and dependency updates across the OSSM forks. Upstream Sail Operator has its own sync jobs you can read about [here](https://github.com/istio-ecosystem/sail-operator/blob/main/SYNC.md).
+
+### Prow job types
+
+- **Periodic jobs** run on a cron schedule (weekdays only), independent of any PR. Used for upstream sync (`sync-upstream`) and scheduled test suites.
+- **Presubmit jobs** run when a PR is opened or updated, before it merges. Used for build validation and testing (e.g., `cargo-build`, `unit`, `envoy`).
+- **Postsubmit jobs** run after a PR merges into a branch. Used for artifact publishing (`copy-artifacts-gcs`, `cargo-build-and-push`) and cross-repo dependency updates (`update-istio`).
+
+All sync and update jobs use `maistra/test-infra` automator tooling and create PRs with `auto-merge` and `tide/merge-method-merge` labels so they merge automatically via Tide.
+
+### Downstream Prow jobs
+
+| Repo | Type | Purpose |
+| ---- | ---- | ------- |
+| sail-operator | Periodic | Merges each upstream `istio-ecosystem/sail-operator` branch into the corresponding downstream branch (e.g. `release-1.28` → `release-3.3`), keeping downstream forks up to date with upstream changes plus any downstream-specific patches. |
+| istio | Periodic | Merges upstream `istio/istio` master into downstream master. Only master is synced automatically; release branches have CI jobs but no periodic sync. |
+| ztunnel | Postsubmit | No periodic sync. When a PR merges into a release branch, builds ztunnel, uploads artifacts to [GCS](https://storage.googleapis.com/maistra-prow-testing/ztunnel), and creates a PR to update the ztunnel dependency in the matching `openshift-service-mesh/istio` release branch. |
+| proxy | Postsubmit | No periodic sync. When a PR merges into a release branch, uploads build artifacts to [GCS](https://storage.googleapis.com/maistra-prow-testing/proxy), and creates a PR to update the proxy dependency in the matching `openshift-service-mesh/istio` release branch. |
+
+### How the pieces fit together
+
+The sync and update jobs form a pipeline across repos. When upstream Istio changes flow downstream, this is the typical sequence:
+
+```mermaid
+flowchart LR
+    subgraph upstream
+        istio_upstream["istio/istio"]
+    end
+
+    istio_upstream --> istio_ds
+
+    subgraph downstream["openshift-service-mesh"]
+        sail_ds["sail-operator"]
+        ztunnel_ds["ztunnel"]
+        proxy_ds["proxy"]
+        istio_ds["istio"]
+    end
+
+    ztunnel_ds -->|"postsubmit\nupdate-istio"| istio_ds
+    proxy_ds -->|"postsubmit\nupdate-istio"| istio_ds
+```
+
+- **Sail-operator** syncs upstream-to-downstream on a schedule (periodic).
+- **Istio** syncs upstream master on a schedule (periodic), and also receives dependency update PRs from ztunnel and proxy postsubmit jobs.
+- **Ztunnel** has no periodic sync; all branches push updates to istio on merge (postsubmit).
+- **Proxy** has no periodic sync; all branches push updates to istio on merge (postsubmit).
+
+### Key differences from the upstream sync jobs
+
+- The upstream jobs (GitHub Actions) update dependencies, tool versions, and Istio versions _within_ the upstream repo.
+- The downstream periodic jobs merge the _results_ of those upstream changes into the downstream forks, along with any downstream-specific patches already on the downstream branches.
+- The downstream postsubmit jobs propagate build artifacts and dependency references _across_ downstream forks (ztunnel/proxy → istio).
+
