@@ -193,6 +193,7 @@ flowchart TB
         sync_istio["sync-upstream<br/>istio<br/>(periodic)"]
         update_istio_ztunnel["update-istio<br/>ztunnel → istio<br/>(postsubmit)"]
         update_istio_proxy["update-istio<br/>proxy → istio<br/>(postsubmit)"]
+        update_istio_module["update-istio-module<br/>istio → sail-operator<br/>(postsubmit)"]
     end
 
     subgraph artifacts["Published Artifacts"]
@@ -201,6 +202,7 @@ flowchart TB
         gcs["GCS<br/>ztunnel + proxy<br/>build artifacts"]
     end
 
+    istio_repo -->|"master branch"| sync_istio
     istio_repo --> update_deps
     tools_repos --> update_deps
     gw_api --> update_deps
@@ -211,13 +213,11 @@ flowchart TB
     nightly --> quay
     nightly --> operatorhub
     clean --> operatorhub
-
-    update_deps -->|"merged changes flow<br/>to downstream"| sync_sail
-    istio_repo -->|"master branch"| sync_istio
     update_istio_ztunnel -->|"updates ztunnel dep<br/>in downstream istio"| sync_istio
     update_istio_proxy -->|"updates proxy dep<br/>in downstream istio"| sync_istio
     update_istio_ztunnel --> gcs
     update_istio_proxy --> gcs
+    update_istio_module -->|"replaces istio/istio dep<br/>with openshift-service-mesh/istio<br/>in sail-operator"| sync_sail
 
     style prow stroke:#EE0000,stroke-width:4px
     style gcs stroke:#EE0000,stroke-width:4px
@@ -239,6 +239,7 @@ All sync and update jobs use `maistra/test-infra` automator tooling and create P
 | ---- | ---- | ------- |
 | sail-operator | Periodic | Merges each upstream `istio-ecosystem/sail-operator` branch into the corresponding downstream branch (e.g. `release-1.28` → `release-3.3`), keeping downstream forks up to date with upstream changes plus any downstream-specific patches. |
 | istio | Periodic | Merges upstream `istio/istio` master into downstream master. Only master is synced automatically; release branches have CI jobs but no periodic sync. |
+| istio | Postsubmit | When a PR merges into a release branch, replaces the `istio/istio` Go module dependency with `openshift-service-mesh/istio` in the corresponding `openshift-service-mesh/sail-operator` release branch and runs code generation. |
 | ztunnel | Postsubmit | No periodic sync. When a PR merges into a release branch, builds ztunnel, uploads artifacts to [GCS](https://storage.googleapis.com/maistra-prow-testing/ztunnel), and creates a PR to update the ztunnel dependency in the matching `openshift-service-mesh/istio` release branch. |
 | proxy | Postsubmit | No periodic sync. When a PR merges into a release branch, uploads build artifacts to [GCS](https://storage.googleapis.com/maistra-prow-testing/proxy), and creates a PR to update the proxy dependency in the matching `openshift-service-mesh/istio` release branch. |
 
