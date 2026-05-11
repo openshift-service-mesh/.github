@@ -528,3 +528,8 @@ commits:
     date: 2026-05-05 11:57:16 -0400
     found: true
     isPendingUpstreamSync: true
+  - sha: f99c8dc4923a52cdbd16721906d1a95e0f210b82
+    title: '[release-1.27] Automator: Update proxy (#763)'
+    author: openshift-service-mesh-bot
+    date: 2026-05-10 08:07:37 -0400
+    found: true

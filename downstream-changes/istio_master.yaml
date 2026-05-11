@@ -389,3 +389,9 @@ commits:
     date: 2026-04-26 15:15:50 +0300
     found: true
     isPermanent: true
+  - sha: 57d8d2aa1c0829622df1903fe10be8d5b65e6623
+    title: enable TestGatewayConformance for ambient and pilot midstream (#745)
+    author: Cansin Tartici
+    date: 2026-05-10 08:59:38 +0200
+    found: true
+    isPermanent: true
