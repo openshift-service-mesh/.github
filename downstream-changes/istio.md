@@ -72,6 +72,7 @@
 | [6f8e7d5e](https://github.com/openshift-service-mesh/istio/commit/6f8e7d5ef6732ee07c0567aa3daa4565bdf4269b) | Update istio-gw-api-coredns-fix.patch to adapt the upstream changes ([#746](https://github.com/openshift-service-mesh/istio/issues/746)) |  |  | :white_check_mark: |  | 2026-04-27 11:38:35 +0300 | Maxim Babushkin |
 | [f1ff503a](https://github.com/openshift-service-mesh/istio/commit/f1ff503ab42365d705ef98acb9fdebcc9b7d5f50) | Fix go.sum and update license files ([#746](https://github.com/openshift-service-mesh/istio/issues/746)) |  |  | :white_check_mark: |  | 2026-04-26 15:15:50 +0300 | Maxim Babushkin |
 | [57d8d2aa](https://github.com/openshift-service-mesh/istio/commit/57d8d2aa1c0829622df1903fe10be8d5b65e6623) | enable TestGatewayConformance for ambient and pilot midstream ([#745](https://github.com/openshift-service-mesh/istio/issues/745)) |  |  | :white_check_mark: |  | 2026-05-10 08:59:38 +0200 | Cansin Tartici |
+| [8d3928a6](https://github.com/openshift-service-mesh/istio/commit/8d3928a60bd3722babe81e7fea0c847e9879947c) | Skip new unsupported ambient gw conformance tests ([#770](https://github.com/openshift-service-mesh/istio/issues/770)) |  |  | :white_check_mark: |  | 2026-06-01 20:06:31 +0300 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

@@ -395,3 +395,9 @@ commits:
     date: 2026-05-10 08:59:38 +0200
     found: true
     isPermanent: true
+  - sha: 8d3928a60bd3722babe81e7fea0c847e9879947c
+    title: Skip new unsupported ambient gw conformance tests (#770)
+    author: Maxim Babushkin
+    date: 2026-06-01 20:06:31 +0300
+    found: true
+    isPermanent: true
