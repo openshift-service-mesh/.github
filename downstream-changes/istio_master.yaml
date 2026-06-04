@@ -401,3 +401,9 @@ commits:
     date: 2026-06-01 20:06:31 +0300
     found: true
     isPermanent: true
+  - sha: 601ae5b887579508ec21cc550f4b60e84cb2bc54
+    title: Update unsupported ambient GW conformance tests (#780)
+    author: Maxim Babushkin
+    date: 2026-06-03 23:08:05 +0300
+    found: true
+    isPermanent: true
