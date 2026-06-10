@@ -553,3 +553,15 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-05-28 06:36:46 -0400
     found: true
+  - sha: bc8793a7cd778f2cfecfdfeccc97f3b7c96eea1e
+    title: Deploy Sail Operator control plane based on branch (#789)
+    author: OpenShift Cherrypick Robot
+    date: 2026-06-09 21:28:16 +0200
+    found: true
+    isPermanent: true
+  - sha: ef496d4024e157822390d4d41546e42dcb996ba8
+    title: Update proxy deps (#785)
+    author: Matej Kralik
+    date: 2026-06-09 15:30:06 +0200
+    found: true
+    isPermanent: true

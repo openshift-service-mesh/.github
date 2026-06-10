@@ -568,3 +568,14 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-05-31 07:45:17 -0400
     found: true
+  - sha: 3d41baeec1c1c29a8c9c329b135cd697c3854f50
+    title: '[release-1.28] Automator: Update proxy (#781)'
+    author: openshift-service-mesh-bot
+    date: 2026-06-09 10:18:49 -0400
+    found: true
+  - sha: 1ef330fa91ab674eac570b6363c88f2c4231ee95
+    title: Update go.sum after merge 1.28.8 (#782)
+    author: mkralik3
+    date: 2026-06-08 10:31:19 +0200
+    found: true
+    isPermanent: true

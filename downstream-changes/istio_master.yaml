@@ -407,3 +407,14 @@ commits:
     date: 2026-06-03 23:08:05 +0300
     found: true
     isPermanent: true
+  - sha: 65d201f3f4ecb6fff062a98ab670ebfe58c727b2
+    title: Deploy Sail Operator control plane based on branch (#786)
+    author: Maxim Babushkin
+    date: 2026-06-09 18:51:58 +0300
+    found: true
+    isPermanent: true
+  - sha: 69096dedb654440d6c613519aea9511204fe648e
+    title: Update gw conformance test patch file (#764)
+    author: Maxim Babushkin
+    date: 2026-05-07 19:04:18 +0300
+    found: true
