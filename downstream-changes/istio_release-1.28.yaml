@@ -579,3 +579,14 @@ commits:
     date: 2026-06-08 10:31:19 +0200
     found: true
     isPermanent: true
+  - sha: 6e7bc4e9c0c5b051f217b881a541f0cad3961a4e
+    title: Deploy Sail Operator control plane based on branch (#788)
+    author: OpenShift Cherrypick Robot
+    date: 2026-06-10 17:42:56 +0200
+    found: true
+    isPermanent: true
+  - sha: 462c38d417b8362c9032301b8cb897d91d910eb9
+    title: '[release-1.28] Automator: Update ztunnel (#784)'
+    author: openshift-service-mesh-bot
+    date: 2026-06-10 02:58:54 -0400
+    found: true
