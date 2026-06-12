@@ -418,3 +418,9 @@ commits:
     author: Maxim Babushkin
     date: 2026-05-07 19:04:18 +0300
     found: true
+  - sha: 52ed78405fdb904537ff05dbe28925ba13b512de
+    title: Add terminationMessagePolicy helm field for pilot container (#60102) (#796)
+    author: Brian Mangoenpawiro
+    date: 2026-06-11 09:51:44 +0200
+    found: true
+    isPendingUpstreamSync: true
