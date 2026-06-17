@@ -321,6 +321,7 @@
 | [e284440b](https://github.com/openshift-service-mesh/istio/commit/e284440b291aa20106ed1fbe864be82f36f09d84) | [release-1.27] Automator: Update proxy ([#777](https://github.com/openshift-service-mesh/istio/issues/777)) |  |  | :x: |  | 2026-05-28 06:36:46 -0400 | openshift-service-mesh-bot |
 | [bc8793a7](https://github.com/openshift-service-mesh/istio/commit/bc8793a7cd778f2cfecfdfeccc97f3b7c96eea1e) | Deploy Sail Operator control plane based on branch ([#789](https://github.com/openshift-service-mesh/istio/issues/789)) |  |  | :white_check_mark: |  | 2026-06-09 21:28:16 +0200 | OpenShift Cherrypick Robot |
 | [ef496d40](https://github.com/openshift-service-mesh/istio/commit/ef496d4024e157822390d4d41546e42dcb996ba8) | Update proxy deps ([#785](https://github.com/openshift-service-mesh/istio/issues/785)) |  |  | :white_check_mark: |  | 2026-06-09 15:30:06 +0200 | Matej Kralik |
+| [dbc5d8be](https://github.com/openshift-service-mesh/istio/commit/dbc5d8be325a530689c66a6b905651c9a5e48077) | [release-1.27] Automator: Update proxy ([#810](https://github.com/openshift-service-mesh/istio/issues/810)) |  |  | :x: |  | 2026-06-16 04:33:53 -0400 | openshift-service-mesh-bot |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -432,3 +433,4 @@
 | [1ef330fa](https://github.com/openshift-service-mesh/istio/commit/1ef330fa91ab674eac570b6363c88f2c4231ee95) | Update go.sum after merge 1.28.8 ([#782](https://github.com/openshift-service-mesh/istio/issues/782)) |  |  | :white_check_mark: |  | 2026-06-08 10:31:19 +0200 | mkralik3 |
 | [6e7bc4e9](https://github.com/openshift-service-mesh/istio/commit/6e7bc4e9c0c5b051f217b881a541f0cad3961a4e) | Deploy Sail Operator control plane based on branch ([#788](https://github.com/openshift-service-mesh/istio/issues/788)) |  |  | :white_check_mark: |  | 2026-06-10 17:42:56 +0200 | OpenShift Cherrypick Robot |
 | [462c38d4](https://github.com/openshift-service-mesh/istio/commit/462c38d417b8362c9032301b8cb897d91d910eb9) | [release-1.28] Automator: Update ztunnel ([#784](https://github.com/openshift-service-mesh/istio/issues/784)) |  |  | :x: |  | 2026-06-10 02:58:54 -0400 | openshift-service-mesh-bot |
+| [c04a5467](https://github.com/openshift-service-mesh/istio/commit/c04a5467993aafbad4e2943c8985869cf36fced5) | [release-1.28] Automator: Update proxy ([#809](https://github.com/openshift-service-mesh/istio/issues/809)) |  |  | :x: |  | 2026-06-16 04:36:28 -0400 | openshift-service-mesh-bot |
