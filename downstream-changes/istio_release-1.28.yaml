@@ -595,3 +595,9 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-06-16 04:36:28 -0400
     found: true
+  - sha: 64cff0e8084fb73eb298fa0970fc444c2ce12d4a
+    title: 'manifests: fix NetworkPolicy creation (#805)'
+    author: Mikhail Abramov
+    date: 2026-06-17 14:14:09 +0200
+    found: true
+    isPermanent: true
