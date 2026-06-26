@@ -77,6 +77,7 @@
 | [65d201f3](https://github.com/openshift-service-mesh/istio/commit/65d201f3f4ecb6fff062a98ab670ebfe58c727b2) | Deploy Sail Operator control plane based on branch ([#786](https://github.com/openshift-service-mesh/istio/issues/786)) |  |  | :white_check_mark: |  | 2026-06-09 18:51:58 +0300 | Maxim Babushkin |
 | [69096ded](https://github.com/openshift-service-mesh/istio/commit/69096dedb654440d6c613519aea9511204fe648e) | Update gw conformance test patch file ([#764](https://github.com/openshift-service-mesh/istio/issues/764)) |  |  | :x: |  | 2026-05-07 19:04:18 +0300 | Maxim Babushkin |
 | [52ed7840](https://github.com/openshift-service-mesh/istio/commit/52ed78405fdb904537ff05dbe28925ba13b512de) | Add terminationMessagePolicy helm field for pilot container ([#60102](https://github.com/openshift-service-mesh/istio/issues/60102)) ([#796](https://github.com/openshift-service-mesh/istio/issues/796)) |  | :hourglass_flowing_sand: | :x: |  | 2026-06-11 09:51:44 +0200 | Brian Mangoenpawiro |
+| [d29400d3](https://github.com/openshift-service-mesh/istio/commit/d29400d3d35d4bcc60d05417178797d27a0764e2) | Add Sail config for telemetry policy DynamicDNS test ([#818](https://github.com/openshift-service-mesh/istio/issues/818)) |  |  | :white_check_mark: |  | 2026-06-25 20:07:10 +0300 | Maxim Babushkin |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

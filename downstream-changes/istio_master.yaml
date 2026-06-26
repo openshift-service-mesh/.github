@@ -424,3 +424,9 @@ commits:
     date: 2026-06-11 09:51:44 +0200
     found: true
     isPendingUpstreamSync: true
+  - sha: d29400d3d35d4bcc60d05417178797d27a0764e2
+    title: Add Sail config for telemetry policy DynamicDNS test (#818)
+    author: Maxim Babushkin
+    date: 2026-06-25 20:07:10 +0300
+    found: true
+    isPermanent: true
