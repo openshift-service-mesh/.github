@@ -430,3 +430,9 @@ commits:
     date: 2026-06-25 20:07:10 +0300
     found: true
     isPermanent: true
+  - sha: f78559dc6aa0255e946fa30b9094327bdeb9a411
+    title: Skip pilot tests requiring experimental Gateway API CRDs (#823)
+    author: Cansin Tartici
+    date: 2026-07-01 10:34:32 +0200
+    found: true
+    isPermanent: true
