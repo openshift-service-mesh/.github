@@ -607,3 +607,9 @@ commits:
     date: 2026-07-01 14:14:04 +0200
     found: true
     isPermanent: true
+  - sha: 7444aa87f975516c7d706065113acb62326d777e
+    title: 'Revert "[release-1.28]prow: fix check_cluster_operators to survive transient …" (#835)'
+    author: Francisco Herrera
+    date: 2026-07-02 11:23:45 +0200
+    found: true
+    isPermanent: true

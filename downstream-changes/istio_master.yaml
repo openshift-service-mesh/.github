@@ -436,3 +436,9 @@ commits:
     date: 2026-07-01 10:34:32 +0200
     found: true
     isPermanent: true
+  - sha: e2f02f53fe09cb3477d73c75ab09d3671b1636f4
+    title: 'prow: fix check_cluster_operators to survive transient oc errors and log unstable operators (#830)'
+    author: Francisco Herrera
+    date: 2026-07-02 12:02:04 +0200
+    found: true
+    isPermanent: true
