@@ -442,3 +442,9 @@ commits:
     date: 2026-07-02 12:02:04 +0200
     found: true
     isPermanent: true
+  - sha: fdc0d392e9fce580e2f741e73658bd82858fe12c
+    title: Add unit and gencheck jobs directly on gh actions (#839)
+    author: Francisco Herrera
+    date: 2026-07-06 11:11:38 +0200
+    found: true
+    isPermanent: true
