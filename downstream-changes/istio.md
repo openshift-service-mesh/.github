@@ -81,6 +81,7 @@
 | [f78559dc](https://github.com/openshift-service-mesh/istio/commit/f78559dc6aa0255e946fa30b9094327bdeb9a411) | Skip pilot tests requiring experimental Gateway API CRDs ([#823](https://github.com/openshift-service-mesh/istio/issues/823)) |  |  | :white_check_mark: |  | 2026-07-01 10:34:32 +0200 | Cansin Tartici |
 | [e2f02f53](https://github.com/openshift-service-mesh/istio/commit/e2f02f53fe09cb3477d73c75ab09d3671b1636f4) | prow: fix check_cluster_operators to survive transient oc errors and log unstable operators ([#830](https://github.com/openshift-service-mesh/istio/issues/830)) |  |  | :white_check_mark: |  | 2026-07-02 12:02:04 +0200 | Francisco Herrera |
 | [fdc0d392](https://github.com/openshift-service-mesh/istio/commit/fdc0d392e9fce580e2f741e73658bd82858fe12c) | Add unit and gencheck jobs directly on gh actions ([#839](https://github.com/openshift-service-mesh/istio/issues/839)) |  |  | :white_check_mark: |  | 2026-07-06 11:11:38 +0200 | Francisco Herrera |
+| [96d7190c](https://github.com/openshift-service-mesh/istio/commit/96d7190c7db97c50a1d66b63b4ab4796ef5ed5fc) | Running gh action only as presubmit and running unit test in container ([#840](https://github.com/openshift-service-mesh/istio/issues/840)) |  |  | :white_check_mark: |  | 2026-07-08 12:58:23 +0200 | Francisco Herrera |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

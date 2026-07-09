@@ -448,3 +448,9 @@ commits:
     date: 2026-07-06 11:11:38 +0200
     found: true
     isPermanent: true
+  - sha: 96d7190c7db97c50a1d66b63b4ab4796ef5ed5fc
+    title: Running gh action only as presubmit and running unit test in container (#840)
+    author: Francisco Herrera
+    date: 2026-07-08 12:58:23 +0200
+    found: true
+    isPermanent: true
