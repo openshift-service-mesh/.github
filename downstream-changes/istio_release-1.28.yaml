@@ -647,3 +647,9 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-07-14 14:21:05 +0000
     found: true
+  - sha: 22173b9e4c966f0fbae766e24aabf71aa53e5124
+    title: Reorganize the images used for the testing (#848)
+    author: OpenShift Cherrypick Robot
+    date: 2026-07-20 15:43:47 +0200
+    found: true
+    isPermanent: true

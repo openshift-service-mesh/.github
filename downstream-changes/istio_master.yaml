@@ -982,3 +982,9 @@ commits:
     date: 2026-07-16 12:36:24 +0300
     found: true
     isPermanent: true
+  - sha: 92e91aacecc4b946586442e5665c1b0ca7ef0b6e
+    title: Add "create-service-account" flag to CreateRemoteSecret test function (#842)
+    author: Maxim Babushkin
+    date: 2026-07-21 00:29:11 +0300
+    found: true
+    isPermanent: true
