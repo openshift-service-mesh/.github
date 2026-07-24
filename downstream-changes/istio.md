@@ -188,6 +188,7 @@
 | [d42b0579](https://github.com/openshift-service-mesh/istio/commit/d42b0579284f578c322699da45e591a346d86cd8) | Use max to simplify value checks. ([#59569](https://github.com/openshift-service-mesh/istio/issues/59569)) |  |  | :x: |  | 2026-05-07 23:29:48 +0200 | Mads Jensen |
 | [1975ebba](https://github.com/openshift-service-mesh/istio/commit/1975ebba48b9f1a144624b32f1612b02c9357ac3) | Update Prow test Sail ZTunnel API ([#806](https://github.com/openshift-service-mesh/istio/issues/806)) |  |  | :white_check_mark: |  | 2026-07-16 12:36:24 +0300 | Maxim Babushkin |
 | [92e91aac](https://github.com/openshift-service-mesh/istio/commit/92e91aacecc4b946586442e5665c1b0ca7ef0b6e) | "Add ""create-service-account"" flag to CreateRemoteSecret test function ([#842](https://github.com/openshift-service-mesh/istio/issues/842))" |  |  | :white_check_mark: |  | 2026-07-21 00:29:11 +0300 | Maxim Babushkin |
+| [b3f64158](https://github.com/openshift-service-mesh/istio/commit/b3f6415878e158c51406e7bd90379c4f12e3f370) | prow: re-check cluster operators inside pod before running tests ([#857](https://github.com/openshift-service-mesh/istio/issues/857)) |  |  | :white_check_mark: |  | 2026-07-23 13:55:25 +0200 | Francisco Herrera |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

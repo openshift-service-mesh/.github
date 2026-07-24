@@ -988,3 +988,9 @@ commits:
     date: 2026-07-21 00:29:11 +0300
     found: true
     isPermanent: true
+  - sha: b3f6415878e158c51406e7bd90379c4f12e3f370
+    title: 'prow: re-check cluster operators inside pod before running tests (#857)'
+    author: Francisco Herrera
+    date: 2026-07-23 13:55:25 +0200
+    found: true
+    isPermanent: true
