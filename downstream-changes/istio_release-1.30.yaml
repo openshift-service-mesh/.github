@@ -1,0 +1,457 @@
+commits:
+  - sha: d8ba7391ba3a432bb89b90490246985a72d342ba
+    title: '[release-1.30] Automator: Update proxy (#821)'
+    author: openshift-service-mesh-bot
+    date: 2026-07-23 20:47:32 +0200
+    found: true
+    isPermanent: true
+  - sha: 5ae93449a5d1e7586cb7546478d1f95353833a3f
+    title: '[release-1.30] Automator: Update ztunnel (#852)'
+    author: openshift-service-mesh-bot
+    date: 2026-07-22 11:08:47 +0200
+    found: true
+  - sha: 6a1055e2bebfae50728ee4f3db834bf8b06faca7
+    title: Reorganize the images used for the testing (#849)
+    author: OpenShift Cherrypick Robot
+    date: 2026-07-20 13:10:15 +0200
+    found: true
+    isPermanent: true
+  - sha: 4b943b8d25a888fa1471c63bb2465f328105a595
+    title: Update "PR label check" GH workflow (#844)
+    author: OpenShift Cherrypick Robot
+    date: 2026-07-10 10:32:19 +0200
+    found: true
+    isPermanent: true
+  - sha: 8bb31509e2d89cc45e9f0602a44dcbb75526a6c8
+    title: Update skip tests for 1.30 (#841)
+    author: Matej Kralik
+    date: 2026-07-10 10:03:58 +0200
+    found: true
+    isPermanent: true
+  - sha: db9096e3a50c00918edc562f07675b503501b01a
+    title: Remove hardcoded echo image for pqc (#824)
+    author: Matej Kralik
+    date: 2026-07-02 20:06:02 +0200
+    found: true
+    isPermanent: true
+  - sha: 70382ed1dcaebab9fad25440d5c22d5ff0bc84e4
+    title: '[release-1.30] prow: fix check_cluster_operators to survive transient oc errors and log unstable operators (#838)'
+    author: OpenShift Cherrypick Robot
+    date: 2026-07-02 16:26:25 +0200
+    found: true
+    isPermanent: true
+  - sha: 98e682310b8acdb7d746e49ebbcb8d74e08ceacd
+    title: 'tmp: remove ambient skip sidecar on ocp (#826)'
+    author: Matej Kralik
+    date: 2026-07-01 15:47:45 +0200
+    found: true
+    isPermanent: true
+  - sha: cfc59a7263ee38d729d6ddffdf8e396d75f279ce
+    title: Skip pilot tests requiring experimental Gateway API CRDs (#832)
+    author: OpenShift Cherrypick Robot
+    date: 2026-07-01 12:46:33 +0200
+    found: true
+    isPermanent: true
+  - sha: 5e7bf7339f77b72f16b47e89171c8129550e5e18
+    title: '[release-1.30] Automator: Update proxy (#819)'
+    author: openshift-service-mesh-bot
+    date: 2026-06-24 12:24:18 -0400
+    found: true
+    isPermanent: true
+  - sha: 8eba3f2f6c4ac267f815020376e5691a4af0a2fa
+    title: Add missing Sail Operator test configs (#807)
+    author: Maxim Babushkin
+    date: 2026-06-24 11:15:16 +0300
+    found: true
+    isPermanent: true
+  - sha: 0b43aac251ba1adda6c3178e2162e0066724b8bd
+    title: '[release-1.30] Automator: Update ztunnel (#817)'
+    author: openshift-service-mesh-bot
+    date: 2026-06-23 09:43:27 -0400
+    found: true
+    isPermanent: true
+  - sha: 42c47eebf32dee174b01a07e2f5e1157cdb87495
+    title: '[release-1.30] Automator: Update proxy (#816)'
+    author: openshift-service-mesh-bot
+    date: 2026-06-23 07:29:09 -0400
+    found: true
+    isPermanent: true
+  - sha: 329ec80c2c13e42ff31928ac9826dac375bb5aed
+    title: '[release-1.30] Automator: Update proxy (#811)'
+    author: openshift-service-mesh-bot
+    date: 2026-06-18 13:37:50 -0400
+    found: true
+    isPermanent: true
+  - sha: 79836fa20c4a2b7c1bfa1251d8d06f09cbb79492
+    title: '[release-1.30] Automator: Update ztunnel (#814)'
+    author: openshift-service-mesh-bot
+    date: 2026-06-18 09:26:03 -0400
+    found: true
+    isPermanent: true
+  - sha: 869bced483d083a5c2ba2f5829028e6ae372ad09
+    title: '[release-1.30] Automator: Update proxy (#808)'
+    author: openshift-service-mesh-bot
+    date: 2026-06-16 04:36:28 -0400
+    found: true
+    isPermanent: true
+  - sha: 310ddc3c85564669bc90e84c536df44776d38788
+    title: Revert "Prevent route resource status conflict in multi-revision installs (#58292)" (#802)
+    author: Aslak Knutsen
+    date: 2026-06-15 11:19:55 +0200
+    found: true
+    isPermanent: true
+  - sha: 63d5cfab8872fed249f6bfc9d0a27eee0538566f
+    title: '  Remove unnecessary from: [] in NetworkPolicy templates (#59592)'
+    author: Cameron Garrison
+    date: 2026-03-27 07:52:20 -0400
+    found: true
+  - sha: 6b081df58323d073d10bbbcbf676c9f339036e63
+    title: 'manifests: fix NetworkPolicy creation (#803)'
+    author: Daniel Grimm
+    date: 2025-07-24 10:19:58 +0200
+    found: true
+    isPermanent: true
+  - sha: ec6e330171566a8f9c2dbd4e80eab3b0d8ae17c0
+    title: '[agw] Support Istio CA (#59713)'
+    author: Jackie Maertens
+    date: 2026-04-03 15:55:52 -0700
+    found: true
+  - sha: e8dc7f5fdaf96e855bdff4b8a899b87d84fba371
+    title: '[release-1.30] Automator: Update proxy (#800)'
+    author: openshift-service-mesh-bot
+    date: 2026-06-12 12:46:45 +0000
+    found: true
+    isPermanent: true
+  - sha: 25c524ce093c592e8e945cf2532d0f2e8b4b7da0
+    title: Add terminationMessagePolicy helm field for pilot container (#60102) (#798)
+    author: OpenShift Cherrypick Robot
+    date: 2026-06-11 19:24:45 +0200
+    found: true
+    isPendingUpstreamSync: true
+  - sha: c71c0bdad110047e8fbe51bb57f0bad74f37b6a9
+    title: Deploy Sail Operator control plane based on branch (#799)
+    author: Maxim Babushkin
+    date: 2026-06-09 13:20:20 +0300
+    found: true
+    isPermanent: true
+  - sha: 070a32bd5c4cf0e3fdc1c585c7d6de4e19e751ea
+    title: Update gw conformance test patch file (#795)
+    author: Maxim Babushkin
+    date: 2026-05-07 19:04:18 +0300
+    found: true
+    isPermanent: true
+  - sha: 7e32aeec7bd3d52bd940d4e3e5df1a49a5afa9bd
+    title: 'feat: add fips-140-3-redhat COMPLIANCE_POLICY (#767)'
+    author: Zuzana Miklánková
+    date: 2026-06-11 05:43:12 +0200
+    found: true
+    isPermanent: true
+  - sha: 0a0f1301889d4527ffa18bc74563dd0524b44ec5
+    title: Update proxy and ztunnel SHAs, skip WASM and CRL tests on OCP (#797)
+    author: Cameron Garrison
+    date: 2026-06-09 19:38:34 -0400
+    found: true
+    isPermanent: true
+  - sha: ea74489c378c88119ecf299385013436aa5a0fb7
+    title: Skip tests that fail on OCP due to platform limitations (#797)
+    author: Cameron Garrison
+    date: 2026-05-27 09:27:07 -0400
+    found: true
+    isPermanent: true
+  - sha: ebadbe99cff67520b72c5b87f12ea903f3999812
+    title: use release-1.28 proxy until 1.30 proxy branch is prepared (#797)
+    author: Cameron Garrison
+    date: 2026-05-15 12:17:49 -0400
+    found: true
+    isPermanent: true
+  - sha: 5cf2591b44c31f22091325042a77485b15b36cf9
+    title: 'Restore otelResourceAttributes removed by PR #689 cherry-pick'
+    author: Cameron Garrison
+    date: 2026-05-04 16:55:52 -0400
+    found: true
+  - sha: 9d279952fca23865d116325d70ed8df37d2f1d48
+    title: Fix lint failures in baseline_test.go and sail-operator-setup.sh (#797)
+    author: Cameron Garrison
+    date: 2026-05-04 12:25:51 -0400
+    found: true
+    isPermanent: true
+  - sha: 6f76790e6c8aac32947bd63fbbd74dc4ef70718a
+    title: Adding E2e Changes for Custom GatewayClass and "Meshless" Istio Deployment (#59179)
+    author: Jaiveer Katariya
+    date: 2026-04-08 17:04:57 -0400
+    found: true
+  - sha: 480b4d97ef4edc77f01bffaeec7d2035dde08a05
+    title: Fix additional shellcheck warnings in sail-operator-setup.sh (#797)
+    author: Cameron Garrison
+    date: 2026-05-04 11:44:14 -0400
+    found: true
+    isPermanent: true
+  - sha: 5b3c416db8b66270a057683d06c7b1f94f107d4f
+    title: 'Fix CI failures: go mod tidy, k8sbeta type error, and shell lint issues (#797)'
+    author: Cameron Garrison
+    date: 2026-05-04 11:16:09 -0400
+    found: true
+    isPermanent: true
+  - sha: cc711a3c92a304f398c359ba913cc5639ff8dd19
+    title: 'Revert xDS keepalive increase from #685'
+    author: Cameron Garrison
+    date: 2026-05-04 10:18:28 -0400
+    found: true
+  - sha: debdf8601943df93a7bd935338ed4dac0f3150b5
+    title: '[OSSM-12338] Standardize skip of failing test on both midstream and downstream repositories (#736)'
+    author: Matej Kralik
+    date: 2026-04-16 09:35:43 +0200
+    found: true
+    isPermanent: true
+  - sha: b2b2a709418ad920fa6bc815597ba49761570d74
+    title: Modify "pr-label-check" GH workflow (#703)
+    author: OpenShift Cherrypick Robot
+    date: 2026-04-13 15:09:56 +0200
+    found: true
+    isPermanent: true
+  - sha: b7f084c528234a480ca1c36b2fed095c55208e32
+    title: Add pre-release cherry-pick list create automation (#723)
+    author: OpenShift Cherrypick Robot
+    date: 2026-04-13 22:36:51 +0200
+    found: true
+    isPermanent: true
+  - sha: 88ab422a12ca7112dd45de173bd19b80999ea130
+    title: '[release-1.28] Security fix for 1.28 (#717)'
+    author: Mikhail Abramov
+    date: 2026-04-08 16:51:23 +0200
+    found: true
+    isPermanent: true
+  - sha: 28f1d163e9a490c93466cce058fad4cacc85cbb6
+    title: '[release-1.28] Adapt test suite on OSSM 3.3+ proxy key validation on FIPS (#709)'
+    author: OpenShift Cherrypick Robot
+    date: 2026-04-02 09:30:38 +0200
+    found: true
+    isPermanent: true
+  - sha: 655754de8a66162a3ad8e6e80f2caad059a63916
+    title: '[OSSM-12848] Fix pilot/gatewayinstance subsuite when sail operator is used (#648)'
+    author: Matej Kralik
+    date: 2026-03-31 16:14:03 +0200
+    found: true
+    isPermanent: true
+  - sha: 1839963b7c6667e9a941da33ae2d00ee8bd21368
+    title: 'fix: resources improperly being set when trying to remove resource values (#58824) (#689)'
+    author: Maxim Babushkin
+    date: 2026-03-24 15:15:37 +0200
+    found: true
+    isPermanent: true
+  - sha: d56c3faff1a4e334e4761d1f3eff707c63d3c116
+    title: 'fix: increase xDS keepalive to 2m (#685)'
+    author: Daniel Grimm
+    date: 2026-03-19 13:33:29 +0100
+    found: true
+    isPermanent: true
+  - sha: e435afa6bfbc996e4a524cd20e284695f299667c
+    title: 'tests: use check.OK function to log errors if occur (#675)'
+    author: Jacek Ewertowski
+    date: 2026-03-16 20:18:06 +0100
+    found: true
+    isPermanent: true
+  - sha: e962ab9c1d18e0b8df5792322283eb18ef07e1f8
+    title: Bump PROXY_REPO_SHA for 1.28.5 security release (#797)
+    author: Petr McAllister
+    date: 2026-03-04 13:56:40 -0800
+    found: true
+    isPermanent: true
+  - sha: 083111a21a4aeaad06a70c954cf4a87d7ec30b06
+    title: Fix sail operator setup for ambient pqc (#663)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-13 11:12:18 +0100
+    found: true
+    isPermanent: true
+  - sha: 9e2de5b97e488494bc26792a4cb9af683fdce942
+    title: 'Ambient/pqc: Correct workdir name (#665)'
+    author: Matej Kralik
+    date: 2026-03-13 20:33:20 +0100
+    found: true
+    isPermanent: true
+  - sha: 7c973ed3d940d438262330ae097f847da3acbde9
+    title: 'tests: customize app image in PQC tests (#639)'
+    author: Jacek Ewertowski
+    date: 2026-03-11 17:25:51 +0100
+    found: true
+    isPendingUpstreamSync: true
+  - sha: 54384a48bc1eb0d63a1c28dbc2db83630267d4e9
+    title: Add "ztunnelNamespace" flag to converter flow (#635)
+    author: Maxim Babushkin
+    date: 2026-03-05 11:57:02 +0200
+    found: true
+    isPermanent: true
+  - sha: b5cdebe927d100d259628eb19a7b7d00417df3bf
+    title: Add "ZtunnelNamespace" flag to specify Ztunnel deployment location (#58677) (#619)
+    author: Maxim Babushkin
+    date: 2026-03-04 11:24:28 +0200
+    found: true
+    isPermanent: true
+  - sha: f9d4af24f8e8fa3e04d14c7b3e16a2ddfe736ee9
+    title: Update integ-suite-ocp.sh to support IBM infra to run (#623)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-04 12:30:24 +0100
+    found: true
+    isPermanent: true
+  - sha: 8f428a4b6e90241b09ce2fabc77299cdb083be35
+    title: Add PR label check Github Action (#628)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-03 14:14:53 +0100
+    found: true
+    isPermanent: true
+  - sha: 7c4cd40ea86a7ea085383f6a02fa4def4fca7704
+    title: Update "PR label check" GH workflow (#630)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-03 16:01:48 +0100
+    found: true
+    isPermanent: true
+  - sha: 3ddecc594ff7996f672340fce197c7fabb25f063
+    title: 'tests: add integration tests for PQC compliance policy in ambient mode (#797)'
+    author: Jacek Ewertowski
+    date: 2026-02-18 21:59:51 +0100
+    found: true
+    isPermanent: true
+  - sha: f07c9494fba57b6790e3d3fee0b1ed914cc5f0de
+    title: Use DestinationRule in ambient tests (#797)
+    author: Jacek Ewertowski
+    date: 2026-03-03 14:47:29 +0100
+    found: true
+    isPermanent: true
+  - sha: 4f60e6e44fb0222930892fa68fe7ef518b42fdde
+    title: Add "discoverySelectors" param to Sail test deploy config (#617)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-02 15:51:12 +0100
+    found: true
+    isPermanent: true
+  - sha: 75bbad252e628a85adca51beee25fe1b281c4dc0
+    title: use Fedora 43 for both ztunnel and proxy runtime containers to contain openssl 3.5 (#606)
+    author: Zuzana Miklánková
+    date: 2026-02-26 17:34:14 +0100
+    found: true
+    isPermanent: true
+  - sha: 28575bcbea2a4b9af2b0455aa07c18b48fee6d41
+    title: Use our ztunnel (#594)
+    author: Zuzana Miklánková
+    date: 2026-02-23 13:56:24 +0100
+    found: true
+    isPermanent: true
+  - sha: 6b0a3f5b4ea5d47a4fd778e10230e7f2d3554ed9
+    title: '[release-1.28] Re-enable using unsupported commands with warning (#598)'
+    author: OpenShift Cherrypick Robot
+    date: 2026-02-24 02:01:32 +0100
+    found: true
+    isPermanent: true
+  - sha: e07a1b4c77e4e2bf2818fabfe548be1490750844
+    title: 'manifests: add NetworkPolicy to istio-cni chart (#446) (#587)'
+    author: Daniel Grimm
+    date: 2026-02-17 16:26:58 +0100
+    found: true
+    isPermanent: true
+  - sha: 435b4ebf3a3f52981b166c1bec578790f7dbaf5c
+    title: Missing backports in release-1.28 (#576)
+    author: Matej Kralik
+    date: 2026-02-16 16:02:06 +0100
+    found: true
+    isPermanent: true
+  - sha: 7542ae3f1e0943db5f23e64d1697e3d883eec690
+    title: Missing backports in release-1.28 (#585)
+    author: Matej Kralik
+    date: 2026-02-16 17:29:52 +0100
+    found: true
+    isPermanent: true
+  - sha: 2db74e5a89d39c0dd4241e01dfebec12b87536e3
+    title: Update some examples to use quay.io/sail-dev instead of docker (#797)
+    author: Nick Fox
+    date: 2025-03-10 15:32:01 -0400
+    found: true
+    isPermanent: true
+  - sha: fe92b24dafbf00889f17ac3cf4d85404cee82f24
+    title: Fixing Failing Converter Tests (#797)
+    author: ctartici
+    date: 2025-04-14 18:11:31 +0200
+    found: true
+    isPermanent: true
+  - sha: dc1814ff9b4f4fd40868962a8f4e5c6c5480056b
+    title: fix for release directory structure to patch config (#797)
+    author: ctartici
+    date: 2025-05-05 13:54:29 +0200
+    found: true
+    isPermanent: true
+  - sha: c3bec0055618844d33c0b3034015f5e12bc39f83
+    title: change timeout value 2h if test is running on sail-operator (#797)
+    author: ctartici
+    date: 2025-05-05 20:18:37 +0200
+    found: true
+    isPermanent: true
+  - sha: a29557643f52a83b3f6b66dccb868e35b5a3f12a
+    title: modify cleanup function with wait (#797)
+    author: ctartici
+    date: 2025-05-06 10:46:07 +0200
+    found: true
+    isPermanent: true
+  - sha: 4e89e4a6c96b23e93da7790cfcece2e99a120af0
+    title: Update bookinfo image version (#797)
+    author: Maxim Babushkin
+    date: 2025-04-20 09:48:40 +0300
+    found: true
+    isPermanent: true
+  - sha: 8588984316351b3ed1210f50a9d07ad5ebfdee68
+    title: Add mechanism to execute integration tests againist downstream builds. (#797)
+    author: ctartici
+    date: 2025-06-12 20:41:41 +0200
+    found: true
+    isPermanent: true
+  - sha: c2c53a303d55ac01ceee859b0d24a92e1663b14e
+    title: Added mechanism to skip test suites (#797)
+    author: ctartici
+    date: 2025-08-01 12:27:18 +0200
+    found: true
+    isPermanent: true
+  - sha: 457b6c84e2c8a5425e6d62d9f767d4e3a28c3912
+    title: Added mechanism to skip test suites (#797)
+    author: ctartici
+    date: 2025-08-04 11:04:31 +0200
+    found: true
+    isPermanent: true
+  - sha: 63515189eb637fa59951f50477189f6bffb83b92
+    title: Modifications for running Gateway Conformance Test Suite (#797)
+    author: ctartici
+    date: 2025-07-09 17:10:16 +0200
+    found: true
+    isPermanent: true
+  - sha: a0a2124729e0fd14641b1c5c94b90b62e9650419
+    title: '[release-1.27] Fix ca root cert configmap update in gateway ca controller (#797)'
+    author: Filip Brychta
+    date: 2025-09-04 08:12:10 +0200
+    found: true
+    isPermanent: true
+  - sha: 06e4d70175464d722e9bf0513084a4025507a385
+    title: Fixing lint warnings in our ocp scripts (#797)
+    author: Filip Brychta
+    date: 2025-09-05 09:08:24 +0200
+    found: true
+    isPermanent: true
+  - sha: 3a2de4473046b6b7cd07c1819e49ffcb35aed604
+    title: Set Ambient config for DNS resolution (#548)
+    author: OpenShift Cherrypick Robot
+    date: 2026-01-09 09:18:15 +0100
+    found: true
+    isPermanent: true
+  - sha: cb4a95695243a2fd2b1bf31757d6d3ddc0c836ea
+    title: Prevent silent exit in OpenShift CI (#551)
+    author: OpenShift Cherrypick Robot
+    date: 2026-01-13 14:54:57 +0100
+    found: true
+    isPermanent: true
+  - sha: 3259328871a80b9afb75da9096f8f354bd710078
+    title: 'OSSM-8342: Use our proxy (#225)'
+    author: Jonh Wendell
+    date: 2025-01-15 12:56:16 -0500
+    found: true
+    isPermanent: true
+  - sha: 7a510288a468a0c8cb5b6ac08bedf80e5b3c7ef7
+    title: Cherry-pick downstream changes to release-1.30 (#761)
+    author: Cameron Garrison
+    date: 2026-06-10 05:36:06 -0400
+    found: true
+    isPermanent: true
