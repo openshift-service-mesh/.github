@@ -397,7 +397,7 @@ function markHiddenCommits() {
     [[ ! -f "${yaml_file}" ]] && continue
 
     local count
-    count=$(yq e "[.commits[] | select(.hide != true and (.title | test(\"${HIDE_PATTERNS}\"))] | length" "${yaml_file}")
+    count=$(yq e "[.commits[] | select(.hide != true and (.title | test(\"${HIDE_PATTERNS}\")))] | length" "${yaml_file}")
     if [[ "${count}" -gt 0 ]]; then
       yq -i e "(.commits[] | select(.hide != true and (.title | test(\"${HIDE_PATTERNS}\"))) | .hide) = true" "${yaml_file}"
       echo "  ${branch}: marked ${count} commits as hidden"
@@ -456,8 +456,17 @@ function renderOverviewMatrix() {
   echo "${header}"
   echo "${separator}"
 
-  # Render one row per commit title
+  # Render one row per commit title, skipping master-only commits
   for title in "${ordered_titles[@]}"; do
+    local on_release=false
+    for branch in ${BRANCHES}; do
+      if [[ "${branch}" != "master" && -n "${branch_has["${branch}|${title}"]:-}" ]]; then
+        on_release=true
+        break
+      fi
+    done
+    [[ "${on_release}" == "false" ]] && continue
+
     local row="| `renderTitle \"${title}\"` |"
     for branch in ${BRANCHES}; do
       if [[ -n "${branch_has["${branch}|${title}"]:-}" ]]; then
