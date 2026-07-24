@@ -257,6 +257,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-02-10 22:57:07 +0000
     found: true
+    hide: true
   - sha: a2ffe1a25755a5e82e7ecb67f4fc399e8f67ff12
     title: Missing backports in release-1.28 (#585)
     author: Matej Kralik
@@ -302,6 +303,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-02-25 14:19:00 -0500
     found: true
+    hide: true
   - sha: a4394a0b1b05e508a0fbf372df5a87e89e9a3486
     title: use Fedora 43 for both ztunnel and proxy runtime containers to contain openssl 3.5 (#606)
     author: Zuzana Miklánková
@@ -313,6 +315,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-02-26 05:09:05 +0000
     found: true
+    hide: true
   - sha: 253f92586704cc02fe68927d70be366ee37a080f
     title: Revert "Prevent route resource status conflict in multi-revision installs (#58292) (#58369)"
     author: Aslak Knutsen
@@ -381,6 +384,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-05 11:27:33 -0500
     found: true
+    hide: true
   - sha: 7da3a391b5a5a30164858e082694d6e36c8e3ab9
     title: 'tests: customize app image in PQC tests (#639)'
     author: Jacek Ewertowski
@@ -392,6 +396,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-12 11:11:58 -0400
     found: true
+    hide: true
   - sha: db3ef7e4bfee13de3d81123c97c7245ec13c9f08
     title: 'tests: use FIPS-compliant keys and certs in integration tests (#658)'
     author: Daniel Grimm
@@ -438,6 +443,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-17 03:16:52 -0400
     found: true
+    hide: true
   - sha: abdbf45d7ccaca4b2fc0f2dc301b409674755a58
     title: 'fix: increase xDS keepalive to 2m (#685)'
     author: Daniel Grimm
@@ -455,6 +461,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-25 08:21:48 -0400
     found: true
+    hide: true
   - sha: 894488a13568b81a5e1c8ce33e4933aff6a3e31c
     title: '[OSSM-12848] Fix pilot/gatewayinstance subsuite when sail operator is used (#648)'
     author: Matej Kralik
@@ -478,6 +485,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-04-09 00:57:30 -0400
     found: true
+    hide: true
   - sha: 03c90acd65bb7baefe0fbfb1c6c4c32da7c27ab6
     title: Add pre-release cherry-pick list create automation (#723)
     author: OpenShift Cherrypick Robot
@@ -495,6 +503,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-04-13 02:38:55 -0400
     found: true
+    hide: true
   - sha: 4d96a62760d68edb94a6676b25c4c208132c0bc2
     title: '[OSSM-12338] Standardize skip of failing test on both midstream and downstream repositories (#736)'
     author: Matej Kralik
@@ -506,21 +515,25 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-04-27 22:40:15 -0400
     found: true
+    hide: true
   - sha: c990433e24d2a4e9e9bf80103a0844b6da4f3526
     title: '[release-1.28] Automator: Update proxy (#749)'
     author: openshift-service-mesh-bot
     date: 2026-04-28 11:47:34 -0400
     found: true
+    hide: true
   - sha: ab89358620c5e7a34cea15fe9a9dbc8a9a2a7415
     title: '[release-1.28] Automator: Update ztunnel (#748)'
     author: openshift-service-mesh-bot
     date: 2026-04-29 05:42:49 -0400
     found: true
+    hide: true
   - sha: cf3b8f223e47a4c3d85538d15d1af6b65675893a
     title: '[release-1.28] Automator: Update proxy (#752)'
     author: openshift-service-mesh-bot
     date: 2026-04-30 09:03:05 -0400
     found: true
+    hide: true
   - sha: 0139da7c45c9cf2d5f91a742b3187be84401a641
     title: 'Revert "fix: increase xDS keepalive to 2m (#685)" (#757)'
     author: Jonh Wendell
@@ -532,11 +545,13 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-05-04 02:33:09 -0400
     found: true
+    hide: true
   - sha: c5d40b862b52789b57ed3886f100c73c25fdd19d
     title: '[release-1.28] Automator: Update proxy (#760)'
     author: openshift-service-mesh-bot
     date: 2026-05-05 02:01:06 -0400
     found: true
+    hide: true
   - sha: c4c3f99e1d0f824d3547c22d292309cdd774d1ad
     title: '  Remove unnecessary from: [] in NetworkPolicy templates (#59592) (#729)'
     author: Cameron Garrison
@@ -548,31 +563,37 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-05-10 07:39:43 -0400
     found: true
+    hide: true
   - sha: 5b9109d63b1ab3dfaef7c6ed83e2a91a2635c263
     title: '[release-1.28] Automator: Update proxy (#768)'
     author: openshift-service-mesh-bot
     date: 2026-05-17 13:12:01 -0400
     found: true
+    hide: true
   - sha: b612d6730e3fd0cc86f60f7f438f16eb05abca30
     title: '[release-1.28] Automator: Update ztunnel (#774)'
     author: openshift-service-mesh-bot
     date: 2026-05-26 17:40:46 -0400
     found: true
+    hide: true
   - sha: f2ef309e3d5d646264802475fe67938eabe9e067
     title: '[release-1.28] Automator: Update proxy (#771)'
     author: openshift-service-mesh-bot
     date: 2026-05-28 04:43:01 -0400
     found: true
+    hide: true
   - sha: b7c0c039f926920ea71e536a04349a84400e793b
     title: '[release-1.28] Automator: Update proxy (#779)'
     author: openshift-service-mesh-bot
     date: 2026-05-31 07:45:17 -0400
     found: true
+    hide: true
   - sha: 3d41baeec1c1c29a8c9c329b135cd697c3854f50
     title: '[release-1.28] Automator: Update proxy (#781)'
     author: openshift-service-mesh-bot
     date: 2026-06-09 10:18:49 -0400
     found: true
+    hide: true
   - sha: 1ef330fa91ab674eac570b6363c88f2c4231ee95
     title: Update go.sum after merge 1.28.8 (#782)
     author: mkralik3
@@ -590,11 +611,13 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-06-10 02:58:54 -0400
     found: true
+    hide: true
   - sha: c04a5467993aafbad4e2943c8985869cf36fced5
     title: '[release-1.28] Automator: Update proxy (#809)'
     author: openshift-service-mesh-bot
     date: 2026-06-16 04:36:28 -0400
     found: true
+    hide: true
   - sha: 64cff0e8084fb73eb298fa0970fc444c2ce12d4a
     title: 'manifests: fix NetworkPolicy creation (#805)'
     author: Mikhail Abramov
@@ -642,11 +665,13 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-07-08 00:35:03 +0000
     found: true
+    hide: true
   - sha: 0d1da9ce01d19f230430630cb1c17b7eda7c308c
     title: '[release-1.28] Automator: Update ztunnel (#847)'
     author: openshift-service-mesh-bot
     date: 2026-07-14 14:21:05 +0000
     found: true
+    hide: true
   - sha: 22173b9e4c966f0fbae766e24aabf71aa53e5124
     title: Reorganize the images used for the testing (#848)
     author: OpenShift Cherrypick Robot

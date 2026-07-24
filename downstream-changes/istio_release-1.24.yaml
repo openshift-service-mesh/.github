@@ -140,31 +140,37 @@ commits:
     comment: Our version of the proxy
     isPermanent: true
     found: true
+    hide: true
   - sha: 5c914a2c40d7573c11fb94a755a859e3202e0c3d
     title: '[release-1.24] Automator: Update proxy (#485)'
     author: openshift-service-mesh-bot
     date: 2025-09-10 09:21:23 +0200
     found: true
+    hide: true
   - sha: 212682ee80849606726afb8d1fc349b468bcd64f
     title: '[release-1.24] Automator: Update proxy (#513)'
     author: openshift-service-mesh-bot
     date: 2025-10-15 15:01:13 -0400
     found: true
+    hide: true
   - sha: 6afb4060d890b47f7b1e861a6ebdd1c7ef94961c
     title: '[release-1.24] Automator: Update proxy (#518)'
     author: openshift-service-mesh-bot
     date: 2025-10-22 04:16:45 -0400
     found: true
+    hide: true
   - sha: aca33d64402be6c6540149df6ccca44999e1f1ea
     title: '[release-1.24] Automator: Update proxy (#527)'
     author: openshift-service-mesh-bot
     date: 2025-10-26 07:02:58 -0400
     found: true
+    hide: true
   - sha: 10e4d700bd3b39f9d4ecc9623c86958824dda729
     title: '[release-1.24] Automator: Update proxy (#529)'
     author: openshift-service-mesh-bot
     date: 2025-11-02 08:46:05 -0500
     found: true
+    hide: true
   - sha: 9bff741fb4818fc690834b42cb96efcd5863e881
     title: Prevent silent exit in OpenShift CI (#550)
     author: OpenShift Cherrypick Robot
@@ -180,6 +186,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-02-03 03:18:35 -0500
     found: true
+    hide: true
   - sha: 07a0078396ce598eda869251f2e1dfc101b2bce1
     title: '[release-1.24] Backport changes for use fully qualified names (#578)'
     author: Matej Kralik
@@ -196,6 +203,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-04 03:16:00 -0500
     found: true
+    hide: true
   - sha: 36c948e4bb439743da865fed6641e54ac9bb6b39
     title: Update "PR label check" GH workflow (#633)
     author: OpenShift Cherrypick Robot
@@ -207,6 +215,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-15 10:42:07 -0400
     found: true
+    hide: true
   - sha: 41c8fd4691d2f48a7258eb311325f6e4f5a3c05f
     title: '[release-1.24] Security fixes for 1.24 (from istio/istio pr #59372) (#679)'
     author: Yuanlin Xu
@@ -218,6 +227,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-04-08 07:54:02 -0400
     found: true
+    hide: true
   - sha: 73bb5ed55ad039919dc23024932d39f97d5d0076
     title: Modify "pr-label-check" GH workflow (#701)
     author: OpenShift Cherrypick Robot
@@ -241,8 +251,10 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-06-18 04:46:48 -0400
     found: true
+    hide: true
   - sha: b52ce88a299a718049a90d9dadefe0c761a6b491
     title: '[release-1.24] Automator: Update proxy (#833)'
     author: openshift-service-mesh-bot
     date: 2026-07-10 11:53:27 +0200
     found: true
+    hide: true

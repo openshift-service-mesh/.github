@@ -476,16 +476,19 @@ commits:
     author: Istio Automation
     date: 2026-06-14 09:24:32 -0700
     found: true
+    hide: true
   - sha: 017979b587de08c902dc2c0edac4e154a37c46f8
     title: 'Automator: update go-control-plane in istio/istio@master (#60585)'
     author: Istio Automation
     date: 2026-06-13 19:55:32 -0700
     found: true
+    hide: true
   - sha: b740d22787cf30e1aa1bc90facb700150c6ade74
     title: 'Automator: update proxy@master in istio/istio@master (#60584)'
     author: Istio Automation
     date: 2026-06-13 09:12:31 -0700
     found: true
+    hide: true
   - sha: 863549fc86921a77e657e5ed37682c288d67d7b6
     title: introducing e2e tests for TLS passthrough in EWGW (#59560)
     author: Gustavo Meira
@@ -496,6 +499,7 @@ commits:
     author: Istio Automation
     date: 2026-06-11 20:45:38 -0700
     found: true
+    hide: true
   - sha: 4cea327fa0ec01496bf48db894ed9138b957bb78
     title: 'addon: bump addons version (#60495)'
     author: my-git9
@@ -506,6 +510,7 @@ commits:
     author: Istio Automation
     date: 2026-06-11 06:37:52 -0700
     found: true
+    hide: true
   - sha: 84f63e435bf5dd3a3f14513cda5fc4bfd75ee594
     title: 'perf: optimize sidecar exact-host egress resolution via index lookup (#60473)'
     author: Rudrakh Panigrahi
@@ -516,6 +521,7 @@ commits:
     author: Istio Automation
     date: 2026-06-11 05:11:40 -0700
     found: true
+    hide: true
   - sha: dfd01e7f00e15f468eeae4f8f062004bea943328
     title: 'networking: include budget_interval field in retry budget traffic policy (#60435)'
     author: Eric Bishop
@@ -526,6 +532,7 @@ commits:
     author: Istio Automation
     date: 2026-06-10 06:24:40 -0700
     found: true
+    hide: true
   - sha: 081e643221edc274a841c3ccc05c69e8d15cd5ca
     title: Fix ambient pods dropped from host probe ipset after node/kubelet restart (#60471)
     author: Nick
@@ -541,6 +548,7 @@ commits:
     author: Istio Automation
     date: 2026-06-09 17:55:36 -0700
     found: true
+    hide: true
   - sha: 3b52372282f1b0c461bfd12c75447de43bde7cbf
     title: Add istio-agentgateway-waypoint class (#60457)
     author: Jackie Maertens
@@ -551,6 +559,7 @@ commits:
     author: Istio Automation
     date: 2026-06-09 11:02:39 -0700
     found: true
+    hide: true
   - sha: e992d0cb763b42fea19a4dec1f04e2b5f9620d56
     title: 'feat: implement allow_any_dynamic_dns mode in outbound traffic policy (#59802)'
     author: Rudrakh Panigrahi
@@ -561,6 +570,7 @@ commits:
     author: Istio Automation
     date: 2026-06-08 14:01:37 -0700
     found: true
+    hide: true
   - sha: f0cc7c9ab873766e8f9d96bcb7fde66ebbf94d40
     title: wrap build targets in retry and widen the go-fetch retry regex (#60481)
     author: Petr McAllister
@@ -576,16 +586,19 @@ commits:
     author: Istio Automation
     date: 2026-06-08 04:56:36 -0700
     found: true
+    hide: true
   - sha: dac9f6e75b630da601d79446ed9605b791d5c33a
     title: 'Automator: update proxy@master in istio/istio@master (#60487)'
     author: Istio Automation
     date: 2026-06-08 04:56:28 -0700
     found: true
+    hide: true
   - sha: ddb228efed411e2078e64536b1b0050318f411c9
     title: 'Automator: update go-control-plane in istio/istio@master (#60493)'
     author: Istio Automation
     date: 2026-06-08 04:01:28 -0700
     found: true
+    hide: true
   - sha: 66bbfd8a6e36d01a7f025f4398d80589e84b12e0
     title: 'pilot: skip empty IPRangeMatcher for headless services on IPv6 waypoint (#60314)'
     author: Aditya Menon
@@ -606,6 +619,7 @@ commits:
     author: Istio Automation
     date: 2026-06-05 09:46:40 -0700
     found: true
+    hide: true
   - sha: c465e003bdcf83d50d9f859717802beec279b168
     title: 'test: gateway-API-only test mode plumbing (#60453)'
     author: Jaiveer Katariya
@@ -626,6 +640,7 @@ commits:
     author: Istio Automation
     date: 2026-06-03 17:56:44 -0700
     found: true
+    hide: true
   - sha: 2f4b42c60b6b44c725898a00e1a34d8e87fa5fd8
     title: 'Make node-untaint controller respect configurable taint name (PILOT_NODE_UNTAINT_CONTROLLERS_TAINT_NAME) — Fixes #57844 (#59499)'
     author: Mirt0x
@@ -641,16 +656,19 @@ commits:
     author: Istio Automation
     date: 2026-06-02 21:24:43 -0700
     found: true
+    hide: true
   - sha: 13aade0560377b210d65d1ef9e5173ed7e575d59
     title: 'Automator: update proxy@master in istio/istio@master (#60439)'
     author: Istio Automation
     date: 2026-06-02 12:44:44 -0700
     found: true
+    hide: true
   - sha: 084d73968d08d968b450a2df64f0861c040d23d4
     title: 'Automator: update common-files@master in istio/istio@master (#60413)'
     author: Istio Automation
     date: 2026-06-02 01:03:43 -0700
     found: true
+    hide: true
   - sha: 47ac61d15c856359fb917100e94cf8e3dc43af7c
     title: Fix proxy init image template (#59292)
     author: darren
@@ -661,6 +679,7 @@ commits:
     author: Istio Automation
     date: 2026-06-01 13:17:31 -0700
     found: true
+    hide: true
   - sha: 89919b3f77dd9bf4bf84786130c363b1c1a31f51
     title: Sidecar->ambient migration tests (#60010)
     author: Johanan Liebermann
@@ -696,11 +715,13 @@ commits:
     author: Istio Automation
     date: 2026-05-30 19:56:05 -0700
     found: true
+    hide: true
   - sha: c43ede103f4917aa943526f959d448b451d4c383
     title: 'Automator: update ztunnel@master in istio/istio@master (#60418)'
     author: Istio Automation
     date: 2026-05-29 18:53:33 -0700
     found: true
+    hide: true
   - sha: 7d260f3226a28825207bf2732a409210d73c8b24
     title: 'networking: support prefix_rewrite in HTTPRedirect (#60385)'
     author: Liam White
@@ -726,41 +747,49 @@ commits:
     author: Istio Automation
     date: 2026-05-29 13:28:34 -0700
     found: true
+    hide: true
   - sha: 491767185793cb30987d3efff629f73929ef2e9a
     title: 'Automator: update proxy@master in istio/istio@master (#60400)'
     author: Istio Automation
     date: 2026-05-29 06:46:34 -0700
     found: true
+    hide: true
   - sha: 426fcda4276e5e217f7ceb6c348ef516785d5b0b
     title: 'Automator: update ztunnel@master in istio/istio@master (#60398)'
     author: Istio Automation
     date: 2026-05-28 18:11:33 -0700
     found: true
+    hide: true
   - sha: 9d81a68a4fbb2e476df547cb83eb5ebc350c0488
     title: 'Automator: update proxy@master in istio/istio@master (#60384)'
     author: Istio Automation
     date: 2026-05-28 15:30:33 -0700
     found: true
+    hide: true
   - sha: 6b61bcf47c9d70ae5b6adbe4478bc510f5974680
     title: 'Automator: update common-files@master in istio/istio@master (#60383)'
     author: Istio Automation
     date: 2026-05-28 14:14:35 -0700
     found: true
+    hide: true
   - sha: 119f6172d8515ce7e46b84711c81641a07493665
     title: 'Automator: update istio/client-go@master dependency in istio/istio@master (#60380)'
     author: Istio Automation
     date: 2026-05-28 07:10:32 -0700
     found: true
+    hide: true
   - sha: 3e6e6b5d0fb88d9b0900c46d8aef4dff6cd41cba
     title: 'Automator: update proxy@master in istio/istio@master (#60355)'
     author: Istio Automation
     date: 2026-05-27 15:32:26 -0700
     found: true
+    hide: true
   - sha: 30d1c6aafc6d2f922398fb6bd8e9f2bff258f43a
     title: 'Automator: update ztunnel@master in istio/istio@master (#60363)'
     author: Istio Automation
     date: 2026-05-27 02:57:28 -0700
     found: true
+    hide: true
   - sha: da68eabc8e2f025c82ea9882957c073b9ab9a82b
     title: add istioctl analyzer for gateway api crds below minimum version (#60359)
     author: Petr McAllister
@@ -771,16 +800,19 @@ commits:
     author: Istio Automation
     date: 2026-05-26 09:18:28 -0700
     found: true
+    hide: true
   - sha: d39de9a82ef3f114222fb6d7ac75d34143c737ef
     title: 'Automator: update ztunnel@master in istio/istio@master (#60348)'
     author: Istio Automation
     date: 2026-05-25 17:59:25 -0700
     found: true
+    hide: true
   - sha: 0db8e7a2c2bba613ebaa66ccbf7f71ee08d0e212
     title: 'Automator: update go-control-plane in istio/istio@master (#60347)'
     author: Istio Automation
     date: 2026-05-23 19:44:22 -0700
     found: true
+    hide: true
   - sha: fd20fced078d6b9d455116d47e4ff85d14edc19d
     title: fix consistentHash load balancing issue (#60329)
     author: Rama Chavali
@@ -831,6 +863,7 @@ commits:
     author: Istio Automation
     date: 2026-05-20 17:48:05 -0700
     found: true
+    hide: true
   - sha: 892c38a8af936792c81a0884674c88c8feaa5f6f
     title: 'crd validation: allow opting in to skipping CRD validation (#60304)'
     author: John Howard
@@ -866,6 +899,7 @@ commits:
     author: Istio Automation
     date: 2026-05-16 19:47:41 -0700
     found: true
+    hide: true
   - sha: 67c0571389a612f0824f5711e1b22a9f8620cf8d
     title: 'krt: add dump for join (#60234)'
     author: John Howard
@@ -891,6 +925,7 @@ commits:
     author: Istio Automation
     date: 2026-05-13 12:30:05 -0700
     found: true
+    hide: true
   - sha: e30a682420a181d547d0c82ec424e19828dcc8cd
     title: update Kiali to 2.26 - it works with Istio 1.30 (#60183)
     author: John Mazzitelli
@@ -971,6 +1006,7 @@ commits:
     author: Istio Automation
     date: 2026-05-08 17:47:48 -0700
     found: true
+    hide: true
   - sha: d42b0579284f578c322699da45e591a346d86cd8
     title: Use max to simplify value checks. (#59569)
     author: Mads Jensen

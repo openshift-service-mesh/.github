@@ -254,11 +254,13 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-10-02 10:30:55 +0200
     found: true
+    hide: true
   - sha: fc5f695dac9b123e269626b2fd16a91f770a16b2
     title: '[release-1.27] Automator: Update proxy (#510)'
     author: openshift-service-mesh-bot
     date: 2025-10-14 03:48:12 -0400
     found: true
+    hide: true
   - sha: 748dd8f2e40bbde2174b330b147ec50d69622670
     title: Implement cluster operator stability check (#508)
     author: OpenShift Cherrypick Robot
@@ -269,26 +271,31 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-10-15 07:18:11 -0400
     found: true
+    hide: true
   - sha: 41b4fc0092bcb5918cdec49c6a05328d397b2d10
     title: '[release-1.27] Automator: Update proxy (#520)'
     author: openshift-service-mesh-bot
     date: 2025-10-16 16:21:44 -0400
     found: true
+    hide: true
   - sha: e9b031ef6b6d4c0767d799a509c56f32ae2cb98b
     title: '[release-1.27] Automator: Update proxy (#522)'
     author: openshift-service-mesh-bot
     date: 2025-10-21 16:29:03 -0400
     found: true
+    hide: true
   - sha: 8b721a266c6bd41d84ec1ea71902c50b92da5e3c
     title: '[release-1.27] Automator: Update proxy (#523)'
     author: openshift-service-mesh-bot
     date: 2025-10-22 01:42:27 -0400
     found: true
+    hide: true
   - sha: 15d69d85e3c34215c34ad18a97a7ad51d1ba301d
     title: '[release-1.27] Automator: Update proxy (#525)'
     author: openshift-service-mesh-bot
     date: 2025-10-27 03:51:30 -0400
     found: true
+    hide: true
   - sha: e4c535c0f8a6f7b7dcfc780d7d9b9c86c17bfd8e
     title: 'manifests: add optional network policy charts for ztunnel (#57680)'
     author: Cameron Garrison
@@ -299,6 +306,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-11-30 05:51:59 -0500
     found: true
+    hide: true
   - sha: ee2a561a92ec2b7074fdb00a9f918427642ca097
     title: Gateway Inference Extension 1.1 Multi-Port support (#538)
     author: Aslak Knutsen
@@ -321,6 +329,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-01-15 16:27:12 -0500
     found: true
+    hide: true
   - sha: 7d86be07c1fbde694b42a104bde3930cb84d944b
     title: Fix Telemetry tests Sail Operator config (#552) (#556)
     author: Maxim Babushkin
@@ -361,11 +370,13 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-02-25 22:39:40 -0500
     found: true
+    hide: true
   - sha: c7ea2467ec0fcf745ec679f7289df93fb3ba7487
     title: '[release-1.27] Automator: Update proxy (#615)'
     author: openshift-service-mesh-bot
     date: 2026-03-01 12:21:22 -0500
     found: true
+    hide: true
   - sha: a2e60cfc6620cbd314d387ae36f8edd97a22b43b
     title: Add "discoverySelectors" param to Sail test deploy config (#616)
     author: OpenShift Cherrypick Robot
@@ -430,11 +441,13 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-15 14:35:51 -0400
     found: true
+    hide: true
   - sha: 05659db4d2c3082fe25be2712780475d56cc782c
     title: '[release-1.27] Automator: Update ztunnel (#660)'
     author: openshift-service-mesh-bot
     date: 2026-03-16 09:49:50 -0400
     found: true
+    hide: true
   - sha: aa9c1669620c4009f87f216121c0a01271e6aa73
     title: 'fix: resources improperly being set when trying to remove resource values (#58824) (#691)'
     author: Maxim Babushkin
@@ -446,6 +459,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-29 08:39:15 -0400
     found: true
+    hide: true
   - sha: 89e95d96e773e2ced0fc86eba50d8cf454adf3d7
     title: Fix pilot/gatewayinstance subsuite when sail operator is used (#706)
     author: OpenShift Cherrypick Robot
@@ -463,16 +477,19 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-04-09 01:05:47 -0400
     found: true
+    hide: true
   - sha: f9718a08954d0a9f83e6294ff7289a29780c9676
     title: '[release-1.27] Automator: Update proxy (#718)'
     author: openshift-service-mesh-bot
     date: 2026-04-10 10:59:24 -0400
     found: true
+    hide: true
   - sha: b3e88db6280746300f7759ab4de61bee927ebdd7
     title: '[release-1.27] Automator: Update proxy (#722)'
     author: openshift-service-mesh-bot
     date: 2026-04-12 07:06:55 -0400
     found: true
+    hide: true
   - sha: 4b991fab7ffecd6401f204ca04ce39d4f7bb5905
     title: Modify "pr-label-check" GH workflow (#702)
     author: OpenShift Cherrypick Robot
@@ -496,21 +513,25 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-04-20 10:19:12 -0400
     found: true
+    hide: true
   - sha: b911848021d2e60b70c715533bffc0700ddfceaa
     title: '[release-1.27] Automator: Update ztunnel (#747)'
     author: openshift-service-mesh-bot
     date: 2026-04-28 16:18:38 -0400
     found: true
+    hide: true
   - sha: 8c58bda6d929798ac5b768c01361ba20904edfe5
     title: '[release-1.27] Automator: Update proxy (#744)'
     author: openshift-service-mesh-bot
     date: 2026-04-28 07:42:47 -0400
     found: true
+    hide: true
   - sha: 787cc8d76c29e931c8ebe8785f5ce09426ed3d57
     title: '[release-1.27] Automator: Update proxy (#751)'
     author: openshift-service-mesh-bot
     date: 2026-04-30 06:54:19 -0400
     found: true
+    hide: true
   - sha: e973d7be21bca4a1a4f2200ecc63c380bfc09150
     title: 'Revert "fix: resources improperly being set when trying to remove resource values (#58824) (#691)" (#759)'
     author: Matej Kralik
@@ -522,6 +543,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-05-04 02:33:09 -0400
     found: true
+    hide: true
   - sha: 047067a2f153da94e927fae4563f2ff4920b18fd
     title: '  Remove unnecessary from: [] in NetworkPolicy templates (#59592) (#730)'
     author: Cameron Garrison
@@ -533,26 +555,31 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-05-10 08:07:37 -0400
     found: true
+    hide: true
   - sha: 86a7f7fe3b47b57eb77d67ebce775290ce09932d
     title: '[release-1.27] Automator: Update proxy (#769)'
     author: openshift-service-mesh-bot
     date: 2026-05-17 13:23:14 -0400
     found: true
+    hide: true
   - sha: 3a3105b56d119ddd4e2ed0d2ee4bcb536d0b815c
     title: '[release-1.27] Automator: Update proxy (#772)'
     author: openshift-service-mesh-bot
     date: 2026-05-26 13:14:16 -0400
     found: true
+    hide: true
   - sha: ee1713949010222ceae42d5ba7359b368f9908ab
     title: '[release-1.27] Automator: Update proxy (#776)'
     author: openshift-service-mesh-bot
     date: 2026-05-27 10:34:46 -0400
     found: true
+    hide: true
   - sha: e284440b291aa20106ed1fbe864be82f36f09d84
     title: '[release-1.27] Automator: Update proxy (#777)'
     author: openshift-service-mesh-bot
     date: 2026-05-28 06:36:46 -0400
     found: true
+    hide: true
   - sha: bc8793a7cd778f2cfecfdfeccc97f3b7c96eea1e
     title: Deploy Sail Operator control plane based on branch (#789)
     author: OpenShift Cherrypick Robot
@@ -570,3 +597,4 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-06-16 04:33:53 -0400
     found: true
+    hide: true

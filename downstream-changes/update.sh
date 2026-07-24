@@ -27,7 +27,7 @@ LABEL_PENDING_UPSTREAM=${LABEL_PENDING_UPSTREAM:-"pending-upstream-sync"}
 GRAPHQL_LABELS_LIMIT=${GRAPHQL_LABELS_LIMIT:-20}
 
 # Patterns for commits to hide from rendered output (extended regex, matched against title)
-HIDE_PATTERNS=${HIDE_PATTERNS:-"^Automator: |^dependabot"}
+HIDE_PATTERNS=${HIDE_PATTERNS:-"Automator: |^dependabot"}
 
 function updateGit() {
   cd `mktemp -d`
@@ -433,16 +433,22 @@ function renderOverviewMatrix() {
     return
   fi
 
-  # Build set of titles present per branch
-  declare -A branch_has  # key: "branch|title" -> 1
+  # Build set of titles present per branch and track permanent status
+  declare -A branch_has    # key: "branch|title" -> 1
+  declare -A title_permanent  # key: "title" -> 1 if any branch marks it permanent
 
   for branch in ${BRANCHES}; do
     yaml_file="${pwd}/${REPO}_${branch}.yaml"
     [[ ! -f "${yaml_file}" ]] && continue
-    while IFS= read -r title; do
+    while IFS= read -r line; do
+      local perm="${line%%|||*}"
+      local title="${line#*|||}"
       [[ -z "${title}" ]] && continue
       branch_has["${branch}|${title}"]=1
-    done < <(yq e '.commits[] | select(.hide != true) | .title' "${yaml_file}")
+      if [[ "${perm}" == "true" ]]; then
+        title_permanent["${title}"]=1
+      fi
+    done < <(yq e '.commits[] | select(.hide != true) | (.isPermanent // "false") + "|||" + .title' "${yaml_file}")
   done
 
   # Render header row: Title | branch1 | branch2 | ...
@@ -467,10 +473,22 @@ function renderOverviewMatrix() {
     done
     [[ "${on_release}" == "false" ]] && continue
 
+    local is_permanent="${title_permanent["${title}"]:-}"
+    # Find the oldest branch (rightmost in BRANCHES) where this commit appears
+    local oldest_idx=-1
+    local branches_arr=(${BRANCHES})
+    for (( i=${#branches_arr[@]}-1; i>=0; i-- )); do
+      if [[ -n "${branch_has["${branches_arr[$i]}|${title}"]:-}" ]]; then
+        oldest_idx=$i
+        break
+      fi
+    done
     local row="| `renderTitle \"${title}\"` |"
-    for branch in ${BRANCHES}; do
-      if [[ -n "${branch_has["${branch}|${title}"]:-}" ]]; then
+    for (( i=0; i<${#branches_arr[@]}; i++ )); do
+      if [[ -n "${branch_has["${branches_arr[$i]}|${title}"]:-}" ]]; then
         row+=" :white_check_mark: |"
+      elif [[ "${is_permanent}" == "1" && $i -lt $oldest_idx ]]; then
+        row+=" :warning: |"
       else
         row+=" :x: |"
       fi

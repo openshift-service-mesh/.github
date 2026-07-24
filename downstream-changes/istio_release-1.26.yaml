@@ -200,6 +200,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-07-16 11:45:17 +0200
     found: true
+    hide: true
   - sha: 262d0b903cc710024038b2e5783e642e8e236e88
     title: 'manifests: add NetworkPolicy to istio-cni chart (#446)'
     author: Daniel Grimm
@@ -225,11 +226,13 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-07-30 11:39:27 +0200
     found: true
+    hide: true
   - sha: 4b1e497cd1c6b51e6a45e6c0abe9aab6bb19e0a8
     title: '[release-1.26] Automator: Update proxy (#458)'
     author: openshift-service-mesh-bot
     date: 2025-08-01 11:20:44 +0200
     found: true
+    hide: true
   - sha: 99e869f26cf30441c34191f61f35a0005f9d1358
     title: Do not create the PDB by default when we don't have enough replicas (#57202)
     author: Filip Brychta
@@ -245,6 +248,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-08-20 07:38:59 +0200
     found: true
+    hide: true
   - sha: 606d76b9ef66861947806cc20473b8fa067b823d
     title: Run make gen after 1.26.4 sync (#488)
     author: mkralik3
@@ -255,6 +259,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-09-09 08:09:34 +0200
     found: true
+    hide: true
   - sha: e6e55d9dfa8ddf2bd1c01d1ba0502dee9173763b
     title: Move "meshConfig" values out of gateway manifests (#479)
     author: Maxim Babushkin
@@ -270,6 +275,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-10-15 10:52:02 -0400
     found: true
+    hide: true
   - sha: e37fca100a69f8454815b45bd3a715e3687e4fdf
     title: Implement cluster operator stability check (#507)
     author: OpenShift Cherrypick Robot
@@ -280,31 +286,37 @@ commits:
     author: openshift-service-mesh-bot
     date: 2025-10-16 15:55:45 -0400
     found: true
+    hide: true
   - sha: d08af215ab6fbae744391affd5a1e0d5e2a3559b
     title: '[release-1.26] Automator: Update proxy (#521)'
     author: openshift-service-mesh-bot
     date: 2025-10-21 15:47:24 -0400
     found: true
+    hide: true
   - sha: 97ab93c93853c8f33e843630d303bc61ac734527
     title: '[release-1.26] Automator: Update proxy (#524)'
     author: openshift-service-mesh-bot
     date: 2025-10-26 07:02:58 -0400
     found: true
+    hide: true
   - sha: ac9131eeefa6ebcd0c5e16e3aaa0b32a0e570324
     title: '[release-1.26] Automator: Update proxy (#530)'
     author: openshift-service-mesh-bot
     date: 2025-11-02 08:43:25 -0500
     found: true
+    hide: true
   - sha: 4d9e6a8b911bc3c804fd208ece5722ba84f98af8
     title: '[release-1.26] Automator: Update proxy (#536)'
     author: openshift-service-mesh-bot
     date: 2025-11-30 05:54:43 -0500
     found: true
+    hide: true
   - sha: f24e6707f8929d564b9fe3bb750411979dee6f22
     title: '[release-1.26] Automator: Update proxy (#542)'
     author: openshift-service-mesh-bot
     date: 2025-12-08 07:04:19 -0500
     found: true
+    hide: true
   - sha: ae067b073773558e7c5a44dc954701a0f3ff4214
     title: security suite control plane parameters (#543)
     author: Matej Kralik
@@ -320,6 +332,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-01-16 00:44:15 -0500
     found: true
+    hide: true
   - sha: 33c58ae12c665c781b74db9f40040d792a310894
     title: Fix Telemetry tests Sail Operator config (#552) (#557)
     author: Maxim Babushkin
@@ -350,6 +363,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-02-25 19:58:31 -0500
     found: true
+    hide: true
   - sha: 83f427baa608243b88a7b53c59ea61698946adc5
     title: Add PR label check Github Action (#626)
     author: OpenShift Cherrypick Robot
@@ -367,6 +381,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-04 05:06:28 -0500
     found: true
+    hide: true
   - sha: a4bfa8097e3ba6005b65154dc000dad91ac8c832
     title: Update "PR label check" GH workflow (#632)
     author: OpenShift Cherrypick Robot
@@ -384,6 +399,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-03-15 10:42:06 -0400
     found: true
+    hide: true
   - sha: ecdf6fc30f778bcb374ab168b850800125b4c649
     title: '[release-1.26] Security fixes for 1.26 (from istio/istio pr #59372) (#678)'
     author: Yuanlin Xu
@@ -407,6 +423,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-04-08 14:19:46 -0400
     found: true
+    hide: true
   - sha: 6acb9a12f7c43ce40985e9d28a1ed3be9872ead3
     title: '[release-1.26] Security fix for 1.26 (#715)'
     author: Mikhail Abramov
@@ -418,11 +435,13 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-04-10 12:08:32 -0400
     found: true
+    hide: true
   - sha: 9bdb431f764e2d478c876a37562a15bd21ed4f51
     title: '[release-1.26] Automator: Update proxy (#720)'
     author: openshift-service-mesh-bot
     date: 2026-04-12 16:58:16 -0400
     found: true
+    hide: true
   - sha: 4d9adf653bfdec72bb6a5a2f598787ce83e65dc0
     title: Add pre-release cherry-pick list create automation (#724)
     author: OpenShift Cherrypick Robot
@@ -446,3 +465,4 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-06-18 06:31:14 -0400
     found: true
+    hide: true
