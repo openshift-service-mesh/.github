@@ -279,13 +279,7 @@ function processPRData() {
 
     local unlabeled_entries=()
 
-    # Only select commits that don't already have isPermanent or isPendingUpstreamSync set
-    readarray -t commits < <(yq e -o=j -I=0 '.commits[] | select(.isPermanent == null and .isPendingUpstreamSync == null) | [.sha, .title] | @tsv' "${yaml_file}")
-
-    local skipped=$(yq e '[.commits[] | select(.isPermanent != null or .isPendingUpstreamSync != null)] | length' "${yaml_file}")
-    if [[ "${skipped}" -gt 0 ]]; then
-      echo "  Skipping ${skipped} already-labeled commits"
-    fi
+    readarray -t commits < <(yq e -o=j -I=0 '.commits[] | [.sha, .title] | @tsv' "${yaml_file}")
 
     for commit_line in "${commits[@]}"; do
       if [[ -z "${commit_line}" ]]; then
@@ -347,12 +341,12 @@ function processPRData() {
 
       labels="${global_pr_labels[$pr_number]:-}"
       if [[ -n "${labels}" ]]; then
-        if echo "${labels}" | grep -q "${LABEL_PERMANENT}"; then
-          updates+=("(.commits[] | select(.sha == \"${sha}\") | .isPermanent) = true")
-          echo "  Setting isPermanent=true for commit ${sha:0:8} (PR #${pr_number}) - found '${LABEL_PERMANENT}' label"
-        elif echo "${labels}" | grep -q "${LABEL_NON_PERMANENT}"; then
+        if echo "${labels}" | grep -q "${LABEL_NON_PERMANENT}"; then
           updates+=("(.commits[] | select(.sha == \"${sha}\") | .isPermanent) = false")
           echo "  Setting isPermanent=false for commit ${sha:0:8} (PR #${pr_number}) - found '${LABEL_NON_PERMANENT}' label"
+        elif echo "${labels}" | grep -q "${LABEL_PERMANENT}"; then
+          updates+=("(.commits[] | select(.sha == \"${sha}\") | .isPermanent) = true")
+          echo "  Setting isPermanent=true for commit ${sha:0:8} (PR #${pr_number}) - found '${LABEL_PERMANENT}' label"
         elif echo "${labels}" | grep -q "${LABEL_PENDING_UPSTREAM}"; then
           updates+=("(.commits[] | select(.sha == \"${sha}\") | .isPendingUpstreamSync) = true")
           echo "  Setting isPendingUpstreamSync=true for commit ${sha:0:8} (PR #${pr_number}) - found '${LABEL_PENDING_UPSTREAM}' label"
@@ -487,7 +481,7 @@ function renderOverviewMatrix() {
     for (( i=0; i<${#branches_arr[@]}; i++ )); do
       if [[ -n "${branch_has["${branches_arr[$i]}|${title}"]:-}" ]]; then
         row+=" :white_check_mark: |"
-      elif [[ "${is_permanent}" == "1" && $i -lt $oldest_idx ]]; then
+      elif [[ "${is_permanent}" == "1" && $i -lt $oldest_idx && "${branches_arr[$i]}" != "master" ]]; then
         row+=" :warning: |"
       else
         row+=" :x: |"

@@ -393,7 +393,7 @@ commits:
     author: Aslak Knutsen
     date: 2026-03-11 15:37:10 +0100
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 24674dbc372d1c1eff6f4dbafcee0f6d01a4dd59
     title: '[release-1.26] Automator: Update proxy (#661)'
     author: openshift-service-mesh-bot
@@ -405,7 +405,7 @@ commits:
     author: Yuanlin Xu
     date: 2026-03-17 03:08:37 -0400
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: bcaf99b9ded6735e558b820ae40cdbbda0f6fe31
     title: '[release-1.26] [OSSM-12848] Fix pilot/gatewayinstance subsuite when sail operator is used#706 (#707)'
     author: Matej Kralik

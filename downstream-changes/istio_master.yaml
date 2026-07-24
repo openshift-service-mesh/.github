@@ -365,7 +365,7 @@ commits:
     author: Maxim Babushkin
     date: 2026-04-21 17:12:31 +0300
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: dc32cb22d36cc1ed2a62d800c0eb92eca950242a
     title: Disable Ambient integ tests due to unsupported CRDs (#750)
     author: Maxim Babushkin
@@ -382,13 +382,13 @@ commits:
     author: Maxim Babushkin
     date: 2026-04-27 11:38:35 +0300
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: f1ff503ab42365d705ef98acb9fdebcc9b7d5f50
     title: Fix go.sum and update license files (#746)
     author: Maxim Babushkin
     date: 2026-04-26 15:15:50 +0300
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 57d8d2aa1c0829622df1903fe10be8d5b65e6623
     title: enable TestGatewayConformance for ambient and pilot midstream (#745)
     author: Cansin Tartici
@@ -465,7 +465,7 @@ commits:
     author: Maxim Babushkin
     date: 2026-06-15 14:25:28 +0300
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: d4301ac7d5ada4d3c7b90c5063b0c1fda0030684
     title: 'pilot: prune stale ListenerSet listener status when a listener is removed (#60579)'
     author: Aditya Menon

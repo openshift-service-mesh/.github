@@ -342,13 +342,13 @@ commits:
     author: Jacek Ewertowski
     date: 2026-03-03 14:47:29 +0100
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 6bfa4e868b05bf22c976384921d8c9cace8f50c8
     title: 'tests: add integration tests for PQC compliance policy in ambient mode (#613)'
     author: Jacek Ewertowski
     date: 2026-02-18 21:59:51 +0100
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: bdab43a3779b80e32ea9fe48bd5f146089160686
     title: Update "PR label check" GH workflow (#630)
     author: OpenShift Cherrypick Robot
@@ -420,7 +420,7 @@ commits:
     author: Petr McAllister
     date: 2026-03-06 09:42:29 -0800
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 670168e65c307ed43b4ad33142a18b28aeac241d
     title: Security fixes for 1.28 (cherry-pick from 1.29) (#153)
     author: Petr McAllister
@@ -431,13 +431,13 @@ commits:
     author: Petr McAllister
     date: 2026-03-04 13:56:40 -0800
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 28b971b8ad28a04f0f93983d19c556b573c29894
     title: 'tests: use check.OK function to log errors if occur (#675)'
     author: Jacek Ewertowski
     date: 2026-03-16 20:18:06 +0100
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: c6b2cc6ce29600451de944e31487fb9af51fc446
     title: '[release-1.28] Automator: Update proxy (#644)'
     author: openshift-service-mesh-bot
@@ -455,7 +455,7 @@ commits:
     author: Maxim Babushkin
     date: 2026-03-24 15:15:37 +0200
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 29a12293961a2a3153944edff1e12fe213231ec0
     title: '[release-1.28] Automator: Update proxy (#693)'
     author: openshift-service-mesh-bot
@@ -599,7 +599,7 @@ commits:
     author: mkralik3
     date: 2026-06-08 10:31:19 +0200
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 6e7bc4e9c0c5b051f217b881a541f0cad3961a4e
     title: Deploy Sail Operator control plane based on branch (#788)
     author: OpenShift Cherrypick Robot
@@ -623,43 +623,43 @@ commits:
     author: Mikhail Abramov
     date: 2026-06-17 14:14:09 +0200
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 8435a4cda9e81a3f59c1e91a8c5ebe57a2197684
     title: '[release-1.28]prow: fix check_cluster_operators to survive transient oc errors and log unstable operators (#831)'
     author: Francisco Herrera
     date: 2026-07-01 14:14:04 +0200
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 7444aa87f975516c7d706065113acb62326d777e
     title: 'Revert "[release-1.28]prow: fix check_cluster_operators to survive transient …" (#835)'
     author: Francisco Herrera
     date: 2026-07-02 11:23:45 +0200
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: c64578add6e6abcdec211d04ce8de12e137d1ff9
     title: 'prow: skip flaky TestInPlaceUpgradeWebhookFailurePolicy on midstream helm (#845)'
     author: Rafael Zago
     date: 2026-07-16 13:48:19 -0300
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 1ea0cf8b7238d8a766354c7473303c8a1bd99d03
     title: 'prow: wait up to 45m for cluster operators before tests (#845)'
     author: Rafael Zago
     date: 2026-07-16 12:07:46 -0300
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 4ec825734024470a0ea5db19a883cf4ab75ec2f0
     title: 'prow: ignore Progressing in cluster operator check (#845)'
     author: Rafael Zago
     date: 2026-07-16 10:40:50 -0300
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 2c42ea725361e15b54cfaf6d421aae6ebdf2c591
     title: Restore OSSM proxy/ztunnel SHAs after upstream merge (#845)
     author: Rafael Zago
     date: 2026-07-14 11:04:54 -0300
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 0b1fe929eef4f476f9286e08e6c35bbb195c9080
     title: '[release-1.28] Automator: Update proxy (#820)'
     author: openshift-service-mesh-bot

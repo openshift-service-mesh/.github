@@ -221,7 +221,7 @@ commits:
     author: Yuanlin Xu
     date: 2026-03-17 03:14:07 -0400
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 8487c1799e790cf4e0faeea72c8cb4f331f9454f
     title: '[release-1.24] Automator: Update proxy (#712)'
     author: openshift-service-mesh-bot

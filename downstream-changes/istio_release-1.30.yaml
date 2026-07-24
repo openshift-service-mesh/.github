@@ -4,7 +4,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-07-23 20:47:32 +0200
     found: true
-    isPermanent: true
+    isPermanent: false
     hide: true
   - sha: 5ae93449a5d1e7586cb7546478d1f95353833a3f
     title: '[release-1.30] Automator: Update ztunnel (#852)'
@@ -59,7 +59,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-06-24 12:24:18 -0400
     found: true
-    isPermanent: true
+    isPermanent: false
     hide: true
   - sha: 8eba3f2f6c4ac267f815020376e5691a4af0a2fa
     title: Add missing Sail Operator test configs (#807)
@@ -72,42 +72,42 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-06-23 09:43:27 -0400
     found: true
-    isPermanent: true
+    isPermanent: false
     hide: true
   - sha: 42c47eebf32dee174b01a07e2f5e1157cdb87495
     title: '[release-1.30] Automator: Update proxy (#816)'
     author: openshift-service-mesh-bot
     date: 2026-06-23 07:29:09 -0400
     found: true
-    isPermanent: true
+    isPermanent: false
     hide: true
   - sha: 329ec80c2c13e42ff31928ac9826dac375bb5aed
     title: '[release-1.30] Automator: Update proxy (#811)'
     author: openshift-service-mesh-bot
     date: 2026-06-18 13:37:50 -0400
     found: true
-    isPermanent: true
+    isPermanent: false
     hide: true
   - sha: 79836fa20c4a2b7c1bfa1251d8d06f09cbb79492
     title: '[release-1.30] Automator: Update ztunnel (#814)'
     author: openshift-service-mesh-bot
     date: 2026-06-18 09:26:03 -0400
     found: true
-    isPermanent: true
+    isPermanent: false
     hide: true
   - sha: 869bced483d083a5c2ba2f5829028e6ae372ad09
     title: '[release-1.30] Automator: Update proxy (#808)'
     author: openshift-service-mesh-bot
     date: 2026-06-16 04:36:28 -0400
     found: true
-    isPermanent: true
+    isPermanent: false
     hide: true
   - sha: 310ddc3c85564669bc90e84c536df44776d38788
     title: Revert "Prevent route resource status conflict in multi-revision installs (#58292)" (#802)
     author: Aslak Knutsen
     date: 2026-06-15 11:19:55 +0200
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 63d5cfab8872fed249f6bfc9d0a27eee0538566f
     title: '  Remove unnecessary from: [] in NetworkPolicy templates (#59592)'
     author: Cameron Garrison
@@ -118,7 +118,7 @@ commits:
     author: Daniel Grimm
     date: 2025-07-24 10:19:58 +0200
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: ec6e330171566a8f9c2dbd4e80eab3b0d8ae17c0
     title: '[agw] Support Istio CA (#59713)'
     author: Jackie Maertens
@@ -129,7 +129,7 @@ commits:
     author: openshift-service-mesh-bot
     date: 2026-06-12 12:46:45 +0000
     found: true
-    isPermanent: true
+    isPermanent: false
     hide: true
   - sha: 25c524ce093c592e8e945cf2532d0f2e8b4b7da0
     title: Add terminationMessagePolicy helm field for pilot container (#60102) (#798)
@@ -142,19 +142,19 @@ commits:
     author: Maxim Babushkin
     date: 2026-06-09 13:20:20 +0300
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 070a32bd5c4cf0e3fdc1c585c7d6de4e19e751ea
     title: Update gw conformance test patch file (#795)
     author: Maxim Babushkin
     date: 2026-05-07 19:04:18 +0300
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 7e32aeec7bd3d52bd940d4e3e5df1a49a5afa9bd
     title: 'feat: add fips-140-3-redhat COMPLIANCE_POLICY (#767)'
     author: Zuzana Miklánková
     date: 2026-06-11 05:43:12 +0200
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 0a0f1301889d4527ffa18bc74563dd0524b44ec5
     title: Update proxy and ztunnel SHAs, skip WASM and CRL tests on OCP (#797)
     author: Cameron Garrison
@@ -247,7 +247,7 @@ commits:
     author: Maxim Babushkin
     date: 2026-03-24 15:15:37 +0200
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: d56c3faff1a4e334e4761d1f3eff707c63d3c116
     title: 'fix: increase xDS keepalive to 2m (#685)'
     author: Daniel Grimm
@@ -259,7 +259,7 @@ commits:
     author: Jacek Ewertowski
     date: 2026-03-16 20:18:06 +0100
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: e962ab9c1d18e0b8df5792322283eb18ef07e1f8
     title: Bump PROXY_REPO_SHA for 1.28.5 security release (#797)
     author: Petr McAllister

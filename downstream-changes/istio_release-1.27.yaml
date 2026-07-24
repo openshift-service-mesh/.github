@@ -418,13 +418,13 @@ commits:
     author: Aslak Knutsen
     date: 2026-03-11 18:43:41 +0100
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 4aee98e195c1af3f5e9385c637050db22d8c41d8
     title: add release note for xds debug namespace auth fix (#656)
     author: Petr McAllister
     date: 2026-03-06 09:43:03 -0800
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: a91ea3324849e1354d248d7070d3ea1a94af2094
     title: Security fixes for 1.27 (cherry-pick from 1.29) (#154)
     author: Petr McAllister
@@ -435,7 +435,7 @@ commits:
     author: Petr McAllister
     date: 2026-03-04 13:56:56 -0800
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: 11e149dba4b2642859bb91e0a7f7301b2dcb3380
     title: '[release-1.27] Automator: Update proxy (#662)'
     author: openshift-service-mesh-bot
@@ -453,7 +453,7 @@ commits:
     author: Maxim Babushkin
     date: 2026-03-24 15:07:31 +0200
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: e56da6087a1f7aa0ec2a83270556e95a5859f5c2
     title: '[release-1.27] Automator: Update proxy (#697)'
     author: openshift-service-mesh-bot
@@ -591,7 +591,7 @@ commits:
     author: Matej Kralik
     date: 2026-06-09 15:30:06 +0200
     found: true
-    isPermanent: true
+    isPermanent: false
   - sha: dbc5d8be325a530689c66a6b905651c9a5e48077
     title: '[release-1.27] Automator: Update proxy (#810)'
     author: openshift-service-mesh-bot
