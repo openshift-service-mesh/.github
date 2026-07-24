@@ -4,7 +4,7 @@ set -eux -o pipefail
 UPSTREAM_CLONE_URL=${UPSTREAM_CLONE_URL:-https://github.com/istio/istio.git}
 DOWNSTREAM_CLONE_URL=${DOWNSTREAM_CLONE_URL:-https://github.com/openshift-service-mesh/istio.git}
 REPO=$(basename "${UPSTREAM_CLONE_URL}" .git)
-BRANCHES=${BRANCHES:-master release-1.24 release-1.26 release-1.27 release-1.28}
+BRANCHES=${BRANCHES:-master release-1.30 release-1.28 release-1.27 release-1.26 release-1.24}
 
 # base URLs for markdown rendering
 COMMIT_BASE_URL=https://github.com/openshift-service-mesh/istio/commit/
@@ -25,6 +25,9 @@ LABEL_PERMANENT=${LABEL_PERMANENT:-"permanent-change"}
 LABEL_NON_PERMANENT=${LABEL_NON_PERMANENT:-"no-permanent-change"}
 LABEL_PENDING_UPSTREAM=${LABEL_PENDING_UPSTREAM:-"pending-upstream-sync"}
 GRAPHQL_LABELS_LIMIT=${GRAPHQL_LABELS_LIMIT:-20}
+
+# Patterns for commits to hide from rendered output (extended regex, matched against title)
+HIDE_PATTERNS=${HIDE_PATTERNS:-"^Automator: |^dependabot"}
 
 function updateGit() {
   cd `mktemp -d`
@@ -67,7 +70,7 @@ function renderMarkdownTableFromYAML() {
 
   echo "| Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |"
   echo "| --- | --- | --- | --- | --- | --- | --- |--- |"
-  commit_data=$(yq e '.commits[] | [.sha, .title, (.upstreamPR // "null"), (.isPendingUpstreamSync // "null"), (.isPermanent // "false"), (.comment // "null"), .date, .author] | @tsv' ${yaml_file})
+  commit_data=$(yq e '.commits[] | select(.hide != true) | [.sha, .title, (.upstreamPR // "null"), (.isPendingUpstreamSync // "null"), (.isPermanent // "false"), (.comment // "null"), .date, .author] | @tsv' ${yaml_file})
   while IFS=$'\t' read -r sha title upstreamPR isPendingUpstreamSync isPermanent comment date author _; do
     if [[ "${isPermanent}" == "true" ]]; then
       isPermanent=":white_check_mark:"
@@ -111,7 +114,7 @@ function extractPRNumber() {
 function batchFetchPRLabels() {
   local -n result_map="$1"
   local pr_numbers=("${@:2}")
-  local batch_size=10
+  local batch_size=50
 
   if [[ ${#pr_numbers[@]} -eq 0 ]]; then
     return 0
@@ -139,9 +142,12 @@ function batchFetchPRLabels() {
     query+=' } }'
 
     # GraphQL API call for this batch
+    # Use || true because gh exits non-zero when the response contains partial errors
+    # (e.g. NOT_FOUND for upstream PR numbers), even though valid data is returned
     local response
-    if response=$(gh api graphql -f query="$query" 2>/dev/null); then
-      # Parse response and populate result map
+    response=$(gh api graphql -f query="$query" 2>/dev/null) || true
+
+    if [[ -n "${response}" ]] && echo "${response}" | jq -e '.data.repository' >/dev/null 2>&1; then
       for pr_num in "${batch[@]}"; do
         local labels
         labels=$(echo "$response" | jq -r ".data.repository.pr${pr_num}.labels.nodes[]?.name" 2>/dev/null | tr '\n' ' ' || echo "")
@@ -149,15 +155,12 @@ function batchFetchPRLabels() {
         total_fetched=$((total_fetched + 1))
       done
     else
-      # GraphQL query failed, try individual PR processing as fallback for this batch
       echo "  Warning: GraphQL batch failed at index ${batch_start}, trying individual PR fallback"
       for pr_num in "${batch[@]}"; do
-        # Single PR fallback using gh pr view (only for failed batches)
         if labels=$(gh pr view "$pr_num" --repo "${GRAPHQL_REPO_OWNER}/${GRAPHQL_REPO_NAME}" --json labels --jq '.labels[].name' 2>/dev/null | tr '\n' ' '); then
           result_map["$pr_num"]="$labels"
           total_fetched=$((total_fetched + 1))
         else
-          # PR doesn't exist, mark as empty
           result_map["$pr_num"]=""
         fi
       done
@@ -258,7 +261,13 @@ function processPRData() {
     return
   fi
 
-  # Process all branches and all commits in each YAML file
+  # Phase 1: collect unlabeled commits and unique PRs across ALL branches
+  declare -A global_unique_prs
+  local global_pr_list=()
+
+  # Per-branch data: branch -> array of "sha|pr_number" for unlabeled commits
+  declare -A branch_unlabeled
+
   for branch in ${BRANCHES}; do
     yaml_file="${pwd}/${REPO}_${branch}.yaml"
 
@@ -266,55 +275,77 @@ function processPRData() {
       continue
     fi
 
-    echo "Processing branch: ${branch}"
+    echo "Scanning branch: ${branch}"
 
-    declare -A commit_pr_map  # sha -> pr_number mapping
-    declare -A unique_prs     # track unique PRs to avoid duplicates
-    local pr_list=()          # array of unique PR numbers
+    local unlabeled_entries=()
 
-    # Get ALL commits from YAML file
-    readarray -t commits < <(yq e -o=j -I=0 '.commits[] | [.sha, .title] | @tsv' "${yaml_file}")
+    # Only select commits that don't already have isPermanent or isPendingUpstreamSync set
+    readarray -t commits < <(yq e -o=j -I=0 '.commits[] | select(.isPermanent == null and .isPendingUpstreamSync == null) | [.sha, .title] | @tsv' "${yaml_file}")
+
+    local skipped=$(yq e '[.commits[] | select(.isPermanent != null or .isPendingUpstreamSync != null)] | length' "${yaml_file}")
+    if [[ "${skipped}" -gt 0 ]]; then
+      echo "  Skipping ${skipped} already-labeled commits"
+    fi
 
     for commit_line in "${commits[@]}"; do
       if [[ -z "${commit_line}" ]]; then
         continue
       fi
 
-      # Remove quotes and convert escaped tab to real tab, then split
       clean_line=$(echo "${commit_line}" | sed 's/^"//; s/"$//' | sed 's/\\t/\t/g')
       sha=$(echo "${clean_line}" | awk -F'\t' '{print $1}')
       title=$(echo "${clean_line}" | awk -F'\t' '{print $2}')
 
-      # Extract PR number from title
       pr_number=$(extractPRNumber "${title}")
       if [[ -n "${pr_number}" ]]; then
-        commit_pr_map["${sha}"]="${pr_number}"
+        unlabeled_entries+=("${sha}|${pr_number}")
 
-        # Add to unique PR list if not already present
-        if [[ -z "${unique_prs[${pr_number}]:-}" ]]; then
-          unique_prs["${pr_number}"]="1"
-          pr_list+=("${pr_number}")
+        if [[ -z "${global_unique_prs[${pr_number}]:-}" ]]; then
+          global_unique_prs["${pr_number}"]="1"
+          global_pr_list+=("${pr_number}")
         fi
       fi
     done
 
-    if [[ ${#pr_list[@]} -eq 0 ]]; then
-      echo "  No PRs found in commit titles for ${branch}"
+    branch_unlabeled["${branch}"]=$(printf '%s\n' "${unlabeled_entries[@]}")
+    echo "  Found ${#unlabeled_entries[@]} unlabeled commits to process"
+  done
+
+  if [[ ${#global_pr_list[@]} -eq 0 ]]; then
+    echo "No unlabeled PRs to fetch across any branch"
+    return
+  fi
+
+  # Phase 2: single batch fetch for all unique PRs
+  declare -A global_pr_labels
+  echo ""
+  echo "Fetching labels for ${#global_pr_list[@]} unique PRs across all branches..."
+  batchFetchPRLabels global_pr_labels "${global_pr_list[@]}"
+
+  # Phase 3: apply labels to each branch file
+  for branch in ${BRANCHES}; do
+    yaml_file="${pwd}/${REPO}_${branch}.yaml"
+
+    if [[ ! -f "${yaml_file}" ]]; then
       continue
     fi
 
-    # Batch fetch all PR labels via GraphQL
-    declare -A pr_labels  # pr_number -> labels mapping
-    batchFetchPRLabels pr_labels "${pr_list[@]}"
+    local entries="${branch_unlabeled[${branch}]:-}"
+    if [[ -z "${entries}" ]]; then
+      continue
+    fi
 
-    # Build batch updates for YAML
+    echo ""
+    echo "Applying labels for branch: ${branch}"
+
     local updates=()
 
-    for sha in "${!commit_pr_map[@]}"; do
-      pr_number="${commit_pr_map[$sha]}"
+    while IFS='|' read -r sha pr_number; do
+      if [[ -z "${sha}" ]]; then
+        continue
+      fi
 
-      # Process labels if available
-      labels="${pr_labels[$pr_number]:-}"
+      labels="${global_pr_labels[$pr_number]:-}"
       if [[ -n "${labels}" ]]; then
         if echo "${labels}" | grep -q "${LABEL_PERMANENT}"; then
           updates+=("(.commits[] | select(.sha == \"${sha}\") | .isPermanent) = true")
@@ -329,9 +360,8 @@ function processPRData() {
           echo "  No relevant labels found for commit ${sha:0:8} (PR #${pr_number}) - expected one of: '${LABEL_PERMANENT}', '${LABEL_NON_PERMANENT}', or '${LABEL_PENDING_UPSTREAM}'"
         fi
       fi
-    done
+    done <<< "${entries}"
 
-    # Apply all updates in a single yq call
     if [[ ${#updates[@]} -gt 0 ]]; then
       local yq_expr=""
       for update in "${updates[@]}"; do
@@ -342,9 +372,9 @@ function processPRData() {
       yq -i e "${yq_expr}" "${yaml_file}"
       echo "  Applied ${#updates[@]} updates to ${yaml_file##*/}"
     fi
-
-    unset commit_pr_map unique_prs pr_labels
   done
+
+  unset global_unique_prs global_pr_labels branch_unlabeled
 }
 
 if [[ -z "${SKIP_GIT}" ]]; then
@@ -360,7 +390,91 @@ if [[ -z "${SKIP_PR_LABELS}" ]]; then
   processPRData
 fi
 
+function markHiddenCommits() {
+  echo "Marking hidden commits..."
+  for branch in ${BRANCHES}; do
+    yaml_file="${pwd}/${REPO}_${branch}.yaml"
+    [[ ! -f "${yaml_file}" ]] && continue
+
+    local count
+    count=$(yq e "[.commits[] | select(.hide != true and (.title | test(\"${HIDE_PATTERNS}\"))] | length" "${yaml_file}")
+    if [[ "${count}" -gt 0 ]]; then
+      yq -i e "(.commits[] | select(.hide != true and (.title | test(\"${HIDE_PATTERNS}\"))) | .hide) = true" "${yaml_file}"
+      echo "  ${branch}: marked ${count} commits as hidden"
+    fi
+  done
+}
+
+markHiddenCommits
+
+function renderOverviewMatrix() {
+  # Collect all unique commit titles across branches with their latest date, then sort newest-first
+  declare -A title_date
+
+  for branch in ${BRANCHES}; do
+    yaml_file="${pwd}/${REPO}_${branch}.yaml"
+    [[ ! -f "${yaml_file}" ]] && continue
+    while IFS= read -r line; do
+      local date="${line%%|||*}"
+      local title="${line#*|||}"
+      [[ -z "${title}" ]] && continue
+      if [[ -z "${title_date["${title}"]:-}" || "${date}" > "${title_date["${title}"]}" ]]; then
+        title_date["${title}"]="${date}"
+      fi
+    done < <(yq e '.commits[] | select(.hide != true) | .date + "|||" + .title' "${yaml_file}")
+  done
+
+  local ordered_titles=()
+  while IFS= read -r line; do
+    ordered_titles+=("${line#*|||}")
+  done < <(for title in "${!title_date[@]}"; do printf '%s|||%s\n' "${title_date["${title}"]}" "${title}"; done | sort -r)
+
+  if [[ ${#ordered_titles[@]} -eq 0 ]]; then
+    return
+  fi
+
+  # Build set of titles present per branch
+  declare -A branch_has  # key: "branch|title" -> 1
+
+  for branch in ${BRANCHES}; do
+    yaml_file="${pwd}/${REPO}_${branch}.yaml"
+    [[ ! -f "${yaml_file}" ]] && continue
+    while IFS= read -r title; do
+      [[ -z "${title}" ]] && continue
+      branch_has["${branch}|${title}"]=1
+    done < <(yq e '.commits[] | select(.hide != true) | .title' "${yaml_file}")
+  done
+
+  # Render header row: Title | branch1 | branch2 | ...
+  local header="| Title |"
+  local separator="| --- |"
+  for branch in ${BRANCHES}; do
+    header+=" ${branch} |"
+    separator+=" :---: |"
+  done
+
+  echo "${header}"
+  echo "${separator}"
+
+  # Render one row per commit title
+  for title in "${ordered_titles[@]}"; do
+    local row="| `renderTitle \"${title}\"` |"
+    for branch in ${BRANCHES}; do
+      if [[ -n "${branch_has["${branch}|${title}"]:-}" ]]; then
+        row+=" :white_check_mark: |"
+      else
+        row+=" :x: |"
+      fi
+    done
+    echo "${row}"
+  done
+}
+
 echo "# ${REPO^} Downstream Changes" > "${OUTPUT_MARKDOWN_FILE}"
+
+echo "## Overview" >> "${OUTPUT_MARKDOWN_FILE}"
+renderOverviewMatrix >> "${OUTPUT_MARKDOWN_FILE}"
+
 for branch in ${BRANCHES}; do
   input_yaml="${pwd}/${REPO}_${branch}.yaml"
   echo "## ${branch} branch" >> "${OUTPUT_MARKDOWN_FILE}"
