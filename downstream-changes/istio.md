@@ -225,8 +225,8 @@
 | Enable CA Bundle injection in only Gateway Namespaces ([#335](https://github.com/openshift-service-mesh/istio/issues/335)) | :x: | :x: | :x: | :x: | :x: | :white_check_mark: |
 | [release-1.26] [OSSM-8825](https://issues.redhat.com/browse/OSSM-8825) add integration test for gateway instance ([#338](https://github.com/openshift-service-mesh/istio/issues/338)) | :x: | :x: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: |
 | [OSSM-8825](https://issues.redhat.com/browse/OSSM-8825) add integration test for gateway instance ([#338](https://github.com/openshift-service-mesh/istio/issues/338)) | :x: | :warning: | :warning: | :warning: | :warning: | :white_check_mark: |
-| [release-1.26] istiod ca: custom ConfigMap name for CA root cert ([#333](https://github.com/openshift-service-mesh/istio/issues/333)) | :x: | :x: | :x: | :x: | :white_check_mark: | :x: |
 | istiod ca: custom ConfigMap name for CA root cert ([#333](https://github.com/openshift-service-mesh/istio/issues/333)) | :x: | :x: | :x: | :x: | :x: | :white_check_mark: |
+| [release-1.26] istiod ca: custom ConfigMap name for CA root cert ([#333](https://github.com/openshift-service-mesh/istio/issues/333)) | :x: | :x: | :x: | :x: | :white_check_mark: | :x: |
 | [release-1.24] Update proxy ([#332](https://github.com/openshift-service-mesh/istio/issues/332)) | :x: | :warning: | :warning: | :warning: | :warning: | :white_check_mark: |
 | [release-1.24] - Fix TestCNIRaceRepair test for Openshift ([#55658](https://github.com/openshift-service-mesh/istio/issues/55658)) | :x: | :x: | :x: | :x: | :x: | :white_check_mark: |
 | Release 1.24 fix test services reachability and flackiness ([#55642](https://github.com/openshift-service-mesh/istio/issues/55642)) | :x: | :x: | :x: | :x: | :x: | :white_check_mark: |
