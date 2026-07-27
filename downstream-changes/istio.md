@@ -2,6 +2,7 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| [release-1.30] Cherry-pick Gateway CA controller changes ([#858](https://github.com/openshift-service-mesh/istio/issues/858)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | Reorganize the images used for the testing ([#848](https://github.com/openshift-service-mesh/istio/issues/848)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
 | Reorganize the images used for the testing ([#849](https://github.com/openshift-service-mesh/istio/issues/849)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | prow: skip flaky TestInPlaceUpgradeWebhookFailurePolicy on midstream helm ([#845](https://github.com/openshift-service-mesh/istio/issues/845)) | :x: | :x: | :white_check_mark: | :x: | :x: | :x: |
@@ -415,6 +416,7 @@
 | [1975ebba](https://github.com/openshift-service-mesh/istio/commit/1975ebba48b9f1a144624b32f1612b02c9357ac3) | Update Prow test Sail ZTunnel API ([#806](https://github.com/openshift-service-mesh/istio/issues/806)) |  |  | :white_check_mark: |  | 2026-07-16 12:36:24 +0300 | Maxim Babushkin |
 | [92e91aac](https://github.com/openshift-service-mesh/istio/commit/92e91aacecc4b946586442e5665c1b0ca7ef0b6e) | "Add ""create-service-account"" flag to CreateRemoteSecret test function ([#842](https://github.com/openshift-service-mesh/istio/issues/842))" |  |  | :white_check_mark: |  | 2026-07-21 00:29:11 +0300 | Maxim Babushkin |
 | [b3f64158](https://github.com/openshift-service-mesh/istio/commit/b3f6415878e158c51406e7bd90379c4f12e3f370) | prow: re-check cluster operators inside pod before running tests ([#857](https://github.com/openshift-service-mesh/istio/issues/857)) |  |  | :white_check_mark: |  | 2026-07-23 13:55:25 +0200 | Francisco Herrera |
+| [3276617a](https://github.com/openshift-service-mesh/istio/commit/3276617abd5e9e1a0b3457fae948f28f6660772e) | test: prepare ocp test runner to build and push to quay on midstream jobs ([#860](https://github.com/openshift-service-mesh/istio/issues/860)) |  |  | :white_check_mark: |  | 2026-07-26 22:47:03 +0200 | Francisco Herrera |
 ## release-1.30 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -486,6 +488,7 @@
 | [cb4a9569](https://github.com/openshift-service-mesh/istio/commit/cb4a95695243a2fd2b1bf31757d6d3ddc0c836ea) | Prevent silent exit in OpenShift CI ([#551](https://github.com/openshift-service-mesh/istio/issues/551)) |  |  | :white_check_mark: |  | 2026-01-13 14:54:57 +0100 | OpenShift Cherrypick Robot |
 | [32593288](https://github.com/openshift-service-mesh/istio/commit/3259328871a80b9afb75da9096f8f354bd710078) | [OSSM-8342](https://issues.redhat.com/browse/OSSM-8342): Use our proxy ([#225](https://github.com/openshift-service-mesh/istio/issues/225)) |  |  | :white_check_mark: |  | 2025-01-15 12:56:16 -0500 | Jonh Wendell |
 | [7a510288](https://github.com/openshift-service-mesh/istio/commit/7a510288a468a0c8cb5b6ac08bedf80e5b3c7ef7) | Cherry-pick downstream changes to release-1.30 ([#761](https://github.com/openshift-service-mesh/istio/issues/761)) |  |  | :white_check_mark: |  | 2026-06-10 05:36:06 -0400 | Cameron Garrison |
+| [4c937f30](https://github.com/openshift-service-mesh/istio/commit/4c937f30b6fcdfae166314c77aba3695febdce86) | [release-1.30] Cherry-pick Gateway CA controller changes ([#858](https://github.com/openshift-service-mesh/istio/issues/858)) |  |  | :white_check_mark: |  | 2026-07-26 10:00:06 +0200 | Mikhail Abramov |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

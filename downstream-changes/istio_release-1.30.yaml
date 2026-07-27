@@ -464,3 +464,9 @@ commits:
     date: 2026-06-10 05:36:06 -0400
     found: true
     isPermanent: true
+  - sha: 4c937f30b6fcdfae166314c77aba3695febdce86
+    title: '[release-1.30] Cherry-pick Gateway CA controller changes (#858)'
+    author: Mikhail Abramov
+    date: 2026-07-26 10:00:06 +0200
+    found: true
+    isPermanent: true
