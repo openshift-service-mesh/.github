@@ -1036,3 +1036,9 @@ commits:
     date: 2026-07-26 22:47:03 +0200
     found: true
     isPermanent: true
+  - sha: 2d1ad03b4f952e1ba9db75e58348b602152cf4eb
+    title: 'test: build default and distroless variants when VARIANT is not set (#867)'
+    author: Francisco Herrera
+    date: 2026-07-29 16:58:53 +0200
+    found: true
+    isPermanent: true
