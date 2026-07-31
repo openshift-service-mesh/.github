@@ -470,3 +470,9 @@ commits:
     date: 2026-07-26 10:00:06 +0200
     found: true
     isPermanent: true
+  - sha: 563853ddea248455855a394ba199caba27e91f1b
+    title: '[release-1.30] test: prepare ocp test runner to build and push to quay on midstream jobs (#864)'
+    author: OpenShift Cherrypick Robot
+    date: 2026-07-30 20:40:09 +0200
+    found: true
+    isPermanent: true

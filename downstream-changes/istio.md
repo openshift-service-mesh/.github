@@ -2,6 +2,8 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| [release-1.30] test: prepare ocp test runner to build and push to quay on midstream jobs ([#864](https://github.com/openshift-service-mesh/istio/issues/864)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
+| [release-1.28] test: prepare ocp test runner to build and push to quay on midstream jobs ([#870](https://github.com/openshift-service-mesh/istio/issues/870)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
 | [release-1.30] Cherry-pick Gateway CA controller changes ([#858](https://github.com/openshift-service-mesh/istio/issues/858)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | Reorganize the images used for the testing ([#848](https://github.com/openshift-service-mesh/istio/issues/848)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
 | Reorganize the images used for the testing ([#849](https://github.com/openshift-service-mesh/istio/issues/849)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
@@ -490,6 +492,7 @@
 | [32593288](https://github.com/openshift-service-mesh/istio/commit/3259328871a80b9afb75da9096f8f354bd710078) | [OSSM-8342](https://issues.redhat.com/browse/OSSM-8342): Use our proxy ([#225](https://github.com/openshift-service-mesh/istio/issues/225)) |  |  | :white_check_mark: |  | 2025-01-15 12:56:16 -0500 | Jonh Wendell |
 | [7a510288](https://github.com/openshift-service-mesh/istio/commit/7a510288a468a0c8cb5b6ac08bedf80e5b3c7ef7) | Cherry-pick downstream changes to release-1.30 ([#761](https://github.com/openshift-service-mesh/istio/issues/761)) |  |  | :white_check_mark: |  | 2026-06-10 05:36:06 -0400 | Cameron Garrison |
 | [4c937f30](https://github.com/openshift-service-mesh/istio/commit/4c937f30b6fcdfae166314c77aba3695febdce86) | [release-1.30] Cherry-pick Gateway CA controller changes ([#858](https://github.com/openshift-service-mesh/istio/issues/858)) |  |  | :white_check_mark: |  | 2026-07-26 10:00:06 +0200 | Mikhail Abramov |
+| [563853dd](https://github.com/openshift-service-mesh/istio/commit/563853ddea248455855a394ba199caba27e91f1b) | [release-1.30] test: prepare ocp test runner to build and push to quay on midstream jobs ([#864](https://github.com/openshift-service-mesh/istio/issues/864)) |  |  | :white_check_mark: |  | 2026-07-30 20:40:09 +0200 | OpenShift Cherrypick Robot |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -587,6 +590,7 @@
 | [4ec82573](https://github.com/openshift-service-mesh/istio/commit/4ec825734024470a0ea5db19a883cf4ab75ec2f0) | prow: ignore Progressing in cluster operator check ([#845](https://github.com/openshift-service-mesh/istio/issues/845)) |  |  | :x: |  | 2026-07-16 10:40:50 -0300 | Rafael Zago |
 | [2c42ea72](https://github.com/openshift-service-mesh/istio/commit/2c42ea725361e15b54cfaf6d421aae6ebdf2c591) | Restore OSSM proxy/ztunnel SHAs after upstream merge ([#845](https://github.com/openshift-service-mesh/istio/issues/845)) |  |  | :x: |  | 2026-07-14 11:04:54 -0300 | Rafael Zago |
 | [22173b9e](https://github.com/openshift-service-mesh/istio/commit/22173b9e4c966f0fbae766e24aabf71aa53e5124) | Reorganize the images used for the testing ([#848](https://github.com/openshift-service-mesh/istio/issues/848)) |  |  | :white_check_mark: |  | 2026-07-20 15:43:47 +0200 | OpenShift Cherrypick Robot |
+| [a0ab8148](https://github.com/openshift-service-mesh/istio/commit/a0ab814873279464a56696127ce00d025e339281) | [release-1.28] test: prepare ocp test runner to build and push to quay on midstream jobs ([#870](https://github.com/openshift-service-mesh/istio/issues/870)) |  |  | :white_check_mark: |  | 2026-07-30 18:16:29 +0200 | Francisco Herrera |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
