@@ -598,3 +598,9 @@ commits:
     date: 2026-06-16 04:33:53 -0400
     found: true
     hide: true
+  - sha: 99bf6d85e1823fee0624efb2b5aa909410fff5a1
+    title: '[release-1.27] test: prepare ocp test runner to build and push to quay on midstream jobs (#869)'
+    author: Francisco Herrera
+    date: 2026-07-31 10:16:28 +0200
+    found: true
+    isPermanent: true

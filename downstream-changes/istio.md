@@ -2,6 +2,8 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| [release-1.27] test: prepare ocp test runner to build and push to quay on midstream jobs ([#869](https://github.com/openshift-service-mesh/istio/issues/869)) | :x: | :warning: | :warning: | :white_check_mark: | :x: | :x: |
+| [release-1.26] test: prepare ocp test runner to build and push to quay on midstream jobs ([#868](https://github.com/openshift-service-mesh/istio/issues/868)) | :x: | :warning: | :warning: | :warning: | :white_check_mark: | :x: |
 | [release-1.30] test: prepare ocp test runner to build and push to quay on midstream jobs ([#864](https://github.com/openshift-service-mesh/istio/issues/864)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | [release-1.28] test: prepare ocp test runner to build and push to quay on midstream jobs ([#870](https://github.com/openshift-service-mesh/istio/issues/870)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
 | [release-1.30] Cherry-pick Gateway CA controller changes ([#858](https://github.com/openshift-service-mesh/istio/issues/858)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
@@ -675,6 +677,7 @@
 | [047067a2](https://github.com/openshift-service-mesh/istio/commit/047067a2f153da94e927fae4563f2ff4920b18fd) | " Remove unnecessary from: [] in NetworkPolicy templates ([#59592](https://github.com/openshift-service-mesh/istio/issues/59592)) ([#730](https://github.com/openshift-service-mesh/istio/issues/730))" |  | :hourglass_flowing_sand: | :x: |  | 2026-05-05 11:57:16 -0400 | Cameron Garrison |
 | [bc8793a7](https://github.com/openshift-service-mesh/istio/commit/bc8793a7cd778f2cfecfdfeccc97f3b7c96eea1e) | Deploy Sail Operator control plane based on branch ([#789](https://github.com/openshift-service-mesh/istio/issues/789)) |  |  | :white_check_mark: |  | 2026-06-09 21:28:16 +0200 | OpenShift Cherrypick Robot |
 | [ef496d40](https://github.com/openshift-service-mesh/istio/commit/ef496d4024e157822390d4d41546e42dcb996ba8) | Update proxy deps ([#785](https://github.com/openshift-service-mesh/istio/issues/785)) |  |  | :x: |  | 2026-06-09 15:30:06 +0200 | Matej Kralik |
+| [99bf6d85](https://github.com/openshift-service-mesh/istio/commit/99bf6d85e1823fee0624efb2b5aa909410fff5a1) | [release-1.27] test: prepare ocp test runner to build and push to quay on midstream jobs ([#869](https://github.com/openshift-service-mesh/istio/issues/869)) |  |  | :white_check_mark: |  | 2026-07-31 10:16:28 +0200 | Francisco Herrera |
 ## release-1.26 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -745,6 +748,7 @@
 | [4d9adf65](https://github.com/openshift-service-mesh/istio/commit/4d9adf653bfdec72bb6a5a2f598787ce83e65dc0) | Add pre-release cherry-pick list create automation ([#724](https://github.com/openshift-service-mesh/istio/issues/724)) |  |  | :white_check_mark: |  | 2026-04-13 17:43:39 +0200 | OpenShift Cherrypick Robot |
 | [47d6ae95](https://github.com/openshift-service-mesh/istio/commit/47d6ae9553722b95bda115e6643bcff68da1e550) | "Modify ""pr-label-check"" GH workflow ([#700](https://github.com/openshift-service-mesh/istio/issues/700))" |  |  | :white_check_mark: |  | 2026-04-13 13:01:43 +0200 | OpenShift Cherrypick Robot |
 | [e953d852](https://github.com/openshift-service-mesh/istio/commit/e953d852dce08a913c8d0d58b177e98f013d4251) | [[OSSM-12338](https://issues.redhat.com/browse/OSSM-12338)] Standardize skip of failing test on both midstream and downstream repositories ([#734](https://github.com/openshift-service-mesh/istio/issues/734)) |  |  | :white_check_mark: |  | 2026-04-16 06:58:37 +0200 | Matej Kralik |
+| [572917aa](https://github.com/openshift-service-mesh/istio/commit/572917aaf214691cd7ccd880008cc44c1584c6bb) | [release-1.26] test: prepare ocp test runner to build and push to quay on midstream jobs ([#868](https://github.com/openshift-service-mesh/istio/issues/868)) |  |  | :white_check_mark: |  | 2026-07-31 10:16:28 +0200 | Francisco Herrera |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
