@@ -2,6 +2,9 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| [release-1.27] add missing cherry picks: detect_sail_operator_branch func, check operators and some changes on ocp script ([#853](https://github.com/openshift-service-mesh/istio/issues/853)) | :x: | :warning: | :warning: | :white_check_mark: | :x: | :x: |
+| [release-1.26] add missing cherry picks: detect_sail_operator_branch func, check operators and some changes on ocp script ([#854](https://github.com/openshift-service-mesh/istio/issues/854)) | :x: | :warning: | :warning: | :warning: | :white_check_mark: | :x: |
+| [release-1.28] prow: enable GatewayConformance and add missing cherry pick ([#855](https://github.com/openshift-service-mesh/istio/issues/855)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
 | [release-1.27] test: prepare ocp test runner to build and push to quay on midstream jobs ([#869](https://github.com/openshift-service-mesh/istio/issues/869)) | :x: | :warning: | :warning: | :white_check_mark: | :x: | :x: |
 | [release-1.26] test: prepare ocp test runner to build and push to quay on midstream jobs ([#868](https://github.com/openshift-service-mesh/istio/issues/868)) | :x: | :warning: | :warning: | :warning: | :white_check_mark: | :x: |
 | [release-1.30] test: prepare ocp test runner to build and push to quay on midstream jobs ([#864](https://github.com/openshift-service-mesh/istio/issues/864)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
@@ -593,6 +596,7 @@
 | [2c42ea72](https://github.com/openshift-service-mesh/istio/commit/2c42ea725361e15b54cfaf6d421aae6ebdf2c591) | Restore OSSM proxy/ztunnel SHAs after upstream merge ([#845](https://github.com/openshift-service-mesh/istio/issues/845)) |  |  | :x: |  | 2026-07-14 11:04:54 -0300 | Rafael Zago |
 | [22173b9e](https://github.com/openshift-service-mesh/istio/commit/22173b9e4c966f0fbae766e24aabf71aa53e5124) | Reorganize the images used for the testing ([#848](https://github.com/openshift-service-mesh/istio/issues/848)) |  |  | :white_check_mark: |  | 2026-07-20 15:43:47 +0200 | OpenShift Cherrypick Robot |
 | [a0ab8148](https://github.com/openshift-service-mesh/istio/commit/a0ab814873279464a56696127ce00d025e339281) | [release-1.28] test: prepare ocp test runner to build and push to quay on midstream jobs ([#870](https://github.com/openshift-service-mesh/istio/issues/870)) |  |  | :white_check_mark: |  | 2026-07-30 18:16:29 +0200 | Francisco Herrera |
+| [fc41903b](https://github.com/openshift-service-mesh/istio/commit/fc41903b6e06bb166a343d460fe2c0d00f820915) | [release-1.28] prow: enable GatewayConformance and add missing cherry pick ([#855](https://github.com/openshift-service-mesh/istio/issues/855)) |  |  | :white_check_mark: |  | 2026-08-03 11:46:35 +0200 | Francisco Herrera |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -678,6 +682,7 @@
 | [bc8793a7](https://github.com/openshift-service-mesh/istio/commit/bc8793a7cd778f2cfecfdfeccc97f3b7c96eea1e) | Deploy Sail Operator control plane based on branch ([#789](https://github.com/openshift-service-mesh/istio/issues/789)) |  |  | :white_check_mark: |  | 2026-06-09 21:28:16 +0200 | OpenShift Cherrypick Robot |
 | [ef496d40](https://github.com/openshift-service-mesh/istio/commit/ef496d4024e157822390d4d41546e42dcb996ba8) | Update proxy deps ([#785](https://github.com/openshift-service-mesh/istio/issues/785)) |  |  | :x: |  | 2026-06-09 15:30:06 +0200 | Matej Kralik |
 | [99bf6d85](https://github.com/openshift-service-mesh/istio/commit/99bf6d85e1823fee0624efb2b5aa909410fff5a1) | [release-1.27] test: prepare ocp test runner to build and push to quay on midstream jobs ([#869](https://github.com/openshift-service-mesh/istio/issues/869)) |  |  | :white_check_mark: |  | 2026-07-31 10:16:28 +0200 | Francisco Herrera |
+| [2788fe29](https://github.com/openshift-service-mesh/istio/commit/2788fe29156a7b6481d772ce1ad228539f06b02a) | [release-1.27] add missing cherry picks: detect_sail_operator_branch func, check operators and some changes on ocp script ([#853](https://github.com/openshift-service-mesh/istio/issues/853)) |  |  | :white_check_mark: |  | 2026-08-03 16:16:06 +0200 | Francisco Herrera |
 ## release-1.26 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -749,6 +754,7 @@
 | [47d6ae95](https://github.com/openshift-service-mesh/istio/commit/47d6ae9553722b95bda115e6643bcff68da1e550) | "Modify ""pr-label-check"" GH workflow ([#700](https://github.com/openshift-service-mesh/istio/issues/700))" |  |  | :white_check_mark: |  | 2026-04-13 13:01:43 +0200 | OpenShift Cherrypick Robot |
 | [e953d852](https://github.com/openshift-service-mesh/istio/commit/e953d852dce08a913c8d0d58b177e98f013d4251) | [[OSSM-12338](https://issues.redhat.com/browse/OSSM-12338)] Standardize skip of failing test on both midstream and downstream repositories ([#734](https://github.com/openshift-service-mesh/istio/issues/734)) |  |  | :white_check_mark: |  | 2026-04-16 06:58:37 +0200 | Matej Kralik |
 | [572917aa](https://github.com/openshift-service-mesh/istio/commit/572917aaf214691cd7ccd880008cc44c1584c6bb) | [release-1.26] test: prepare ocp test runner to build and push to quay on midstream jobs ([#868](https://github.com/openshift-service-mesh/istio/issues/868)) |  |  | :white_check_mark: |  | 2026-07-31 10:16:28 +0200 | Francisco Herrera |
+| [f9c606be](https://github.com/openshift-service-mesh/istio/commit/f9c606be72f75b5df96f45a0e323cfc9e072e02d) | [release-1.26] add missing cherry picks: detect_sail_operator_branch func, check operators and some changes on ocp script ([#854](https://github.com/openshift-service-mesh/istio/issues/854)) |  |  | :white_check_mark: |  | 2026-08-03 15:41:34 +0200 | Francisco Herrera |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

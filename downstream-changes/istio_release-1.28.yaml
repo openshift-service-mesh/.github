@@ -684,3 +684,9 @@ commits:
     date: 2026-07-30 18:16:29 +0200
     found: true
     isPermanent: true
+  - sha: fc41903b6e06bb166a343d460fe2c0d00f820915
+    title: '[release-1.28] prow: enable GatewayConformance and add missing cherry pick (#855)'
+    author: Francisco Herrera
+    date: 2026-08-03 11:46:35 +0200
+    found: true
+    isPermanent: true

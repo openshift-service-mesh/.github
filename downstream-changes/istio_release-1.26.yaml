@@ -472,3 +472,9 @@ commits:
     date: 2026-07-31 10:16:28 +0200
     found: true
     isPermanent: true
+  - sha: f9c606be72f75b5df96f45a0e323cfc9e072e02d
+    title: '[release-1.26] add missing cherry picks: detect_sail_operator_branch func, check operators and some changes on ocp script (#854)'
+    author: Francisco Herrera
+    date: 2026-08-03 15:41:34 +0200
+    found: true
+    isPermanent: true
