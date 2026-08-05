@@ -1042,3 +1042,21 @@ commits:
     date: 2026-07-29 16:58:53 +0200
     found: true
     isPermanent: true
+  - sha: 1a7ec558a3ef6381b1595cf5981bdce9d212ba05
+    title: Remove fips proxy check in test (#825)
+    author: Matej Kralik
+    date: 2026-08-04 17:18:18 +0200
+    found: true
+    isPermanent: true
+  - sha: b57fe6d94ea38195268a87d3562b1e6e125a48e4
+    title: Skip ambient unsupported GW conformance tests (#856)
+    author: Maxim Babushkin
+    date: 2026-07-28 22:21:40 +0300
+    found: true
+    isPermanent: false
+  - sha: 17cf6dc32f639dceba4333a29c03aab44aa6e13c
+    title: Remove GW Conformance test execution workaround (#856)
+    author: Maxim Babushkin
+    date: 2026-07-26 15:53:52 +0300
+    found: true
+    isPermanent: false
