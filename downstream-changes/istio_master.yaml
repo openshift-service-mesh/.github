@@ -1060,3 +1060,9 @@ commits:
     date: 2026-07-26 15:53:52 +0300
     found: true
     isPermanent: false
+  - sha: ec6a473b2d8a048cd018dade9b75c66e22a7b283
+    title: Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm (#872)
+    author: Matej Kralik
+    date: 2026-08-05 10:39:14 +0200
+    found: true
+    isPermanent: true

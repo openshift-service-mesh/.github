@@ -610,3 +610,9 @@ commits:
     date: 2026-08-03 16:16:06 +0200
     found: true
     isPermanent: true
+  - sha: a43cf9f0aef568fa8bc6e0b7179693f7273aeb77
+    title: Add GatewayConformanceAllowCRDsMismatch To Ambient (#59976) (#882)
+    author: Matej Kralik
+    date: 2026-08-05 09:55:59 +0200
+    found: true
+    isPendingUpstreamSync: true

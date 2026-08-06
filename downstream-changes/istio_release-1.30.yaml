@@ -476,3 +476,15 @@ commits:
     date: 2026-07-30 20:40:09 +0200
     found: true
     isPermanent: true
+  - sha: 5a945c36f95f2b436460226c57bf07b1991b58ae
+    title: Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm (#873)
+    author: mkralik3
+    date: 2026-08-04 16:52:20 +0200
+    found: true
+    isPermanent: true
+  - sha: 31eef703981c2801a4c9104cd9a7b22c099d07ec
+    title: Add GatewayConformanceAllowCRDsMismatch To Ambient (#59976) (#880)
+    author: Matej Kralik
+    date: 2026-08-05 09:55:59 +0200
+    found: true
+    isPendingUpstreamSync: true

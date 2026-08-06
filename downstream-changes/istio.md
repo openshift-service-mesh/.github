@@ -2,6 +2,14 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Skip test in ambient for experimental gw crd api ([#874](https://github.com/openshift-service-mesh/istio/issues/874)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
+| [release-1.26] Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm ([#878](https://github.com/openshift-service-mesh/istio/issues/878)) | :x: | :warning: | :warning: | :warning: | :white_check_mark: | :x: |
+| Add GatewayConformanceAllowCRDsMismatch To Ambient ([#59976](https://github.com/openshift-service-mesh/istio/issues/59976)) ([#881](https://github.com/openshift-service-mesh/istio/issues/881)) | :x: | :x: | :white_check_mark: | :x: | :x: | :x: |
+| Add GatewayConformanceAllowCRDsMismatch To Ambient ([#59976](https://github.com/openshift-service-mesh/istio/issues/59976)) ([#883](https://github.com/openshift-service-mesh/istio/issues/883)) | :x: | :x: | :x: | :x: | :white_check_mark: | :x: |
+| Add GatewayConformanceAllowCRDsMismatch To Ambient ([#59976](https://github.com/openshift-service-mesh/istio/issues/59976)) ([#882](https://github.com/openshift-service-mesh/istio/issues/882)) | :x: | :x: | :x: | :white_check_mark: | :x: | :x: |
+| Add GatewayConformanceAllowCRDsMismatch To Ambient ([#59976](https://github.com/openshift-service-mesh/istio/issues/59976)) ([#880](https://github.com/openshift-service-mesh/istio/issues/880)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
+| Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm ([#874](https://github.com/openshift-service-mesh/istio/issues/874)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
+| Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm ([#873](https://github.com/openshift-service-mesh/istio/issues/873)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | [release-1.27] add missing cherry picks: detect_sail_operator_branch func, check operators and some changes on ocp script ([#853](https://github.com/openshift-service-mesh/istio/issues/853)) | :x: | :warning: | :warning: | :white_check_mark: | :x: | :x: |
 | [release-1.26] add missing cherry picks: detect_sail_operator_branch func, check operators and some changes on ocp script ([#854](https://github.com/openshift-service-mesh/istio/issues/854)) | :x: | :warning: | :warning: | :warning: | :white_check_mark: | :x: |
 | [release-1.28] prow: enable GatewayConformance and add missing cherry pick ([#855](https://github.com/openshift-service-mesh/istio/issues/855)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
@@ -428,6 +436,7 @@
 | [1a7ec558](https://github.com/openshift-service-mesh/istio/commit/1a7ec558a3ef6381b1595cf5981bdce9d212ba05) | Remove fips proxy check in test ([#825](https://github.com/openshift-service-mesh/istio/issues/825)) |  |  | :white_check_mark: |  | 2026-08-04 17:18:18 +0200 | Matej Kralik |
 | [b57fe6d9](https://github.com/openshift-service-mesh/istio/commit/b57fe6d94ea38195268a87d3562b1e6e125a48e4) | Skip ambient unsupported GW conformance tests ([#856](https://github.com/openshift-service-mesh/istio/issues/856)) |  |  | :x: |  | 2026-07-28 22:21:40 +0300 | Maxim Babushkin |
 | [17cf6dc3](https://github.com/openshift-service-mesh/istio/commit/17cf6dc32f639dceba4333a29c03aab44aa6e13c) | Remove GW Conformance test execution workaround ([#856](https://github.com/openshift-service-mesh/istio/issues/856)) |  |  | :x: |  | 2026-07-26 15:53:52 +0300 | Maxim Babushkin |
+| [ec6a473b](https://github.com/openshift-service-mesh/istio/commit/ec6a473b2d8a048cd018dade9b75c66e22a7b283) | Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm ([#872](https://github.com/openshift-service-mesh/istio/issues/872)) |  |  | :white_check_mark: |  | 2026-08-05 10:39:14 +0200 | Matej Kralik |
 ## release-1.30 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -501,6 +510,8 @@
 | [7a510288](https://github.com/openshift-service-mesh/istio/commit/7a510288a468a0c8cb5b6ac08bedf80e5b3c7ef7) | Cherry-pick downstream changes to release-1.30 ([#761](https://github.com/openshift-service-mesh/istio/issues/761)) |  |  | :white_check_mark: |  | 2026-06-10 05:36:06 -0400 | Cameron Garrison |
 | [4c937f30](https://github.com/openshift-service-mesh/istio/commit/4c937f30b6fcdfae166314c77aba3695febdce86) | [release-1.30] Cherry-pick Gateway CA controller changes ([#858](https://github.com/openshift-service-mesh/istio/issues/858)) |  |  | :white_check_mark: |  | 2026-07-26 10:00:06 +0200 | Mikhail Abramov |
 | [563853dd](https://github.com/openshift-service-mesh/istio/commit/563853ddea248455855a394ba199caba27e91f1b) | [release-1.30] test: prepare ocp test runner to build and push to quay on midstream jobs ([#864](https://github.com/openshift-service-mesh/istio/issues/864)) |  |  | :white_check_mark: |  | 2026-07-30 20:40:09 +0200 | OpenShift Cherrypick Robot |
+| [5a945c36](https://github.com/openshift-service-mesh/istio/commit/5a945c36f95f2b436460226c57bf07b1991b58ae) | Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm ([#873](https://github.com/openshift-service-mesh/istio/issues/873)) |  |  | :white_check_mark: |  | 2026-08-04 16:52:20 +0200 | mkralik3 |
+| [31eef703](https://github.com/openshift-service-mesh/istio/commit/31eef703981c2801a4c9104cd9a7b22c099d07ec) | Add GatewayConformanceAllowCRDsMismatch To Ambient ([#59976](https://github.com/openshift-service-mesh/istio/issues/59976)) ([#880](https://github.com/openshift-service-mesh/istio/issues/880)) |  | :hourglass_flowing_sand: | :x: |  | 2026-08-05 09:55:59 +0200 | Matej Kralik |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -600,6 +611,9 @@
 | [22173b9e](https://github.com/openshift-service-mesh/istio/commit/22173b9e4c966f0fbae766e24aabf71aa53e5124) | Reorganize the images used for the testing ([#848](https://github.com/openshift-service-mesh/istio/issues/848)) |  |  | :white_check_mark: |  | 2026-07-20 15:43:47 +0200 | OpenShift Cherrypick Robot |
 | [a0ab8148](https://github.com/openshift-service-mesh/istio/commit/a0ab814873279464a56696127ce00d025e339281) | [release-1.28] test: prepare ocp test runner to build and push to quay on midstream jobs ([#870](https://github.com/openshift-service-mesh/istio/issues/870)) |  |  | :white_check_mark: |  | 2026-07-30 18:16:29 +0200 | Francisco Herrera |
 | [fc41903b](https://github.com/openshift-service-mesh/istio/commit/fc41903b6e06bb166a343d460fe2c0d00f820915) | [release-1.28] prow: enable GatewayConformance and add missing cherry pick ([#855](https://github.com/openshift-service-mesh/istio/issues/855)) |  |  | :white_check_mark: |  | 2026-08-03 11:46:35 +0200 | Francisco Herrera |
+| [066fdb39](https://github.com/openshift-service-mesh/istio/commit/066fdb39b7b9565359bee0f3bf48d7771f00aa81) | Skip test in ambient for experimental gw crd api ([#874](https://github.com/openshift-service-mesh/istio/issues/874)) |  |  | :white_check_mark: |  | 2026-08-05 17:11:23 +0200 | mkralik3 |
+| [399b9f51](https://github.com/openshift-service-mesh/istio/commit/399b9f51409003f3911973a31c66c2a52345b214) | Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm ([#874](https://github.com/openshift-service-mesh/istio/issues/874)) |  |  | :white_check_mark: |  | 2026-08-04 16:52:20 +0200 | mkralik3 |
+| [48e74de2](https://github.com/openshift-service-mesh/istio/commit/48e74de269e081144a18dd9bf557238a264be123) | Add GatewayConformanceAllowCRDsMismatch To Ambient ([#59976](https://github.com/openshift-service-mesh/istio/issues/59976)) ([#881](https://github.com/openshift-service-mesh/istio/issues/881)) |  | :hourglass_flowing_sand: | :x: |  | 2026-08-05 10:12:46 +0200 | Matej Kralik |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -686,6 +700,7 @@
 | [ef496d40](https://github.com/openshift-service-mesh/istio/commit/ef496d4024e157822390d4d41546e42dcb996ba8) | Update proxy deps ([#785](https://github.com/openshift-service-mesh/istio/issues/785)) |  |  | :x: |  | 2026-06-09 15:30:06 +0200 | Matej Kralik |
 | [99bf6d85](https://github.com/openshift-service-mesh/istio/commit/99bf6d85e1823fee0624efb2b5aa909410fff5a1) | [release-1.27] test: prepare ocp test runner to build and push to quay on midstream jobs ([#869](https://github.com/openshift-service-mesh/istio/issues/869)) |  |  | :white_check_mark: |  | 2026-07-31 10:16:28 +0200 | Francisco Herrera |
 | [2788fe29](https://github.com/openshift-service-mesh/istio/commit/2788fe29156a7b6481d772ce1ad228539f06b02a) | [release-1.27] add missing cherry picks: detect_sail_operator_branch func, check operators and some changes on ocp script ([#853](https://github.com/openshift-service-mesh/istio/issues/853)) |  |  | :white_check_mark: |  | 2026-08-03 16:16:06 +0200 | Francisco Herrera |
+| [a43cf9f0](https://github.com/openshift-service-mesh/istio/commit/a43cf9f0aef568fa8bc6e0b7179693f7273aeb77) | Add GatewayConformanceAllowCRDsMismatch To Ambient ([#59976](https://github.com/openshift-service-mesh/istio/issues/59976)) ([#882](https://github.com/openshift-service-mesh/istio/issues/882)) |  | :hourglass_flowing_sand: | :x: |  | 2026-08-05 09:55:59 +0200 | Matej Kralik |
 ## release-1.26 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -758,6 +773,8 @@
 | [e953d852](https://github.com/openshift-service-mesh/istio/commit/e953d852dce08a913c8d0d58b177e98f013d4251) | [[OSSM-12338](https://issues.redhat.com/browse/OSSM-12338)] Standardize skip of failing test on both midstream and downstream repositories ([#734](https://github.com/openshift-service-mesh/istio/issues/734)) |  |  | :white_check_mark: |  | 2026-04-16 06:58:37 +0200 | Matej Kralik |
 | [572917aa](https://github.com/openshift-service-mesh/istio/commit/572917aaf214691cd7ccd880008cc44c1584c6bb) | [release-1.26] test: prepare ocp test runner to build and push to quay on midstream jobs ([#868](https://github.com/openshift-service-mesh/istio/issues/868)) |  |  | :white_check_mark: |  | 2026-07-31 10:16:28 +0200 | Francisco Herrera |
 | [f9c606be](https://github.com/openshift-service-mesh/istio/commit/f9c606be72f75b5df96f45a0e323cfc9e072e02d) | [release-1.26] add missing cherry picks: detect_sail_operator_branch func, check operators and some changes on ocp script ([#854](https://github.com/openshift-service-mesh/istio/issues/854)) |  |  | :white_check_mark: |  | 2026-08-03 15:41:34 +0200 | Francisco Herrera |
+| [498958ea](https://github.com/openshift-service-mesh/istio/commit/498958ea29e0c4341d4cd3fd7927854cc04d0586) | [release-1.26] Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm ([#878](https://github.com/openshift-service-mesh/istio/issues/878)) |  |  | :white_check_mark: |  | 2026-08-05 13:47:14 +0200 | Matej Kralik |
+| [d7f6e3f5](https://github.com/openshift-service-mesh/istio/commit/d7f6e3f50021f942d6c8d7e44491e349af77ca25) | Add GatewayConformanceAllowCRDsMismatch To Ambient ([#59976](https://github.com/openshift-service-mesh/istio/issues/59976)) ([#883](https://github.com/openshift-service-mesh/istio/issues/883)) |  | :hourglass_flowing_sand: | :x: |  | 2026-08-05 09:59:13 +0200 | Matej Kralik |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

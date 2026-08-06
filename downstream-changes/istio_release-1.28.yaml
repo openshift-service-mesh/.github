@@ -690,3 +690,21 @@ commits:
     date: 2026-08-03 11:46:35 +0200
     found: true
     isPermanent: true
+  - sha: 066fdb39b7b9565359bee0f3bf48d7771f00aa81
+    title: Skip test in ambient for experimental gw crd api (#874)
+    author: mkralik3
+    date: 2026-08-05 17:11:23 +0200
+    found: true
+    isPermanent: true
+  - sha: 399b9f51409003f3911973a31c66c2a52345b214
+    title: Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm (#874)
+    author: mkralik3
+    date: 2026-08-04 16:52:20 +0200
+    found: true
+    isPermanent: true
+  - sha: 48e74de269e081144a18dd9bf557238a264be123
+    title: Add GatewayConformanceAllowCRDsMismatch To Ambient (#59976) (#881)
+    author: Matej Kralik
+    date: 2026-08-05 10:12:46 +0200
+    found: true
+    isPendingUpstreamSync: true
