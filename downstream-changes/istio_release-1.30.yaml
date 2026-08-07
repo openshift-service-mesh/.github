@@ -488,3 +488,9 @@ commits:
     date: 2026-08-05 09:55:59 +0200
     found: true
     isPendingUpstreamSync: true
+  - sha: a577da1ed38e1345ba2d3e134cf8f69a6cbb7886
+    title: Remove fips proxy check in test (#877)
+    author: OpenShift Cherrypick Robot
+    date: 2026-08-06 07:02:30 +0200
+    found: true
+    isPermanent: true

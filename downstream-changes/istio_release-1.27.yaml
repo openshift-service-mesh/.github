@@ -616,3 +616,21 @@ commits:
     date: 2026-08-05 09:55:59 +0200
     found: true
     isPendingUpstreamSync: true
+  - sha: 577e2d9ec2b17f243ddb30bc505bbed51053ddf8
+    title: '[release-1.27] Automator: Update proxy (#886)'
+    author: Matej Kralik
+    date: 2026-08-06 23:59:25 +0200
+    found: true
+    hide: true
+  - sha: 00f8a46a38d8175a35c2d93d157660bbe1d7a5db
+    title: Skip test in pilot for experimental gw crd api (#875)
+    author: mkralik3
+    date: 2026-08-05 17:08:14 +0200
+    found: true
+    isPermanent: true
+  - sha: ab94ee22738c40591834730807e95c1892862c3d
+    title: Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm (#875)
+    author: mkralik3
+    date: 2026-08-04 16:52:20 +0200
+    found: true
+    isPermanent: true

@@ -490,3 +490,9 @@ commits:
     date: 2026-08-05 09:59:13 +0200
     found: true
     isPendingUpstreamSync: true
+  - sha: 619eb6d8a67eb8e3f49c5472b7e3f94fee448960
+    title: '[release-1.26] Automator: Update proxy (#885)'
+    author: Matej Kralik
+    date: 2026-08-06 21:52:14 +0200
+    found: true
+    hide: true

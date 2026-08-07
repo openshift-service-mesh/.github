@@ -708,3 +708,15 @@ commits:
     date: 2026-08-05 10:12:46 +0200
     found: true
     isPendingUpstreamSync: true
+  - sha: a44ca0d71a76bbd0629443f641a8a46318a63618
+    title: '[release-1.28] Automator: Update proxy (#865)'
+    author: openshift-service-mesh-bot
+    date: 2026-08-06 23:15:14 +0200
+    found: true
+    hide: true
+  - sha: 428dcf9010158954acdcc6949b9ed094788103b4
+    title: Remove fips proxy check in test (#876)
+    author: OpenShift Cherrypick Robot
+    date: 2026-08-06 18:11:34 +0200
+    found: true
+    isPermanent: true
