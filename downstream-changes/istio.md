@@ -2,6 +2,10 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Skip test in pilot for experimental gw crd api ([#888](https://github.com/openshift-service-mesh/istio/issues/888)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
+| Add failing downstream tests regarding experimental gw api ([#889](https://github.com/openshift-service-mesh/istio/issues/889)) | :x: | :warning: | :warning: | :white_check_mark: | :x: | :x: |
+| Add failing downstream tests regarding experimental gw api ([#890](https://github.com/openshift-service-mesh/istio/issues/890)) | :x: | :warning: | :warning: | :warning: | :white_check_mark: | :x: |
+| Skip test in pilot for experimental gw crd api ([#887](https://github.com/openshift-service-mesh/istio/issues/887)) | :x: | :warning: | :warning: | :warning: | :white_check_mark: | :x: |
 | Remove fips proxy check in test ([#876](https://github.com/openshift-service-mesh/istio/issues/876)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
 | Remove fips proxy check in test ([#877](https://github.com/openshift-service-mesh/istio/issues/877)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | Skip test in ambient for experimental gw crd api ([#874](https://github.com/openshift-service-mesh/istio/issues/874)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
@@ -620,6 +624,7 @@
 | [399b9f51](https://github.com/openshift-service-mesh/istio/commit/399b9f51409003f3911973a31c66c2a52345b214) | Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm ([#874](https://github.com/openshift-service-mesh/istio/issues/874)) |  |  | :white_check_mark: |  | 2026-08-04 16:52:20 +0200 | mkralik3 |
 | [48e74de2](https://github.com/openshift-service-mesh/istio/commit/48e74de269e081144a18dd9bf557238a264be123) | Add GatewayConformanceAllowCRDsMismatch To Ambient ([#59976](https://github.com/openshift-service-mesh/istio/issues/59976)) ([#881](https://github.com/openshift-service-mesh/istio/issues/881)) |  | :hourglass_flowing_sand: | :x: |  | 2026-08-05 10:12:46 +0200 | Matej Kralik |
 | [428dcf90](https://github.com/openshift-service-mesh/istio/commit/428dcf9010158954acdcc6949b9ed094788103b4) | Remove fips proxy check in test ([#876](https://github.com/openshift-service-mesh/istio/issues/876)) |  |  | :white_check_mark: |  | 2026-08-06 18:11:34 +0200 | OpenShift Cherrypick Robot |
+| [46e5966c](https://github.com/openshift-service-mesh/istio/commit/46e5966cb553a54b2324364e046577c0f4a986c1) | Skip test in pilot for experimental gw crd api ([#888](https://github.com/openshift-service-mesh/istio/issues/888)) |  |  | :white_check_mark: |  | 2026-08-07 16:22:02 +0200 | Matej Kralik |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -709,6 +714,7 @@
 | [a43cf9f0](https://github.com/openshift-service-mesh/istio/commit/a43cf9f0aef568fa8bc6e0b7179693f7273aeb77) | Add GatewayConformanceAllowCRDsMismatch To Ambient ([#59976](https://github.com/openshift-service-mesh/istio/issues/59976)) ([#882](https://github.com/openshift-service-mesh/istio/issues/882)) |  | :hourglass_flowing_sand: | :x: |  | 2026-08-05 09:55:59 +0200 | Matej Kralik |
 | [00f8a46a](https://github.com/openshift-service-mesh/istio/commit/00f8a46a38d8175a35c2d93d157660bbe1d7a5db) | Skip test in pilot for experimental gw crd api ([#875](https://github.com/openshift-service-mesh/istio/issues/875)) |  |  | :white_check_mark: |  | 2026-08-05 17:08:14 +0200 | mkralik3 |
 | [ab94ee22](https://github.com/openshift-service-mesh/istio/commit/ab94ee22738c40591834730807e95c1892862c3d) | Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm ([#875](https://github.com/openshift-service-mesh/istio/issues/875)) |  |  | :white_check_mark: |  | 2026-08-04 16:52:20 +0200 | mkralik3 |
+| [8c451447](https://github.com/openshift-service-mesh/istio/commit/8c451447d283582a6a6b61f74ff9652fc1ff4724) | Add failing downstream tests regarding experimental gw api ([#889](https://github.com/openshift-service-mesh/istio/issues/889)) |  |  | :white_check_mark: |  | 2026-08-07 16:22:02 +0200 | Matej Kralik |
 ## release-1.26 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -783,6 +789,8 @@
 | [f9c606be](https://github.com/openshift-service-mesh/istio/commit/f9c606be72f75b5df96f45a0e323cfc9e072e02d) | [release-1.26] add missing cherry picks: detect_sail_operator_branch func, check operators and some changes on ocp script ([#854](https://github.com/openshift-service-mesh/istio/issues/854)) |  |  | :white_check_mark: |  | 2026-08-03 15:41:34 +0200 | Francisco Herrera |
 | [498958ea](https://github.com/openshift-service-mesh/istio/commit/498958ea29e0c4341d4cd3fd7927854cc04d0586) | [release-1.26] Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm ([#878](https://github.com/openshift-service-mesh/istio/issues/878)) |  |  | :white_check_mark: |  | 2026-08-05 13:47:14 +0200 | Matej Kralik |
 | [d7f6e3f5](https://github.com/openshift-service-mesh/istio/commit/d7f6e3f50021f942d6c8d7e44491e349af77ca25) | Add GatewayConformanceAllowCRDsMismatch To Ambient ([#59976](https://github.com/openshift-service-mesh/istio/issues/59976)) ([#883](https://github.com/openshift-service-mesh/istio/issues/883)) |  | :hourglass_flowing_sand: | :x: |  | 2026-08-05 09:59:13 +0200 | Matej Kralik |
+| [3c6e0724](https://github.com/openshift-service-mesh/istio/commit/3c6e0724c40849c96f892c6c434de07050464021) | Add failing downstream tests regarding experimental gw api ([#890](https://github.com/openshift-service-mesh/istio/issues/890)) |  |  | :white_check_mark: |  | 2026-08-07 16:15:03 +0200 | Matej Kralik |
+| [5db32646](https://github.com/openshift-service-mesh/istio/commit/5db32646dce284504f8e33c51584d7631e9483bd) | Skip test in pilot for experimental gw crd api ([#887](https://github.com/openshift-service-mesh/istio/issues/887)) |  |  | :white_check_mark: |  | 2026-08-07 15:39:31 +0200 | Matej Kralik |
 ## release-1.24 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

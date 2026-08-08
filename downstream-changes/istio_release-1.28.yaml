@@ -720,3 +720,9 @@ commits:
     date: 2026-08-06 18:11:34 +0200
     found: true
     isPermanent: true
+  - sha: 46e5966cb553a54b2324364e046577c0f4a986c1
+    title: Skip test in pilot for experimental gw crd api (#888)
+    author: Matej Kralik
+    date: 2026-08-07 16:22:02 +0200
+    found: true
+    isPermanent: true

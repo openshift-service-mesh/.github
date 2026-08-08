@@ -496,3 +496,15 @@ commits:
     date: 2026-08-06 21:52:14 +0200
     found: true
     hide: true
+  - sha: 3c6e0724c40849c96f892c6c434de07050464021
+    title: Add failing downstream tests regarding experimental gw api (#890)
+    author: Matej Kralik
+    date: 2026-08-07 16:15:03 +0200
+    found: true
+    isPermanent: true
+  - sha: 5db32646dce284504f8e33c51584d7631e9483bd
+    title: Skip test in pilot for experimental gw crd api (#887)
+    author: Matej Kralik
+    date: 2026-08-07 15:39:31 +0200
+    found: true
+    isPermanent: true
