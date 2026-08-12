@@ -258,3 +258,9 @@ commits:
     date: 2026-07-10 11:53:27 +0200
     found: true
     hide: true
+  - sha: 911fb6323a239a8a8913417cc788cf408756691c
+    title: '[release-1.24] prow: fix quay.io image flow, cluster operator check, and MetalLB stability (#894)'
+    author: Matej Kralik
+    date: 2026-08-11 09:57:06 +0200
+    found: true
+    isPermanent: true

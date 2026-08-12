@@ -2,6 +2,7 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| [release-1.24] prow: fix quay.io image flow, cluster operator check, and MetalLB stability ([#894](https://github.com/openshift-service-mesh/istio/issues/894)) | :x: | :warning: | :warning: | :warning: | :warning: | :white_check_mark: |
 | Skip test in pilot for experimental gw crd api ([#888](https://github.com/openshift-service-mesh/istio/issues/888)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
 | Add failing downstream tests regarding experimental gw api ([#889](https://github.com/openshift-service-mesh/istio/issues/889)) | :x: | :warning: | :warning: | :white_check_mark: | :x: | :x: |
 | Add failing downstream tests regarding experimental gw api ([#890](https://github.com/openshift-service-mesh/istio/issues/890)) | :x: | :warning: | :warning: | :warning: | :white_check_mark: | :x: |
@@ -825,3 +826,4 @@
 | [73bb5ed5](https://github.com/openshift-service-mesh/istio/commit/73bb5ed55ad039919dc23024932d39f97d5d0076) | "Modify ""pr-label-check"" GH workflow ([#701](https://github.com/openshift-service-mesh/istio/issues/701))" |  |  | :white_check_mark: |  | 2026-04-13 11:08:14 +0200 | OpenShift Cherrypick Robot |
 | [3821f5c0](https://github.com/openshift-service-mesh/istio/commit/3821f5c0c95ffed0fa1b51a673d9211d9a907c03) | Add pre-release cherry-pick list create automation ([#725](https://github.com/openshift-service-mesh/istio/issues/725)) |  |  | :white_check_mark: |  | 2026-04-13 09:06:27 +0200 | OpenShift Cherrypick Robot |
 | [c3a4ccf8](https://github.com/openshift-service-mesh/istio/commit/c3a4ccf88cc58cba1251b4a5ac5c1fa0007ec370) | [[OSSM-12338](https://issues.redhat.com/browse/OSSM-12338)] Standardize skip of failing test on both midstream and downstream repositories ([#733](https://github.com/openshift-service-mesh/istio/issues/733)) |  |  | :white_check_mark: |  | 2026-04-15 20:26:49 +0200 | Matej Kralik |
+| [911fb632](https://github.com/openshift-service-mesh/istio/commit/911fb6323a239a8a8913417cc788cf408756691c) | [release-1.24] prow: fix quay.io image flow, cluster operator check, and MetalLB stability ([#894](https://github.com/openshift-service-mesh/istio/issues/894)) |  |  | :white_check_mark: |  | 2026-08-11 09:57:06 +0200 | Matej Kralik |
