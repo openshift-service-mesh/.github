@@ -1066,3 +1066,9 @@ commits:
     date: 2026-08-05 10:39:14 +0200
     found: true
     isPermanent: true
+  - sha: 0e4c7abeb207c87a78f0ec5cc021481788e355e9
+    title: 'docs: adding specific upstream and Agents documentation for the istio midstream project (#892)'
+    author: Francisco Herrera
+    date: 2026-08-12 16:14:27 +0200
+    found: true
+    isPermanent: true

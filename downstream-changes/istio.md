@@ -446,6 +446,7 @@
 | [b57fe6d9](https://github.com/openshift-service-mesh/istio/commit/b57fe6d94ea38195268a87d3562b1e6e125a48e4) | Skip ambient unsupported GW conformance tests ([#856](https://github.com/openshift-service-mesh/istio/issues/856)) |  |  | :x: |  | 2026-07-28 22:21:40 +0300 | Maxim Babushkin |
 | [17cf6dc3](https://github.com/openshift-service-mesh/istio/commit/17cf6dc32f639dceba4333a29c03aab44aa6e13c) | Remove GW Conformance test execution workaround ([#856](https://github.com/openshift-service-mesh/istio/issues/856)) |  |  | :x: |  | 2026-07-26 15:53:52 +0300 | Maxim Babushkin |
 | [ec6a473b](https://github.com/openshift-service-mesh/istio/commit/ec6a473b2d8a048cd018dade9b75c66e22a7b283) | Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm ([#872](https://github.com/openshift-service-mesh/istio/issues/872)) |  |  | :white_check_mark: |  | 2026-08-05 10:39:14 +0200 | Matej Kralik |
+| [0e4c7abe](https://github.com/openshift-service-mesh/istio/commit/0e4c7abeb207c87a78f0ec5cc021481788e355e9) | docs: adding specific upstream and Agents documentation for the istio midstream project ([#892](https://github.com/openshift-service-mesh/istio/issues/892)) |  |  | :white_check_mark: |  | 2026-08-12 16:14:27 +0200 | Francisco Herrera |
 ## release-1.30 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

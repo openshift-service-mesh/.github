@@ -264,3 +264,9 @@ commits:
     date: 2026-08-11 09:57:06 +0200
     found: true
     isPermanent: true
+  - sha: 6975863e8351e5e98829ddd1f2a4a9e22a51d722
+    title: 'Automator: Update proxy (#896)'
+    author: Matej Kralik
+    date: 2026-08-12 13:26:51 +0200
+    found: true
+    hide: true
