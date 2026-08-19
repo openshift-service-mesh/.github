@@ -137,6 +137,7 @@ commits:
     date: 2026-06-11 19:24:45 +0200
     found: true
     isPendingUpstreamSync: true
+    isPermanent: false
   - sha: c71c0bdad110047e8fbe51bb57f0bad74f37b6a9
     title: Deploy Sail Operator control plane based on branch (#799)
     author: Maxim Babushkin
