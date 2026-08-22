@@ -507,3 +507,9 @@ commits:
     date: 2026-08-12 14:52:42 +0200
     found: true
     hide: true
+  - sha: 4f864d546c19d41b6172be3f6aea387f76a94ab3
+    title: 'fips: respect already set min tls version when not lower than tls12 (#914)'
+    author: Zuzana Miklánková
+    date: 2026-08-21 15:02:38 +0200
+    found: true
+    isPermanent: true

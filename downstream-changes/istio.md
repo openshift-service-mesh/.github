@@ -2,6 +2,7 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| fips: respect already set min tls version when not lower than tls12 ([#914](https://github.com/openshift-service-mesh/istio/issues/914)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | [release-1.24] prow: fix quay.io image flow, cluster operator check, and MetalLB stability ([#894](https://github.com/openshift-service-mesh/istio/issues/894)) | :x: | :warning: | :warning: | :warning: | :warning: | :white_check_mark: |
 | Skip test in pilot for experimental gw crd api ([#888](https://github.com/openshift-service-mesh/istio/issues/888)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
 | Add failing downstream tests regarding experimental gw api ([#889](https://github.com/openshift-service-mesh/istio/issues/889)) | :x: | :warning: | :warning: | :white_check_mark: | :x: | :x: |
@@ -523,6 +524,7 @@
 | [5a945c36](https://github.com/openshift-service-mesh/istio/commit/5a945c36f95f2b436460226c57bf07b1991b58ae) | Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm ([#873](https://github.com/openshift-service-mesh/istio/issues/873)) |  |  | :white_check_mark: |  | 2026-08-04 16:52:20 +0200 | mkralik3 |
 | [31eef703](https://github.com/openshift-service-mesh/istio/commit/31eef703981c2801a4c9104cd9a7b22c099d07ec) | Add GatewayConformanceAllowCRDsMismatch To Ambient ([#59976](https://github.com/openshift-service-mesh/istio/issues/59976)) ([#880](https://github.com/openshift-service-mesh/istio/issues/880)) |  | :hourglass_flowing_sand: | :x: |  | 2026-08-05 09:55:59 +0200 | Matej Kralik |
 | [a577da1e](https://github.com/openshift-service-mesh/istio/commit/a577da1ed38e1345ba2d3e134cf8f69a6cbb7886) | Remove fips proxy check in test ([#877](https://github.com/openshift-service-mesh/istio/issues/877)) |  |  | :white_check_mark: |  | 2026-08-06 07:02:30 +0200 | OpenShift Cherrypick Robot |
+| [4f864d54](https://github.com/openshift-service-mesh/istio/commit/4f864d546c19d41b6172be3f6aea387f76a94ab3) | fips: respect already set min tls version when not lower than tls12 ([#914](https://github.com/openshift-service-mesh/istio/issues/914)) |  |  | :white_check_mark: |  | 2026-08-21 15:02:38 +0200 | Zuzana Miklánková |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
