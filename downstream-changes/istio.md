@@ -2,6 +2,7 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| [release-1.27] telemetry: add bootstrap annotations for stats flush and eviction ([#783](https://github.com/openshift-service-mesh/istio/issues/783)) | :x: | :x: | :x: | :white_check_mark: | :x: | :x: |
 | fips: respect already set min tls version when not lower than tls12 ([#914](https://github.com/openshift-service-mesh/istio/issues/914)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | [release-1.24] prow: fix quay.io image flow, cluster operator check, and MetalLB stability ([#894](https://github.com/openshift-service-mesh/istio/issues/894)) | :x: | :warning: | :warning: | :warning: | :warning: | :white_check_mark: |
 | Skip test in pilot for experimental gw crd api ([#888](https://github.com/openshift-service-mesh/istio/issues/888)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
@@ -719,6 +720,7 @@
 | [00f8a46a](https://github.com/openshift-service-mesh/istio/commit/00f8a46a38d8175a35c2d93d157660bbe1d7a5db) | Skip test in pilot for experimental gw crd api ([#875](https://github.com/openshift-service-mesh/istio/issues/875)) |  |  | :white_check_mark: |  | 2026-08-05 17:08:14 +0200 | mkralik3 |
 | [ab94ee22](https://github.com/openshift-service-mesh/istio/commit/ab94ee22738c40591834730807e95c1892862c3d) | Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm ([#875](https://github.com/openshift-service-mesh/istio/issues/875)) |  |  | :white_check_mark: |  | 2026-08-04 16:52:20 +0200 | mkralik3 |
 | [8c451447](https://github.com/openshift-service-mesh/istio/commit/8c451447d283582a6a6b61f74ff9652fc1ff4724) | Add failing downstream tests regarding experimental gw api ([#889](https://github.com/openshift-service-mesh/istio/issues/889)) |  |  | :white_check_mark: |  | 2026-08-07 16:22:02 +0200 | Matej Kralik |
+| [90e833f9](https://github.com/openshift-service-mesh/istio/commit/90e833f94322a6bf6c277b5e415bd84e4a380dbb) | [release-1.27] telemetry: add bootstrap annotations for stats flush and eviction ([#783](https://github.com/openshift-service-mesh/istio/issues/783)) |  |  | :x: |  | 2026-08-24 16:08:51 +0100 | Ted Poole |
 ## release-1.26 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

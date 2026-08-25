@@ -646,3 +646,9 @@ commits:
     date: 2026-08-21 11:04:09 +0200
     found: true
     hide: true
+  - sha: 90e833f94322a6bf6c277b5e415bd84e4a380dbb
+    title: '[release-1.27] telemetry: add bootstrap annotations for stats flush and eviction (#783)'
+    author: Ted Poole
+    date: 2026-08-24 16:08:51 +0100
+    found: true
+    isPermanent: false
