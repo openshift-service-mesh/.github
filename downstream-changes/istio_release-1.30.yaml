@@ -513,3 +513,9 @@ commits:
     date: 2026-08-21 15:02:38 +0200
     found: true
     isPermanent: true
+  - sha: ace273b6bdbe5f6ebfc8bed3ae6261cf6b95d0b3
+    title: '[release-1.30] Automator: Update proxy (#912)'
+    author: openshift-service-mesh-bot
+    date: 2026-08-26 18:42:24 +0200
+    found: true
+    hide: true
