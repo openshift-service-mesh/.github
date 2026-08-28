@@ -738,3 +738,8 @@ commits:
     date: 2026-08-21 11:04:09 +0200
     found: true
     hide: true
+  - sha: cdc138bbc630627f680b8f4dc51a65d87405f0c0
+    title: backendtlspolicy fail closed on sidecar when ca ref unresolved (#214)
+    author: Petr McAllister
+    date: 2026-08-26 12:40:19 -0700
+    found: true

@@ -2,6 +2,7 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| backendtlspolicy fail closed on sidecar when ca ref unresolved ([#214](https://github.com/openshift-service-mesh/istio/issues/214)) | :x: | :x: | :white_check_mark: | :x: | :x: | :x: |
 | [release-1.27] telemetry: add bootstrap annotations for stats flush and eviction ([#783](https://github.com/openshift-service-mesh/istio/issues/783)) | :x: | :x: | :x: | :white_check_mark: | :x: | :x: |
 | fips: respect already set min tls version when not lower than tls12 ([#914](https://github.com/openshift-service-mesh/istio/issues/914)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | [release-1.24] prow: fix quay.io image flow, cluster operator check, and MetalLB stability ([#894](https://github.com/openshift-service-mesh/istio/issues/894)) | :x: | :warning: | :warning: | :warning: | :warning: | :white_check_mark: |
@@ -630,6 +631,7 @@
 | [48e74de2](https://github.com/openshift-service-mesh/istio/commit/48e74de269e081144a18dd9bf557238a264be123) | Add GatewayConformanceAllowCRDsMismatch To Ambient ([#59976](https://github.com/openshift-service-mesh/istio/issues/59976)) ([#881](https://github.com/openshift-service-mesh/istio/issues/881)) |  | :hourglass_flowing_sand: | :x: |  | 2026-08-05 10:12:46 +0200 | Matej Kralik |
 | [428dcf90](https://github.com/openshift-service-mesh/istio/commit/428dcf9010158954acdcc6949b9ed094788103b4) | Remove fips proxy check in test ([#876](https://github.com/openshift-service-mesh/istio/issues/876)) |  |  | :white_check_mark: |  | 2026-08-06 18:11:34 +0200 | OpenShift Cherrypick Robot |
 | [46e5966c](https://github.com/openshift-service-mesh/istio/commit/46e5966cb553a54b2324364e046577c0f4a986c1) | Skip test in pilot for experimental gw crd api ([#888](https://github.com/openshift-service-mesh/istio/issues/888)) |  |  | :white_check_mark: |  | 2026-08-07 16:22:02 +0200 | Matej Kralik |
+| [cdc138bb](https://github.com/openshift-service-mesh/istio/commit/cdc138bbc630627f680b8f4dc51a65d87405f0c0) | backendtlspolicy fail closed on sidecar when ca ref unresolved ([#214](https://github.com/openshift-service-mesh/istio/issues/214)) |  |  | :x: |  | 2026-08-26 12:40:19 -0700 | Petr McAllister |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
