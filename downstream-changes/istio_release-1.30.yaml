@@ -525,3 +525,24 @@ commits:
     date: 2026-08-27 21:14:50 +0200
     found: true
     hide: true
+  - sha: ebe5a1eaadb3a97190a212e879562f483cc642e1
+    title: '[release-1.30] Automator: Update ztunnel (#923)'
+    author: Matej Kralik
+    date: 2026-08-31 17:17:11 +0200
+    found: true
+    hide: true
+  - sha: e3d86c526e84ed6ffd4a887fb0c1b7a045a145b2
+    title: bump istio.deps (#212)
+    author: Prabhjot Singh
+    date: 2026-08-21 09:48:18 -0600
+    found: true
+  - sha: fa4868ef37f8ddbfa8fd112a5e0fda9bacf92b60
+    title: backendtlspolicy fail closed on sidecar when ca ref unresolved (#214)
+    author: Petr McAllister
+    date: 2026-08-26 12:40:19 -0700
+    found: true
+  - sha: 2ec07ef90c56a7c53e0ee54f0278693408972603
+    title: bump istio.deps (#212)
+    author: Prabhjot Singh
+    date: 2026-08-21 09:48:18 -0600
+    found: true

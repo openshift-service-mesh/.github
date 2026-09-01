@@ -2,9 +2,10 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| backendtlspolicy fail closed on sidecar when ca ref unresolved ([#214](https://github.com/openshift-service-mesh/istio/issues/214)) | :x: | :x: | :white_check_mark: | :x: | :x: | :x: |
+| backendtlspolicy fail closed on sidecar when ca ref unresolved ([#214](https://github.com/openshift-service-mesh/istio/issues/214)) | :x: | :white_check_mark: | :white_check_mark: | :x: | :x: | :x: |
 | [release-1.27] telemetry: add bootstrap annotations for stats flush and eviction ([#783](https://github.com/openshift-service-mesh/istio/issues/783)) | :x: | :x: | :x: | :white_check_mark: | :x: | :x: |
 | fips: respect already set min tls version when not lower than tls12 ([#914](https://github.com/openshift-service-mesh/istio/issues/914)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
+| bump istio.deps ([#212](https://github.com/openshift-service-mesh/istio/issues/212)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | [release-1.24] prow: fix quay.io image flow, cluster operator check, and MetalLB stability ([#894](https://github.com/openshift-service-mesh/istio/issues/894)) | :x: | :warning: | :warning: | :warning: | :warning: | :white_check_mark: |
 | Skip test in pilot for experimental gw crd api ([#888](https://github.com/openshift-service-mesh/istio/issues/888)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
 | Add failing downstream tests regarding experimental gw api ([#889](https://github.com/openshift-service-mesh/istio/issues/889)) | :x: | :warning: | :warning: | :white_check_mark: | :x: | :x: |
@@ -527,6 +528,9 @@
 | [31eef703](https://github.com/openshift-service-mesh/istio/commit/31eef703981c2801a4c9104cd9a7b22c099d07ec) | Add GatewayConformanceAllowCRDsMismatch To Ambient ([#59976](https://github.com/openshift-service-mesh/istio/issues/59976)) ([#880](https://github.com/openshift-service-mesh/istio/issues/880)) |  | :hourglass_flowing_sand: | :x: |  | 2026-08-05 09:55:59 +0200 | Matej Kralik |
 | [a577da1e](https://github.com/openshift-service-mesh/istio/commit/a577da1ed38e1345ba2d3e134cf8f69a6cbb7886) | Remove fips proxy check in test ([#877](https://github.com/openshift-service-mesh/istio/issues/877)) |  |  | :white_check_mark: |  | 2026-08-06 07:02:30 +0200 | OpenShift Cherrypick Robot |
 | [4f864d54](https://github.com/openshift-service-mesh/istio/commit/4f864d546c19d41b6172be3f6aea387f76a94ab3) | fips: respect already set min tls version when not lower than tls12 ([#914](https://github.com/openshift-service-mesh/istio/issues/914)) |  |  | :white_check_mark: |  | 2026-08-21 15:02:38 +0200 | Zuzana Miklánková |
+| [e3d86c52](https://github.com/openshift-service-mesh/istio/commit/e3d86c526e84ed6ffd4a887fb0c1b7a045a145b2) | bump istio.deps ([#212](https://github.com/openshift-service-mesh/istio/issues/212)) |  |  | :x: |  | 2026-08-21 09:48:18 -0600 | Prabhjot Singh |
+| [fa4868ef](https://github.com/openshift-service-mesh/istio/commit/fa4868ef37f8ddbfa8fd112a5e0fda9bacf92b60) | backendtlspolicy fail closed on sidecar when ca ref unresolved ([#214](https://github.com/openshift-service-mesh/istio/issues/214)) |  |  | :x: |  | 2026-08-26 12:40:19 -0700 | Petr McAllister |
+| [2ec07ef9](https://github.com/openshift-service-mesh/istio/commit/2ec07ef90c56a7c53e0ee54f0278693408972603) | bump istio.deps ([#212](https://github.com/openshift-service-mesh/istio/issues/212)) |  |  | :x: |  | 2026-08-21 09:48:18 -0600 | Prabhjot Singh |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

@@ -652,3 +652,10 @@ commits:
     date: 2026-08-24 16:08:51 +0100
     found: true
     isPermanent: false
+  - sha: 8a080e3a9c428218d0ff00ade66e56fc2dacc4f1
+    title: '[release-1.27] Automator: Update ztunnel (#906)'
+    author: openshift-service-mesh-bot
+    date: 2026-08-31 09:48:59 +0200
+    found: true
+    isPermanent: false
+    hide: true
