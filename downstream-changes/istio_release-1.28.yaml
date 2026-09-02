@@ -743,3 +743,14 @@ commits:
     author: Petr McAllister
     date: 2026-08-26 12:40:19 -0700
     found: true
+  - sha: ecf8818cfc53886fd340c06373a2df45e8344f34
+    title: '[release-1.28] Automator: Update proxy (#930)'
+    author: openshift-service-mesh-bot
+    date: 2026-08-31 12:42:49 +0000
+    found: true
+    hide: true
+  - sha: 74cf6b58ce0b3a44bfcc95a41121ffa47d2241d1
+    title: bump istio.deps (#212)
+    author: Prabhjot Singh
+    date: 2026-08-21 09:48:18 -0600
+    found: true

@@ -508,3 +508,13 @@ commits:
     date: 2026-08-07 15:39:31 +0200
     found: true
     isPermanent: true
+  - sha: d334d79ebd36b427dc4d771602beefbae41ed4be
+    title: Update midstream proxy (#928)
+    author: mkralik3
+    date: 2026-09-01 08:54:21 +0200
+    found: true
+  - sha: 8172945c4fd0ea80a41b881b12b4c65023f95d61
+    title: bump istio.deps (#212)
+    author: Prabhjot Singh
+    date: 2026-08-21 09:48:18 -0600
+    found: true
