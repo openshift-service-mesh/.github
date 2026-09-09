@@ -1072,3 +1072,9 @@ commits:
     date: 2026-08-12 16:14:27 +0200
     found: true
     isPermanent: true
+  - sha: 6c0ff41b188da06fdd9f5a17e723119eb62f6930
+    title: Fix CI image pull error (#943)
+    author: Maxim Babushkin
+    date: 2026-09-08 08:54:19 +0300
+    found: true
+    isPermanent: false
