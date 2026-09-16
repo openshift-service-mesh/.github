@@ -546,3 +546,9 @@ commits:
     author: Prabhjot Singh
     date: 2026-08-21 09:48:18 -0600
     found: true
+  - sha: 740f475d09bd8b8c94897de7ffb4197e7f428e84
+    title: Disable ListenerSet gw conformance tests (#940)
+    author: Matej Kralik
+    date: 2026-09-15 09:37:26 +0200
+    found: true
+    isPermanent: true

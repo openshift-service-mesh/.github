@@ -2,6 +2,7 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Disable ListenerSet gw conformance tests ([#940](https://github.com/openshift-service-mesh/istio/issues/940)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | Update midstream proxy ([#928](https://github.com/openshift-service-mesh/istio/issues/928)) | :x: | :x: | :x: | :x: | :white_check_mark: | :x: |
 | backendtlspolicy fail closed on sidecar when ca ref unresolved ([#214](https://github.com/openshift-service-mesh/istio/issues/214)) | :x: | :white_check_mark: | :white_check_mark: | :x: | :x: | :x: |
 | [release-1.27] telemetry: add bootstrap annotations for stats flush and eviction ([#783](https://github.com/openshift-service-mesh/istio/issues/783)) | :x: | :x: | :x: | :white_check_mark: | :x: | :x: |
@@ -453,6 +454,7 @@
 | [ec6a473b](https://github.com/openshift-service-mesh/istio/commit/ec6a473b2d8a048cd018dade9b75c66e22a7b283) | Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm ([#872](https://github.com/openshift-service-mesh/istio/issues/872)) |  |  | :white_check_mark: |  | 2026-08-05 10:39:14 +0200 | Matej Kralik |
 | [0e4c7abe](https://github.com/openshift-service-mesh/istio/commit/0e4c7abeb207c87a78f0ec5cc021481788e355e9) | docs: adding specific upstream and Agents documentation for the istio midstream project ([#892](https://github.com/openshift-service-mesh/istio/issues/892)) |  |  | :white_check_mark: |  | 2026-08-12 16:14:27 +0200 | Francisco Herrera |
 | [6c0ff41b](https://github.com/openshift-service-mesh/istio/commit/6c0ff41b188da06fdd9f5a17e723119eb62f6930) | Fix CI image pull error ([#943](https://github.com/openshift-service-mesh/istio/issues/943)) |  |  | :x: |  | 2026-09-08 08:54:19 +0300 | Maxim Babushkin |
+| [2c8a99b1](https://github.com/openshift-service-mesh/istio/commit/2c8a99b1f6f07339acd41c16b183451b2a0c71b7) | Fix DEPLOY_GATEWAY_API on OCP 5.0+ ([#941](https://github.com/openshift-service-mesh/istio/issues/941)) |  |  | :white_check_mark: |  | 2026-09-15 13:24:11 +0200 | Matej Kralik |
 ## release-1.30 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -533,6 +535,7 @@
 | [e3d86c52](https://github.com/openshift-service-mesh/istio/commit/e3d86c526e84ed6ffd4a887fb0c1b7a045a145b2) | bump istio.deps ([#212](https://github.com/openshift-service-mesh/istio/issues/212)) |  |  | :x: |  | 2026-08-21 09:48:18 -0600 | Prabhjot Singh |
 | [fa4868ef](https://github.com/openshift-service-mesh/istio/commit/fa4868ef37f8ddbfa8fd112a5e0fda9bacf92b60) | backendtlspolicy fail closed on sidecar when ca ref unresolved ([#214](https://github.com/openshift-service-mesh/istio/issues/214)) |  |  | :x: |  | 2026-08-26 12:40:19 -0700 | Petr McAllister |
 | [2ec07ef9](https://github.com/openshift-service-mesh/istio/commit/2ec07ef90c56a7c53e0ee54f0278693408972603) | bump istio.deps ([#212](https://github.com/openshift-service-mesh/istio/issues/212)) |  |  | :x: |  | 2026-08-21 09:48:18 -0600 | Prabhjot Singh |
+| [740f475d](https://github.com/openshift-service-mesh/istio/commit/740f475d09bd8b8c94897de7ffb4197e7f428e84) | Disable ListenerSet gw conformance tests ([#940](https://github.com/openshift-service-mesh/istio/issues/940)) |  |  | :white_check_mark: |  | 2026-09-15 09:37:26 +0200 | Matej Kralik |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
