@@ -552,3 +552,21 @@ commits:
     date: 2026-09-15 09:37:26 +0200
     found: true
     isPermanent: true
+  - sha: 1af9fcf1202513e3126d09482817bdf422bc44d8
+    title: Fix DEPLOY_GATEWAY_API on OCP 5.0+ (#954)
+    author: OpenShift Cherrypick Robot
+    date: 2026-09-18 15:03:41 +0200
+    found: true
+    isPermanent: true
+  - sha: 3eeb6e5ca30b876c7dd8b42dc9c478f011edfb41
+    title: '[release-1.30] Automator: Update proxy (#937)'
+    author: openshift-service-mesh-bot
+    date: 2026-09-18 14:15:49 +0200
+    found: true
+    hide: true
+  - sha: 9834d62c7dd0c3e11fc072111bf2be841dcf2308
+    title: '[release-1.30] Automator: Update ztunnel (#945)'
+    author: openshift-service-mesh-bot
+    date: 2026-09-18 13:35:03 +0200
+    found: true
+    hide: true

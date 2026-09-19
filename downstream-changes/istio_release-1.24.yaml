@@ -281,3 +281,9 @@ commits:
     author: Prabhjot Singh
     date: 2026-08-21 09:48:18 -0600
     found: true
+  - sha: 3d79ecd15be272817eed32a4a01c35ec923425df
+    title: '[release-1.24] Automator: Update proxy (#934)'
+    author: openshift-service-mesh-bot
+    date: 2026-09-18 13:45:52 +0200
+    found: true
+    hide: true

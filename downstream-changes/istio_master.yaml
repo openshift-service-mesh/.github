@@ -1084,3 +1084,9 @@ commits:
     date: 2026-09-15 13:24:11 +0200
     found: true
     isPermanent: true
+  - sha: 835c47e8b1e716966bcd8f6444cf585a6a74a904
+    title: Skip auto-http flaky test till upstream issue resolved (#958)
+    author: Matej Kralik
+    date: 2026-09-18 14:15:50 +0200
+    found: true
+    isPermanent: true

@@ -518,3 +518,15 @@ commits:
     author: Prabhjot Singh
     date: 2026-08-21 09:48:18 -0600
     found: true
+  - sha: db8b9e53e8897459c5a309148a61d3166128e185
+    title: Skip auto-http flaky test till upstream issue resolved (#960)
+    author: OpenShift Cherrypick Robot
+    date: 2026-09-18 16:50:52 +0200
+    found: true
+    isPermanent: true
+  - sha: db6b4b26ae0331c8e8c86d7e41aecf1ffba073ed
+    title: '[release-1.26] Automator: Update proxy (#933)'
+    author: openshift-service-mesh-bot
+    date: 2026-09-18 13:49:35 +0200
+    found: true
+    hide: true

@@ -670,3 +670,15 @@ commits:
     author: Prabhjot Singh
     date: 2026-08-21 09:48:18 -0600
     found: true
+  - sha: 736bed246af7bea951b87a59391955162de88dd3
+    title: '[release-1.27] Automator: Update proxy (#936)'
+    author: openshift-service-mesh-bot
+    date: 2026-09-18 14:15:49 +0200
+    found: true
+    hide: true
+  - sha: 68aaaf6cecd8e92d91d9b34d825f35385cce2c10
+    title: '[release-1.27] Automator: Update ztunnel (#946)'
+    author: openshift-service-mesh-bot
+    date: 2026-09-18 13:18:02 +0200
+    found: true
+    hide: true
