@@ -1,0 +1,286 @@
+commits:
+  - sha: d0421acd5a1aa81f916ef0b199c8b47da3390503
+    title: '[release-1.31] Add recent backports  (#969)'
+    author: Matej Kralik
+    date: 2026-09-21 18:07:33 +0200
+    found: true
+  - sha: 9a35be7185cfc4d2a6ffdb749bd2cade8228145e
+    title: 'test(security): update normalization test for Envoy CVE-2026-73551'
+    author: bmangoen
+    date: 2026-09-16 14:31:02 +0200
+    found: true
+  - sha: ee1afea9e76d93e48835a65e36821614d04f3b8d
+    title: 'feat: add fips-140-3-redhat COMPLIANCE_POLICY'
+    author: bmangoen
+    date: 2026-09-14 09:33:27 +0200
+    found: true
+  - sha: 257b477d3a33be2a7be77669810472afc5deb92c
+    title: Disable ListenerSet gw conformance tests
+    author: mkralik3
+    date: 2026-09-04 08:51:58 +0200
+    found: true
+  - sha: 9498ab0fb59fdc6acebbde3e802a2e600589f83c
+    title: 'test(pqc): re-remove hardcoded sail-dev echo image'
+    author: bmangoen
+    date: 2026-09-02 09:35:51 +0200
+    found: true
+  - sha: 03704e4c7a77136be96de1ab48bcdfeae22f89b4
+    title: 'deps: bump proxy/ztunnel SHAs and add agentgateway v1.5.0'
+    author: bmangoen
+    date: 2026-09-01 01:46:21 +0200
+    found: true
+  - sha: 39a8b61d6cba14125b0412361f8d659f8f1e1d99
+    title: 'fix(prow): update gateway conformance patch for 1.31 ConformanceOptions'
+    author: bmangoen
+    date: 2026-09-01 01:43:06 +0200
+    found: true
+  - sha: ecaf2f84f8960fd60408076c5b3589f1293dc348
+    title: 'fix(proxy): remove duplicated libssl/libcrypto symlink RUN block'
+    author: bmangoen
+    date: 2026-08-31 09:34:29 +0200
+    found: true
+  - sha: 8f241d0ac14ed231b41b31e09deb9e0e81e45b9a
+    title: 'fix(lint): repair reintroduced shellcheck + unparam lint failures'
+    author: bmangoen
+    date: 2026-08-27 22:38:58 +0200
+    found: true
+  - sha: 850c76f18300c368b1fbacf454a1404e289189a8
+    title: 'style: gofmt trafficextension_wasm_test.go files'
+    author: bmangoen
+    date: 2026-08-27 21:14:04 +0200
+    found: true
+  - sha: 8a0f00b8b6f174c89b38751660a61b1521d421de
+    title: 'fix(ambient): repair botched merge in TestZtunnelSecureMetrics'
+    author: bmangoen
+    date: 2026-08-27 21:12:22 +0200
+    found: true
+  - sha: 741242b405e1f897ac9234d5f248c0cb7a24c662
+    title: 'prow: fix botched cherry-pick duplications in sail-operator-setup.sh'
+    author: bmangoen
+    date: 2026-08-27 21:07:25 +0200
+    found: true
+  - sha: 0bcce11d52f29fdb4ae9d3b9427cf7fe92669f09
+    title: 'test: remove orphaned conflict marker in ambient/pqc/main_test.go'
+    author: bmangoen
+    date: 2026-08-27 21:06:41 +0200
+    found: true
+  - sha: 909ea073d57d7d510249e939b72413b334cb604a
+    title: 'prow: skip 5 WASM tests on OCP in skip_tests_full.yaml'
+    author: bmangoen
+    date: 2026-08-27 20:31:47 +0200
+    found: true
+  - sha: 764d64f8e93c866de1e5252e116a38eeb93a7160
+    title: 'test: add FIPS DestinationRule wait + --istio.test.fips/240m on OCP'
+    author: bmangoen
+    date: 2026-08-27 20:28:41 +0200
+    found: true
+  - sha: 8b58ab680aad918128cb5e8206f911a41d2874c1
+    title: Add "ztunnelNamespace" flag to converter flow (#635)
+    author: Maxim Babushkin
+    date: 2026-03-05 11:57:02 +0200
+    found: true
+  - sha: ef83f3bff5d86cd7be1f65f962cb9299124dffbc
+    title: 'prow: add SPECIFIC_TESTS arg + -run to integ-suite-ocp.sh'
+    author: bmangoen
+    date: 2026-08-27 15:51:58 +0200
+    found: true
+  - sha: caa900b5091c6de77d8e8bea8808437de4e3ae2d
+    title: 'tests: customize app image in PQC tests (#639)'
+    author: Jacek Ewertowski
+    date: 2026-03-11 17:25:51 +0100
+    found: true
+  - sha: de09499ca67f026b9ad7cb61fa03672df0711873
+    title: 'fips: respect already set min tls version when not lower than tls12 (#914)'
+    author: Zuzana Miklánková
+    date: 2026-08-21 15:02:38 +0200
+    found: true
+  - sha: a382fa59ca8e52ac7c105d4d4cc477a859f224db
+    title: Remove fips proxy check in test (#877)
+    author: OpenShift Cherrypick Robot
+    date: 2026-08-06 07:02:30 +0200
+    found: true
+  - sha: c45c03b8947def7cce703291bf2b66a58de5724c
+    title: Disable PILOT_ENABLE_ALPHA_GATEWAY_API in testing via helm
+    author: mkralik3
+    date: 2026-08-04 16:52:20 +0200
+    found: true
+  - sha: 3e1096728eb95678c6a4f8bcb9589bbd324cb564
+    title: '[release-1.30] test: prepare ocp test runner to build and push to quay on midstream jobs (#864)'
+    author: OpenShift Cherrypick Robot
+    date: 2026-07-30 20:40:09 +0200
+    found: true
+  - sha: 98d95b5844aea7b705fac2bcf37d4469cdbcb157
+    title: '[release-1.30] Cherry-pick Gateway CA controller changes (#858)'
+    author: Mikhail Abramov
+    date: 2026-07-26 10:00:06 +0200
+    found: true
+  - sha: 974efa45f580de0d5003f34366a6ea7468de36c5
+    title: Reorganize the images used for the testing (#849)
+    author: OpenShift Cherrypick Robot
+    date: 2026-07-20 13:10:15 +0200
+    found: true
+  - sha: 762f1ca24ecc2b07fe963baa8216805a3b4f19c4
+    title: Update "PR label check" GH workflow (#844)
+    author: OpenShift Cherrypick Robot
+    date: 2026-07-10 10:32:19 +0200
+    found: true
+  - sha: 492c8de9c76be4bec9972eb4c63a4e6d5f5a405d
+    title: Update skip tests for 1.30 (#841)
+    author: Matej Kralik
+    date: 2026-07-10 10:03:58 +0200
+    found: true
+  - sha: 7075e67e61ab702f9b67580c1640768da2a6c276
+    title: Remove hardcoded echo image for pqc (#824)
+    author: Matej Kralik
+    date: 2026-07-02 20:06:02 +0200
+    found: true
+  - sha: 2f59159af526a21d83724047f8a88a77c6452141
+    title: '[release-1.30] prow: fix check_cluster_operators to survive transient oc errors and log unstable operators (#838)'
+    author: OpenShift Cherrypick Robot
+    date: 2026-07-02 16:26:25 +0200
+    found: true
+  - sha: 110ff0a93c9eae38f28bd74f2e5c079dd9264fdd
+    title: 'tmp: remove ambient skip sidecar on ocp (#826)'
+    author: Matej Kralik
+    date: 2026-07-01 15:47:45 +0200
+    found: true
+  - sha: 0978c93d38d1e010b0f9c3fe9ad62fd28cfbcd38
+    title: Skip pilot tests requiring experimental Gateway API CRDs (#832)
+    author: OpenShift Cherrypick Robot
+    date: 2026-07-01 12:46:33 +0200
+    found: true
+  - sha: 716f38b4f5f7fdd7ee69f23f9f28ca3e207cc734
+    title: Add missing Sail Operator test configs (#807)
+    author: Maxim Babushkin
+    date: 2026-06-24 11:15:16 +0300
+    found: true
+  - sha: 857f9382c4dd8ca8afd45eaecec0881cb7c7267a
+    title: Deploy Sail Operator control plane based on branch
+    author: Maxim Babushkin
+    date: 2026-06-09 13:20:20 +0300
+    found: true
+  - sha: f2837a6c6e3ce490314887c148e12e0c6186f53b
+    title: Fixing Failing Converter Tests
+    author: ctartici
+    date: 2025-04-14 18:11:31 +0200
+    found: true
+  - sha: e51dd6a78e6a387e71b2d8f9b3880ff8712197d5
+    title: Update integ-suite-ocp.sh to support IBM infra to run (#623)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-04 12:30:24 +0100
+    found: true
+  - sha: cc96b88c54282b3e09f9d19941c81805b7b4b2b4
+    title: Use DestinationRule in ambient tests
+    author: Jacek Ewertowski
+    date: 2026-03-03 14:47:29 +0100
+    found: true
+  - sha: 379db8ef8ea9f5bced57e5c4bc804e7bda85d07f
+    title: use release-1.28 proxy until 1.30 proxy branch is prepared
+    author: Cameron Garrison
+    date: 2026-05-15 12:17:49 -0400
+    found: true
+  - sha: dc68ddffeb6c54b576d7e2cbdc64af25357fd441
+    title: Skip tests that fail on OCP due to platform limitations
+    author: Cameron Garrison
+    date: 2026-05-27 09:27:07 -0400
+    found: true
+  - sha: 840376db1df63428ce8d2df40b7736f4178ebcd1
+    title: Bump PROXY_REPO_SHA for 1.28.5 security release
+    author: Petr McAllister
+    date: 2026-03-04 13:56:40 -0800
+    found: true
+  - sha: d153238ad07cd8b571b76dc59e24ed89e497de4f
+    title: 'fix: increase xDS keepalive to 2m (#685)'
+    author: Daniel Grimm
+    date: 2026-03-19 13:33:29 +0100
+    found: true
+  - sha: e11970d8451ff25144986dddbb995066a33c8f7b
+    title: Prevent silent exit in OpenShift CI (#551)
+    author: OpenShift Cherrypick Robot
+    date: 2026-01-13 14:54:57 +0100
+    found: true
+  - sha: 247485611860006bd4009e5d8d08a39518f8ab86
+    title: Added mechanism to skip test suites
+    author: ctartici
+    date: 2025-08-01 12:27:18 +0200
+    found: true
+  - sha: 259eccc5502195651794a277931e038b7fe46c4c
+    title: Add "ZtunnelNamespace" flag to specify Ztunnel deployment location (#58677) (#619)
+    author: Maxim Babushkin
+    date: 2026-03-04 11:24:28 +0200
+    found: true
+  - sha: 39a4c19be59f6d7600ac0547a730b737f1b3bba1
+    title: Modify "pr-label-check" GH workflow (#703)
+    author: OpenShift Cherrypick Robot
+    date: 2026-04-13 15:09:56 +0200
+    found: true
+  - sha: 434aebbb30e39acdb31d0a2e73105190c13f67ce
+    title: Add PR label check Github Action (#628)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-03 14:14:53 +0100
+    found: true
+  - sha: 611f7b7dfb048f6c109563dc1e37822eb29d8dfb
+    title: '[release-1.28] Security fix for 1.28 (#717)'
+    author: Mikhail Abramov
+    date: 2026-04-08 16:51:23 +0200
+    found: true
+  - sha: d10292a39d42206310cf796e2de686cdf8235061
+    title: Add mechanism to execute integration tests againist downstream builds.
+    author: ctartici
+    date: 2025-06-12 20:41:41 +0200
+    found: true
+  - sha: 1aed6dc479842fc2a4304398f39d3f1537e44b2e
+    title: Update "PR label check" GH workflow (#630)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-03 16:01:48 +0100
+    found: true
+  - sha: 70dc9e733a0a31f0b3d9c441514b440bda6353f8
+    title: Missing backports in release-1.28 (#585)
+    author: Matej Kralik
+    date: 2026-02-16 17:29:52 +0100
+    found: true
+  - sha: b3cd456dd75dbdd94f063287bf84a0a441d0e54d
+    title: 'Fix CI failures: go mod tidy, k8sbeta type error, and shell lint issues'
+    author: Cameron Garrison
+    date: 2026-05-04 11:16:09 -0400
+    found: true
+  - sha: 6b186c665f69fcfc8d994ff567a5b653aadf9828
+    title: Update bookinfo image version
+    author: Maxim Babushkin
+    date: 2025-04-20 09:48:40 +0300
+    found: true
+  - sha: 95e8c10869bf9f9ac77fd613acffced0912e9bee
+    title: Added mechanism to skip test suites
+    author: ctartici
+    date: 2025-08-04 11:04:31 +0200
+    found: true
+  - sha: da45b941856ffae2e26a41b3986512742451ad83
+    title: Missing backports in release-1.28 (#576)
+    author: Matej Kralik
+    date: 2026-02-16 16:02:06 +0100
+    found: true
+  - sha: 9a3ca3aad0dcf28962647769cfe9839232302706
+    title: 'tests: add integration tests for PQC compliance policy in ambient mode'
+    author: Jacek Ewertowski
+    date: 2026-02-18 21:59:51 +0100
+    found: true
+  - sha: cd6dc27575bb015455c87d620bf26a11b1dcfb71
+    title: 'OSSM-8342: Use our proxy (#225)'
+    author: Jonh Wendell
+    date: 2025-01-15 12:56:16 -0500
+    found: true
+  - sha: f14c3dd33094102af269ec23e2bee2c6f579b348
+    title: '[release-1.28] Adapt test suite on OSSM 3.3+ proxy key validation on FIPS (#709)'
+    author: OpenShift Cherrypick Robot
+    date: 2026-04-02 09:30:38 +0200
+    found: true
+  - sha: 4386c16666373dfa465561c8b03a8194c235d932
+    title: Use our ztunnel (#594)
+    author: Zuzana Miklánková
+    date: 2026-02-23 13:56:24 +0100
+    found: true
+  - sha: 4fbed8e200a22f6492c33ec9b146187a2308baa2
+    title: Cherry-pick downstream changes to release-1.30 (#761)
+    author: Cameron Garrison
+    date: 2026-06-10 05:36:06 -0400
+    found: true
