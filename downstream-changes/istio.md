@@ -2,6 +2,9 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Skip auto-http flaky test till upstream issue resolved ([#961](https://github.com/openshift-service-mesh/istio/issues/961)) | :x: | :warning: | :warning: | :white_check_mark: | :x: | :x: |
+| Skip auto-http flaky test till upstream issue resolved ([#963](https://github.com/openshift-service-mesh/istio/issues/963)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
+| Skip auto-http flaky test till upstream issue resolved ([#962](https://github.com/openshift-service-mesh/istio/issues/962)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
 | Skip auto-http flaky test till upstream issue resolved ([#960](https://github.com/openshift-service-mesh/istio/issues/960)) | :x: | :warning: | :warning: | :warning: | :white_check_mark: | :x: |
 | Fix DEPLOY_GATEWAY_API on OCP 5.0+ ([#954](https://github.com/openshift-service-mesh/istio/issues/954)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | Fix DEPLOY_GATEWAY_API on OCP 5.0+ ([#953](https://github.com/openshift-service-mesh/istio/issues/953)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: |
@@ -459,6 +462,7 @@
 | [6c0ff41b](https://github.com/openshift-service-mesh/istio/commit/6c0ff41b188da06fdd9f5a17e723119eb62f6930) | Fix CI image pull error ([#943](https://github.com/openshift-service-mesh/istio/issues/943)) |  |  | :x: |  | 2026-09-08 08:54:19 +0300 | Maxim Babushkin |
 | [2c8a99b1](https://github.com/openshift-service-mesh/istio/commit/2c8a99b1f6f07339acd41c16b183451b2a0c71b7) | Fix DEPLOY_GATEWAY_API on OCP 5.0+ ([#941](https://github.com/openshift-service-mesh/istio/issues/941)) |  |  | :white_check_mark: |  | 2026-09-15 13:24:11 +0200 | Matej Kralik |
 | [835c47e8](https://github.com/openshift-service-mesh/istio/commit/835c47e8b1e716966bcd8f6444cf585a6a74a904) | Skip auto-http flaky test till upstream issue resolved ([#958](https://github.com/openshift-service-mesh/istio/issues/958)) |  |  | :white_check_mark: |  | 2026-09-18 14:15:50 +0200 | Matej Kralik |
+| [6e5c1f32](https://github.com/openshift-service-mesh/istio/commit/6e5c1f32c420a32cd589e92d057a472744f6baa6) | Add MULTICLUSTER pipeline ([#843](https://github.com/openshift-service-mesh/istio/issues/843)) |  |  | :white_check_mark: |  | 2026-09-21 18:48:34 +0300 | Maxim Babushkin |
 ## release-1.30 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -541,6 +545,7 @@
 | [2ec07ef9](https://github.com/openshift-service-mesh/istio/commit/2ec07ef90c56a7c53e0ee54f0278693408972603) | bump istio.deps ([#212](https://github.com/openshift-service-mesh/istio/issues/212)) |  |  | :x: |  | 2026-08-21 09:48:18 -0600 | Prabhjot Singh |
 | [740f475d](https://github.com/openshift-service-mesh/istio/commit/740f475d09bd8b8c94897de7ffb4197e7f428e84) | Disable ListenerSet gw conformance tests ([#940](https://github.com/openshift-service-mesh/istio/issues/940)) |  |  | :white_check_mark: |  | 2026-09-15 09:37:26 +0200 | Matej Kralik |
 | [1af9fcf1](https://github.com/openshift-service-mesh/istio/commit/1af9fcf1202513e3126d09482817bdf422bc44d8) | Fix DEPLOY_GATEWAY_API on OCP 5.0+ ([#954](https://github.com/openshift-service-mesh/istio/issues/954)) |  |  | :white_check_mark: |  | 2026-09-18 15:03:41 +0200 | OpenShift Cherrypick Robot |
+| [5b7fcba8](https://github.com/openshift-service-mesh/istio/commit/5b7fcba8ade7811a7b101a29add6993dc3a817a1) | Skip auto-http flaky test till upstream issue resolved ([#963](https://github.com/openshift-service-mesh/istio/issues/963)) |  |  | :white_check_mark: |  | 2026-09-21 19:19:38 +0200 | Matej Kralik |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -648,6 +653,7 @@
 | [cdc138bb](https://github.com/openshift-service-mesh/istio/commit/cdc138bbc630627f680b8f4dc51a65d87405f0c0) | backendtlspolicy fail closed on sidecar when ca ref unresolved ([#214](https://github.com/openshift-service-mesh/istio/issues/214)) |  |  | :x: |  | 2026-08-26 12:40:19 -0700 | Petr McAllister |
 | [74cf6b58](https://github.com/openshift-service-mesh/istio/commit/74cf6b58ce0b3a44bfcc95a41121ffa47d2241d1) | bump istio.deps ([#212](https://github.com/openshift-service-mesh/istio/issues/212)) |  |  | :x: |  | 2026-08-21 09:48:18 -0600 | Prabhjot Singh |
 | [04d58af8](https://github.com/openshift-service-mesh/istio/commit/04d58af84f9d7d838f4e83dfe7793062ab55cc48) | Fix DEPLOY_GATEWAY_API on OCP 5.0+ ([#953](https://github.com/openshift-service-mesh/istio/issues/953)) |  |  | :white_check_mark: |  | 2026-09-18 10:56:05 +0200 | OpenShift Cherrypick Robot |
+| [6f2547ea](https://github.com/openshift-service-mesh/istio/commit/6f2547eaa77f5d795b36b385c6058cfab5498f66) | Skip auto-http flaky test till upstream issue resolved ([#962](https://github.com/openshift-service-mesh/istio/issues/962)) |  |  | :white_check_mark: |  | 2026-09-21 11:04:25 +0200 | OpenShift Cherrypick Robot |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -740,6 +746,7 @@
 | [8c451447](https://github.com/openshift-service-mesh/istio/commit/8c451447d283582a6a6b61f74ff9652fc1ff4724) | Add failing downstream tests regarding experimental gw api ([#889](https://github.com/openshift-service-mesh/istio/issues/889)) |  |  | :white_check_mark: |  | 2026-08-07 16:22:02 +0200 | Matej Kralik |
 | [90e833f9](https://github.com/openshift-service-mesh/istio/commit/90e833f94322a6bf6c277b5e415bd84e4a380dbb) | [release-1.27] telemetry: add bootstrap annotations for stats flush and eviction ([#783](https://github.com/openshift-service-mesh/istio/issues/783)) |  |  | :x: |  | 2026-08-24 16:08:51 +0100 | Ted Poole |
 | [1318bf8b](https://github.com/openshift-service-mesh/istio/commit/1318bf8b74d2574a579644b2a0160a6bd9e2f13b) | bump istio.deps ([#212](https://github.com/openshift-service-mesh/istio/issues/212)) |  |  | :x: |  | 2026-08-21 09:48:18 -0600 | Prabhjot Singh |
+| [9cd0d1e0](https://github.com/openshift-service-mesh/istio/commit/9cd0d1e0426a254c0918eb07d53a9c9ac531a901) | Skip auto-http flaky test till upstream issue resolved ([#961](https://github.com/openshift-service-mesh/istio/issues/961)) |  |  | :white_check_mark: |  | 2026-09-21 20:53:51 +0200 | OpenShift Cherrypick Robot |
 ## release-1.26 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

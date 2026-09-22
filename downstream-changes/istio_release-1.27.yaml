@@ -682,3 +682,9 @@ commits:
     date: 2026-09-18 13:18:02 +0200
     found: true
     hide: true
+  - sha: 9cd0d1e0426a254c0918eb07d53a9c9ac531a901
+    title: Skip auto-http flaky test till upstream issue resolved (#961)
+    author: OpenShift Cherrypick Robot
+    date: 2026-09-21 20:53:51 +0200
+    found: true
+    isPermanent: true
