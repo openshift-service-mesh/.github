@@ -2,6 +2,7 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Resolve InferencePool endpoint pickers per backendRef ([#61601](https://github.com/openshift-service-mesh/istio/issues/61601)) ([#983](https://github.com/openshift-service-mesh/istio/issues/983)) | :x: | :x: | :white_check_mark: | :x: | :x: | :x: |
 | Skip TestCNIRaceRepair on helm install method ([#976](https://github.com/openshift-service-mesh/istio/issues/976)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | Skip auto-http flaky test till upstream issue resolved ([#961](https://github.com/openshift-service-mesh/istio/issues/961)) | :x: | :warning: | :warning: | :white_check_mark: | :x: | :x: |
 | Skip auto-http flaky test till upstream issue resolved ([#963](https://github.com/openshift-service-mesh/istio/issues/963)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
@@ -659,6 +660,7 @@
 | [74cf6b58](https://github.com/openshift-service-mesh/istio/commit/74cf6b58ce0b3a44bfcc95a41121ffa47d2241d1) | bump istio.deps ([#212](https://github.com/openshift-service-mesh/istio/issues/212)) |  |  | :x: |  | 2026-08-21 09:48:18 -0600 | Prabhjot Singh |
 | [04d58af8](https://github.com/openshift-service-mesh/istio/commit/04d58af84f9d7d838f4e83dfe7793062ab55cc48) | Fix DEPLOY_GATEWAY_API on OCP 5.0+ ([#953](https://github.com/openshift-service-mesh/istio/issues/953)) |  |  | :white_check_mark: |  | 2026-09-18 10:56:05 +0200 | OpenShift Cherrypick Robot |
 | [6f2547ea](https://github.com/openshift-service-mesh/istio/commit/6f2547eaa77f5d795b36b385c6058cfab5498f66) | Skip auto-http flaky test till upstream issue resolved ([#962](https://github.com/openshift-service-mesh/istio/issues/962)) |  |  | :white_check_mark: |  | 2026-09-21 11:04:25 +0200 | OpenShift Cherrypick Robot |
+| [9a1a9aca](https://github.com/openshift-service-mesh/istio/commit/9a1a9acab171a8fe7da1bedabb58860670c22aff) | Resolve InferencePool endpoint pickers per backendRef ([#61601](https://github.com/openshift-service-mesh/istio/issues/61601)) ([#983](https://github.com/openshift-service-mesh/istio/issues/983)) |  |  | :x: |  | 2026-09-25 15:59:55 -0400 | Cameron Garrison |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
