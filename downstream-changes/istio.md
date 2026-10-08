@@ -2,6 +2,7 @@
 ## Overview
 | Title | master | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| test: Update skip tests ([#989](https://github.com/openshift-service-mesh/istio/issues/989)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | Resolve InferencePool endpoint pickers per backendRef ([#61601](https://github.com/openshift-service-mesh/istio/issues/61601)) ([#983](https://github.com/openshift-service-mesh/istio/issues/983)) | :x: | :x: | :white_check_mark: | :x: | :x: | :x: |
 | Skip TestCNIRaceRepair on helm install method ([#976](https://github.com/openshift-service-mesh/istio/issues/976)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | Skip auto-http flaky test till upstream issue resolved ([#961](https://github.com/openshift-service-mesh/istio/issues/961)) | :x: | :warning: | :warning: | :white_check_mark: | :x: | :x: |
@@ -552,6 +553,7 @@
 | [1af9fcf1](https://github.com/openshift-service-mesh/istio/commit/1af9fcf1202513e3126d09482817bdf422bc44d8) | Fix DEPLOY_GATEWAY_API on OCP 5.0+ ([#954](https://github.com/openshift-service-mesh/istio/issues/954)) |  |  | :white_check_mark: |  | 2026-09-18 15:03:41 +0200 | OpenShift Cherrypick Robot |
 | [5b7fcba8](https://github.com/openshift-service-mesh/istio/commit/5b7fcba8ade7811a7b101a29add6993dc3a817a1) | Skip auto-http flaky test till upstream issue resolved ([#963](https://github.com/openshift-service-mesh/istio/issues/963)) |  |  | :white_check_mark: |  | 2026-09-21 19:19:38 +0200 | Matej Kralik |
 | [291e8ff9](https://github.com/openshift-service-mesh/istio/commit/291e8ff9188ff6fa50c0b7019e789b81cf3f622b) | Skip TestCNIRaceRepair on helm install method ([#976](https://github.com/openshift-service-mesh/istio/issues/976)) |  |  | :white_check_mark: |  | 2026-09-23 13:37:13 +0200 | OpenShift Cherrypick Robot |
+| [c9d2e341](https://github.com/openshift-service-mesh/istio/commit/c9d2e341384cb597e868358701437a03882a3a2c) | test: Update skip tests ([#989](https://github.com/openshift-service-mesh/istio/issues/989)) |  |  | :white_check_mark: |  | 2026-10-08 00:01:59 +0200 | Matej Kralik |
 ## release-1.28 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

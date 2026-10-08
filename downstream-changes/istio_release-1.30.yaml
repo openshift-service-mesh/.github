@@ -594,3 +594,9 @@ commits:
     date: 2026-10-04 10:56:33 +0200
     found: true
     hide: true
+  - sha: c9d2e341384cb597e868358701437a03882a3a2c
+    title: 'test: Update skip tests (#989)'
+    author: Matej Kralik
+    date: 2026-10-08 00:01:59 +0200
+    found: true
+    isPermanent: true
