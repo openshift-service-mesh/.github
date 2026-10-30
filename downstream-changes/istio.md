@@ -471,6 +471,7 @@
 | [c16da8b0](https://github.com/openshift-service-mesh/istio/commit/c16da8b0cdf022541b86f2dfaa8eb7a1b5a364eb) | Skip TestCNIRaceRepair on helm install method ([#975](https://github.com/openshift-service-mesh/istio/issues/975)) |  |  | :white_check_mark: |  | 2026-09-23 13:11:09 +0200 | Matej Kralik |
 | [f2f0701e](https://github.com/openshift-service-mesh/istio/commit/f2f0701ec931fddf1e549514b4a4ea6f7094830c) | Update CI image digest ([#985](https://github.com/openshift-service-mesh/istio/issues/985)) |  |  | :x: |  | 2026-10-19 15:46:45 +0300 | Maxim Babushkin |
 | [e8723b68](https://github.com/openshift-service-mesh/istio/commit/e8723b683291d5f72cf4b99b04c1bd59c501a8f1) | Temporary disable telemetry and ambient integ tests ([#1007](https://github.com/openshift-service-mesh/istio/issues/1007)) |  |  | :x: |  | 2026-10-19 09:06:26 +0300 | Maxim Babushkin |
+| [cf68053d](https://github.com/openshift-service-mesh/istio/commit/cf68053d5a32fc46492ebea6f4a46cf5243b2cfa) | test: Add multi revision test flow to sail deployment ([#1010](https://github.com/openshift-service-mesh/istio/issues/1010)) |  |  | :white_check_mark: |  | 2026-10-29 15:34:41 +0200 | Maxim Babushkin |
 ## release-1.30 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
