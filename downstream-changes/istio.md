@@ -2,7 +2,13 @@
 ## Overview
 | Title | master | release-1.31 | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| test: Update skip tests ([#989](https://github.com/openshift-service-mesh/istio/issues/989)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: | :x: |
+| Resolve InferencePool endpoint pickers per backendRef ([#61601](https://github.com/openshift-service-mesh/istio/issues/61601)) ([#983](https://github.com/openshift-service-mesh/istio/issues/983)) | :x: | :x: | :x: | :white_check_mark: | :x: | :x: | :x: |
+| Skip TestCNIRaceRepair on helm install method ([#976](https://github.com/openshift-service-mesh/istio/issues/976)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: | :x: |
+| Skip auto-http flaky test till upstream issue resolved ([#961](https://github.com/openshift-service-mesh/istio/issues/961)) | :x: | :warning: | :warning: | :warning: | :white_check_mark: | :x: | :x: |
+| Skip auto-http flaky test till upstream issue resolved ([#963](https://github.com/openshift-service-mesh/istio/issues/963)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | [release-1.31] Add recent backports ([#969](https://github.com/openshift-service-mesh/istio/issues/969)) | :x: | :white_check_mark: | :x: | :x: | :x: | :x: | :x: |
+| Skip auto-http flaky test till upstream issue resolved ([#962](https://github.com/openshift-service-mesh/istio/issues/962)) | :x: | :warning: | :warning: | :white_check_mark: | :x: | :x: | :x: |
 | Skip auto-http flaky test till upstream issue resolved ([#960](https://github.com/openshift-service-mesh/istio/issues/960)) | :x: | :warning: | :warning: | :warning: | :warning: | :white_check_mark: | :x: |
 | Fix DEPLOY_GATEWAY_API on OCP 5.0+ ([#954](https://github.com/openshift-service-mesh/istio/issues/954)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | Fix DEPLOY_GATEWAY_API on OCP 5.0+ ([#953](https://github.com/openshift-service-mesh/istio/issues/953)) | :x: | :warning: | :warning: | :white_check_mark: | :x: | :x: | :x: |
@@ -487,6 +493,13 @@
 | [6c0ff41b](https://github.com/openshift-service-mesh/istio/commit/6c0ff41b188da06fdd9f5a17e723119eb62f6930) | Fix CI image pull error ([#943](https://github.com/openshift-service-mesh/istio/issues/943)) |  |  | :x: |  | 2026-09-08 08:54:19 +0300 | Maxim Babushkin |
 | [2c8a99b1](https://github.com/openshift-service-mesh/istio/commit/2c8a99b1f6f07339acd41c16b183451b2a0c71b7) | Fix DEPLOY_GATEWAY_API on OCP 5.0+ ([#941](https://github.com/openshift-service-mesh/istio/issues/941)) |  |  | :white_check_mark: |  | 2026-09-15 13:24:11 +0200 | Matej Kralik |
 | [835c47e8](https://github.com/openshift-service-mesh/istio/commit/835c47e8b1e716966bcd8f6444cf585a6a74a904) | Skip auto-http flaky test till upstream issue resolved ([#958](https://github.com/openshift-service-mesh/istio/issues/958)) |  |  | :white_check_mark: |  | 2026-09-18 14:15:50 +0200 | Matej Kralik |
+| [6e5c1f32](https://github.com/openshift-service-mesh/istio/commit/6e5c1f32c420a32cd589e92d057a472744f6baa6) | Add MULTICLUSTER pipeline ([#843](https://github.com/openshift-service-mesh/istio/issues/843)) |  |  | :white_check_mark: |  | 2026-09-21 18:48:34 +0300 | Maxim Babushkin |
+| [b6fb5348](https://github.com/openshift-service-mesh/istio/commit/b6fb5348dd66280245e3d98d8d93f416ece453c3) | Standarization for Agentic SDLC Istio project ([#957](https://github.com/openshift-service-mesh/istio/issues/957)) |  |  | :white_check_mark: |  | 2026-09-23 16:02:44 +0200 | Francisco Herrera |
+| [ca3e7033](https://github.com/openshift-service-mesh/istio/commit/ca3e7033647c8f95197adc7cacab13d2f440b04d) | Prevent dependabot PR creation ([#978](https://github.com/openshift-service-mesh/istio/issues/978)) |  |  | :white_check_mark: |  | 2026-09-23 16:40:42 +0300 | Maxim Babushkin |
+| [c16da8b0](https://github.com/openshift-service-mesh/istio/commit/c16da8b0cdf022541b86f2dfaa8eb7a1b5a364eb) | Skip TestCNIRaceRepair on helm install method ([#975](https://github.com/openshift-service-mesh/istio/issues/975)) |  |  | :white_check_mark: |  | 2026-09-23 13:11:09 +0200 | Matej Kralik |
+| [f2f0701e](https://github.com/openshift-service-mesh/istio/commit/f2f0701ec931fddf1e549514b4a4ea6f7094830c) | Update CI image digest ([#985](https://github.com/openshift-service-mesh/istio/issues/985)) |  |  | :x: |  | 2026-10-19 15:46:45 +0300 | Maxim Babushkin |
+| [e8723b68](https://github.com/openshift-service-mesh/istio/commit/e8723b683291d5f72cf4b99b04c1bd59c501a8f1) | Temporary disable telemetry and ambient integ tests ([#1007](https://github.com/openshift-service-mesh/istio/issues/1007)) |  |  | :x: |  | 2026-10-19 09:06:26 +0300 | Maxim Babushkin |
+| [cf68053d](https://github.com/openshift-service-mesh/istio/commit/cf68053d5a32fc46492ebea6f4a46cf5243b2cfa) | test: Add multi revision test flow to sail deployment ([#1010](https://github.com/openshift-service-mesh/istio/issues/1010)) |  |  | :white_check_mark: |  | 2026-10-29 15:34:41 +0200 | Maxim Babushkin |
 ## release-1.31 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
