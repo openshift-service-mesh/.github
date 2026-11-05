@@ -1,6 +1,12 @@
 #/bin/bash
 set -eux -o pipefail
 
+# Pin collation so sorting/string comparisons are deterministic regardless of
+# the host locale. Without this, renderOverviewMatrix's `sort`/`[[ > ]]` order
+# same-date rows differently on a dev machine (UTF-8 locale) vs the CI runner
+# (C locale), making `make gen-check` fail on an otherwise up-to-date tree.
+export LC_ALL=C
+
 UPSTREAM_CLONE_URL=${UPSTREAM_CLONE_URL:-https://github.com/istio/istio.git}
 DOWNSTREAM_CLONE_URL=${DOWNSTREAM_CLONE_URL:-https://github.com/openshift-service-mesh/istio.git}
 REPO=$(basename "${UPSTREAM_CLONE_URL}" .git)
