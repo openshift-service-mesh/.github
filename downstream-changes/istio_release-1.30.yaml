@@ -600,3 +600,15 @@ commits:
     date: 2026-10-08 00:01:59 +0200
     found: true
     isPermanent: true
+  - sha: 23847770165815dcae2aee14fe46d19c92e7e70d
+    title: '[release-1.30] Automator: Update ztunnel (#1004)'
+    author: openshift-service-mesh-bot
+    date: 2026-11-06 13:53:30 +0100
+    found: true
+    hide: true
+  - sha: 9991a0489bf7c8ea4078349c957cc16f39c0559f
+    title: '[release-1.30] Automator: Update proxy (#992)'
+    author: openshift-service-mesh-bot
+    date: 2026-11-06 09:22:10 +0100
+    found: true
+    hide: true

@@ -1132,3 +1132,9 @@ commits:
     date: 2026-10-29 15:34:41 +0200
     found: true
     isPermanent: true
+  - sha: 0009c400195e27bb51939014dc3b964e9f0b25da
+    title: Disable pilot TestConnectionSettings/gateway_xds test (#1022)
+    author: Maxim Babushkin
+    date: 2026-11-06 07:14:38 +0200
+    found: true
+    isPermanent: true

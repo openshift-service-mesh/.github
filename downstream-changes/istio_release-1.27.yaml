@@ -21,6 +21,7 @@ commits:
     author: Daniel Grimm
     date: 2025-04-03 14:04:41 +0200
     found: true
+    isPermanent: true
   - sha: 3551c2daf4e1fe68d6b56ed304e3488e0a6ddf20
     title: Do not create the PDB by default when we don't have enough replicas (#57202)
     author: Filip Brychta
@@ -76,11 +77,13 @@ commits:
     author: Maxim Babushkin
     date: 2025-07-10 14:28:27 +0300
     found: true
+    isPermanent: true
   - sha: 74e8517b25d16e57bcde095e5c423e64b885b220
     title: Add Ambient Gateway API test flow (#423)
     author: Maxim Babushkin
     date: 2025-07-03 14:23:27 +0300
     found: true
+    isPermanent: true
   - sha: 28709bc085aa900f7fdf0e71e7605f0c0077ef92
     title: Add mechanism to execute integration tests againist downstream builds. (#480)
     author: ctartici
@@ -96,6 +99,7 @@ commits:
     author: Maxim Babushkin
     date: 2025-05-26 18:22:47 +0300
     found: true
+    isPermanent: true
   - sha: e40ce5ad9e0172aa9572f9cff6c1e5d9f183a7d5
     title: modify cleanup function with wait (#480)
     author: ctartici
@@ -121,11 +125,13 @@ commits:
     author: Brian Mangoenpawiro
     date: 2025-04-29 09:37:48 +0200
     found: true
+    isPermanent: true
   - sha: df5d8f179eedf295e40657f568ee7cabc6b51802
     title: OSSM-8998 Disable istioctl commands with building ldflags (#312)
     author: Brian Mangoenpawiro
     date: 2025-04-18 10:04:01 +0200
     found: true
+    isPermanent: true
   - sha: e9d90bf687ddf362eca02fd278956c15b864b6d1
     title: Fixing Failing Converter Tests (#480)
     author: ctartici
@@ -141,11 +147,13 @@ commits:
     author: Brian Mangoenpawiro
     date: 2024-12-11 15:01:25 +0100
     found: true
+    isPermanent: true
   - sha: a1a3ebb1395c369b66ac361d6938e04eb48d72a6
     title: Update sleep to use quay.io/sail-dev (#319)
     author: Nick Fox
     date: 2025-03-21 07:15:17 -0400
     found: true
+    isPermanent: true
   - sha: a8b399f84511ae8b2e4d29465a717ff79c125e07
     title: Update some examples to use quay.io/sail-dev instead of docker (#480)
     author: Nick Fox
@@ -156,6 +164,7 @@ commits:
     author: Francisco Herrera
     date: 2025-02-11 11:15:15 +0100
     found: true
+    isPermanent: true
   - sha: 7932f6ccdfe34141f7d330c033ffca51e344c14c
     title: Enable istioctl related ambient commands (#480)
     author: bmangoen
@@ -166,46 +175,55 @@ commits:
     author: Brian Mangoenpawiro
     date: 2024-12-10 16:28:39 +0100
     found: true
+    isPermanent: true
   - sha: 6d10ace007079f1e742d93c1b80849b860214aca
     title: Add in ocp setup the build of ztunnel image (#142)
     author: Francisco Herrera
     date: 2024-09-12 14:05:26 +0200
     found: true
+    isPermanent: true
   - sha: 9e0903cee41d2d2e8c484b7d8b2cae8bb427a7e7
     title: 'Integration test run: delete profile openshift (#137)'
     author: Francisco Herrera
     date: 2024-09-09 13:34:19 +0200
     found: true
+    isPermanent: true
   - sha: 2b632a71ec629ad5857ccf096cfe1bacd7b69396
     title: OSSM-6600 Avoid failures to be hidden on integration test (#30)
     author: Francisco Herrera
     date: 2024-07-18 12:58:40 +0200
     found: true
+    isPermanent: true
   - sha: dec0d869b589b758bd308d8979ad93c373d4015f
     title: Push distroless images when helm integration test are executed (#27)
     author: Francisco Herrera
     date: 2024-05-22 18:29:01 +0200
     found: true
+    isPermanent: true
   - sha: 23952475a6edca236dcae86b735112d967f0aefa
     title: Changes to report junit file and results from the running test suite (#15)
     author: Francisco Herrera
     date: 2024-05-14 13:54:50 +0200
     found: true
+    isPermanent: true
   - sha: abc1ec11c8ebefe089924440b19819fd376fb106
     title: Fix ocp running test script affected by upstream test (#17)
     author: Francisco Herrera
     date: 2024-05-10 15:12:57 +0200
     found: true
+    isPermanent: true
   - sha: fdb9f957d851c4785e76ebe01112fae39966cd89
     title: OSSM-6313 Update getAddressTimeout in our fork (#12)
     author: Francisco Herrera
     date: 2024-05-08 17:22:43 +0200
     found: true
+    isPermanent: true
   - sha: 06142d01f0d7bf737404f38414a217ca75bec09a
     title: OSSM-4505 Add script to run integration test againt OCP cluster (#4)
     author: Francisco Herrera
     date: 2024-04-26 13:40:16 +0200
     found: true
+    isPermanent: true
   - sha: 25dcb2d5bf228cf7dce75cb28e966b3e7d77e0dc
     title: Move "meshConfig" values out of gateway manifests (#479) (#500)
     author: Maxim Babushkin
@@ -688,3 +706,9 @@ commits:
     date: 2026-09-21 20:53:51 +0200
     found: true
     isPermanent: true
+  - sha: b34fa97b6268a0e62a160fce95e4fe7105b9c179
+    title: '[release-1.27] Automator: Update proxy (#1023)'
+    author: openshift-service-mesh-bot
+    date: 2026-11-06 07:59:53 +0100
+    found: true
+    hide: true
