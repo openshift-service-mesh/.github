@@ -511,6 +511,7 @@
 | [e8723b68](https://github.com/openshift-service-mesh/istio/commit/e8723b683291d5f72cf4b99b04c1bd59c501a8f1) | Temporary disable telemetry and ambient integ tests ([#1007](https://github.com/openshift-service-mesh/istio/issues/1007)) |  |  | :x: |  | 2026-10-19 09:06:26 +0300 | Maxim Babushkin |
 | [cf68053d](https://github.com/openshift-service-mesh/istio/commit/cf68053d5a32fc46492ebea6f4a46cf5243b2cfa) | test: Add multi revision test flow to sail deployment ([#1010](https://github.com/openshift-service-mesh/istio/issues/1010)) |  |  | :white_check_mark: |  | 2026-10-29 15:34:41 +0200 | Maxim Babushkin |
 | [0009c400](https://github.com/openshift-service-mesh/istio/commit/0009c400195e27bb51939014dc3b964e9f0b25da) | Disable pilot TestConnectionSettings/gateway_xds test ([#1022](https://github.com/openshift-service-mesh/istio/issues/1022)) |  |  | :white_check_mark: |  | 2026-11-06 07:14:38 +0200 | Maxim Babushkin |
+| [b0f44c34](https://github.com/openshift-service-mesh/istio/commit/b0f44c34fd9aebd05fead432e6ae168cbdda6f6e) | Skip failed multicluster ambient tests ([#1020](https://github.com/openshift-service-mesh/istio/issues/1020)) |  |  | :white_check_mark: |  | 2026-11-09 18:08:13 +0200 | Maxim Babushkin |
 ## release-1.31 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |

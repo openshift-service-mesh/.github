@@ -1138,3 +1138,9 @@ commits:
     date: 2026-11-06 07:14:38 +0200
     found: true
     isPermanent: true
+  - sha: b0f44c34fd9aebd05fead432e6ae168cbdda6f6e
+    title: Skip failed multicluster ambient tests (#1020)
+    author: Maxim Babushkin
+    date: 2026-11-09 18:08:13 +0200
+    found: true
+    isPermanent: true
