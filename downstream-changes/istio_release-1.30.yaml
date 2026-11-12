@@ -612,3 +612,9 @@ commits:
     date: 2026-11-06 09:22:10 +0100
     found: true
     hide: true
+  - sha: 28713e1ee1dd4f11308cc6125d8d9b1af39816cd
+    title: '[release-1.30] Automator: Update ztunnel (#1028)'
+    author: openshift-service-mesh-bot
+    date: 2026-11-11 12:31:52 +0100
+    found: true
+    hide: true

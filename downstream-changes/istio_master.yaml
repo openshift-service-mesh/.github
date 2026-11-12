@@ -1144,3 +1144,9 @@ commits:
     date: 2026-11-09 18:08:13 +0200
     found: true
     isPermanent: true
+  - sha: 9d4c46c4f36f066267b48f47fd27fb0653ca27e5
+    title: Update ci build image (#1031)
+    author: Maxim Babushkin
+    date: 2026-11-11 19:04:02 +0200
+    found: true
+    isPermanent: false
