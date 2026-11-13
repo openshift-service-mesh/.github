@@ -618,3 +618,40 @@ commits:
     date: 2026-11-11 12:31:52 +0100
     found: true
     hide: true
+  - sha: c75f5ce27ef3ad92352658185c218a7f359bd78b
+    title: 'test: Add multi revision test flow to sail deployment (#1038)'
+    author: Maxim Babushkin
+    date: 2026-11-12 16:15:56 +0200
+    found: true
+    isPermanent: true
+  - sha: f6879bae446c19c398d0f844d66fe1c3801b2b25
+    title: '[release-1.30] fix istiod crash on nil to/from entries in ambient authz policy- #268 (#279)'
+    author: Francisco Herrera
+    date: 2026-11-06 14:17:48 +0100
+    found: true
+    isPermanent: true
+  - sha: 01210af6e0ce7b59abed5a5423a9956d76cd8544
+    title: '[release-1.31] reject malformed debug resource names instead of crashing istiod (#272) (#283)'
+    author: Francisco Herrera
+    date: 2026-11-06 10:31:48 +0100
+    found: true
+  - sha: bd397185d6637629da2d0231a467760cc1d81814
+    title: '[release-1.30] bind xds proxy cluster id to the authenticated cluster- #270 (#281)'
+    author: Francisco Herrera
+    date: 2026-11-06 07:04:48 +0100
+    found: true
+  - sha: 86660fdfa037ccadcc9341299e5d66574ec3eec7
+    title: '[release-1.30] make authz authority and host header matching case-insensitive- #269 (#280)'
+    author: Francisco Herrera
+    date: 2026-11-06 04:22:48 +0100
+    found: true
+  - sha: 33369baf78eb3219f712fe48e8074f90d51f0202
+    title: '[release-1.30] fix mTLS bypass in ambient mode that discards mesh-wide strictness- #263 (#278)'
+    author: Francisco Herrera
+    date: 2026-11-06 00:34:47 +0100
+    found: true
+  - sha: 2c421b93f73e4c4dad2257ef012b0eb8096ec3cd
+    title: '[release-1.30]fix(istio-iptables): route pure SYN packets to ISTIO_TPROXY before conntrack ESTABLISHED check- #271 (#282)'
+    author: Francisco Herrera
+    date: 2026-11-05 21:46:49 +0100
+    found: true

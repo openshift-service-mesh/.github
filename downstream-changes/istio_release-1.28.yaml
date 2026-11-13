@@ -822,3 +822,9 @@ commits:
     date: 2026-11-06 09:32:50 +0100
     found: true
     hide: true
+  - sha: ac89c468bcc257ec2562e3541d54217a897fcb63
+    title: Pin sail-operator converter branch to release-1.28 (#1033)
+    author: Matej Kralik
+    date: 2026-11-12 13:47:53 +0100
+    found: true
+    isPermanent: true

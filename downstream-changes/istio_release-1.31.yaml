@@ -437,3 +437,75 @@ commits:
     date: 2026-09-23 13:30:06 +0200
     found: true
     isPermanent: true
+  - sha: e98452737daa80be525360968f56ddf6c95cc248
+    title: '[release-1.31] Automator: Update ztunnel (#1027)'
+    author: openshift-service-mesh-bot
+    date: 2026-11-12 10:46:35 +0100
+    found: true
+    hide: true
+  - sha: c713d2019e8918d6b3c689aa565c431357f67f54
+    title: 'test: Add multi revision test flow to sail deployment (#1010) (#1036)'
+    author: Maxim Babushkin
+    date: 2026-11-12 09:09:40 +0200
+    found: true
+    isPermanent: true
+  - sha: 26eb89a60437504e55d2499fb91dacfa972f1de4
+    title: '[release-1.31] Automator: Update proxy (#1032)'
+    author: openshift-service-mesh-bot
+    date: 2026-11-12 05:29:39 +0100
+    found: true
+    hide: true
+  - sha: a079f649cbcb984cd8d9330699e165b89ff1f6a1
+    title: '[release-1.31] reject malformed debug resource names instead of crashing istiod (#272) (#273)'
+    author: Petr McAllister
+    date: 2026-11-05 12:35:26 -0700
+    found: true
+  - sha: 84087332129a734b612f6ef5ec916eeeb02c6715
+    title: '[release-1.31]fix(istio-iptables): route pure SYN packets to ISTIO_TPROXY before conntrack ESTABLISHED check (#271)'
+    author: Francisco Herrera
+    date: 2026-11-05 20:08:25 +0100
+    found: true
+  - sha: a7e01cecad4512069247599ac42ace7a3b1d758a
+    title: '[release-1.31] bind xds proxy cluster id to the authenticated cluster (#270)'
+    author: Petr McAllister
+    date: 2026-11-05 11:32:46 -0700
+    found: true
+  - sha: 56134aab6a8e7836a209ed813ec09376f31edcdd
+    title: '[release-1.31] make authz authority and host header matching case-insensitive (#269)'
+    author: Petr McAllister
+    date: 2026-11-05 11:32:36 -0700
+    found: true
+  - sha: b0ab1e01fb42eaea962a02dc5b0bc73340934590
+    title: '[release-1.31] fix istiod crash on nil to/from entries in ambient authz policy (#268)'
+    author: Petr McAllister
+    date: 2026-11-05 11:32:27 -0700
+    found: true
+  - sha: c66c9034ed7330db83ccb517e7cae7fb0c76d107
+    title: Add credits and CVE score details (#1037)
+    author: Onur Calik
+    date: 2026-11-04 13:02:39 +0100
+    found: true
+    isPermanent: false
+  - sha: 09907c9c8fcc698cace409cb6becbb1902000e9d
+    title: Update the release note (#1037)
+    author: calikonur
+    date: 2026-11-03 17:19:33 +0000
+    found: true
+    isPermanent: false
+  - sha: 5db709449136c675684df0a0a6ed918ed674f346
+    title: Manual bump 1.31 (#62621)
+    author: Francisco Herrera
+    date: 2026-11-04 12:51:26 +0100
+    found: true
+  - sha: 86c47f404ccb6d22575eb5cddd37824dd4d86daa
+    title: Update the release note (#1037)
+    author: calikonur
+    date: 2026-11-03 17:19:33 +0000
+    found: true
+    isPermanent: false
+  - sha: 7bc0eb20bc839d467968b426d73e42dd7addaba3
+    title: fix mTLS bypass in ambient mode that discards mesh-wide strictness (#1037)
+    author: Onur Calik
+    date: 2026-10-16 19:20:08 +0200
+    found: true
+    isPermanent: false
