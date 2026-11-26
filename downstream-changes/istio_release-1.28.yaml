@@ -828,3 +828,9 @@ commits:
     date: 2026-11-12 13:47:53 +0100
     found: true
     isPermanent: true
+  - sha: 81749483455e06344d991bea9ad3a7fc1b2f9084
+    title: 'gateway: don''t drop config when istio.io/rev label changes (#1067)'
+    author: Filip Brychta
+    date: 2026-11-25 21:09:47 +0100
+    found: true
+    isPermanent: false

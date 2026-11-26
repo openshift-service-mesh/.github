@@ -2,6 +2,8 @@
 ## Overview
 | Title | master | release-1.31 | release-1.30 | release-1.28 | release-1.27 | release-1.26 | release-1.24 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| gateway: don't drop config when istio.io/rev label changes ([#1068](https://github.com/openshift-service-mesh/istio/issues/1068)) | :x: | :x: | :x: | :x: | :white_check_mark: | :x: | :x: |
+| gateway: don't drop config when istio.io/rev label changes ([#1067](https://github.com/openshift-service-mesh/istio/issues/1067)) | :x: | :x: | :x: | :white_check_mark: | :x: | :x: | :x: |
 | test: Add multi revision test flow to sail deployment ([#1038](https://github.com/openshift-service-mesh/istio/issues/1038)) | :x: | :warning: | :white_check_mark: | :x: | :x: | :x: | :x: |
 | Pin sail-operator converter branch to release-1.28 ([#1033](https://github.com/openshift-service-mesh/istio/issues/1033)) | :x: | :warning: | :warning: | :white_check_mark: | :x: | :x: | :x: |
 | Pin sail-operator converter branch to release-1.28 ([#1035](https://github.com/openshift-service-mesh/istio/issues/1035)) | :x: | :warning: | :warning: | :warning: | :warning: | :white_check_mark: | :x: |
@@ -816,6 +818,7 @@
 | [6f2547ea](https://github.com/openshift-service-mesh/istio/commit/6f2547eaa77f5d795b36b385c6058cfab5498f66) | Skip auto-http flaky test till upstream issue resolved ([#962](https://github.com/openshift-service-mesh/istio/issues/962)) |  |  | :white_check_mark: |  | 2026-09-21 11:04:25 +0200 | OpenShift Cherrypick Robot |
 | [9a1a9aca](https://github.com/openshift-service-mesh/istio/commit/9a1a9acab171a8fe7da1bedabb58860670c22aff) | Resolve InferencePool endpoint pickers per backendRef ([#61601](https://github.com/openshift-service-mesh/istio/issues/61601)) ([#983](https://github.com/openshift-service-mesh/istio/issues/983)) |  |  | :x: |  | 2026-09-25 15:59:55 -0400 | Cameron Garrison |
 | [ac89c468](https://github.com/openshift-service-mesh/istio/commit/ac89c468bcc257ec2562e3541d54217a897fcb63) | Pin sail-operator converter branch to release-1.28 ([#1033](https://github.com/openshift-service-mesh/istio/issues/1033)) |  |  | :white_check_mark: |  | 2026-11-12 13:47:53 +0100 | Matej Kralik |
+| [81749483](https://github.com/openshift-service-mesh/istio/commit/81749483455e06344d991bea9ad3a7fc1b2f9084) | gateway: don't drop config when istio.io/rev label changes ([#1067](https://github.com/openshift-service-mesh/istio/issues/1067)) |  |  | :x: |  | 2026-11-25 21:09:47 +0100 | Filip Brychta |
 ## release-1.27 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
@@ -910,6 +913,7 @@
 | [1318bf8b](https://github.com/openshift-service-mesh/istio/commit/1318bf8b74d2574a579644b2a0160a6bd9e2f13b) | bump istio.deps ([#212](https://github.com/openshift-service-mesh/istio/issues/212)) |  |  | :x: |  | 2026-08-21 09:48:18 -0600 | Prabhjot Singh |
 | [9cd0d1e0](https://github.com/openshift-service-mesh/istio/commit/9cd0d1e0426a254c0918eb07d53a9c9ac531a901) | Skip auto-http flaky test till upstream issue resolved ([#961](https://github.com/openshift-service-mesh/istio/issues/961)) |  |  | :white_check_mark: |  | 2026-09-21 20:53:51 +0200 | OpenShift Cherrypick Robot |
 | [ea565e81](https://github.com/openshift-service-mesh/istio/commit/ea565e815e9cd592441390863b60ae9bb27c46a7) | Pin sail-operator converter branch to release-1.28 ([#1034](https://github.com/openshift-service-mesh/istio/issues/1034)) |  |  | :white_check_mark: |  | 2026-11-12 13:16:18 +0100 | Matej Kralik |
+| [ad3a8b07](https://github.com/openshift-service-mesh/istio/commit/ad3a8b07ede6b8b0a47c5b31b090b88eb632e704) | gateway: don't drop config when istio.io/rev label changes ([#1068](https://github.com/openshift-service-mesh/istio/issues/1068)) |  |  | :x: |  | 2026-11-25 21:09:48 +0100 | Filip Brychta |
 ## release-1.26 branch
 | Commit SHA | Title | Upstream PR | Pending Sync | Permanent | Comment | Date | Author |
 | --- | --- | --- | --- | --- | --- | --- |--- |
